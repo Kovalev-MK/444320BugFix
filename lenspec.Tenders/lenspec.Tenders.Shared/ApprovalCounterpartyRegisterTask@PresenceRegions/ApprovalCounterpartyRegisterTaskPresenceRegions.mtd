@@ -1,0 +1,65 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a4df20cf-9387-4e25-a7b8-ae5690599cc3",
+  "Name": "ApprovalCounterpartyRegisterTaskPresenceRegions",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ApprovalCount1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fdda4fa7-7044-4196-824a-2006f8be8dd7",
+      "Name": "ApprovalCounterpartyRegisterTask",
+      "CanBeSearch": false,
+      "Code": "Task",
+      "EntityGuid": "2ec894f8-d7da-46be-a14f-36d51722b0b5",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8740651a-0f14-4672-90ff-fc725501e3ec",
+      "Name": "PresenceRegion",
+      "CanBeSearch": false,
+      "Code": "PresenceRegion",
+      "EntityGuid": "2d959782-81f7-4656-9892-748b79fc2d14",
+      "FlatListInStandaloneLookup": true,
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "fdda4fa7-7044-4196-824a-2006f8be8dd7"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "b45bdc3a-f64f-4135-b827-0399aace3617",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "e1296db5-62dc-42b4-bd13-3ee19dcecb23",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

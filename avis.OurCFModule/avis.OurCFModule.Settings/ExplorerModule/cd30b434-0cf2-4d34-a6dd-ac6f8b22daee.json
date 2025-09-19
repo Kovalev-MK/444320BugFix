@@ -1,0 +1,9 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Uuid": "cd30b434-0cf2-4d34-a6dd-ac6f8b22daee",
+  "ModuleNameGuid": "cd30b434-0cf2-4d34-a6dd-ac6f8b22daee",
+  "HelpCode": "avis_OurCFModule",
+  "Status": "Active",
+  "SortingPriority": "Medium",
+  "StoreAsDefaultSetting": true
+}

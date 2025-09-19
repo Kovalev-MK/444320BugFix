@@ -1,0 +1,68 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "611d209a-f3a3-4738-b820-00a7f04901c7",
+  "Name": "EnvelopeC4Report",
+  "AssociatedGuid": "990619f6-bf0c-41d2-9881-78f9f1195045",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "c7096334-4073-44f3-9266-e528ebf17296",
+      "Name": "PostalItems",
+      "EntityType": "47809823-ca97-4f38-9e2f-59cfffcbaa46"
+    }
+  ],
+  "DefaultExportFormat": "Pdf",
+  "ExportFormats": [
+    "Pdf"
+  ],
+  "IconResourcesKeys": [],
+  "Overridden": [
+    "DisplayName",
+    "HandledEvents",
+    "Parameters",
+    "PublicConstants",
+    "PublicStructures",
+    "DataSources"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "db7b4438-c8b0-4985-aab6-dde60f9d54d0",
+      "Name": "Id",
+      "InternalDataTypeName": "System.Int64",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "ccefcafd-2a3c-49d9-99af-70b799a78433",
+      "Name": "BeginDateCreate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "8ed1a621-0281-482d-ba88-d060f51425fd",
+      "Name": "EndDateCreate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "7a0e4fe3-b8ea-43df-92e8-31099c29b348",
+      "Name": "MailDeliveryMethod",
+      "EntityType": "276d7e4a-ea11-4740-af17-893abc6bc6e9",
+      "InternalDataTypeName": "Sungero.Docflow.IMailDeliveryMethod, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "7b314e8c-1c4f-41b7-9922-bbb568806167",
+      "Name": "Senders",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab",
+      "InternalDataTypeName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

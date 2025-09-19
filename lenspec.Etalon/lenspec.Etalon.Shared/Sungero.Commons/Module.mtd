@@ -1,0 +1,184 @@
+{
+  "$type": "Sungero.Metadata.LayerModuleMetadata, Sungero.Metadata",
+  "NameGuid": "8f304430-c984-431b-827a-73c8e23e6271",
+  "Name": "Commons",
+  "AssociatedGuid": "64038fa9-c2bc-4b60-b658-5249259632cd",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "1e83eeb6-e56d-4786-98e6-dd3b7290f3d5",
+      "Name": "IndexEntity",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "056ceed8-4474-4864-80e1-c911a3dcd47c",
+          "Name": "AllowCreateRecord",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "223d3e5d-bd6d-4ad9-a2b0-fc393129af40",
+          "Name": "IndexName",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "a7a7a3e5-32fa-4df4-9d35-828cf1030bcb",
+          "Name": "Json",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "b92fefd3-9f88-4e85-9ba7-ba771d7a3dbc",
+          "Name": "AsyncCreated",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "c3200f84-4683-4d8a-a995-a23c85761e4f",
+          "Name": "EntityId",
+          "ParameterType": "Integer"
+        }
+      ]
+    },
+    {
+      "NameGuid": "cb668a39-0ffc-4e03-9217-d07d59997c66",
+      "Name": "RemoveEntityFromIndex",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsAncestorMetadata": true,
+      "Parameters": [
+        {
+          "NameGuid": "07b1c902-1ff6-4cd6-b901-e16e54d7dba3",
+          "Name": "EntityId",
+          "ParameterType": "Integer"
+        },
+        {
+          "NameGuid": "172caa65-ec88-4111-a33b-01000cea9d7c",
+          "Name": "IndexName",
+          "ParameterType": "String"
+        }
+      ]
+    }
+  ],
+  "BaseGuid": "459fa497-ee5b-49a4-9980-de00cada9b7a",
+  "ClientBaseAssemblyName": "lenspec.Etalon.ClientBase",
+  "ClientBaseNamespace": "lenspec.Etalon.Module.Commons.ClientBase",
+  "Code": "Commons",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "d4c0d93c-8e47-4d87-8887-93ea823aa01f",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "07850e5e-d38c-46af-a509-a2eb32b1b1a6",
+        "Name": "ScanSettingslenspec",
+        "EntityTypeId": "3b76326b-e800-4134-ac32-0fec6b28f5fd",
+        "GroupId": "38abfaa9-aa41-4bb4-989e-44f2b737f550",
+        "IsVisible": false,
+        "PreviousItemGuid": "3c4c0410-43fe-4646-919e-1067ae8fbb5c"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "0bf1c157-8aec-4f9f-b793-8281ceae23b6",
+        "Name": "DecodingBudgetItemslenspec",
+        "EntityTypeId": "3e3f2a50-6191-4323-b77e-c36158d91218",
+        "GroupId": "42fca107-ab46-4fb9-8955-43ac4716a0b0",
+        "PreviousItemGuid": "7ecaf766-40f2-4009-a6f0-8faf86091dd7"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "3c4c0410-43fe-4646-919e-1067ae8fbb5c",
+        "Name": "PrinterSettingslenspec",
+        "EntityTypeId": "85aa3082-fdb4-4c7f-b430-fd408895e6ba",
+        "GroupId": "38abfaa9-aa41-4bb4-989e-44f2b737f550"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "452fa55e-7926-403c-a3f0-af0a245b7b3d",
+        "Name": "EtalonTaskTypeavis",
+        "EntityTypeId": "6b44dc7b-dfbf-40a8-b062-e227517ac8db",
+        "GroupId": "056413d6-d13e-41cf-a4e3-1b05196c4d4f",
+        "PreviousItemGuid": "7a2df0f6-b4a8-4f2e-8e1e-d2b76befcb07"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "7a2df0f6-b4a8-4f2e-8e1e-d2b76befcb07",
+        "Name": "FlowFolderSettingavis",
+        "EntityTypeId": "723dc19d-5f55-4a9b-9b4e-edcaf51dfa61",
+        "GroupId": "056413d6-d13e-41cf-a4e3-1b05196c4d4f",
+        "PreviousItemGuid": "73c2ee10-0b5e-420d-9a71-b5012b2bf23d"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "7ecaf766-40f2-4009-a6f0-8faf86091dd7",
+        "Name": "GroupsBudgetItemslenspec",
+        "EntityTypeId": "87e224d4-0436-4a70-8ad9-d8a9a814522f",
+        "GroupId": "42fca107-ab46-4fb9-8955-43ac4716a0b0",
+        "PreviousItemGuid": "c64b8f84-2391-4c90-a46f-3c64f079afed"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "8f605600-2895-448a-8fcb-f350fdafeccb",
+        "Name": "EtalonAssignmentTypeavis",
+        "EntityTypeId": "f574ee6f-7180-4fe5-8df6-2d905fda2236",
+        "GroupId": "056413d6-d13e-41cf-a4e3-1b05196c4d4f",
+        "PreviousItemGuid": "452fa55e-7926-403c-a3f0-af0a245b7b3d"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "c64b8f84-2391-4c90-a46f-3c64f079afed",
+        "Name": "BudgetItemslenspec",
+        "EntityTypeId": "549d6cd8-ae68-4321-804b-140ed7eee88e",
+        "GroupId": "42fca107-ab46-4fb9-8955-43ac4716a0b0"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "38abfaa9-aa41-4bb4-989e-44f2b737f550",
+        "Name": "PrintScanSettingslenspec",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconPrintScanSettingslenspec_38abfaa9aa414bb4989e44f2b737f550.png",
+        "PreviousItemGuid": "056413d6-d13e-41cf-a4e3-1b05196c4d4f",
+        "TabId": "cdd0df61-5cc5-4342-9c3c-942e567a5520"
+      },
+      {
+        "NameGuid": "42fca107-ab46-4fb9-8955-43ac4716a0b0",
+        "Name": "BudgetItemslenspec",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconBudgetItemslenspec_42fca107ab464fb9895543ac4716a0b0.png",
+        "PreviousItemGuid": "38abfaa9-aa41-4bb4-989e-44f2b737f550",
+        "TabId": "cdd0df61-5cc5-4342-9c3c-942e567a5520"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "Groups",
+      "Actions",
+      "Tabs"
+    ],
+    "RemoteControls": [],
+    "Tabs": [],
+    "Versions": []
+  },
+  "ExplorerTreeOrder": [],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "IsVisible": false,
+  "LayeredFromGuid": "459fa497-ee5b-49a4-9980-de00cada9b7a",
+  "NeedResetAppliedCache": true,
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.Etalon.Module.Commons",
+  "ResourcesKeys": [],
+  "SpecialFolders": [],
+  "Version": "4.12.266.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "LayerModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    }
+  ]
+}

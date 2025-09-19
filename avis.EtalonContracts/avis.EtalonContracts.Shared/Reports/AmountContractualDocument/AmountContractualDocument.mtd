@@ -1,0 +1,45 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "86d8264b-7da1-49e0-9c39-101d18e1295e",
+  "Name": "AmountContractualDocument",
+  "AssociatedGuid": "68d3f5d9-0a14-489e-9024-a4cb77f5f223",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "1c658b55-0089-4f02-ac7a-b8c04434ed97",
+      "Name": "ContractualDocuments",
+      "EntityType": "59079f7f-a326-4947-bbd6-0ae6dfb5f59b"
+    }
+  ],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "EtalonContractsAmountContractualDocument",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DataSources",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "4e355134-077d-49c5-aa9f-8cc1b1f6d763",
+      "Name": "DocumentId",
+      "InternalDataTypeName": "System.Int64",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

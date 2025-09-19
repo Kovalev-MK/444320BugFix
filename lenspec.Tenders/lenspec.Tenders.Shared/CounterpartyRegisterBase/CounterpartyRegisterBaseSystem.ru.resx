@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Property_ResultApprovalDEB" xml:space="preserve">
+    <value>Результат согласования ДБ</value>
+  </data>
+  <data name="Property_QCDecision" xml:space="preserve">
+    <value>Решение комитета по квалификации</value>
+  </data>
+  <data name="Property_CounterpartyEmail" xml:space="preserve">
+    <value>Эл. почта Ген. директора/Контрагента</value>
+  </data>
+  <data name="Property_ContactEmail" xml:space="preserve">
+    <value>Эл. почта контактного лица</value>
+  </data>
+  <data name="FilterPanel_CounterpartyGroup_75731cf9cae74f3caff08ee5a3c6b2f5" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="FilterPanel_Period_f3c56008bcd34bc39039a6e09df88f76" xml:space="preserve">
+    <value>Интервал времени</value>
+  </data>
+  <data name="FilterPanel_Last180Days_de585cea3cb24d7ab2bc31707a0d8da3" xml:space="preserve">
+    <value>Последние 180 дней</value>
+  </data>
+  <data name="FilterPanel_LastMonth_69006e98f3ef45b9b46cd36b5f08d256" xml:space="preserve">
+    <value>Последние 30 дней</value>
+  </data>
+  <data name="FilterPanel_Last90Days_8f603e299f6141f4ab955b2787b1cb47" xml:space="preserve">
+    <value>Последние 90 дней</value>
+  </data>
+  <data name="FilterPanel_ManualPeriod_dd2902f738344d81b8e6f6946938cd48" xml:space="preserve">
+    <value>Произвольный период:</value>
+  </data>
+  <data name="FilterPanel_Status_89f1165590ec4efda233ae7f784da021" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="FilterPanel_Active_6c339001f5ad413a877311e21b7a99b8" xml:space="preserve">
+    <value>Действующая</value>
+  </data>
+  <data name="FilterPanel_Closed_d6f59e5b9d714b769dc565381bae6541" xml:space="preserve">
+    <value>Закрытая</value>
+  </data>
+  <data name="Property_CounterpartyCEO" xml:space="preserve">
+    <value>Ген. директор/Учредитель</value>
+  </data>
+  <data name="FilterPanel_PresenceRegionGroup_115f53cb56004b39baeb9f59496ff2d4" xml:space="preserve">
+    <value>Регион присутствия</value>
+  </data>
+  <data name="FilterPanel_IsStrategicPartner_bcbe9ff437d14f808086a18ec0f2b678" xml:space="preserve">
+    <value>Стратегический партнер</value>
+  </data>
+  <data name="FilterPanel_IsBlacklist_fab32a956d9c4aeebbdc00cd15cbee86" xml:space="preserve">
+    <value>Черный список</value>
+  </data>
+</root>

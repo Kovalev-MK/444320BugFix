@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RequiredFillIn" xml:space="preserve">
+    <value>Обязательно для заполнения хотя бы одно из 5 значений: Адвокаты/нотариусы/совет дома, Клиенты (покупатели, дольщики), Клиенты (собственники), Сотрудник ГК, Прочие</value>
+  </data>
+  <data name="ErrorTextDuplicatePerson" xml:space="preserve">
+    <value>Найдены дубли персон по ФИО + дата рождения.</value>
+  </data>
+  <data name="IsMale" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="IsFemale" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="UpdatedEntityMessage" xml:space="preserve">
+    <value>Обновлена сущность {0} ИД {1} ({2})</value>
+  </data>
+  <data name="ErrorMessageTemplate" xml:space="preserve">
+    <value>Ошибка: {0}</value>
+  </data>
+  <data name="FieldIsEmptyErrorMessage" xml:space="preserve">
+    <value>не заполнено поле {0}</value>
+  </data>
+  <data name="IncorrectFieldErrorMessage" xml:space="preserve">
+    <value>поле {0} заполнено некорректно</value>
+  </data>
+  <data name="EntityIsNotFoundErrorMessage" xml:space="preserve">
+    <value>сущность {0} с ИД {1} не найдена</value>
+  </data>
+  <data name="CreatedEntityMessage" xml:space="preserve">
+    <value>Создана сущность {0} ИД {1} ({2})</value>
+  </data>
+  <data name="NotCreatedEntityMessage" xml:space="preserve">
+    <value>Не создалась сущность {0}: {1}</value>
+  </data>
+  <data name="PersonTypeNotFilledIn" xml:space="preserve">
+    <value>Не заполнен тип персоны. Для внесения данных обратитесь в службу развития и администрирования СЭД.</value>
+  </data>
+  <data name="PersonHasEmptyRequiredFields" xml:space="preserve">
+    <value>Внимание! Не заполнены обязательные поля в записи справочника Персоны: {0}. Для внесения данных обратитесь в службу развития и администрирования СЭД.</value>
+  </data>
+</root>

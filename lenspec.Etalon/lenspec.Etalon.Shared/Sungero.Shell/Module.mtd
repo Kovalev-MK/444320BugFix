@@ -1,0 +1,54 @@
+{
+  "$type": "Sungero.Metadata.LayerModuleMetadata, Sungero.Metadata",
+  "NameGuid": "86cb75e8-e1ae-4df5-b123-086783b042c6",
+  "Name": "Shell",
+  "AssociatedGuid": "64038fa9-c2bc-4b60-b658-5249259632cd",
+  "AsyncHandlers": [],
+  "BaseGuid": "fcc573ab-5f4e-4b20-88e8-7b1e11a7a59a",
+  "ClientBaseAssemblyName": "lenspec.Etalon.ClientBase",
+  "ClientBaseNamespace": "lenspec.Etalon.Module.Shell.ClientBase",
+  "Code": "Shell",
+  "CompanyCode": "Sungero",
+  "ExplorerTreeOrder": [],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "IsVisible": false,
+  "LayeredFromGuid": "fcc573ab-5f4e-4b20-88e8-7b1e11a7a59a",
+  "NeedResetAppliedCache": true,
+  "NeedResetTags": true,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.Etalon.Module.Shell",
+  "ResourcesKeys": [],
+  "SpecialFolders": [
+    {
+      "NameGuid": "1ead1abe-1b7e-4833-9e01-ee7f8404537a",
+      "Name": "OnDocumentProcessing",
+      "DisplayType": "Inbox",
+      "IconPath": "OnDocumentProcessing_1ead1abe1b7e48339e01ee7f8404537a.ico",
+      "IsAncestorMetadata": true,
+      "IsShow": true,
+      "IsViewSettingsByFolder": true,
+      "NeedShowMarkedCount": true,
+      "Overridden": [
+        "HandledEvents"
+      ],
+      "Versions": []
+    }
+  ],
+  "Version": "4.12.266.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "LayerModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    }
+  ]
+}

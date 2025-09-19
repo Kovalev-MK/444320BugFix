@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="QueryAtt">
+    <default><![CDATA[SELECT DISTINCT EDoc, 
+STUFF((
+SELECT CONCAT(', ', cp.Name)
+FROM [dbo].[lenspec_Etalon_PowerOfAttorn1] as poa
+JOIN [dbo].[Sungero_Parties_Counterparty] as cp
+ON poa.Attorn = cp.Id
+WHERE poa.EDoc = main.EDoc
+ORDER BY EDoc
+FOR XML PATH('')),1,1,'') as Names
+FROM [dbo].[lenspec_Etalon_PowerOfAttorn1] as main]]></default>
+  </query>
+</queries>

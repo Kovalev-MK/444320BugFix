@@ -1,0 +1,80 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "a202226f-8d3d-4841-a791-894e6be9840a",
+  "Name": "ApprovalSheetDefault",
+  "AssociatedGuid": "0235c08d-4819-4ddd-862f-531c9ddcfc4a",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Word",
+  "ExportFormats": [
+    "Word"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ApprovingCounterpartyDEBApprovalSheetDefault",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DataSources",
+    "Parameters",
+    "ExportFormats",
+    "DefaultExportFormat"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "40cf7d1d-7b4a-49b4-aaf8-34d81d643c43",
+      "Name": "TaskId",
+      "InternalDataTypeName": "System.Int64",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "61e5c92c-b3d4-4ca4-9f39-f4f3acbf5638",
+      "Name": "StartId",
+      "InternalDataTypeName": "System.Int32",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "01500b0f-129d-4b3a-a633-9e42419e6882",
+      "Name": "DocId",
+      "InternalDataTypeName": "System.Int64",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "551cba95-8410-463c-9939-748bc0b151e2",
+      "Name": "Author",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "36d0893f-9d9b-4084-8fdf-c5f7f14ff022",
+      "Name": "Initiator",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "34845aa0-bb15-4f14-ae3d-a2e59a62b3a9",
+      "Name": "CurrentUser",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "74c11c7f-ef50-4a6d-995d-6b3a2dd41005",
+      "Name": "CounterpartyTIN",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d3566850-d6e9-434c-8428-55caeaa794de",
+      "Name": "CounterpartyName",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c9a85a0b-91f5-44a6-ada8-28cc7e99bb7b",
+      "Name": "TaskSubject",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

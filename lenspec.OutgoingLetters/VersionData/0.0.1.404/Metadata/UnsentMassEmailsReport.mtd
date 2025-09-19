@@ -1,0 +1,43 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "07c2dacd-ba03-4d75-8771-1f71d8cf23fc",
+  "Name": "UnsentMassEmailsReport",
+  "AssociatedGuid": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "OutgoingLettersUnsentMassEmailsReport",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "HandledEvents",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "b7f3c97c-6ee1-4d52-8a27-1f161d516ad9",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4d5f9be1-8cf5-42da-a241-e9bb946c4a81",
+      "Name": "MassMailingNotification",
+      "EntityType": "7f59ae3a-09be-4e02-a6c5-e5ff374ad5a2",
+      "InternalDataTypeName": "lenspec.OutgoingLetters.IMassMailingNoticeTask, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

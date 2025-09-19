@@ -1,0 +1,493 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "6cd088e4-bb1d-4057-8b1b-a2b98f500e04",
+  "Name": "CompanyBase",
+  "Actions": [
+    {
+      "NameGuid": "d2f538d6-0809-49d2-b8f3-e86a2d0cc183",
+      "Name": "FillDadataavis",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_FillDadataavis_large_d2f538d6080949d2b8f3e86a2d0cc183.png",
+      "SmallIconName": "Action_FillDadataavis_small_d2f538d6080949d2b8f3e86a2d0cc183.png"
+    },
+    {
+      "NameGuid": "06c4223f-3fd8-420d-add9-d429e8400c99",
+      "Name": "FillFromKonturavis",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_FillFromKonturavis_large_06c4223f3fd8420dadd9d429e8400c99.png",
+      "SmallIconName": "Action_FillFromKonturavis_small_06c4223f3fd8420dadd9d429e8400c99.png"
+    },
+    {
+      "NameGuid": "246c5fc9-ea2c-4b28-95e2-f1a6420af281",
+      "Name": "ExpressReportavis",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_ExpressReportavis_large_246c5fc9ea2c4b2895e2f1a6420af281.png",
+      "SmallIconName": "Action_ExpressReportavis_small_246c5fc9ea2c4b2895e2f1a6420af281.png"
+    },
+    {
+      "NameGuid": "2737d0e5-cd12-4695-9937-f4f13d53f86e",
+      "Name": "ShowBankDetailslenspec",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_ShowBankDetailslenspec_large_2737d0e5cd1246959937f4f13d53f86e.png",
+      "SmallIconName": "Action_ShowBankDetailslenspec_small_2737d0e5cd1246959937f4f13d53f86e.png"
+    },
+    {
+      "NameGuid": "b920d9f4-59ea-4a38-a1cc-c2d00b8a1861",
+      "Name": "ReportFromExternalResourcelenspec",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_ReportFromExternalResourcelenspec_large_b920d9f459ea4a38a1ccc2d00b8a1861.png",
+      "SmallIconName": "Action_ReportFromExternalResourcelenspec_small_b920d9f459ea4a38a1ccc2d00b8a1861.png"
+    }
+  ],
+  "BaseGuid": "78278dd7-f0d2-4e35-b543-13d0bd462cd6",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "308b66c0-28e9-4beb-bf43-03fc550c1468",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "026f3b94-a2e4-47bc-a270-d900853f782e",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "Name": "Contacts",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 55.0
+            },
+            {
+              "Percentage": 45.0
+            }
+          ],
+          "GroupType": "WithTitleNoBorder",
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Controls",
+            "ColumnDefinitions"
+          ],
+          "SharedNestedGroupsAlignment": true,
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "966f5464-efad-489f-8598-d48f1fdfe547",
+          "Name": "Phonesavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "fb72b196-fb7f-4ea9-b2ef-7212f205afe5",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "37b611c9-0c65-4ebb-b20b-532c099ebe6d",
+          "Name": "Emailavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "80e99e7b-8e41-40c1-9112-8f42d8c34ce1",
+          "RowNumber": 4,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "0a16025b-f9b7-4ee3-8653-fae0509c4ab4",
+          "Name": "Websiteavis",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "63f355a0-920c-4682-91ab-e446175167dd",
+          "RowNumber": 4,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "2e356dc0-5ad9-4695-8703-d2d84f01c2bf",
+          "Name": "Settlementavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "93db464a-c19f-441c-bf41-7ad6b9ea2fb5",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "db0be72b-481a-49fe-b8cb-90f6be327354",
+          "Name": "Regionavis",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "78b9f52c-febf-4a73-89ae-c7a4723e3944",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "8aa59063-3d62-455f-b454-b27459ee3d32",
+          "Name": "LegalAddressavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "c0fedb36-4bff-4978-a39e-ee43154bc84b",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "687c94fc-6770-4c17-bb0b-57a69433b001",
+          "Name": "PostalAddressavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "4a8264be-df2c-4175-b1f2-776d388e2042",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "4a42b25f-03db-4a51-9b5f-ab66b575e7b6",
+          "Name": "Indexavisavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "19b337a3-64d2-49e2-b190-9d4992e06afa",
+          "RowNumber": 6,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "992f3734-b1fc-422c-87dc-81a14fbc7927",
+          "Name": "Streetavisavis",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "9e3df66a-01e8-408a-aa4c-a5c92a1227fb",
+          "PropertyGuid": "1bb564c5-0488-4a52-a7f6-5ad1edeadb78",
+          "RowNumber": 5,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ],
+      "Versions": []
+    }
+  ],
+  "HandledEvents": [
+    "ShowingClient"
+  ],
+  "IconResourcesKeys": [],
+  "IsAbstract": true,
+  "LayeredFromGuid": "78278dd7-f0d2-4e35-b543-13d0bd462cd6",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "342f64bd-29fa-4e8b-bbdf-00fff9b097dc",
+      "Name": "Bank",
+      "CanBeSearch": false,
+      "IsAncestorMetadata": true,
+      "IsShowedInList": false,
+      "Overridden": [
+        "CanBeSearch",
+        "IsShowedInList"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8c43815d-1a3d-47ec-a98d-909052509a21",
+      "Name": "ExchangeBoxes",
+      "EntityGuid": "32b8b710-ac33-44bf-b4bc-d7f59e703366",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "19b337a3-64d2-49e2-b190-9d4992e06afa",
+      "Name": "Indexavis",
+      "CanBeSearch": false,
+      "Code": "Indexavis1",
+      "IsShowedInList": false,
+      "Length": 10,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "f3253916-499d-4f30-8041-6aa47fb10fc8"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1bb564c5-0488-4a52-a7f6-5ad1edeadb78",
+      "Name": "Streetavis",
+      "CanBeSearch": false,
+      "Code": "Streetavis",
+      "IsShowedInList": false,
+      "Length": 100,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "19b337a3-64d2-49e2-b190-9d4992e06afa"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "bd89fdd1-2766-4f6d-9e95-efbb5d311f72",
+      "Name": "FIOContactavis",
+      "CanBeSearch": false,
+      "Code": "FIOContactavi1",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "1bb564c5-0488-4a52-a7f6-5ad1edeadb78"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "0e6b0162-a0c8-4f7b-8585-71c876fa3ce8",
+      "Name": "JobTitleContactavis",
+      "CanBeSearch": false,
+      "Code": "JobTitleContac",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsVisibility": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "bd89fdd1-2766-4f6d-9e95-efbb5d311f72"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d63217a7-92bf-4835-b769-94e48c4cc988",
+      "Name": "HeadBankavis",
+      "Code": "HeadBankavis1",
+      "EntityGuid": "80c4e311-e95f-449b-984d-1fd540b8f0af",
+      "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "NeedPassEntityToLookupEvent": true,
+      "PreviousPropertyGuid": "0e6b0162-a0c8-4f7b-8585-71c876fa3ce8"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "GetCounterpartyDuplicatesErrorText",
+      "Parameters": [
+        {
+          "Name": "companyBase",
+          "ParameterType": "global::lenspec.Etalon.ICompanyBase",
+          "ParameterTypeFullName": "lenspec.Etalon.ICompanyBase, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "c248f878-8ce1-4ab6-b63f-d01082115599",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "45603231-fc9a-430b-8a49-1bad1ffd58f7",
+        "Name": "OpenInService",
+        "ActionGuid": "e296d20d-5811-4626-9b70-2d0fa03fc5f4",
+        "ButtonSize": "Large",
+        "Index": 3,
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "Index"
+        ],
+        "ParentGuid": "aa25262b-e782-4a70-829e-0856dd1e2b57",
+        "Versions": []
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "8da50f25-14b7-45ac-9ebd-3afd4de3f4cb",
+        "Name": "ShowCounterparty",
+        "ActionGuid": "2f4477e0-bcb9-439b-9bad-2b4d51af45c0",
+        "ButtonSize": "Large",
+        "Index": 4,
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "Index"
+        ],
+        "ParentGuid": "aa25262b-e782-4a70-829e-0856dd1e2b57",
+        "Versions": []
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "422c93ac-b374-4243-b75a-3acbcd3ebcaf",
+        "Name": "FillDadataavisavis",
+        "ActionGuid": "d2f538d6-0809-49d2-b8f3-e86a2d0cc183",
+        "ButtonSize": "Large",
+        "Index": 2,
+        "ParentGuid": "aa25262b-e782-4a70-829e-0856dd1e2b57"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "77e7499e-92aa-483a-a0f2-229bedd32359",
+        "Name": "FillFromService",
+        "ActionGuid": "5afd431e-3d37-4293-b886-7ebf86035e6b",
+        "ButtonSize": "Large",
+        "Index": 1,
+        "IsAncestorMetadata": true,
+        "IsVisible": false,
+        "Overridden": [
+          "IsVisible"
+        ],
+        "ParentGuid": "aa25262b-e782-4a70-829e-0856dd1e2b57",
+        "Versions": []
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "a9ba24e7-0192-463c-bdd9-0b178473024d",
+        "Name": "FillFromKonturavisavis",
+        "ActionGuid": "06c4223f-3fd8-420d-add9-d429e8400c99",
+        "ButtonSize": "Large",
+        "Index": 51,
+        "ParentGuid": "f3b0ddcd-9d1e-4ca3-8780-695ae25a9e8b"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "f79f4d35-037f-4de5-a0aa-77f5d30de4d2",
+        "Name": "ExpressReportSchow",
+        "ActionGuid": "246c5fc9-ea2c-4b28-95e2-f1a6420af281",
+        "ButtonSize": "Large",
+        "Index": 0,
+        "ParentGuid": "1088f05d-7d6e-48a0-a909-94e5a292fd8a"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "1cc30a42-ab72-401e-8a32-60f617d6877d",
+        "Name": "GoToWebsite",
+        "ActionGuid": "ab7ae51d-205b-43ba-8961-2d2ec069651f",
+        "ButtonSize": "Large",
+        "Index": 4,
+        "IsAncestorMetadata": true,
+        "Overridden": [
+          "Index"
+        ],
+        "ParentGuid": "7ef0a3c5-76ac-4fed-b79e-26827b7bf183",
+        "Versions": []
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "a4086167-bb30-44f3-a698-3b5bc5d1dd2d",
+        "Name": "ShowBankDetailslenspec",
+        "ActionGuid": "2737d0e5-cd12-4695-9937-f4f13d53f86e",
+        "ButtonSize": "Large",
+        "Index": -1,
+        "ParentGuid": "7ef0a3c5-76ac-4fed-b79e-26827b7bf183"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "01b850b6-8821-4c58-aae7-096a024c422e",
+        "Name": "OpenContacts",
+        "ActionGuid": "2ff7648d-aaa4-4fa9-96f7-ed7b659483b7",
+        "ButtonSize": "Large",
+        "Index": -2,
+        "IsAncestorMetadata": true,
+        "IsShowInContextMenu": true,
+        "Overridden": [
+          "Index",
+          "ButtonSize"
+        ],
+        "ParentGuid": "7ef0a3c5-76ac-4fed-b79e-26827b7bf183",
+        "Versions": []
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "df50b0dc-8754-4ab6-aaff-dcf005c4b2a0",
+        "Name": "ReportFromExternalResource",
+        "ActionGuid": "b920d9f4-59ea-4a38-a1cc-c2d00b8a1861",
+        "ButtonSize": "Large",
+        "Index": 1,
+        "ParentGuid": "1088f05d-7d6e-48a0-a909-94e5a292fd8a"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "1088f05d-7d6e-48a0-a909-94e5a292fd8a",
+        "Name": "Groupavis",
+        "IconName": "Ribbon_Groupavis_1088f05d7d6e48a0a90994e5a292fd8a.png",
+        "Index": 0,
+        "ParentGuid": "b51ec25c-f2d5-437e-aaa5-62be39d7b367",
+        "SmallIconName": "Ribbon_Groupavis_small_1088f05d7d6e48a0a90994e5a292fd8a.png"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Pages": [
+      {
+        "NameGuid": "b51ec25c-f2d5-437e-aaa5-62be39d7b367",
+        "Name": "Report",
+        "Index": 31,
+        "ParentGuid": "ab56c73d-5e95-4014-b359-86c97643f13c"
+      }
+    ],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "ccd2465e-e817-43d0-9b04-57fb84164cd4",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

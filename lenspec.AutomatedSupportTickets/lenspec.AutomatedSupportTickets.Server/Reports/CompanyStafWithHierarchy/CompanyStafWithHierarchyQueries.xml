@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="QueryForReportCompanyStaf">
+    <mssql><![CDATA[Set language russian;
+with DipartmentHiererhcy (
+  ID,
+  HightID, 
+  Level)
+as
+(
+-- Подразделение верхнего уровня (N = 0)
+  select
+    department.Id,
+    department.HeadOffice_Company_Sungero,
+    0 as Level
+  from
+    Sungero_Core_Recipient department
+  where
+   department.Discriminator = '61B1C19F-26E2-49A5-B3D3-0D3618151E12'
+   and department.HeadOffice_Company_Sungero is null
+   and department.Status = 'Active'
+   and department.BusinessUnit_Company_Sungero in (select value 
+        from string_split(@Companies, ','))
+       
+  union ALL
+-- Подчиненное подразделение (N + 1)
+  select
+    department.Id,
+    department.HeadOffice_Company_Sungero,
+    Level + 1
+  from
+    Sungero_Core_Recipient as department
+      inner join DipartmentHiererhcy as hightdepartment
+        on department.HeadOffice_Company_Sungero = hightdepartment.ID 
+where department.Discriminator = '61B1C19F-26E2-49A5-B3D3-0D3618151E12' 
+
+)
+-- Иерархия подразделений с остальными полями
+select  
+  IsNull(nor.Name, '') as BusinessUnitName, 
+  IsNull(hightdepartment.name, '') as LeadDepName,
+  isnull(department.name, '') as DepName,
+  isnull(man.Name, '') as ManagerName,
+  isnull(empl.Name, '') as EmplName, 
+  isnull(jt.name, '') as JobTitle 
+from
+  DipartmentHiererhcy hierarchy
+    left join Sungero_Core_Recipient department on department.id = hierarchy.ID and department.Status = 'Active'
+    left join Sungero_Core_Recipient hightdepartment on hightdepartment.id = hierarchy.HightID and hightdepartment.Status = 'Active'	
+    inner join Sungero_Core_Recipient nor on nor.Id = department.BusinessUnit_Company_Sungero and nor.Discriminator = 'EFF95720-181F-4F7D-892D-DEC034C7B2AB' and nor.Status = 'Active'
+  	left join Sungero_Core_Recipient hn on hn.Id = nor.HeadCompany_Company_Sungero and hn.Discriminator = 'EFF95720-181F-4F7D-892D-DEC034C7B2AB' and hn.Status = 'Active'
+  	left join Sungero_Core_Recipient man on department.Manager_Company_Sungero = man.id and man.Discriminator = 'B7905516-2BE5-4931-961C-CB38D5677565' and man.Status = 'Active'
+  	left join Sungero_Core_Recipient empl on department.id = empl.Department_Company_Sungero and empl.Discriminator = 'B7905516-2BE5-4931-961C-CB38D5677565' and empl.Status = 'Active' 
+  	left join Sungero_Company_JobTitle jt on jt.id = empl.JobTitle_Company_Sungero 	and jt.Discriminator = '4A37AEC4-764C-4C14-8887-E1ECAFA5B4C5' and jt.Status = 'Active'
+order by 1, Level, empl.Name]]></mssql>
+  </query>
+</queries>

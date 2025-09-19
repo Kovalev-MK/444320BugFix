@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConstituentDocumentKindInstruction" xml:space="preserve">
+    <value>К учредительным документам относятся следующие документы:
+· Решение/протокол о создании ЮЛ
+· ИНН
+· ОГРН
+· Лист записи ЕГРЮЛ
+· Список участников общества
+· Протокол учредителей/решение учредителя об избрании руководителя
+· Приказ о вступлении в должность руководителя/о назначении руководителя
+· Приказ о назначении главного бухгалтера
+· Решение о продлении полномочий руководителя общества
+· Справка о присвоении кодов статистики
+Внимание! Устав, изменения к Уставу, Учредительный договор необходимо загружать из налоговой/или вручную в вид документа «Устав и изменения»
+Загружать в карточку необходимо документы единым архивом, оформленным надлежащим образом, а именно: 
+· Сканы документов переименованы по формату: &lt;Вид документа &gt; &lt;Номер документа&gt; от &lt;Дата документа&gt; &lt;Наименование контрагента&gt;
+· Сформирован zip архив документов.</value>
+  </data>
+  <data name="AdditionalInfoDocumentKindInstruction" xml:space="preserve">
+    <value>Внимание! Учредительные документы, Устав и изменения не загружаются в  карточку документа «Прочие сведения о контрагенте»!</value>
+  </data>
+  <data name="DuplicatesNotFound" xml:space="preserve">
+    <value>Дублирующие записи не найдены.</value>
+  </data>
+  <data name="DuplicateFoundForExtractFromEGRUL" xml:space="preserve">
+    <value>Выписка из ЕГРЮЛ/ЕГРИП уже создана для контрагента. Откройте существующий документ, при необходимости загрузите новую версию по кнопке «Загрузить из ЕГРЮЛ».</value>
+  </data>
+  <data name="DuplicateFoundForCharterAndChanges" xml:space="preserve">
+    <value>Устав и изменения уже созданы для контрагента. Откройте существующий документ, при необходимости загрузите новую версию.</value>
+  </data>
+  <data name="VersionsNotFoundError" xml:space="preserve">
+    <value>Создайте хотя бы одну версию документа.</value>
+  </data>
+  <data name="NeedFillCounterparty" xml:space="preserve">
+    <value>Для получения выписки заполните поле Контрагент.</value>
+  </data>
+  <data name="FillFromEGRULConfirmMessage" xml:space="preserve">
+    <value>Выписка из ЕГРЮЛ/ЕГРИП содержит актуальные сведения. Вы точно хотите загрузить ту же информацию?</value>
+  </data>
+  <data name="DuplicateFoundForConstituentDocument" xml:space="preserve">
+    <value>Учредительный документ уже создан для контрагента. Откройте существующий документ, при необходимости загрузите новую версию.</value>
+  </data>
+</root>

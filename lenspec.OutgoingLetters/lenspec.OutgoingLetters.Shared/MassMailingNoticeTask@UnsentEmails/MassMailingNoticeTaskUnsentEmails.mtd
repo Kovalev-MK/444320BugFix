@@ -1,0 +1,74 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "f0ab0e2e-ea91-4494-ad83-0eec6ec6cd80",
+  "Name": "MassMailingNoticeTaskUnsentEmails",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "MassMailingNo1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "52e9f0fa-9a5e-44ed-a447-c39aa388093b",
+      "Name": "MassMailingNoticeTask",
+      "CanBeSearch": false,
+      "Code": "Task",
+      "EntityGuid": "7f59ae3a-09be-4e02-a6c5-e5ff374ad5a2",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a0fbe03b-8ea1-4872-b69f-7be0fe00c682",
+      "Name": "UnsentOutgoingLetter",
+      "CanBeSearch": false,
+      "Code": "UnsentOutgoing",
+      "EntityGuid": "4689aeb6-1589-4ba0-a6b6-3f0137cde4d6",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "52e9f0fa-9a5e-44ed-a447-c39aa388093b"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "77977c9b-2c43-4e78-bd35-aee5101ba034",
+      "Name": "ErrorMessage",
+      "CanBeSearch": false,
+      "Code": "ErrorMessage",
+      "Length": 500,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "a0fbe03b-8ea1-4872-b69f-7be0fe00c682"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "7051beac-2fa6-4ddb-a343-e7a602c1f61c",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "84b6c297-a208-4792-8ef5-7cedde0022f6",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

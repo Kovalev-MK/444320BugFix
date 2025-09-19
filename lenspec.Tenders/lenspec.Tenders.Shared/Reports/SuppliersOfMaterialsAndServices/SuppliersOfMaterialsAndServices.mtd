@@ -1,0 +1,91 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "e633f04b-cc17-48d3-b247-46e7ab57787e",
+  "Name": "SuppliersOfMaterialsAndServices",
+  "AssociatedGuid": "803bf0a2-88a4-48de-aa9b-6c851ac60ec0",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient",
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "TendersSuppliersOfMaterialsAndServices",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "HandledEvents",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DataSources",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "fb08af57-3dd9-44dc-b648-73ac5cb972d5",
+      "Name": "WorkKinds",
+      "EntityType": "4334ba2f-03a3-4ca7-ab49-a525835ecaa2",
+      "InternalDataTypeName": "avis.EtalonParties.IWorkKind, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "a390ee98-829c-48c0-89de-fc8fe16699cf",
+      "Name": "WorkKindGroups",
+      "EntityType": "246cf56d-d54a-4014-bbf6-d47f5c6b3180",
+      "InternalDataTypeName": "avis.EtalonParties.IWorkGroup, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "5bde157d-0d50-4767-9b91-9308a156a2ff",
+      "Name": "MaterialGroups",
+      "EntityType": "3a4efd00-0c1c-48c9-81fc-06aaf8787211",
+      "InternalDataTypeName": "avis.EtalonParties.IMaterialGroup, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "b8bb2b26-148e-4b56-855a-07fa01528634",
+      "Name": "Materials",
+      "EntityType": "8653221e-616a-4db9-8b33-2be30632bc55",
+      "InternalDataTypeName": "avis.EtalonParties.IMaterial, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "3eb3fe37-f9eb-4b20-9f6d-a247d192ddaa",
+      "Name": "Regions",
+      "EntityType": "4efe2fa9-b1d1-4b47-b366-4128fe0a391c",
+      "InternalDataTypeName": "Sungero.Commons.IRegion, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "668c0566-0344-4d40-926f-35c18010bf2f",
+      "Name": "Cities",
+      "EntityType": "3a0c21f8-aa88-429c-891f-56c24d56fcef",
+      "InternalDataTypeName": "Sungero.Commons.ICity, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "97ab8678-d74e-47e3-9c4c-b07e5e22d2b8",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9a7e7257-417a-475d-87bf-2015664f1182",
+      "Name": "InputParams",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

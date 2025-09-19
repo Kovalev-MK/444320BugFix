@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Enum_Result_Complete" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Action_Complete" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Action_CompleteHint" xml:space="preserve">
+    <value>Complete with Result "Approve"</value>
+  </data>
+  <data name="Action_CompleteConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Approve"?</value>
+  </data>
+  <data name="Action_CompleteDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Approve"</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Enum_Result_Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Action_Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Action_RejectHint" xml:space="preserve">
+    <value>Complete with Result "Reject"</value>
+  </data>
+  <data name="Action_RejectConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Reject"?</value>
+  </data>
+  <data name="Action_RejectDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Reject"</value>
+  </data>
+  <data name="Enum_Result_Revision" xml:space="preserve">
+    <value>Revision</value>
+  </data>
+  <data name="Action_Revision" xml:space="preserve">
+    <value>Revision</value>
+  </data>
+  <data name="Action_RevisionHint" xml:space="preserve">
+    <value>Complete with Result "Revision"</value>
+  </data>
+  <data name="Action_RevisionConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Revision"?</value>
+  </data>
+  <data name="Action_RevisionDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Revision"</value>
+  </data>
+  <data name="ControlGroup_ebfeb539df3646ebb16c88e4afe77109" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_1bbfaba9c44445878d1c51150787fb2e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_1bbfaba9c44445878d1c51150787fb2e_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_4917364762724459ab15867c0b3c85a2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c9c4beefec5b4b3796d4959c17991279" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_c9c4beefec5b4b3796d4959c17991279_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_45c3f7afea6f40948e21e643b6358f4a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_45c3f7afea6f40948e21e643b6358f4a_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ad03c4af7bfe4967aa2cdaa3265bdbe3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>1. Before creating / changing an organization or person card, check for duplicates in the directory. If there is no entry, then create it. Check the correctness of the name and filling of all fields in the created card, then save it and complete the task with the result “Agreed“.
+2. If the organization or person has already been specified, or there are other reasons for rejection, indicate the reasons in the text of the task, complete the task with the result “Reject“.
+3. If you need additional information, send it to the initiator by clicking the "For revision" button and indicate in the task text what needs to be improved.</value>
+  </data>
+  <data name="Property_CompanyName" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="Property_TIN" xml:space="preserve">
+    <value>TIN</value>
+  </data>
+  <data name="Property_CreateCompanyTask" xml:space="preserve">
+    <value>CreateCompanyTask</value>
+  </data>
+  <data name="Property_TypeObject" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="Property_TypeRequest" xml:space="preserve">
+    <value>Type request</value>
+  </data>
+  <data name="Property_FIOPerson" xml:space="preserve">
+    <value>FIO Person</value>
+  </data>
+  <data name="Property_Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Property_SpecifyNeedToBeMade" xml:space="preserve">
+    <value>Specify what changes need to be made</value>
+  </data>
+  <data name="Property_Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Action_CreatePerson" xml:space="preserve">
+    <value>Create person</value>
+  </data>
+  <data name="Action_CreatePersonDescription" xml:space="preserve">
+    <value>Create person</value>
+  </data>
+  <data name="Action_CreatePersonHint" xml:space="preserve">
+    <value>Create person</value>
+  </data>
+  <data name="Action_CreatePersonConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreatePersonConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreateCompany" xml:space="preserve">
+    <value>Create company</value>
+  </data>
+  <data name="Action_CreateCompanyDescription" xml:space="preserve">
+    <value>Create company</value>
+  </data>
+  <data name="Action_CreateCompanyHint" xml:space="preserve">
+    <value>Create company</value>
+  </data>
+  <data name="Action_CreateCompanyConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreateCompanyConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreateBank" xml:space="preserve">
+    <value>Create bank</value>
+  </data>
+  <data name="Action_CreateBankDescription" xml:space="preserve">
+    <value>Create bank</value>
+  </data>
+  <data name="Action_CreateBankHint" xml:space="preserve">
+    <value>Create bank</value>
+  </data>
+  <data name="Action_CreateBankConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreateBankConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_DateOfBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="Property_ResponsibleEmployee" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="Property_BusinessUnit" xml:space="preserve">
+    <value>Наша орг.</value>
+  </data>
+  <data name="Property_ResponsibleByCounterparty" xml:space="preserve">
+    <value>Ответственные по контрагентам</value>
+  </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="Control_272eb57483724caf90abc2965ccb1aa9_EmptyText" xml:space="preserve">
+    <value>Выберите запись справочника для изменения</value>
+  </data>
+  <data name="Property_DatabookActionType" xml:space="preserve">
+    <value>Создать/изменить запись</value>
+  </data>
+  <data name="Enum_DatabookActionType_NewEntry" xml:space="preserve">
+    <value>Создать новую</value>
+  </data>
+  <data name="Enum_DatabookActionType_EditEntry" xml:space="preserve">
+    <value>Внести изменения</value>
+  </data>
+</root>

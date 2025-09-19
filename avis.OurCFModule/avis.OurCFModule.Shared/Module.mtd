@@ -1,0 +1,211 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "cd30b434-0cf2-4d34-a6dd-ac6f8b22daee",
+  "Name": "OurCFModule",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "b74cd289-7e94-4d55-858f-794e25bafbef",
+      "Name": "AsyncChangingApprovalsInISP",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "6b4a8834-24aa-4ef2-98e2-b805f94cce1d",
+          "Name": "employeeNewId",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "768cd9e9-6e7a-457e-aefa-37fd782a1c52",
+          "Name": "roleIds",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "d9e72010-40ac-4b91-afb4-c18d1ac7d3c0",
+          "Name": "ourCFIds",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "dec750e9-1283-4ba2-803c-12b587b793c1",
+          "Name": "employeeCurrentId",
+          "ParameterType": "String"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "avis.OurCFModule.Client",
+  "ClientBaseAssemblyName": "avis.OurCFModule.ClientBase",
+  "ClientBaseNamespace": "avis.OurCFModule.ClientBase",
+  "ClientNamespace": "avis.OurCFModule.Client",
+  "Code": "OurCFMo",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "c4f8b183-a0f1-4378-94cc-ea9010ebafcf",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "018c0541-4304-4a88-af87-f323838caca8",
+        "Name": "CreateRNV",
+        "FunctionName": "CreateRNV",
+        "GroupId": "7bfe530e-ce91-4864-b5dc-60d96a2f9146",
+        "PreviousItemGuid": "c23f165d-dd1b-4caf-9691-f4b7aa743abe"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "481ab738-dcc3-4eba-9005-0e692f5ff5bd",
+        "Name": "OurCF",
+        "EntityTypeId": "e1754f33-7b0c-4931-80b9-61743558235c",
+        "GroupId": "d9c017fa-a9eb-40f4-b302-524d5730489d"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "6f064b2d-8617-431b-afca-d7e31e2be29d",
+        "Name": "SeachRNS",
+        "FunctionName": "SearchRNS",
+        "GroupId": "070a77f5-1505-4a74-91d4-780358e11336"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "80ff5f1e-15c7-46c8-8b33-2a20f39ef312",
+        "Name": "ObjectAnSale",
+        "EntityTypeId": "6e4ca10b-3991-4c0d-928f-ec296b8dbca7",
+        "GroupId": "d9c017fa-a9eb-40f4-b302-524d5730489d",
+        "PreviousItemGuid": "c0bae571-13e2-4913-9430-2effa21fee61"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "c0bae571-13e2-4913-9430-2effa21fee61",
+        "Name": "ObjectAnProject",
+        "EntityTypeId": "7fcdaad1-cef7-4874-9bc7-7d9b80d0241f",
+        "GroupId": "d9c017fa-a9eb-40f4-b302-524d5730489d",
+        "PreviousItemGuid": "481ab738-dcc3-4eba-9005-0e692f5ff5bd"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "c23f165d-dd1b-4caf-9691-f4b7aa743abe",
+        "Name": "CreateRNS",
+        "FunctionName": "CreateRNS",
+        "GroupId": "7bfe530e-ce91-4864-b5dc-60d96a2f9146"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "f75a9afb-d5a5-446f-8c0b-a3f73fc53db7",
+        "Name": "SearchRNV",
+        "FunctionName": "SearchRNV",
+        "GroupId": "070a77f5-1505-4a74-91d4-780358e11336",
+        "PreviousItemGuid": "6f064b2d-8617-431b-afca-d7e31e2be29d"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "fb5ecf88-a509-4b38-b910-bae4de54643d",
+        "Name": "PurposeOfPremises",
+        "EntityTypeId": "79ad0730-c965-4fb0-a7e6-b85fc7d9bc07",
+        "GroupId": "d9c017fa-a9eb-40f4-b302-524d5730489d",
+        "PreviousItemGuid": "80ff5f1e-15c7-46c8-8b33-2a20f39ef312"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "10575ff9-28d2-4343-8a87-72767e4e008a",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "7bfe530e-ce91-4864-b5dc-60d96a2f9146",
+        "Name": "CreateDocuments",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconCreateDocuments_7bfe530ece914864b5dc60d96a2f9146.png",
+        "TabId": "ab5b238f-e776-425c-8555-dc8864f1876f"
+      },
+      {
+        "NameGuid": "d9c017fa-a9eb-40f4-b302-524d5730489d",
+        "Name": "Databooks",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDatabooks_d9c017faa9eb40f4b302524d5730489d.png",
+        "PreviousItemGuid": "7bfe530e-ce91-4864-b5dc-60d96a2f9146",
+        "TabId": "ab5b238f-e776-425c-8555-dc8864f1876f"
+      },
+      {
+        "NameGuid": "070a77f5-1505-4a74-91d4-780358e11336",
+        "Name": "SearchDocuments",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSearch_070a77f515054a7491d4780358e11336.png",
+        "PreviousItemGuid": "d9c017fa-a9eb-40f4-b302-524d5730489d",
+        "TabId": "ab5b238f-e776-425c-8555-dc8864f1876f"
+      }
+    ],
+    "Header": {
+      "NameGuid": "794877ba-77d7-48b5-9dae-a54b924af9fb",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "ab5b238f-e776-425c-8555-dc8864f1876f",
+        "Name": "MainGroup"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "433d87ab-384a-496c-872f-703f8bfe9794",
+      "MaxVersion": "",
+      "MinVersion": "0.0.1.228"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "84862e8a-cca0-4ad1-91f2-3ebf6114bc14"
+    },
+    {
+      "ItemId": "942b1446-8e9f-4e66-a6ef-77a738d0863b",
+      "PreviousItemId": "84862e8a-cca0-4ad1-91f2-3ebf6114bc14"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.OurCFModule",
+  "IsolatedAssemblyName": "avis.OurCFModule.Isolated",
+  "IsolatedNamespace": "avis.OurCFModule.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.OurCFModule",
+  "ResourcesKeys": [
+    "CreateRNS_ResourceKey",
+    "CreateRNS_DescriptionResourceKey",
+    "CreateRNV_ResourceKey",
+    "CreateRNV_DescriptionResourceKey",
+    "SearchRNS_ResourceKey",
+    "SearchRNS_DescriptionResourceKey",
+    "SearchRNV_ResourceKey",
+    "SearchRNV_DescriptionResourceKey"
+  ],
+  "ServerAssemblyName": "avis.OurCFModule.Server",
+  "ServerNamespace": "avis.OurCFModule.Server",
+  "SharedAssemblyName": "avis.OurCFModule.Shared",
+  "SharedNamespace": "avis.OurCFModule.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.169",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

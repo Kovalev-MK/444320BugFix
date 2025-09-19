@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CoverAction_ShowPositionKindslenspec" xml:space="preserve">
+    <value>Виды должностей</value>
+  </data>
+  <data name="CoverDescription_ShowPositionKindslenspec" xml:space="preserve">
+    <value>Справочник предназначен для хранения видов должностей наших сотрудников.</value>
+  </data>
+  <data name="JobDisplayName_72219e370ae04a729d881b229de7bf9f" xml:space="preserve">
+    <value>Эталон. Компания. Рассылка задач об окончании срока действия ГПД сотрудников</value>
+  </data>
+  <data name="JobDescription_72219e370ae04a729d881b229de7bf9f" xml:space="preserve">
+    <value>Рассылка уведомлений об окончании срока действия ГПД.</value>
+  </data>
+  <data name="JobDisplayName_caf9ef995be44b02a214d30e29329115" xml:space="preserve">
+    <value>Эталон. Компания. Закрытие учетных записей сотрудников с истекающим сроком действия ГПД</value>
+  </data>
+  <data name="JobDescription_caf9ef995be44b02a214d30e29329115" xml:space="preserve">
+    <value>Закрыть учетные записи сотрудников, у которых истек срок действия ГПД.</value>
+  </data>
+  <data name="CoverGroup_Integration" xml:space="preserve">
+    <value>Администрирование</value>
+  </data>
+  <data name="CoverAction_CreateApplicationBUCreationlenspec" xml:space="preserve">
+    <value>Заявка на создание Нашей организации (в т.ч. в базе 1С)</value>
+  </data>
+  <data name="CoverAction_CreateApplicationBUEditinglenspec" xml:space="preserve">
+    <value>Заявка на изменение Нашей организации (в т.ч. в базе 1С)</value>
+  </data>
+  <data name="CoverAction_CreateAccountlenspecavis" xml:space="preserve">
+    <value>Создать учетную запись</value>
+  </data>
+  <data name="AsyncHandler_Description_181b1d8d38e54744aea2b7e393b468e6" xml:space="preserve">
+    <value>Синхронизировать вхождение сотрудника в роль по виду должности</value>
+  </data>
+  <data name="JobDisplayName_984d21fddddd4ae29ae733956e0f0499" xml:space="preserve">
+    <value>Эталон. Компания. Автоматическое создание замещений</value>
+  </data>
+  <data name="JobDescription_984d21fddddd4ae29ae733956e0f0499" xml:space="preserve">
+    <value>Создание замещений для сотрудников, работающих по совместительству.</value>
+  </data>
+  <data name="JobDisplayName_6d993c7452bf4c17a596af322d9c4b8e" xml:space="preserve">
+    <value>Эталон. Компания. Закрытие учетных записей</value>
+  </data>
+  <data name="JobDescription_6d993c7452bf4c17a596af322d9c4b8e" xml:space="preserve">
+    <value>Закрытие учетных записей, которые не привязаны к действующим сотрудникам.</value>
+  </data>
+  <data name="JobDescription_cbf405a393164580900c366490c35cd6" xml:space="preserve">
+    <value>Закрыть замещения, в которых УЗ замещающего сотрудника закрыта</value>
+  </data>
+  <data name="JobDisplayName_cbf405a393164580900c366490c35cd6" xml:space="preserve">
+    <value>Эталон. Компания. Автоматическое закрытие замещений и выполнение заданий членами КО</value>
+  </data>
+  <data name="CoverAction_CompanyProfileavis" xml:space="preserve">
+    <value>Профили компаний</value>
+  </data>
+  <data name="CoverDescription_CompanyProfileavis" xml:space="preserve">
+    <value>Справочник предназначен для учета и редактирования направлений деятельности Наших организаций.</value>
+  </data>
+  <data name="JobDisplayName_ccc82338ef6b4ba484356f5fa996d63d" xml:space="preserve">
+    <value>Эталон. Очистка папки Входящие/Исходящие от выполненных заданий и прочитанных уведомлений.</value>
+  </data>
+  <data name="JobDescription_ccc82338ef6b4ba484356f5fa996d63d" xml:space="preserve">
+    <value>Эталон. Очистка папки Входящие/Исходящие от выполненных заданий и прочитанных уведомлений.</value>
+  </data>
+  <data name="CoverAction_CreateReportlenspec" xml:space="preserve">
+    <value>Время подключения пользователей</value>
+  </data>
+  <data name="CoverDescription_CreateReportlenspec" xml:space="preserve">
+    <value>Отчет с информацией о последнем времени подключения сотрудников</value>
+  </data>
+  <data name="JobDisplayName_1331b777b95a46d4944a1072321d0290" xml:space="preserve">
+    <value>Эталон. Компания. Привязка учетной записи к актуальной записи сотрудника</value>
+  </data>
+  <data name="JobDescription_1331b777b95a46d4944a1072321d0290" xml:space="preserve">
+    <value>Эталон. Компания. Привязка учетной записи к актуальной записи сотрудника</value>
+  </data>
+  <data name="AsyncHandler_Description_76aeec8653574dab82bcbf46e44e81ee" xml:space="preserve">
+    <value>AsyncHandlerlenspec</value>
+  </data>
+  <data name="CoverAction_SpecifyingUsersSystemObjectslenspec" xml:space="preserve">
+    <value>Указание пользователей в объектах системы</value>
+  </data>
+  <data name="CoverDescription_SpecifyingUsersSystemObjectslenspec" xml:space="preserve">
+    <value>Отчет предназначен для оценки участия пользователя в процессах и оставшейся незавершенной работы. </value>
+  </data>
+  <data name="CoverAction_DisablingAccountslenspec" xml:space="preserve">
+    <value>Отключение учетных записей</value>
+  </data>
+  <data name="CoverAction_ReportCompanyStaflenspec" xml:space="preserve">
+    <value>Организационно-штатная структура организации</value>
+  </data>
+  <data name="CoverDescription_ReportCompanyStaflenspec" xml:space="preserve">
+    <value>Отчет предназначен для представления организационно-штатной структуры, по которой сотрудники, отделы и подразделения взаимодействуют между собой.</value>
+  </data>
+  <data name="CoverAction_ChangeApprovalSettingsavis" xml:space="preserve">
+    <value>Изменение настроек согласования</value>
+  </data>
+  <data name="CoverDescription_ChangeApprovalSettingsavis" xml:space="preserve">
+    <value>Автоматическое изменение настроек согласования</value>
+  </data>
+  <data name="AsyncHandler_Description_d668d81ef61c4df2b1f79cd6af5cca21" xml:space="preserve">
+    <value>AsyncHandleravis</value>
+  </data>
+  <data name="AsyncHandler_Description_e11ad29fe0904f69bb0dcfbfb96bb33f" xml:space="preserve">
+    <value>Изменение настроек согласования при значении 'Действия' - Изменение</value>
+  </data>
+  <data name="AsyncHandler_Description_1f37b7dd048940418f76c715535eb541" xml:space="preserve">
+    <value>Изменение настроек согласования при значении 'Действия' - Удаление</value>
+  </data>
+  <data name="AsyncHandler_Description_f79443f5eddd4d4a91dc45811f26a3d9" xml:space="preserve">
+    <value>AsyncHandleravis</value>
+  </data>
+  <data name="AsyncHandler_Description_345fa2876f9247228ce90274c6a0f647" xml:space="preserve">
+    <value>AsyncHandlerlenspec</value>
+  </data>
+  <data name="AsyncHandler_Description_4ad5a3de24b34370b4a1ef1ef08ca474" xml:space="preserve">
+    <value>Автоматическая замена категорий персон через Объекты проектов или ИСП</value>
+  </data>
+  <data name="AsyncHandler_Description_50e92b690b25411cb37a8fbe5ddc7dbd" xml:space="preserve">
+    <value>Обновление персоны уволенного сотрудника</value>
+  </data>
+  <data name="JobDescription_7528acab4e39490b89ff959c29b8c0cf" xml:space="preserve">
+    <value>Установка у Персон Чек-бокса Сотрудник ГК = Нет</value>
+  </data>
+  <data name="JobDescription_0391832212904c67bd6ee98a4ed40845" xml:space="preserve">
+    <value>Удаление дублирующих записей из табличной части Сотрудники в карточке Подразделения.</value>
+  </data>
+</root>

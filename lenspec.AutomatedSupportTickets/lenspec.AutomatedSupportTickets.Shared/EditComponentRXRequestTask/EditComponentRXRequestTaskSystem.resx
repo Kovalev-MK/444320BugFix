@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявка на изменение компонентов Directum RX</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Заявка на изменение компонентов Directum RX</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Заявки на изменения компонентов Directum RX</value>
+  </data>
+  <data name="Action_From" xml:space="preserve">
+    <value>Показать "От"</value>
+  </data>
+  <data name="Action_FromDescription" xml:space="preserve">
+    <value>Показать "От"</value>
+  </data>
+  <data name="Action_FromHint" xml:space="preserve">
+    <value>Показать "От"</value>
+  </data>
+  <data name="Action_FromConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_FromConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Number" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="Property_DateCreated" xml:space="preserve">
+    <value>Date created</value>
+  </data>
+  <data name="Property_TypeRequest" xml:space="preserve">
+    <value>Type request</value>
+  </data>
+  <data name="Enum_TypeRequest_EditDoc" xml:space="preserve">
+    <value>Заявки на изменение прав на документы</value>
+  </data>
+  <data name="Enum_TypeRequest_EditProcess" xml:space="preserve">
+    <value>Заявка на изменение процесса</value>
+  </data>
+  <data name="Enum_TypeRequest_Other" xml:space="preserve">
+    <value>Заявка в произвольной форме</value>
+  </data>
+  <data name="Property_CollectionEmployees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="Property_CollectionDocumentTypes" xml:space="preserve">
+    <value>Виды документов</value>
+  </data>
+  <data name="Property_CollectionBussinessUnits" xml:space="preserve">
+    <value>Наши организации</value>
+  </data>
+  <data name="Property_DescriptionPermit" xml:space="preserve">
+    <value>Описание прав и обоснование для согласующих</value>
+  </data>
+  <data name="Property_ObjectEdit" xml:space="preserve">
+    <value>Объект для изменения</value>
+  </data>
+  <data name="Enum_ObjectEdit_EditSetting" xml:space="preserve">
+    <value>Изменение настроек</value>
+  </data>
+  <data name="Enum_ObjectEdit_EditProcess" xml:space="preserve">
+    <value>Модификация процесса (доработка существующего или разработка нового)</value>
+  </data>
+  <data name="Property_ProcessEdit" xml:space="preserve">
+    <value>Процесс для доработки</value>
+  </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Необходимые модификации и пояснения</value>
+  </data>
+  <data name="Property_Description" xml:space="preserve">
+    <value>Описание заявки</value>
+  </data>
+  <data name="ControlGroup_73e7c55ab14d49d89a690ed7d46bf563" xml:space="preserve">
+    <value>ОСНОВНОЕ</value>
+  </data>
+  <data name="ControlGroup_3849ac3b252941c6aa0d03907f402a05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_035869ed2baa4573bdfe9e4f5e10c4b3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_035869ed2baa4573bdfe9e4f5e10c4b3_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_74e85eafe5944dc5b4724e791948b781" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_74e85eafe5944dc5b4724e791948b781_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_ea414e2445694d67ac32bd689a909457" xml:space="preserve">
+    <value>ОСТАЛЬНОЕ</value>
+  </data>
+  <data name="Control_9ada511fd69649f39dc41acd92e74f60_EmptyText" xml:space="preserve">
+    <value>"Производственная необходимость“, “Для работы“ и подобные фразы обоснованиями не являются!  </value>
+  </data>
+  <data name="Control_b29a3fe701dc4f2099b045b790b7292c_EmptyText" xml:space="preserve">
+    <value>"Согласование заявок на оплату“, “Процесс одобрения контрагента".</value>
+  </data>
+  <data name="Control_05977f11d054446f808654576b331d45_EmptyText" xml:space="preserve">
+    <value>Опишите подробно, какие изменения в процесс/настройки необходимо внести.</value>
+  </data>
+  <data name="Control_a8e5a9b1dca64b04a8fd54985c3ba40c_EmptyText" xml:space="preserve">
+    <value>Подробно опишите, что необходимо сделать. От детализации описания зависит скорость и качество выполнения заявки.</value>
+  </data>
+  <data name="Property_From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Property_Forwarding" xml:space="preserve">
+    <value>Переадресовать сотруднику</value>
+  </data>
+  <data name="Property_AddApprovers" xml:space="preserve">
+    <value>Доп. согласующие</value>
+  </data>
+</root>

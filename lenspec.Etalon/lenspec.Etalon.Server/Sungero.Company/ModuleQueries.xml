@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="CreateTableForExpiringEmployees">
+    <mssql><![CDATA[if OBJECT_ID('lenspec_Company_ExpiringEmployees') is null
+create table [lenspec_Company_ExpiringEmployees] (EmployeeId int unique, Task int);]]></mssql>
+    <postgres><![CDATA[CREATE TABLE IF NOT EXISTS lenspec_Company_ExpiringEmployees
+  (
+    EmployeeId integer,
+    Task integer,
+    UNIQUE(EmployeeId)
+  )]]></postgres>
+  </query>
+  <query key="SelectEmployeesWithSendedTask">
+    <mssql><![CDATA[select EmployeeId
+from {0}
+where [Task] is not null]]></mssql>
+    <postgres><![CDATA[select EmployeeId
+from {0}
+where Task is not null]]></postgres>
+  </query>
+  <query key="DeleteEmployeeIdsWithoutTask">
+    <mssql><![CDATA[delete from {0}
+where
+  [Task] is null
+  and EmployeeId in ({1})]]></mssql>
+    <postgres><![CDATA[delete from {0}
+ where
+  Task is null
+  and EmployeeId in ({1})]]></postgres>
+  </query>
+  <query key="AddExpiringEmployeesToTable">
+    <default><![CDATA[insert into {0} ( EmployeeId ) values ({1})]]></default>
+  </query>
+  <query key="AddTaskExpiringEmployeesTable">
+    <mssql><![CDATA[if not exists
+ (
+    select
+      1
+    from
+      [dbo].[{0}]
+    where
+      [EmployeeId] = {1}
+  )
+  insert
+    [{0}] ([EmployeeId], [Task])  values ({1}, {2})
+  else
+    update
+      {0}
+    set
+      [Task] = {2}
+    where
+      [EmployeeId] = {1}]]></mssql>
+    <postgres><![CDATA[DO
+$$
+BEGIN
+if not exists
+  (select
+    1
+  from
+    {0}
+  where
+    EmployeeId = {1})
+then
+  insert into
+    {0} (EmployeeId, Task)  values ({1}, {2});
+else
+  update
+    {0}
+  set
+    Task = {2}
+  where
+    EmployeeId = {1};
+end if;
+END$$]]></postgres>
+  </query>
+  <query key="UpdateLastExpiringNotificationDate">
+    <mssql><![CDATA[if not exists
+  (
+    select
+      1
+    from
+      [dbo].[Sungero_Docflow_Params]
+    where
+      [Key] = '{0}'
+  )
+  insert
+    [Sungero_Docflow_Params] ([Key],Value) values ('{0}', '{1}')
+  else
+    update
+      Sungero_Docflow_Params
+    set
+      Value = '{1}'
+    where
+      [Key] = '{0}']]></mssql>
+    <postgres><![CDATA[DO
+$$
+BEGIN
+if not exists
+  (select
+    1
+  from
+    Sungero_Docflow_Params
+  where
+    Key = '{0}'
+  )
+then
+  insert into
+    Sungero_Docflow_Params (Key,Value) values ('{0}', '{1}');
+else
+  update
+    Sungero_Docflow_Params
+  set
+    Value = '{1}'
+  where
+    Key = '{0}';
+end if;
+END$$]]></postgres>
+  </query>
+</queries>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="InProcessBlockLableSate" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="PerformerNotCalculated" xml:space="preserve">
+    <value>Исполнитель не вычислен.</value>
+  </data>
+  <data name="CompletedBlockLableState" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="NotRecomendedResultLable" xml:space="preserve">
+    <value>Сотрудничество не рекомендовано</value>
+  </data>
+  <data name="PossibleResultLable" xml:space="preserve">
+    <value>Сотрудничество возможно</value>
+  </data>
+  <data name="WithRisksResultLable" xml:space="preserve">
+    <value>Сотрудничество с рисками</value>
+  </data>
+  <data name="NotRquiredResultLable" xml:space="preserve">
+    <value>Не требует одобрения</value>
+  </data>
+  <data name="ReworkResultLable" xml:space="preserve">
+    <value>На доработку</value>
+  </data>
+  <data name="FailedAddExtractFromEGRUL" xml:space="preserve">
+    <value>Не удалось актуализировать Выписку из ЕГРЮЛ/ЕГРИП. Добавьте документ вручную.</value>
+  </data>
+  <data name="DocumentsHaveBeenUpdated" xml:space="preserve">
+    <value>Актуализированы выписки из ЕГРЮЛ (добавлена версия, обновлено поле Дата документа):{0}</value>
+  </data>
+  <data name="StartTaskConfirmMessage" xml:space="preserve">
+    <value>Отправить задачу?</value>
+  </data>
+  <data name="UpdateDocumentsErrorMessage" xml:space="preserve">
+    <value>Не удалось актуализировать документ {0} (ИД {1}): {2}.</value>
+  </data>
+  <data name="ErrorMessageHereIsActiveTask" xml:space="preserve">
+    <value>Контрагент отправлен на согласование {0} сотрудником {1}.</value>
+  </data>
+  <data name="DBApprovalTaskOnStartNotification" xml:space="preserve">
+    <value>Уведомление о старте задачи по согласованию с ДБ. Контрагент {0}</value>
+  </data>
+</root>

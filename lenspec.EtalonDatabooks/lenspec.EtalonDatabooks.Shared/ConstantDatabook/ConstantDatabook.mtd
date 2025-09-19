@@ -1,0 +1,639 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "fef6c8f3-2224-42be-a13a-7f08f366c733",
+  "Name": "ConstantDatabook",
+  "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ConstantDatabo",
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "f99f3b5b-1600-42ee-8d59-36c4e3791729",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "Name": "ControlGroup"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "443b46f3-08f7-4a54-9142-68da5f8b423d",
+          "Name": "Control",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "PropertyGuid": "f162a421-1ef5-4e0f-b734-2320169127c1",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "bbbe0451-a085-4530-bb25-5b648bb82110",
+          "Name": "Code",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "PropertyGuid": "d0053185-21ec-420c-8b64-49a8248ac0b1",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "5b991ae5-42dc-40fb-a720-aa5f4ebec8ad",
+          "Name": "Value",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "PropertyGuid": "19bd1bed-6d6a-482b-8b4d-10e660cb0bef",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "0f94bcef-3c91-4167-86ca-00692b0bd741",
+          "Name": "IsNumeration",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "PropertyGuid": "12cc6be6-65cb-4572-9c70-737b4ae8b80b",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "7afa43f4-d597-4451-b4d5-4a5180efe1b1",
+          "Name": "Comment",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
+          "HeaderLocation": "Top",
+          "ParentGuid": "d7ed799e-0869-4c0f-845c-afc865be704c",
+          "PropertyGuid": "3a1fc5fe-b66e-4e52-b576-6c8f1e45db7d",
+          "RowNumber": 4,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ]
+    }
+  ],
+  "HandledEvents": [
+    "CreatedServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "EtalonDatabooksConstantDatabook",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f162a421-1ef5-4e0f-b734-2320169127c1",
+      "Name": "Name",
+      "Code": "Name",
+      "IsDisplayValue": true,
+      "IsEnabled": false,
+      "IsQuickSearchAllowed": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "19bd1bed-6d6a-482b-8b4d-10e660cb0bef",
+      "Name": "Value",
+      "Code": "Value",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
+      "Length": 255,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "f162a421-1ef5-4e0f-b734-2320169127c1"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3a1fc5fe-b66e-4e52-b576-6c8f1e45db7d",
+      "Name": "Comment",
+      "Code": "Comment",
+      "Length": 1000,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "19bd1bed-6d6a-482b-8b4d-10e660cb0bef"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "12cc6be6-65cb-4572-9c70-737b4ae8b80b",
+      "Name": "IsNumeration",
+      "Code": "IsNumeration",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "3a1fc5fe-b66e-4e52-b576-6c8f1e45db7d"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d0053185-21ec-420c-8b64-49a8248ac0b1",
+      "Name": "Code",
+      "Code": "Code",
+      "IsEnabled": false,
+      "IsUnique": true,
+      "Length": 5,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "12cc6be6-65cb-4572-9c70-737b4ae8b80b"
+    }
+  ],
+  "PublicConstants": [
+    {
+      "Name": "ApplicationForPaymentBusinessUnitId",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00011\""
+    },
+    {
+      "Name": "AutonumerationAttachmentPostalItemCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00001\""
+    },
+    {
+      "Name": "BarcodePathCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00004\""
+    },
+    {
+      "Name": "BussinessUnitsForFilteringByBudget",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0044\""
+    },
+    {
+      "Name": "CancellationInstruction",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0042\""
+    },
+    {
+      "Name": "ContractStatementC2DocumentKind",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0053\""
+    },
+    {
+      "Name": "ContractStatementC3DocumentKind",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0054\""
+    },
+    {
+      "Name": "DepartmentForClosedEmployees",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00010\""
+    },
+    {
+      "Name": "DepartmentTransit",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0049\""
+    },
+    {
+      "Name": "DirectorateRegionTransit",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0050\""
+    },
+    {
+      "Name": "DirectorateSubsidy",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0052\""
+    },
+    {
+      "Name": "DirectorateTransit",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0048\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant01",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0011\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant02",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0012\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant03",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0013\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant04",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0014\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant05",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0015\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant06",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0016\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant07",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0017\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant08",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0018\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant09",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0019\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant10",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0020\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant11",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0021\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant12",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0022\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant13",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0023\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant14",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0024\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant15",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0025\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant16",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0026\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant17",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0027\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant18",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0028\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant19",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0029\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant20",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0030\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant21",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0031\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant22",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0032\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant23",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0033\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant24",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0034\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant25",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0035\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant26",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0036\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant27",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0037\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant28",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0038\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant29",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0039\""
+    },
+    {
+      "Name": "EditableHyperlinkConstant30",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0040\""
+    },
+    {
+      "Name": "ExpensiveContractType",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0056\""
+    },
+    {
+      "Name": "FlowFoldersSalesDepartmentsFixCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00006\""
+    },
+    {
+      "Name": "FormationIncomingLettersWithinGroupFunctionsCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00005\""
+    },
+    {
+      "Name": "IncomeContractType",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0055\""
+    },
+    {
+      "Name": "InvestInegrationLogCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00002\""
+    },
+    {
+      "Name": "MassMailingBCCEmailCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00009\""
+    },
+    {
+      "Name": "MassMailingEmailAddressCode",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00003\""
+    },
+    {
+      "Name": "MaxNumberOfAcquaintanceTaskPerformers",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"00007\""
+    },
+    {
+      "Name": "RenewalInstruction",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0041\""
+    },
+    {
+      "Name": "SettingInstruction",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0043\""
+    },
+    {
+      "Name": "SharedConstructionBudgetItemSubsidy",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0051\""
+    },
+    {
+      "Name": "SharedConstructionBudgetItemTransit",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0046\""
+    },
+    {
+      "Name": "SharedConstructionBudgetItemTransitDecoding",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0047\""
+    },
+    {
+      "Name": "TenderDocsMigrationUserId",
+      "ParentClasses": [
+        "ConstantDatabook"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"0045\""
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "EditableHyperlink"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "7024eb56-8888-4a8f-8e50-303ef83c6c24",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "d17415cf-8a2d-4d13-a985-44385cd85935",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

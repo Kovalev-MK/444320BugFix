@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="CreateMaterilasAndWorkKindsTable">
+    <mssql><![CDATA[CREATE TABLE {0}
+([ReportSessionId] varchar(256) NOT NULL,
+[Name] nvarchar(max),
+[TIN] nvarchar(50),
+[TRRC] nvarchar(50),
+[PSRN] nvarchar(50),
+[Accreditation] nvarchar(30),
+[TargetEntity] nvarchar(20),
+[EntityGroup] nvarchar(max),
+[EntityDetailing] nvarchar(max),
+[Region] nvarchar(max),
+[City] nvarchar(max))]]></mssql>
+  </query>
+  <query key="GetMaterialsAndWorkKinds">
+    <mssql><![CDATA[SELECT [ReportSessionId]
+      ,[Name]
+      ,[TIN]
+      ,[TRRC]
+      ,[PSRN]
+      ,[Accreditation]
+      ,[TargetEntity]
+      ,[EntityGroup]
+      ,[EntityDetailing]
+      ,[Region]
+      ,[City] 
+FROM [dbo].[MaterialsAndWorkKinds]
+WHERE ReportSessionId = @ReportSessionId]]></mssql>
+  </query>
+</queries>

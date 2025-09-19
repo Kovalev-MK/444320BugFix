@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="SelectDataFromTable">
+    <mssql><![CDATA[SELECT [ReportSessionId]
+      ,[Id] 
+      ,[BusinessUnits] 
+      ,[ApprovalSettings] 
+      ,[RoleKinds] 
+      ,[Employee] 
+      ,[Note] 
+      ,[HyperlinkID]
+      ,[Status]
+  FROM Sungero_Reports_ReconciliationSettingsReport
+  where ReportSessionId = @ReportSessionId]]></mssql>
+  </query>
+  <query key="CreateReconciliationSettingsReportTable">
+    <mssql><![CDATA[create table {0}
+  ([ReportSessionId] varchar(256) NOT NULL
+      ,[Id] nvarchar(max)
+      ,[BusinessUnits] nvarchar(max)
+      ,[ApprovalSettings] nvarchar(max)
+      ,[RoleKinds] nvarchar(max)
+      ,[Employee] nvarchar(max)
+      ,[Note] nvarchar(max)
+      ,[HyperlinkID] varchar(256)
+      ,[Status] varchar(15))]]></mssql>
+  </query>
+</queries>

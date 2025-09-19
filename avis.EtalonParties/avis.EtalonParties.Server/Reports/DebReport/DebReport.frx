@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Core.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.Localization&#13;&#10;Sungero.Declension&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;avis.EtalonParties.Shared&#13;&#10;avis.EtalonParties.Server" ReportInfo.CreatorVersion="2020.2.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Sungero.Domain.Shared;
+using Sungero.CoreEntities;
+using Sungero.Core;
+using Resources = avis.EtalonParties.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Table1" Alias="Deb_Activities" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebActivities}">
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="Code" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table" Alias="Deb_Founders" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebFounders}">
+        <Column Name="Share" DataType="System.String" PropName="Column"/>
+        <Column Name="ShareRub" DataType="System.String" PropName="Column"/>
+        <Column Name="Name" DataType="System.String" PropName="Column1"/>
+        <Column Name="Date" DataType="System.String" PropName="Column2"/>
+        <Column Name="Comment" DataType="System.String" PropName="Column3"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table3" Alias="Deb_HistoryFounders" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebHistoryFounders}">
+        <Column Name="ShareRub" DataType="System.String" PropName="Column"/>
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="Date" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table2" Alias="Deb_Filials" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebFilials}">
+        <Column Name="Address" DataType="System.String" PropName="Column"/>
+        <Column Name="Date" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table4" Alias="Deb_Licenses" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebLicenses}">
+        <Column Name="Source" DataType="System.String" PropName="Column"/>
+        <Column Name="Number" DataType="System.String" PropName="Column1"/>
+        <Column Name="Date" DataType="System.String" PropName="Column2"/>
+        <Column Name="Name" DataType="System.String" PropName="Column3"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table5" Alias="Deb_Finances" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebFinances}">
+        <Column Name="Code11501" DataType="System.String" PropName="Column"/>
+        <Column Name="Code11502" DataType="System.String" PropName="Column1"/>
+        <Column Name="Code11503" DataType="System.String" PropName="Column2"/>
+        <Column Name="Code12101" DataType="System.String" PropName="Column3"/>
+        <Column Name="Code12102" DataType="System.String" PropName="Column4"/>
+        <Column Name="Code12103" DataType="System.String" PropName="Column5"/>
+        <Column Name="Code12301" DataType="System.String" PropName="Column6"/>
+        <Column Name="Code12302" DataType="System.String" PropName="Column7"/>
+        <Column Name="Code12303" DataType="System.String" PropName="Column8"/>
+        <Column Name="Code12501" DataType="System.String" PropName="Column9"/>
+        <Column Name="Code12502" DataType="System.String" PropName="Column10"/>
+        <Column Name="Code12503" DataType="System.String" PropName="Column11"/>
+        <Column Name="Code16001" DataType="System.String" PropName="Column12"/>
+        <Column Name="Code16002" DataType="System.String" PropName="Column13"/>
+        <Column Name="Code16003" DataType="System.String" PropName="Column14"/>
+        <Column Name="Code13001" DataType="System.String" PropName="Column15"/>
+        <Column Name="Code13002" DataType="System.String" PropName="Column16"/>
+        <Column Name="Code13003" DataType="System.String" PropName="Column17"/>
+        <Column Name="Code14101" DataType="System.String" PropName="Column18"/>
+        <Column Name="Code14102" DataType="System.String" PropName="Column19"/>
+        <Column Name="Code14103" DataType="System.String" PropName="Column20"/>
+        <Column Name="Code15101" DataType="System.String" PropName="Column21"/>
+        <Column Name="Code15102" DataType="System.String" PropName="Column22"/>
+        <Column Name="Code15103" DataType="System.String" PropName="Column23"/>
+        <Column Name="Code15201" DataType="System.String" PropName="Column24"/>
+        <Column Name="Code15202" DataType="System.String" PropName="Column25"/>
+        <Column Name="Code15203" DataType="System.String" PropName="Column26"/>
+        <Column Name="Code17001" DataType="System.String" PropName="Column27"/>
+        <Column Name="Code17002" DataType="System.String" PropName="Column28"/>
+        <Column Name="Code17003" DataType="System.String" PropName="Column29"/>
+        <Column Name="Code21101" DataType="System.String" PropName="Column30"/>
+        <Column Name="Code21102" DataType="System.String" PropName="Column31"/>
+        <Column Name="Code21103" DataType="System.String" PropName="Column32"/>
+        <Column Name="Code21201" DataType="System.String" PropName="Column33"/>
+        <Column Name="Code21202" DataType="System.String" PropName="Column34"/>
+        <Column Name="Code21203" DataType="System.String" PropName="Column35"/>
+        <Column Name="Code22101" DataType="System.String" PropName="Column36"/>
+        <Column Name="Code22102" DataType="System.String" PropName="Column37"/>
+        <Column Name="Code22103" DataType="System.String" PropName="Column38"/>
+        <Column Name="Code23401" DataType="System.String" PropName="Column39"/>
+        <Column Name="Code23402" DataType="System.String" PropName="Column40"/>
+        <Column Name="Code23403" DataType="System.String" PropName="Column41"/>
+        <Column Name="Code23501" DataType="System.String" PropName="Column"/>
+        <Column Name="Code23502" DataType="System.String" PropName="Column1"/>
+        <Column Name="Code23503" DataType="System.String" PropName="Column2"/>
+        <Column Name="Code24001" DataType="System.String" PropName="Column3"/>
+        <Column Name="Code24002" DataType="System.String" PropName="Column4"/>
+        <Column Name="Code24003" DataType="System.String" PropName="Column5"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table6" Alias="Deb_Taxes" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebTaxes}">
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="Year1" DataType="System.String" PropName="Column1"/>
+        <Column Name="Year2" DataType="System.String" PropName="Column2"/>
+        <Column Name="Year3" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table7" Alias="Deb_Fns" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebFns}">
+        <Column Name="Bik" DataType="System.String" PropName="Column"/>
+        <Column Name="Name" DataType="System.String" PropName="Column1"/>
+        <Column Name="Date" DataType="System.String" PropName="Column2"/>
+        <Column Name="Number" DataType="System.String" PropName="Column3"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table9" Alias="Deb_HistoryUL" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebHistoryUL}">
+        <Column Name="Address" DataType="System.String" PropName="Column"/>
+        <Column Name="Date" DataType="System.String" PropName="Column1"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table8" Alias="Deb_Banks" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebBanks}">
+        <Column Name="Number" DataType="System.String" PropName="Column"/>
+        <Column Name="Bik" DataType="System.String" PropName="Column1"/>
+        <Column Name="Name" DataType="System.String" PropName="Column2"/>
+        <Column Name="Source" DataType="System.String" PropName="Column3"/>
+        <Column Name="Date" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table10" Alias="Deb_Directors" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebDirectors}">
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="Date" DataType="System.String" PropName="Column1"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table11" Alias="Deb_Arbitrations" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebArbitrations}">
+        <Column Name="Name" DataType="System.String" PropName="Column"/>
+        <Column Name="Inn" DataType="System.String" PropName="Column1"/>
+        <Column Name="MainActivity" DataType="System.String" PropName="Column2"/>
+        <Column Name="Count" DataType="System.String" PropName="Column3"/>
+        <Column Name="Summ" DataType="System.String" PropName="Column4"/>
+        <Column Name="LastDate" DataType="System.String" PropName="Column5"/>
+        <Column Name="Number" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+      <TableDataSource Name="Table12" Alias="Deb_Contracts" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${SelectDebContracts}">
+        <Column Name="Number" DataType="System.String" PropName="Column"/>
+        <Column Name="Type" DataType="System.String" PropName="Column1"/>
+        <Column Name="Customer" DataType="System.String" PropName="Column2"/>
+        <Column Name="Inn" DataType="System.String" PropName="Column3"/>
+        <Column Name="Description" DataType="System.String" PropName="Column4"/>
+        <Column Name="ContractNumber" DataType="System.String" PropName="Column5"/>
+        <Column Name="ContractDate" DataType="System.String" PropName="Column6"/>
+        <Column Name="Price" DataType="System.String" PropName="Column7"/>
+        <Column Name="Status" DataType="System.String" PropName="Column8"/>
+        <Column Name="Reason" DataType="System.String" PropName="Column9"/>
+        <CommandParameter Name="SessionId" DataType="16" IsDbType="true" Expression="[SessionId]"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" Id="64ed200b-9f0e-4a54-9578-5c58ea067f01" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Inn" Description="Инн" Id="fae13da1-31f0-407b-a032-80adce1f9d3d" IsRequired="true" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Date" Id="01b6fd27-fba8-4780-a228-01276c8c3404" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Legalname" Id="7300a45f-9d65-4eee-82bf-be39de25076d" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Ogrn" Id="5e76c8b6-c70e-4b55-b850-c01c4bac8265" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="InitiatorEmployeer" Description="Инициатор проверки" Id="52aa7a39-1eb5-43ac-a3f1-bca4c539cb78" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Kpp" Description="КПП" Id="9148548b-99ec-4bc8-a411-2dcff94a72f2" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Department" Description="Подразделение" Id="a0db184d-d8f9-4cf3-8985-e50499be4a21" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="BusinessUnit" Description="9 От организации: " Id="e8d319f0-8012-4873-9141-b8c6a70f8d98" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ShortName" Description="12 Краткое наименование" Id="a79038cd-6697-4060-9f90-989315e1bce7" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Status" Id="ae2463b0-2932-4af3-b9ac-2d540967ca60" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DateFormation" Description="17 Дата образования" Id="6d847bdf-8b9e-4abc-b496-4b4f16f6cb1a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="AuthorizedCapital" Description="25 установной капитал" Id="d6316fe1-a3ff-4f7a-aea3-afcb20086b01" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="AuthorizedCapitalDate" Description="26 Дата установного капитала" Id="2f43ad58-380c-499a-ab4f-618d2229d832" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Sites" Id="46eca596-1c90-4ff2-87c9-3af1a8196228" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Phones" Id="e43fe75f-4dc1-4a58-b3fd-c9cdd60c3520" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="SessionId" Id="521c892e-e042-4b6f-abf9-f5e68e4ab28e" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="GDJobTitle" Description="Должность руководителя" Id="c8bc7e64-2416-45fb-8eb6-07930f43b65e" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="GDDate" Description="Дата руководителя" Id="3776e60c-0c2e-4e0f-b5f7-6328d6e66ead" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="GDName" Description="ФИО ИНН рукводителя" Id="43fa1183-c74f-43a0-acdf-c1f671153b72" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NoLicense" Id="573c0de6-5c47-49e8-b5a3-291b6b2ae409" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NoActiveLicense" Id="6352e4b4-da7a-4a99-9b47-8183ae04c7bf" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NoInstalledLicense" Id="e5c7c466-b49b-4564-a4cd-1b40cbdf850f" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="FinanceYear1" Id="71abd8dc-6526-4092-a406-8e5be0bade49" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="FinanceYear2" Id="ab746f82-630d-4ddc-a28f-0b5a02e685d9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="FinanceYear3" Id="3f9c4032-68bb-4568-8f8b-8458c27e54f0" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m4001" Id="bbb77bfd-7e7e-4083-9de6-cd23970f3b5a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NoContract" Id="e60b5592-b35b-4484-8dc3-ad85bfb9dc49" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q4003" Id="558405ec-1c06-4877-8418-310f764405b1" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s4003" Id="39684a34-bec9-4b50-80b8-7e4d4a60a97d" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q4002" Id="4066db70-9ded-46a9-a960-b5caa59ef4ee" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s4002" Id="8d9cf95f-fab8-4b20-b179-231b975e434d" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7010" Id="6ec8d3ad-b4a2-4386-9511-eb5923377e05" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DateUpdate" Id="753d4481-5d0e-456f-bf74-fc81a5e79ee6" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q1002" Id="4e730c61-085f-4fed-829d-1d892d6c9426" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q1001" Id="7d681cdb-c483-4fe5-a78a-50d0e940dc8a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s1002" Id="a75109de-ba6d-4764-8b72-d9b80b216d26" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s1001" Id="5e87f478-7992-4ec4-bcd5-48a131e2fae9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2002" Id="d9cb7e35-1429-4b51-ba71-f5b73da7fdfb" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2011" Id="506f08c3-a951-4126-ae4b-f1e0f94da63d" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2012" Id="c7e89ceb-b833-410a-a419-8e141a348072" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2013" Id="d28c3ff8-cab6-40fd-9882-33efe6ac8af6" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2014" Id="c16f5bcb-906a-4704-8a44-8e76d07d9842" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2015" Id="9c74e752-bd75-4335-a9d0-30de0ff9704c" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2029" Id="40c07cbf-ee53-4c69-a2be-1ef3e14edf0f" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2002" Id="68a2b9b7-1870-422e-a055-d78d004c793b" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2011" Id="35f15be5-e290-42e8-b7db-cb6441e306b8" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2012" Id="7a153e59-b12f-4a84-8e08-e6d8e065cbf9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2013" Id="da31fa3a-e25e-4776-ad34-c205605d2dd5" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2014" Id="ecd0a0f6-064c-4806-b7cb-1867e16b4597" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2015" Id="457eddc0-06b5-4bd2-a428-415020c7c8bb" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2029" Id="84255461-fcf7-4007-9936-9138b8569a43" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2001" Id="0073d2d3-be08-4eb8-bc50-b1d1af770178" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2016" Id="16e63722-9d28-4b30-a96e-1c7e090372a9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2017" Id="79de6c6c-a913-47bc-b836-37a08580f8d8" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2018" Id="c86725ac-9733-4ddd-ba6d-49c274d3c890" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2019" Id="c765a614-094d-48c9-83cc-df3da68626db" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2027" Id="c55b9de7-e8ef-46a5-9be3-4f4e2771be2c" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2028" Id="ae5660c0-3f73-47ac-b3bb-c7e1a12688a1" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2001" Id="fa53b1ae-64fa-47e6-9489-3abafe1ded4f" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2016" Id="cb1c0315-c35b-40a6-9a19-1e1c85195f4b" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2017" Id="8b641278-79ba-43ac-90d8-e2784480083a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2018" Id="4e5cfb34-307e-4d84-ac21-08020385d2c8" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2019" Id="5be1851e-5ef3-4f59-b4b2-a7b32610a6a5" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2027" Id="1fcb040a-71cb-401b-9a36-b0b93747273c" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="s2028" Id="9635ac1c-5809-4eb9-9c5e-18c034bb56c1" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q7026" Id="48039866-fbe1-43ff-b562-ec47d4c0d7e2" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="q2041" Id="e2fbb5f1-5a7d-4287-9a7b-b068d3d1113a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="e7014" Id="ed13e819-cf6b-4a3c-98ca-058c571fde96" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="d7014" Id="69bb68ab-9435-4099-82fc-f6c1e29cc96b" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Director" Description="Руководитель" Id="ddceb4d2-8958-4492-82a4-3b904cdfd1e8" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="LegalAddress" Id="4e785d5d-d883-468d-a1a9-d9df49828bdf" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="MainViewActivities" Id="6d1f4de2-3308-4e40-87e2-42e90f26b8cf" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DirectorDate" Id="8f4aefad-b35c-4f0c-902e-44655eea75ee" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ArbitrationCount50" Id="1cb0dd45-9da3-4fe1-8418-0a9deda50d31" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7035Green" Id="b5cd971d-7580-4d08-a32a-259d4bc753ad" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7035Red" Id="d0ae9ae5-3a09-4fa4-b520-f5807f1f88ed" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7036Green" Id="088e9f38-0dd2-4aec-bbf4-955b99975858" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7036Red" Id="32bb17e8-5036-4545-82cd-1d9c73114272" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NonoLinecses" Id="d86b714b-ceb6-4e9f-898f-d2f6bbff27d0" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="IsInaccuracy" Id="99a101f5-b2a7-4208-9f37-8dc6d72e679c" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="InaccuracyDate" Id="a221576b-1645-4e76-aa7f-cdeec2f10465" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7015" Id="48550305-c2a8-4bbf-abdb-9de4e455158b" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="CaseNumber" Id="459d168b-976b-46e7-b321-81728e9def8d" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7035" Id="502d35cf-388e-4f63-bfc3-0199e0078a7e" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m7036" Id="1c0db060-3629-4a3f-aad9-614c3009676a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="PurposeOfInspection" Id="1b23d5f5-0b43-40a0-be73-efa236980e02" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Essential" Id="3d42d211-936f-4f48-9322-6898a642b907" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="IsInaccuracyManager" Id="7a29029d-d963-4f5e-9cf2-0a81444ac483" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="IsInaccuracyManagerDate" Id="b2a3e241-0276-4634-ad12-b3dabecffaf9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="NoTaxes" Id="5483a874-8610-4687-afcc-7bf2e075de59" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m5004" Id="90bcdfee-6ccf-477c-a3ad-2fa3a29c5662" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="m5005" Id="757dcda9-215f-4b79-a447-13208843f5de" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Pledges" Id="668c6b39-5420-4215-b3c8-14ef8a813a9c" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <PageHeaderBand Name="PageHeader1" Width="718.2" Height="56.7" CanGrow="true" CanShrink="true">
+      <TextObject Name="Text1" Left="9.45" Top="9.45" Width="500.85" Height="18.9" Text="Отчет Дирекции по безопасности на [Date] г. " Font="Arial, 8pt" TextFill.Color="129, 129, 129">
+        <Formats>
+          <DateFormat Format="dd.MM.yyyy"/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text2" Left="9.45" Top="28.35" Width="500.85" Height="18.9" CanGrow="true" CanShrink="true" Text="&quot;[Legalname]&quot;, ИНН [Inn], ОГРН [Ogrn]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="60.7" Width="718.2" Height="557.55" CanGrow="true" CanShrink="true" CanBreak="true">
+      <TextObject Name="Text3" Left="9.45" Top="18.9" Width="699.3" Height="28.35" Text="[Legalname]" HorzAlign="Center" Font="Arial, 18pt"/>
+      <TextObject Name="Text4" Left="9.45" Top="56.7" Width="699.3" Height="28.35" Text="Результаты проверки на [Date] г." HorzAlign="Center" Font="Arial, 14pt">
+        <Formats>
+          <DateFormat Format="dd.MM.yyyy"/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text5" Left="9.45" Top="94.5" Width="198.45" Height="18.9" CanGrow="true" CanShrink="true" Text="Инициатор проверки" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text6" Left="9.45" Top="122.85" Width="198.45" Height="18.9" CanGrow="true" CanShrink="true" Text="Подразделение" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text7" Left="9.45" Top="151.2" Width="198.45" Height="18.9" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="Цель проверки" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text8" Left="9.45" Top="179.55" Width="198.45" Height="18.9" CanGrow="true" CanShrink="true" Text="Предполагаемая сумма контракта" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text13" Left="9.45" Top="245.7" Width="699.3" Height="18.9" Text="1. Общие сведения о контрагенте" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text33" Left="236.25" Top="94.5" Width="415.8" Height="18.9" CanGrow="true" CanShrink="true" Text="[InitiatorEmployeer]" Font="Arial, 8pt"/>
+      <TextObject Name="Text35" Left="236.25" Top="122.85" Width="415.8" Height="18.9" CanGrow="true" CanShrink="true" Text="[Department]" Font="Arial, 8pt"/>
+      <TextObject Name="Text11" Left="236.25" Top="151.2" Width="415.8" Height="18.9" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[PurposeOfInspection]" Font="Arial, 8pt"/>
+      <TextObject Name="Text12" Left="236.25" Top="179.55" Width="415.8" Height="18.9" CanGrow="true" CanShrink="true" Text="[Essential]" Font="Arial, 8pt">
+        <Formats>
+          <CurrencyFormat UseLocale="false" DecimalSeparator="," GroupSeparator=" " CurrencySymbol="" PositivePattern="3" NegativePattern="8"/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text429" Left="9.45" Top="283.5" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Полное наименование   " HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text447" Left="207.9" Top="283.5" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[Legalname]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text455" Left="595.35" Top="283.5" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text430" Left="9.45" Top="311.85" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Краткое наименование   " HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text448" Left="207.9" Top="311.85" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[ShortName]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text456" Left="595.35" Top="311.85" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text431" Left="9.45" Top="340.2" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="Статус   " HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Status_Text" Left="207.9" Top="340.2" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[Status]" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Green">
+        <Highlight>
+          <Condition Expression="[Status] != &quot;Действующее&quot;" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text457" Left="595.35" Top="340.2" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text432" Left="9.45" Top="368.55" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="ИНН" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text450" Left="207.9" Top="368.55" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[Inn]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text458" Left="595.35" Top="368.55" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text433" Left="9.45" Top="396.9" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="КПП" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text451" Left="207.9" Top="396.9" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[Kpp]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text459" Left="595.35" Top="396.9" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text434" Left="9.45" Top="425.25" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="ОГРН" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text452" Left="207.9" Top="425.25" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[Ogrn]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text460" Left="595.35" Top="425.25" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text435" Left="9.45" Top="453.6" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="Дата образования" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text453" Left="207.9" Top="453.6" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[DateFormation]" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value == &quot;Контрагент зарегистрирован менее 2 лет назад&quot;" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text461" Left="595.35" Top="453.6" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text509" Left="207.9" Top="481.95" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[IIf(AddDays(ToDateTime([DateFormation]),730) &gt; Calendar.Today,&quot;Контрагент зарегистрирован менее 2 лет назад&quot;,null)]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value != null" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text512" Left="9.45" Top="481.95" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text513" Left="595.35" Top="481.95" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HideZeros="true" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text436" Left="9.45" Top="510.3" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Юр. Адрес" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text454" Left="207.9" Top="510.3" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[LegalAddress]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text462" Left="595.35" Top="510.3" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text32" Left="236.25" Top="207.9" Width="415.8" Height="18.9" CanGrow="true" Text="От организации: [BusinessUnit]" Font="Arial, 8pt"/>
+      <TextObject Name="Text34" Left="207.9" Top="538.65" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[IsInaccuracy]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text36" Left="595.35" Top="538.65" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[InaccuracyDate]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text549" Left="9.45" Top="538.65" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data17" Top="622.25" Width="718.2" Height="28.35" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table9">
+      <TextObject Name="Text411" Left="595.35" Top="9.45" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_HistoryUL.Date]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text412" Left="207.9" Top="9.45" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_HistoryUL.Address]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text428" Left="9.45" Top="9.45" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="История юр. адресов" HideZeros="true" Duplicates="Merge" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="Gray"/>
+    </DataBand>
+    <DataBand Name="Data21" Top="654.6" Width="718.2" Height="113.4" CanGrow="true" CanShrink="true" CanBreak="true">
+      <TextObject Name="Text468" Left="9.45" Top="9.45" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="Основной вид деятельности" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text469" Left="9.45" Top="37.8" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="Уставный капитал " HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text470" Left="9.45" Top="66.15" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="Руководитель" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text472" Left="207.9" Top="37.8" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[AuthorizedCapital]" VertAlign="Center" Font="Arial, 8pt">
+        <Formats>
+          <CurrencyFormat UseLocale="false" DecimalSeparator="," GroupSeparator=" " CurrencySymbol="" PositivePattern="3" NegativePattern="8"/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text473" Left="595.35" Top="37.8" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[AuthorizedCapitalDate]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text474" Left="207.9" Top="66.15" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[Director]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text475" Left="207.9" Top="9.45" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" Text="[MainViewActivities]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text476" Left="595.35" Top="66.15" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" CanBreak="false" Text="[DirectorDate]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text21" Left="595.35" Top="9.45" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text14" Left="207.9" Top="94.5" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[IsInaccuracyManager]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text20" Left="595.35" Top="94.5" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[IsInaccuracyManagerDate]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text550" Left="9.45" Top="94.5" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data22" Top="772" Width="718.2" Height="28.35" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table10">
+      <TextObject Name="Text477" Left="595.35" Top="9.45" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_Directors.Date]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text478" Left="207.9" Top="9.45" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_Directors.Name]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text471" Left="9.45" Top="9.45" Width="189" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="История руководителей" HideZeros="true" Duplicates="Merge" HorzAlign="Right" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+    </DataBand>
+    <DataBand Name="Data18" Top="804.35" Width="718.2" Height="255.15" CanGrow="true" CanShrink="true" CanBreak="true">
+      <TextObject Name="Text394" Left="9.45" Top="18.9" Width="699.3" Height="18.9" Text="2. Контактные данные" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text395" Left="9.45" Top="56.7" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Фактический адрес местонахождения" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text396" Left="9.45" Top="85.05" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Контактные телефоны" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text397" Left="9.45" Top="113.4" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Контур.Фокус" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text398" Left="9.45" Top="141.75" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Электронная почта" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text399" Left="9.45" Top="170.1" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Сайт" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text400" Left="9.45" Top="198.45" Width="189" Height="18.9" Border.Lines="All" CanBreak="false" Text="Контур.Фокус" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text404" Left="207.9" Top="198.45" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" Text="[Sites]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text405" Left="207.9" Top="113.4" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" Text="[Phones]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text408" Left="207.9" Top="56.7" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" Text="Заполняется сотрудником ДЭБ вручную на основании представленных документов/ по результатам выезда на объект" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text409" Left="207.9" Top="141.75" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" Text="Заполняется сотрудником ДЭБ вручную" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text23" Left="595.35" Top="56.7" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text24" Left="207.9" Top="85.05" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text25" Left="595.35" Top="85.05" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text515" Left="595.35" Top="113.4" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text516" Left="595.35" Top="141.75" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text517" Left="595.35" Top="198.45" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text26" Left="207.9" Top="170.1" Width="387.45" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text518" Left="595.35" Top="170.1" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text401" Left="9.45" Top="236.25" Width="699.3" Height="18.9" Text="3. Виды деятельности" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data2" Top="1105.3" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" DataSource="Table1">
+      <TextObject Name="Text45" Left="9.45" Width="585.9" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_Activities.Name]" Font="Arial, 8pt"/>
+      <TextObject Name="Text46" Left="595.35" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" Text="[Deb_Activities.Code]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <DataHeaderBand Name="DataHeader5" Top="1063.5" Width="718.2" Height="37.8" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text406" Left="9.45" Top="18.9" Width="585.9" Height="18.9" Border.Lines="All" Text="Наименование вида деятельности" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text407" Left="595.35" Top="18.9" Width="113.4" Height="18.9" Border.Lines="All" Text="Код" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data16" Top="1128.2" Width="718.2" Height="37.8">
+      <TextObject Name="Text58" Left="9.45" Top="18.9" Width="699.3" Height="18.9" Text="4. Учредители" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data4" Top="1211.8" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table">
+      <TextObject Name="Text48" Left="9.45" Width="113.4" Height="18.9" Border.Lines="All" Text="[Deb_Founders.Share]" Font="Arial, 8pt"/>
+      <TextObject Name="Text49" Left="122.85" Width="113.4" Height="18.9" Border.Lines="All" Text="[Deb_Founders.ShareRub]" Font="Arial, 8pt"/>
+      <TextObject Name="Text50" Left="236.25" Width="359.1" Height="18.9" Border.Lines="All" Text="[Deb_Founders.Name]" Font="Arial, 8pt"/>
+      <TextObject Name="Text51" Left="595.35" Width="113.4" Height="18.9" Border.Lines="All" Text="[Deb_Founders.Date]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <DataHeaderBand Name="DataHeader1" Top="1170" Width="718.2" Height="37.8" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text59" Left="9.45" Top="18.9" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" Text="Доля в %" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text60" Left="122.85" Top="18.9" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" Text="Доля в руб." HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text61" Left="236.25" Top="18.9" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="Наименование и реквизиты учредителя" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text62" Left="595.35" Top="18.9" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" Text="Дата" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data3" Top="1267.05" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table3">
+      <TextObject Name="Text64" Left="122.85" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_HistoryFounders.ShareRub]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text65" Left="236.25" Width="359.1" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_HistoryFounders.Name]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text66" Left="595.35" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_HistoryFounders.Date]" HideZeros="true" Font="Arial, 8.25pt, style=Strikeout" TextFill.Color="129, 129, 129"/>
+      <DataHeaderBand Name="DataHeader2" Top="1234.7" Width="718.2" Height="28.35" KeepWithData="true">
+        <TextObject Name="Text63" Left="9.45" Top="9.45" Width="699.3" Height="18.9" Text="История изменений:" Font="Arial, 10pt, style=Bold" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data14" Top="1289.95" Width="718.2" Height="37.8">
+      <TextObject Name="Text67" Left="9.45" Top="18.9" Width="699.3" Height="18.9" Text="5. Филиалы и представительства" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data5" Top="1373.55" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table2">
+      <TextObject Name="Text70" Left="595.35" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Filials.Date]" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text71" Left="9.45" Width="585.9" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Filials.Address]" Font="Arial, 8pt"/>
+      <DataHeaderBand Name="DataHeader3" Top="1331.75" Width="718.2" Height="37.8" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text68" Left="9.45" Top="18.9" Width="585.9" Height="18.9" Border.Lines="All" CanBreak="false" Text="Адрес" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text69" Left="595.35" Top="18.9" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" Text="Дата" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data6" Top="1396.45" Width="718.2" Height="406.35" CanGrow="true" CanShrink="true" CanBreak="true">
+      <TextObject Name="Text72" Left="9.45" Top="18.9" Width="699.3" Height="18.9" Text="6. Подробная информация о руководителе" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text73" Left="9.45" Top="56.7" Width="226.8" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="Должность" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text75" Left="9.45" Top="113.4" Width="226.8" Height="18.9" Border.Lines="All" CanBreak="false" Text="Дата рождения" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text76" Left="9.45" Top="141.75" Width="226.8" Height="18.9" Border.Lines="All" CanBreak="false" Text="Паспортные данные" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text77" Left="9.45" Top="170.1" Width="226.8" Height="18.9" Border.Lines="All" CanBreak="false" Text="Действительность паспорта" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text78" Left="9.45" Top="198.45" Width="226.8" Height="18.9" Border.Lines="All" CanBreak="false" Text="Информация о месте регистрации" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text79" Left="9.45" Top="226.8" Width="226.8" Height="18.9" Border.Lines="All" CanBreak="false" Text="Контактные телефоны" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text80" Left="236.25" Top="56.7" Width="359.1" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[GDJobTitle]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text82" Left="595.35" Top="56.7" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[GDDate]" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text83" Left="236.25" Top="113.4" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="&lt;Заполняется сотрудником ДЭБ вручную&gt;" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text84" Left="236.25" Top="141.75" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="&lt;Заполняется сотрудником ДЭБ вручную&gt;" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text85" Left="236.25" Top="170.1" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="&lt;Заполняется сотрудником ДЭБ вручную&gt;" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text86" Left="236.25" Top="198.45" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="&lt;Заполняется сотрудником ДЭБ вручную&gt;" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text87" Left="236.25" Top="226.8" Width="359.1" Height="18.9" Border.Lines="All" CanBreak="false" Text="&lt;Заполняется сотрудником ДЭБ вручную&gt;" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text90" Left="9.45" Top="274.05" Width="699.3" Height="18.9" Text="7. Информация об аффилированных лицах" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text91" Left="9.45" Top="349.65" Width="699.3" Height="18.9" Text="8. Лицензии, разрешения, нахождение в СРО" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text92" Left="9.45" Top="311.85" Width="699.3" Height="18.9" Text="&lt;Раздел заполняется сотрудником ДЭБ вручную, в произвольном виде&gt;" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text464" Left="9.45" Top="387.45" Width="604.8" Height="18.9" Text="Действующие лицензии:" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text27" Left="595.35" Top="113.4" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text519" Left="595.35" Top="141.75" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text520" Left="595.35" Top="170.1" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text521" Left="595.35" Top="198.45" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text522" Left="595.35" Top="226.8" Width="113.4" Height="18.9" Border.Lines="All" CanBreak="false" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text31" Left="236.25" Top="85.05" Width="359.1" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[GDName]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text551" Left="595.35" Top="85.05" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text552" Left="9.45" Top="85.05" Width="226.8" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data7" Top="1839.15" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table4">
+      <TextObject Name="Text97" Left="9.45" Width="141.75" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Licenses.Source]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text98" Left="151.2" Width="94.5" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Licenses.Number]" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text99" Left="245.7" Width="75.6" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Licenses.Date]" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text100" Left="321.3" Width="387.45" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Licenses.Name]" VertAlign="Center" Font="Arial, 8pt"/>
+      <DataHeaderBand Name="DataHeader7" Top="1806.8" Width="718.2" Height="28.35" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text96" Left="321.3" Width="387.45" Height="28.35" Border.Lines="All" Text="Описание вида деятельности/ описание видов работ, услуг " HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text93" Left="9.45" Width="141.75" Height="28.35" Border.Lines="All" Text="Источник сведений/ &#13;&#10;выдавший орган " HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text94" Left="151.2" Width="94.5" Height="28.35" Border.Lines="All" Text="Номер, дата &#13;&#10;лицензии " HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text95" Left="245.7" Width="75.6" Height="28.35" Border.Lines="All" Text="Период &#13;&#10;действия " HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter1" Top="1862.05" Width="718.2" Height="226.8" CanGrow="true" CanShrink="true" CanBreak="true">
+        <TextObject Name="Text101" Left="9.45" Top="18.9" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="false" Text="[NoLicense]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+        <TextObject Name="Text104" Left="9.45" Top="37.8" Width="699.3" Height="18.9" Text="[NonoLinecses]" Font="Arial, 8pt" TextFill.Color="Red"/>
+        <TextObject Name="Text102" Left="9.45" Top="66.15" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="false" Text="[NoActiveLicense]" HideZeros="true" Font="Arial, 8pt"/>
+        <TextObject Name="Text103" Left="9.45" Top="85.05" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="false" Text="[NoInstalledLicense]" HideZeros="true" Font="Arial, 8pt"/>
+        <TextObject Name="Text105" Left="9.45" Top="113.4" Width="699.3" Height="28.35" Text="Сотруднику ДЭБ рекомендуется проверить наличие всех необходимых лицензий для видов деятельности, по которым проводится проверка, а также запросить сканы действующих лицензий. " Font="Arial, 8pt" TextFill.Color="Red"/>
+        <TextObject Name="Text106" Left="9.45" Top="160.65" Width="699.3" Height="18.9" Text="Нахождение в СРО: " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+        <TextObject Name="Text18" Left="9.45" Top="179.55" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[m7035]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Green">
+          <Highlight>
+            <Condition Expression="Value == &quot;Информация о включении контрагента в единый реестр членов СРО Ассоциации «Национальное объединение строителей» (НОСТРОЙ) не установлена.&quot;" Font="Arial, 10pt"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text19" Left="9.45" Top="198.45" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[m7036]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Green">
+          <Highlight>
+            <Condition Expression="Value == &quot;Информация о включении контрагента в единый реестр членов СРО Национального объединения изыскателей и проектировщиков (НОПРИЗ) не установлена.&quot;" Font="Arial, 10pt"/>
+          </Highlight>
+        </TextObject>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data8" Top="2115.75" Width="718.2" Height="18.9" CanGrow="true" CanShrink="true" CanBreak="true" KeepTogether="true">
+      <TextObject Name="Text28" Left="9.45" Width="160.65" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text525" Left="170.1" Width="151.2" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text526" Left="321.3" Width="170.1" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text527" Left="491.4" Width="217.35" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <DataHeaderBand Name="DataHeader6" Top="2092.85" Width="718.2" Height="18.9" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text111" Left="9.45" Width="160.65" Height="18.9" Border.Lines="All" Text="Наименование СРО" HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text112" Left="170.1" Width="151.2" Height="18.9" Border.Lines="All" Text="Дата вступления" HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text113" Left="321.3" Width="170.1" Height="18.9" Border.Lines="All" Text="Сфера деятельности" HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text114" Left="491.4" Width="217.35" Height="18.9" Border.Lines="All" Text="Уровень ответственности, руб. " HorzAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data20" Top="2138.65" Width="718.2" Height="75.6">
+      <TextObject Name="Text213" Left="9.45" Top="18.9" Width="699.3" Height="18.9" Text="9. Финансовое состояние " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text214" Left="9.45" Top="56.7" Width="699.3" Height="18.9" Text="Бухгалтерская (финансовая) отчетность: " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+    </DataBand>
+    <DataBand Name="Data9" Top="2269.5" Width="718.2" Height="652.05" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table5">
+      <TextObject Name="Text123" Left="9.45" Top="9.45" Width="699.3" Height="18.9" Text="Бухгалтерский баланс: АКТИВ" Font="Arial, 12pt, style=Bold" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text124" Left="9.45" Top="179.55" Width="699.3" Height="18.9" Text="Бухгалтерский баланс: ПАССИВ" Font="Arial, 12pt, style=Bold" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text125" Left="9.45" Top="349.65" Width="699.3" Height="18.9" Text="Отчет о финансовых результатах" Font="Arial, 12pt, style=Bold" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text126" Left="9.45" Top="37.8" Width="160.65" Height="18.9" Border.Lines="All" Text="Основные средства" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text127" Left="170.1" Top="37.8" Width="75.6" Height="18.9" Border.Lines="All" Text="1150" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text128" Left="245.7" Top="37.8" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code11501]" Font="Arial, 8pt"/>
+      <TextObject Name="Text129" Left="340.2" Top="37.8" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code11502]" Font="Arial, 8pt"/>
+      <TextObject Name="Text130" Left="434.7" Top="37.8" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code11503]" Font="Arial, 8pt"/>
+      <TextObject Name="Text131" Left="9.45" Top="66.15" Width="160.65" Height="18.9" Border.Lines="All" Text="Запасы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text132" Left="170.1" Top="66.15" Width="75.6" Height="18.9" Border.Lines="All" Text="1210" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text133" Left="245.7" Top="66.15" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12101]" Font="Arial, 8pt"/>
+      <TextObject Name="Text134" Left="340.2" Top="66.15" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12102]" Font="Arial, 8pt"/>
+      <TextObject Name="Text135" Left="434.7" Top="66.15" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12103]" Font="Arial, 8pt"/>
+      <TextObject Name="Text136" Left="9.45" Top="94.5" Width="160.65" Height="18.9" Border.Lines="All" Text="Дебиторская задолженность" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text137" Left="170.1" Top="94.5" Width="75.6" Height="18.9" Border.Lines="All" Text="1230" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text138" Left="245.7" Top="94.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12301]" Font="Arial, 8pt"/>
+      <TextObject Name="Text139" Left="340.2" Top="94.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12302]" Font="Arial, 8pt"/>
+      <TextObject Name="Text140" Left="434.7" Top="94.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12303]" Font="Arial, 8pt"/>
+      <TextObject Name="Text141" Left="9.45" Top="122.85" Width="160.65" Height="18.9" Border.Lines="All" Text="Денежные ср-ва и эквиваленты " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text142" Left="170.1" Top="122.85" Width="75.6" Height="18.9" Border.Lines="All" Text="1250 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text143" Left="245.7" Top="122.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12501]" Font="Arial, 8pt"/>
+      <TextObject Name="Text144" Left="340.2" Top="122.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12502]" Font="Arial, 8pt"/>
+      <TextObject Name="Text145" Left="434.7" Top="122.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code12503]" Font="Arial, 8pt"/>
+      <TextObject Name="Text151" Left="9.45" Top="207.9" Width="160.65" Height="18.9" Border.Lines="All" Text="Капитал и резервы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text152" Left="170.1" Top="207.9" Width="75.6" Height="18.9" Border.Lines="All" Text="1300" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text153" Left="245.7" Top="207.9" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code13001]" Font="Arial, 8pt"/>
+      <TextObject Name="Text154" Left="340.2" Top="207.9" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code13002]" Font="Arial, 8pt"/>
+      <TextObject Name="Text155" Left="434.7" Top="207.9" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code13003]" Font="Arial, 8pt"/>
+      <TextObject Name="Text156" Left="9.45" Top="236.25" Width="160.65" Height="18.9" Border.Lines="All" Text="Долгосрочные займы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text157" Left="170.1" Top="236.25" Width="75.6" Height="18.9" Border.Lines="All" Text="1410" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text158" Left="245.7" Top="236.25" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code14101]" Font="Arial, 8pt"/>
+      <TextObject Name="Text159" Left="340.2" Top="236.25" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code14102]" Font="Arial, 8pt"/>
+      <TextObject Name="Text160" Left="434.7" Top="236.25" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code14103]" Font="Arial, 8pt"/>
+      <TextObject Name="Text161" Left="9.45" Top="264.6" Width="160.65" Height="18.9" Border.Lines="All" Text="Краткосрочные займы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text162" Left="170.1" Top="264.6" Width="75.6" Height="18.9" Border.Lines="All" Text="1510" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text163" Left="245.7" Top="264.6" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15101]" Font="Arial, 8pt"/>
+      <TextObject Name="Text164" Left="340.2" Top="264.6" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15102]" Font="Arial, 8pt"/>
+      <TextObject Name="Text165" Left="434.7" Top="264.6" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15103]" Font="Arial, 8pt"/>
+      <TextObject Name="Text166" Left="9.45" Top="292.95" Width="160.65" Height="18.9" Border.Lines="All" Text="Кредиторская задолженность " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text167" Left="170.1" Top="292.95" Width="75.6" Height="18.9" Border.Lines="All" Text="1520" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text168" Left="245.7" Top="292.95" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15201]" Font="Arial, 8pt"/>
+      <TextObject Name="Text169" Left="340.2" Top="292.95" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15202]" Font="Arial, 8pt"/>
+      <TextObject Name="Text170" Left="434.7" Top="292.95" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code15203]" Font="Arial, 8pt"/>
+      <TextObject Name="Text171" Left="9.45" Top="321.3" Width="160.65" Height="18.9" Border.Lines="All" Text="БАЛАНС (пассив)" Font="Arial, 8pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text172" Left="170.1" Top="321.3" Width="75.6" Height="18.9" Border.Lines="All" Text="1700" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text173" Left="245.7" Top="321.3" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code17001]" Font="Arial, 8pt"/>
+      <TextObject Name="Text174" Left="340.2" Top="321.3" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code17002]" Font="Arial, 8pt"/>
+      <TextObject Name="Text175" Left="434.7" Top="321.3" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code17003]" Font="Arial, 8pt"/>
+      <TextObject Name="Text176" Left="9.45" Top="378" Width="160.65" Height="18.9" Border.Lines="All" Text="Выручка" Font="Arial, 8pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text177" Left="170.1" Top="378" Width="75.6" Height="18.9" Border.Lines="All" Text="2110 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text178" Left="245.7" Top="378" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21101]" Font="Arial, 8pt"/>
+      <TextObject Name="Text179" Left="340.2" Top="378" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21102]" Font="Arial, 8pt"/>
+      <TextObject Name="Text180" Left="434.7" Top="378" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21103]" Font="Arial, 8pt"/>
+      <TextObject Name="Text181" Left="9.45" Top="406.35" Width="160.65" Height="18.9" Border.Lines="All" Text="Себестоимость продаж" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text182" Left="170.1" Top="406.35" Width="75.6" Height="18.9" Border.Lines="All" Text="2120 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text183" Left="245.7" Top="406.35" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21201]" Font="Arial, 8pt"/>
+      <TextObject Name="Text184" Left="340.2" Top="406.35" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21202]" Font="Arial, 8pt"/>
+      <TextObject Name="Text185" Left="434.7" Top="406.35" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code21203]" Font="Arial, 8pt"/>
+      <TextObject Name="Text186" Left="9.45" Top="434.7" Width="160.65" Height="28.35" Border.Lines="All" Text="Коммерческие и управленческие расходы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text187" Left="170.1" Top="434.7" Width="75.6" Height="28.35" Border.Lines="All" Text="2210 + 2220 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text188" Left="245.7" Top="434.7" Width="94.5" Height="28.35" Border.Lines="All" Text="[Deb_Finances.Code22101]" Font="Arial, 8pt"/>
+      <TextObject Name="Text189" Left="340.2" Top="434.7" Width="94.5" Height="28.35" Border.Lines="All" Text="[Deb_Finances.Code22102]" Font="Arial, 8pt"/>
+      <TextObject Name="Text190" Left="434.7" Top="434.7" Width="94.5" Height="28.35" Border.Lines="All" Text="[Deb_Finances.Code22103]" Font="Arial, 8pt"/>
+      <TextObject Name="Text191" Left="9.45" Top="472.5" Width="160.65" Height="18.9" Border.Lines="All" Text="Прочие доходы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text192" Left="170.1" Top="472.5" Width="75.6" Height="18.9" Border.Lines="All" Text="2340 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text193" Left="245.7" Top="472.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23401]" Font="Arial, 8pt"/>
+      <TextObject Name="Text194" Left="340.2" Top="472.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23402]" Font="Arial, 8pt"/>
+      <TextObject Name="Text195" Left="434.7" Top="472.5" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23403]" Font="Arial, 8pt"/>
+      <TextObject Name="Text196" Left="9.45" Top="500.85" Width="160.65" Height="18.9" Border.Lines="All" Text="Прочие расходы" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text197" Left="170.1" Top="500.85" Width="75.6" Height="18.9" Border.Lines="All" Text="2350 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text198" Left="245.7" Top="500.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23501]" Font="Arial, 8pt"/>
+      <TextObject Name="Text199" Left="340.2" Top="500.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23502]" Font="Arial, 8pt"/>
+      <TextObject Name="Text200" Left="434.7" Top="500.85" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code23503]" Font="Arial, 8pt"/>
+      <TextObject Name="Text201" Left="9.45" Top="529.2" Width="160.65" Height="18.9" Border.Lines="All" Text="Чистая прибыль" Font="Arial, 8pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text202" Left="170.1" Top="529.2" Width="75.6" Height="18.9" Border.Lines="All" Text="2400 " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text203" Left="245.7" Top="529.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code24001]" Font="Arial, 8pt"/>
+      <TextObject Name="Text204" Left="340.2" Top="529.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code24002]" Font="Arial, 8pt"/>
+      <TextObject Name="Text205" Left="434.7" Top="529.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code24003]" Font="Arial, 8pt"/>
+      <TextObject Name="Text211" Left="9.45" Top="557.55" Width="699.3" Height="37.8" Text="* информация о показателях последней на момент проверки квартальной отчетности заполняется вручную" Font="Arial, 10pt, style=Bold" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text212" Left="9.45" Top="604.8" Width="699.3" Height="18.9" Text="Уплаченные налоги и сборы:" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text225" Left="9.45" Top="151.2" Width="160.65" Height="18.9" Border.Lines="All" Text="БАЛАНС (актив)" Font="Arial, 8pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text226" Left="170.1" Top="151.2" Width="75.6" Height="18.9" Border.Lines="All" Text="1600" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text227" Left="245.7" Top="151.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code16001]" Font="Arial, 8pt"/>
+      <TextObject Name="Text228" Left="340.2" Top="151.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code16002]" Font="Arial, 8pt"/>
+      <TextObject Name="Text229" Left="434.7" Top="151.2" Width="94.5" Height="18.9" Border.Lines="All" Text="[Deb_Finances.Code16003]" Font="Arial, 8pt"/>
+      <TextObject Name="Text29" Left="529.2" Top="37.8" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text528" Left="529.2" Top="66.15" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text529" Left="529.2" Top="94.5" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text530" Left="529.2" Top="122.85" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text531" Left="529.2" Top="151.2" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text532" Left="529.2" Top="207.9" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text533" Left="529.2" Top="236.25" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text534" Left="529.2" Top="264.6" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text535" Left="529.2" Top="292.95" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text536" Left="529.2" Top="321.3" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text537" Left="529.2" Top="378" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text538" Left="529.2" Top="406.35" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text539" Left="529.2" Top="434.7" Width="179.55" Height="28.35" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text540" Left="529.2" Top="472.5" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text541" Left="529.2" Top="500.85" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text542" Left="529.2" Top="529.2" Width="179.55" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text30" Left="9.45" Top="623.7" Width="699.3" Height="18.9" CanShrink="true" CanBreak="false" Text="[NoTaxes]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <DataHeaderBand Name="DataHeader4" Top="2218.25" Width="718.2" Height="47.25" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text215" Left="9.45" Width="160.65" Height="47.25" Border.Lines="All" Text="Наименование показателя" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text216" Left="170.1" Width="75.6" Height="47.25" Border.Lines="All" Text="Код строки" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text217" Left="245.7" Width="94.5" Height="47.25" Border.Lines="All" Text="[[FinanceYear1]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text218" Left="340.2" Width="94.5" Height="47.25" Border.Lines="All" Text="[[FinanceYear2]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text219" Left="434.7" Width="94.5" Height="47.25" Border.Lines="All" Text="[[FinanceYear3]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text220" Left="529.2" Width="179.55" Height="47.25" Border.Lines="All" Text="Последняя квартальная отч-ть*" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data10" Top="2957.9" Width="718.2" Height="28.35" CanGrow="true" CanShrink="true" CanBreak="true" DataSource="Table6" KeepTogether="true">
+      <TextObject Name="Text230" Left="9.45" Width="359.1" Height="28.35" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Taxes.Name]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text231" Left="368.55" Width="113.4" Height="28.35" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Taxes.Year1]" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text232" Left="481.95" Width="113.4" Height="28.35" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Taxes.Year2]" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text233" Left="595.35" Width="113.4" Height="28.35" Border.Lines="All" CanGrow="true" CanShrink="true" GrowToBottom="true" CanBreak="false" Text="[Deb_Taxes.Year3]" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <DataHeaderBand Name="DataHeader8" Top="2925.55" Width="718.2" Height="28.35" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text224" Left="595.35" Width="113.4" Height="28.35" Border.Lines="All" CanBreak="false" Text="[[FinanceYear3]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text222" Left="368.55" Width="113.4" Height="28.35" Border.Lines="All" CanBreak="false" Text="[[FinanceYear1]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text223" Left="481.95" Width="113.4" Height="28.35" Border.Lines="All" CanBreak="false" Text="[[FinanceYear2]] г., тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text221" Left="9.45" Width="359.1" Height="28.35" Border.Lines="All" CanBreak="false" Text="Наименование налога (сбора)" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <DataBand Name="Data11" Top="2990.25" Width="718.2" Height="378" CanGrow="true" CanShrink="true" CanBreak="true">
+      <TextObject Name="Text234" Left="9.45" Top="28.35" Width="699.3" Height="18.9" Text="10. Данные об исполнении госконтрактов" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text235" Left="9.45" Top="66.15" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[m4001]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text236" Left="9.45" Top="94.5" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[NoContract]" HideZeros="true" Font="Arial, 8pt"/>
+      <TextObject Name="Text237" Left="9.45" Top="141.75" Width="415.8" Height="28.35" Border.Lines="All" Text="Показатель" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text238" Left="425.25" Top="141.75" Width="141.75" Height="28.35" Border.Lines="All" Text="Всего" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text239" Left="567" Top="141.75" Width="141.75" Height="28.35" Border.Lines="All" Text="За последние 12 месяцев" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text240" Left="9.45" Top="170.1" Width="415.8" Height="28.35" Border.Lines="All" Text="Количество госконтрактов, в которых организация участвует в качестве поставщика " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text241" Left="9.45" Top="198.45" Width="415.8" Height="28.35" Border.Lines="All" Text="Сумма по госконтрактам, в которых организация участвует в качестве поставщика, тыс. руб. " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text242" Left="425.25" Top="170.1" Width="141.75" Height="28.35" Border.Lines="All" Text="[q4003]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text243" Left="425.25" Top="198.45" Width="141.75" Height="28.35" Border.Lines="All" Text="[s4003]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text244" Left="567" Top="170.1" Width="141.75" Height="28.35" Border.Lines="All" Text="[q4002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text245" Left="567" Top="198.45" Width="141.75" Height="28.35" Border.Lines="All" Text="[s4002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text246" Left="9.45" Top="283.5" Width="699.3" Height="18.9" Text="11. Сведения из ФНС об отсутствии задолженности " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text247" Left="9.45" Top="321.3" Width="699.3" Height="18.9" CanShrink="true" CanBreak="false" Text="[m7010]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text248" Left="9.45" Top="349.65" Width="699.3" Height="18.9" CanShrink="true" CanBreak="false" Text="[DateUpdate]" HideZeros="true" Font="Arial, 8pt" TextFill.Color="0, 142, 64"/>
+      <TextObject Name="Text466" Left="9.45" Top="122.85" Width="699.3" Height="18.9" Text="Статистическая информация по госконтрактам контрагента по данным Контур.Фокус:" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text467" Left="9.45" Top="236.25" Width="699.3" Height="18.9" Text="Подробная информация о госконтрактах контрагента представлена в Приложении 2." Font="Arial, 8pt"/>
+    </DataBand>
+    <DataBand Name="Data12" Top="3404.6" Width="718.2" Height="18.9" DataSource="Table7">
+      <TextObject Name="Text253" Left="9.45" Width="113.4" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[Deb_Fns.Bik]" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text254" Left="122.85" Width="311.85" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[Deb_Fns.Name]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text255" Left="434.7" Width="132.3" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[Deb_Fns.Date]" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text256" Left="567" Width="141.75" Height="18.9" Border.Lines="All" CanGrow="true" CanShrink="true" Text="[Deb_Fns.Number]" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt"/>
+      <DataHeaderBand Name="DataHeader9" Top="3372.25" Width="718.2" Height="28.35" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text252" Left="567" Width="141.75" Height="28.35" Border.Lines="All" Text="Номер решения о приостановлении" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text249" Left="9.45" Width="113.4" Height="28.35" Border.Lines="All" Text="БИК банка" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text250" Left="122.85" Width="311.85" Height="28.35" Border.Lines="All" Text="Наименование банка" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text251" Left="434.7" Width="132.3" Height="28.35" Border.Lines="All" Text="Дата решения о приостановлении" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+      <DataFooterBand Name="DataFooter2" Top="3427.5" Width="718.2" Height="56.7">
+        <TextObject Name="Text22" Left="9.45" Top="9.45" Width="699.3" Height="18.9" Text="[m5004]" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Green">
+          <Highlight>
+            <Condition Expression="Value != &quot;Организация не найдена в списке юридических лиц, имеющих задолженность по уплате налогов более 1000 руб., которая направлялась на взыскание судебному приставу-исполнителю (ФНС).&quot;" Font="Arial, 10pt"/>
+          </Highlight>
+        </TextObject>
+        <TextObject Name="Text37" Left="9.45" Top="37.8" Width="699.3" Height="18.9" Text="[m5005]" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="Green">
+          <Highlight>
+            <Condition Expression="Value != &quot;Организация не найдена в списке юридических лиц, не представляющих налоговую отчетность более года (ФНС).&quot;" Font="Arial, 10pt"/>
+          </Highlight>
+        </TextObject>
+      </DataFooterBand>
+    </DataBand>
+    <DataBand Name="Data13" Top="3488.2" Width="718.2" Height="1171.8" CanBreak="true">
+      <TextObject Name="Text257" Left="9.45" Top="28.35" Width="699.3" Height="18.9" Text="12. Компрометирующие сведения по базам данным ФНС, ФССП, судов" Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text258" Left="9.45" Top="66.15" Width="699.3" Height="18.9" Text="Исполнительные производства: " Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text259" Left="9.45" Top="85.05" Width="699.3" Height="18.9" Text="Информация о текущих исполнительных производствах заполняется сотрудником ДЭБ вручную, в произвольном виде. " HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text260" Left="9.45" Top="103.95" Width="699.3" Height="18.9" Text="Статистическая информация об исполнительных производствах по данным Контур.Фокус: " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text261" Left="9.45" Top="132.3" Width="406.35" Height="37.8" Border.Lines="All" Text="Показатель" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text262" Left="415.8" Top="132.3" Width="122.85" Height="37.8" Border.Lines="All" Text="Всего" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text263" Left="538.65" Top="132.3" Width="170.1" Height="37.8" Border.Lines="All" Text="За последние 12 месяцев" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text264" Left="9.45" Top="170.1" Width="406.35" Height="37.8" Border.Lines="All" Text="Количество найденных исполнительных производств в отношении организаций со схожими реквизитами " Font="Arial, 10pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text265" Left="415.8" Top="170.1" Width="122.85" Height="37.8" Border.Lines="All" Text="[q1002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text266" Left="538.65" Top="170.1" Width="170.1" Height="37.8" Border.Lines="All" Text="[q1001]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text267" Left="9.45" Top="207.9" Width="406.35" Height="37.8" Border.Lines="All" Text="Сумма найденных исполнительных производств в отношении организаций со схожими реквизитами, тыс. руб. " Font="Arial, 10pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text268" Left="415.8" Top="207.9" Width="122.85" Height="37.8" Border.Lines="All" Text="[s1002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text269" Left="538.65" Top="207.9" Width="170.1" Height="37.8" Border.Lines="All" Text="[s1001]" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text270" Left="9.45" Top="264.6" Width="699.3" Height="18.9" Text="Участие в арбитражных делах:" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text271" Left="9.45" Top="283.5" Width="699.3" Height="18.9" Text="Информация об участии контрагента в арбитражных делах заполняется сотрудником ДЭБ вручную, в произвольном виде." HideZeros="true" Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text272" Left="9.45" Top="302.4" Width="699.3" Height="18.9" Text="Оценочная информация по участию контрагента в арбитражных делах в качестве ответчика по данным Контур.Фокус: " Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text274" Left="9.45" Top="321.3" Width="255.15" Height="75.6" Border.Lines="All" Text="Показатель" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text275" Left="264.6" Top="359.1" Width="85.05" Height="37.8" Border.Lines="All" Text="Количество дел" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text276" Left="349.65" Top="359.1" Width="132.3" Height="37.8" Border.Lines="All" Text="Сумма исков, тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text277" Left="481.95" Top="359.1" Width="85.05" Height="37.8" Border.Lines="All" Text="Количество дел" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text278" Left="264.6" Top="321.3" Width="217.35" Height="37.8" Border.Lines="All" Text="За 3 года" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text279" Left="481.95" Top="321.3" Width="226.8" Height="37.8" Border.Lines="All" Text="За последние 12 месяцев" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text280" Left="567" Top="359.1" Width="141.75" Height="37.8" Border.Lines="All" Text="Сумма исков, тыс. руб." HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text281" Left="9.45" Top="396.9" Width="255.15" Height="18.9" Border.Lines="All" Text="Всего арбитражных дел, в т.ч.: " VertAlign="Center" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text282" Left="9.45" Top="425.25" Width="255.15" Height="18.9" Border.Lines="All" Text="      Иск удовлетворен полностью" VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text283" Left="9.45" Top="453.6" Width="255.15" Height="18.9" Border.Lines="All" Text="      Иск удовлетворен частично" VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text284" Left="9.45" Top="481.95" Width="255.15" Height="18.9" Border.Lines="All" Text="      Иск не удовлетворен" VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text285" Left="9.45" Top="510.3" Width="255.15" Height="18.9" Border.Lines="All" Text="      Дело в процессе рассмотрения" VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text286" Left="9.45" Top="538.65" Width="255.15" Height="18.9" Border.Lines="All" Text="      Исход дела определить не удалось" VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text287" Left="9.45" Top="567" Width="255.15" Height="18.9" Border.Lines="All" Text="      Рассмотрение дела прекращено " VertAlign="Center" Font="Arial, 8pt, style=Italic" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text288" Left="264.6" Top="396.9" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text289" Left="349.65" Top="396.9" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2002]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text290" Left="481.95" Top="396.9" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2001]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text291" Left="567" Top="396.9" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2001]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text292" Left="264.6" Top="425.25" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2011]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text293" Left="349.65" Top="425.25" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2011]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text294" Left="481.95" Top="425.25" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2016]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text295" Left="567" Top="425.25" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2016]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text296" Left="264.6" Top="453.6" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2012]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text297" Left="349.65" Top="453.6" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2012]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text298" Left="481.95" Top="453.6" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2017]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text299" Left="567" Top="453.6" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2017]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text300" Left="264.6" Top="481.95" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2013]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text301" Left="349.65" Top="481.95" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2013]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text302" Left="481.95" Top="481.95" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2018]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text303" Left="567" Top="481.95" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2018]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text304" Left="264.6" Top="510.3" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2014]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text305" Left="349.65" Top="510.3" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2014]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text306" Left="481.95" Top="510.3" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2019]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text307" Left="567" Top="510.3" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2019]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text308" Left="264.6" Top="538.65" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2015]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text309" Left="349.65" Top="538.65" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2015]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text310" Left="481.95" Top="538.65" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2027]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text311" Left="567" Top="538.65" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2027]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text312" Left="264.6" Top="567" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2029]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text313" Left="349.65" Top="567" Width="132.3" Height="18.9" Border.Lines="All" Text="[s2029]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text314" Left="481.95" Top="567" Width="85.05" Height="18.9" Border.Lines="All" Text="[q2028]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text315" Left="567" Top="567" Width="141.75" Height="18.9" Border.Lines="All" Text="[s2028]" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text316" Left="9.45" Top="604.8" Width="699.3" Height="28.35" Text="Информация об истцах, по заявлениям которых в отношении контрагента за последние 3 года возбуждались арбитражные дела, представлена в Приложении 3. " Font="Arial, 8pt"/>
+      <TextObject Name="Text317" Left="9.45" Top="652.05" Width="699.3" Height="18.9" Text="Признаки банкротства:" Font="Arial, 8pt" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text318" Left="9.45" Top="680.4" Width="699.3" Height="18.9" Text="Информация о признаках банкротства проверяется и дополняется сотрудником ДЭБ вручную, в произвольном виде." Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text319" Left="9.45" Top="708.75" Width="699.3" Height="18.9" Text="Информация о признаках банкротства по данным Контур.Фокус:" Font="Arial, 8pt" TextFill.Color="129, 129, 129"/>
+      <TextObject Name="Text328" Left="9.45" Top="897.75" Width="699.3" Height="18.9" Text="13. Информация о контрагенте из общедоступных источников " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text330" Left="9.45" Top="954.45" Width="699.3" Height="18.9" Text="Раздел дополняется сотрудником ДЭБ вручную, в произвольном виде " Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text331" Left="9.45" Top="1001.7" Width="699.3" Height="18.9" Text="14. Оперативные сведения " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text332" Left="9.45" Top="1039.5" Width="699.3" Height="37.8" Text="Раздел заполняется сотрудником ДЭБ вручную, в произвольном виде. В этом разделе вносится информация по результатам выезда в адрес нахождения фирмы или беседы по телефону " Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text333" Left="9.45" Top="1115.1" Width="699.3" Height="18.9" Text="Рекомендация службы безопасности по результатам проверки: " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+      <TextObject Name="Text334" Left="9.45" Top="1152.9" Width="699.3" Height="18.9" Text="Раздел заполняется сотрудником ДЭБ вручную, в произвольном виде " Font="Arial, 8pt" TextFill.Color="Red"/>
+      <TextObject Name="Text414" Left="9.45" Top="1077.3" Width="699.3" Height="18.9" Border.Lines="Bottom" Font="Arial, 8pt"/>
+      <TextObject Name="Text9" Left="9.45" Top="765.45" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[e7014]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value == &quot;Информация о введенных процедурах банкротства не установлена.&quot;" TextFill.Color="Green" Font="Arial, 10pt"/>
+          <Condition Expression="Value != null" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text10" Left="9.45" Top="793.8" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[d7014]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value != null" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text15" Left="9.45" Top="737.1" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[q7026]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value == &quot;Арбитражные дела о банкротстве контрагента не обнаружены.&quot;" TextFill.Color="Green" Font="Arial, 10pt"/>
+          <Condition Expression="Value != null" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text16" Left="9.45" Top="850.5" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[m7015]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt">
+        <Highlight>
+          <Condition Expression="Value == &quot;Сообщения кредиторов о намерении обратиться в суд с заявлением о банкротстве контрагента за последний месяц не установлены.&quot;" TextFill.Color="Green" Font="Arial, 10pt"/>
+          <Condition Expression="Value == &quot;Обнаружены сообщения кредиторов о намерении обратиться в суд с заявлением о банкротстве контрагента за последний месяц.&quot;" Font="Arial, 10pt"/>
+        </Highlight>
+      </TextObject>
+      <TextObject Name="Text17" Left="9.45" Top="822.15" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[CaseNumber]" HideZeros="true" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text38" Left="9.45" Top="926.1" Width="699.3" Height="18.9" CanGrow="true" CanShrink="true" Text="[Pledges]" HideZeros="true" Font="Arial, 8pt"/>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" Landscape="true" PaperWidth="297" PaperHeight="210" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="37.8">
+      <TextObject Name="Text335" Left="9.45" Top="9.45" Width="859.95" Height="18.9" Text="Приложение 1. Информация о банках, в которых ранее были найдены счета организации." Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </ReportTitleBand>
+    <DataBand Name="Data19" Top="74.15" Width="1047.06" Height="28.35" CanGrow="true" CanShrink="true" DataSource="Table8">
+      <TextObject Name="Text415" Left="9.45" Width="56.7" Height="28.35" Border.Lines="All" Text="[Deb_Banks.Number]" Font="Arial, 10pt"/>
+      <TextObject Name="Text416" Left="66.15" Width="122.85" Height="28.35" Border.Lines="All" Text="[Deb_Banks.Bik]" Font="Arial, 10pt"/>
+      <TextObject Name="Text417" Left="189" Width="425.25" Height="28.35" Border.Lines="All" Text="[Deb_Banks.Name]" Font="Arial, 10pt"/>
+      <TextObject Name="Text418" Left="614.25" Width="207.9" Height="28.35" Border.Lines="All" Text="[Deb_Banks.Source]" Font="Arial, 10pt"/>
+      <TextObject Name="Text419" Left="822.15" Width="217.35" Height="28.35" Border.Lines="All" Text="[Deb_Banks.Date]" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="DataHeader10" Top="41.8" Width="1047.06" Height="28.35" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text340" Left="822.15" Width="217.35" Height="28.35" Border.Lines="All" Text="Дата проверки информации в источнике" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text336" Left="9.45" Width="56.7" Height="28.35" Border.Lines="All" Text="№ " HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text337" Left="66.15" Width="122.85" Height="28.35" Border.Lines="All" Text="БИК" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text338" Left="189" Width="425.25" Height="28.35" Border.Lines="All" Text="Наименование банка" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text339" Left="614.25" Width="207.9" Height="28.35" Border.Lines="All" Text="Источник информации о счете" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page3" Landscape="true" PaperWidth="297" PaperHeight="210" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle2" Width="1047.06" Height="56.7">
+      <TextObject Name="Text346" Left="9.45" Top="9.45" Width="1030.05" Height="37.8" Text="Приложение 2. Информация о контрактах, заключенных контрагентом в результате участия в закупочных процедурах по 44-ФЗ, 223-ФЗ, 94-ФЗ и 615-ПП " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </ReportTitleBand>
+    <DataBand Name="Data26" Top="111.95" Width="1047.06" Height="47.25" CanGrow="true" CanShrink="true" DataSource="Table12">
+      <TextObject Name="Text498" Width="56.7" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Number]" Font="Arial, 10pt"/>
+      <TextObject Name="Text499" Left="56.7" Width="85.05" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Type]" Font="Arial, 10pt"/>
+      <TextObject Name="Text500" Left="141.75" Width="103.95" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Customer]" Font="Arial, 10pt"/>
+      <TextObject Name="Text501" Left="245.7" Width="85.05" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Inn]" Font="Arial, 10pt"/>
+      <TextObject Name="Text502" Left="330.75" Width="217.35" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Description]" Font="Arial, 10pt"/>
+      <TextObject Name="Text503" Left="548.1" Width="122.85" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.ContractNumber]" Font="Arial, 10pt"/>
+      <TextObject Name="Text504" Left="897.75" Width="151.2" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Reason]" Font="Arial, 10pt"/>
+      <TextObject Name="Text505" Left="822.15" Width="75.6" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Status]" Font="Arial, 10pt"/>
+      <TextObject Name="Text506" Left="746.55" Width="75.6" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.Price]" Font="Arial, 10pt"/>
+      <TextObject Name="Text507" Left="670.95" Width="75.6" Height="47.25" Border.Lines="All" Text="[Deb_Contracts.ContractDate]" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="DataHeader11" Top="60.7" Width="1047.06" Height="47.25" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text353" Left="897.75" Width="151.2" Height="47.25" Border.Lines="All" Text="Причина расторжения (если применимо)" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text347" Width="56.7" Height="47.25" Border.Lines="All" Text="№ " HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text348" Left="56.7" Width="85.05" Height="47.25" Border.Lines="All" Text="Тип закупки" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text349" Left="141.75" Width="103.95" Height="47.25" Border.Lines="All" Text="Заказчик" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text350" Left="245.7" Width="85.05" Height="47.25" Border.Lines="All" Text="ИНН заказчика" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text351" Left="330.75" Width="217.35" Height="47.25" Border.Lines="All" Text="Описание предмета закупки" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text352" Left="548.1" Width="122.85" Height="47.25" Border.Lines="All" Text="Номер договора" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text354" Left="822.15" Width="75.6" Height="47.25" Border.Lines="All" Text="Статус договора " HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text355" Left="746.55" Width="75.6" Height="47.25" Border.Lines="All" Text="Цена договора, тыс. руб. " HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text356" Left="670.95" Width="75.6" Height="47.25" Border.Lines="All" Text="Дата договора" HorzAlign="Center" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page4" Landscape="true" PaperWidth="297" PaperHeight="210" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle3" Width="1047.06" Height="66.15">
+      <TextObject Name="Text367" Top="9.45" Width="1030.05" Height="47.25" Text="Приложение 3. Информация об истцах, по заявлениям которых в отношении контрагента за последние 3 года возбуждались арбитражные дела " Font="Arial, 12pt, style=Bold" TextFill.Color="47, 84, 150"/>
+    </ReportTitleBand>
+    <DataBand Name="Data23" Top="121.4" Width="1047.06" Height="47.25" CanGrow="true" CanShrink="true" DataSource="Table11">
+      <TextObject Name="Text481" Width="56.7" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.Number]" Font="Arial, 10pt"/>
+      <TextObject Name="Text482" Left="56.7" Width="141.75" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.Name]" Font="Arial, 10pt"/>
+      <TextObject Name="Text483" Left="198.45" Width="103.95" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.Inn]" Font="Arial, 10pt"/>
+      <TextObject Name="Text484" Left="302.4" Width="264.6" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.MainActivity]" Font="Arial, 10pt"/>
+      <TextObject Name="Text485" Left="567" Width="141.75" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.Count]" Font="Arial, 10pt"/>
+      <TextObject Name="Text486" Left="708.75" Width="189" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.Summ]" Font="Arial, 10pt"/>
+      <TextObject Name="Text487" Left="897.75" Width="151.2" Height="47.25" Border.Lines="All" Text="[Deb_Arbitrations.LastDate]" Font="Arial, 10pt"/>
+      <DataHeaderBand Name="DataHeader12" Top="70.15" Width="1047.06" Height="47.25" KeepWithData="true" RepeatOnEveryPage="true">
+        <TextObject Name="Text377" Left="897.75" Width="151.2" Height="47.25" Border.Lines="All" Text="Дата последнего дела" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text368" Width="56.7" Height="47.25" Border.Lines="All" Text="№ " Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text369" Left="56.7" Width="141.75" Height="47.25" Border.Lines="All" Text="Истец " Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text370" Left="198.45" Width="103.95" Height="47.25" Border.Lines="All" Text="ИНН истца " Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text371" Left="302.4" Width="264.6" Height="47.25" Border.Lines="All" Text="Основной вид деятельности истца" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text372" Left="567" Width="141.75" Height="47.25" Border.Lines="All" Text="Оценка количества дел за 3 года" Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+        <TextObject Name="Text373" Left="708.75" Width="189" Height="47.25" Border.Lines="All" Text="Оценка исковой суммы за 3 последних года, тыс. руб." Font="Arial, 10pt" TextFill.Color="129, 129, 129"/>
+      </DataHeaderBand>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="172.65" Width="1047.06" Height="37.8">
+      <TextObject Name="Text480" Left="9.45" Top="9.45" Width="1030.05" Height="18.9" Text="[ArbitrationCount50]" Font="Arial, 10pt"/>
+    </ReportSummaryBand>
+  </ReportPage>
+</Report>

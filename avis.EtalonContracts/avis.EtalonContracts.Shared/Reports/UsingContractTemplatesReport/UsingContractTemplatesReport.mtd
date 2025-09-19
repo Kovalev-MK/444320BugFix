@@ -1,0 +1,126 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "9c91f058-6f3c-4642-96f3-3d4332541432",
+  "Name": "UsingContractTemplatesReport",
+  "AssociatedGuid": "68d3f5d9-0a14-489e-9024-a4cb77f5f223",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteServer",
+    "BeforeExecuteClient",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "EtalonContractsUsingContractTemplatesReport",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "Description",
+    "Parameters",
+    "HandledEvents"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "258c8f07-c430-43e3-916c-97baad1a5f93",
+      "Name": "DateFrom",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d0feef0d-dcdb-4fa2-828d-753a995f3f0a",
+      "Name": "DateTo",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "8ae4c9d5-05a8-4a87-802d-60c4c1273dd8",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4824e6ae-ec7a-46e3-b994-f240795c3f93",
+      "Name": "CurrentDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "UsingContractTemplatesReportTableLine",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "ReportSessionId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "DocumentId",
+          "TypeFullName": "global::System.Int64"
+        },
+        {
+          "Name": "DocumentHyperlink",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Author",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CreatedDate",
+          "IsNullable": true,
+          "TypeFullName": "global::System.DateTime"
+        },
+        {
+          "Name": "BusinessUnit",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Counterparty",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "TemplateName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "TemplateId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.Int64>"
+        },
+        {
+          "Name": "TemplateHyperlink",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "avis.EtalonContracts.Structures.UsingContractTemplatesReport"
+    }
+  ],
+  "ResourcesKeys": [
+    "ReportName",
+    "DocumentIdColumnName",
+    "AuthorColumnName",
+    "CreatedColumnName",
+    "BusinessUnitColumnName",
+    "CounterpartyColumnName",
+    "TemplateNameColumnName",
+    "TemplateIdColumnName"
+  ],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

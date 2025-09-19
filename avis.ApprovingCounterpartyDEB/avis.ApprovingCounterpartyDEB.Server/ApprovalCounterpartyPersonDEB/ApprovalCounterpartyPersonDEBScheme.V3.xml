@@ -1,0 +1,1824 @@
+<?xml version="1.0"?>
+<RouteScheme xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MaxBlockId="25">
+  <Blocks>
+    <BlockBase xsi:type="StartBlock">
+      <Id>1</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+    </BlockBase>
+    <BlockBase xsi:type="FinishBlock">
+      <Id>2</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <UnderReview>false</UnderReview>
+      <ReviewAssignmentId>0</ReviewAssignmentId>
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>3</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Согласование с руководителем инициатора</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>f07ce29e-ad32-4049-bfcb-eee4c802ab30</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <NoPerformersResult>NoPerformers</NoPerformersResult>
+      <IsStopped>false</IsStopped>
+      <IsParallel>false</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>1.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>1</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>4</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Проверка контрагента согласующим ДЭБ</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>82576de7-bc3a-4064-a1ed-221dc58b6b66</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>true</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>5.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>5</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>5</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Проверка контрагента руководством ДЭБ</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>b377a6ed-d907-4527-a003-aaed665abfe6</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>true</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>5.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>5</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="DecisionBlock">
+      <Id>6</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Проверка Персоны или Банка?</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <ConditionExpressions />
+    </BlockBase>
+    <BlockBase xsi:type="DecisionBlock">
+      <Id>7</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Тип контрагента заполнен?</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <ConditionExpressions />
+    </BlockBase>
+    <BlockBase xsi:type="DecisionBlock">
+      <Id>8</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Сумма разовой сделки в год более тендерной суммы? </Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <ConditionExpressions />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>9</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Включение контрагента в реестр</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights />
+      <AttachmentGroupsSettings />
+      <TypeGuid>34af3173-0bf2-4605-8141-6aa1a5b2b207</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>true</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>3.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>3</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>11</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление об исполнении (включение в реестр)</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights />
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>12</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Доработка инициатором</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>a667ecb8-f154-4210-86c1-eabbd0fa27b7</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>acf65403-5eec-476e-8db9-d6fdcc3775ee</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>96f1e042-8194-40c9-bb69-46693f8cdd28</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>false</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays xsi:nil="true" />
+      <RelativeDeadlineHours xsi:nil="true" />
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>13</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Доработка согласующим ДЭБ</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>a667ecb8-f154-4210-86c1-eabbd0fa27b7</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>acf65403-5eec-476e-8db9-d6fdcc3775ee</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>4305b4af-349f-4aba-838b-fb851ecf29b3</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>false</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>3.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>3</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>14</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление об исполнении (служба безопасности)</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>15</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление об отклонении (служба безопасности)</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>18</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление о завершении для наблюдателей</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights />
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+    <BlockBase xsi:type="AssignmentBlock">
+      <Id>19</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Установка лимита по контрагенту</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>ab36176b-a7ed-4359-b301-9e84f4896e5e</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>a667ecb8-f154-4210-86c1-eabbd0fa27b7</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>acf65403-5eec-476e-8db9-d6fdcc3775ee</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>9b5b14db-30fc-449e-a123-9bd20f8454e8</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>949031af-9e6b-4361-83df-3497515f2e6c</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+      <IsStopped>false</IsStopped>
+      <IsParallel>true</IsParallel>
+      <IsCompetitive>false</IsCompetitive>
+      <AbsoluteDeadline>0001-01-01T00:00:00</AbsoluteDeadline>
+      <RelativeDeadline>3.00:00:00</RelativeDeadline>
+      <RelativeDeadlineDays>3</RelativeDeadlineDays>
+      <RelativeDeadlineHours>0</RelativeDeadlineHours>
+      <RelativeDeadlineTimeBase xsi:nil="true" />
+      <AbsoluteDeadlineInternal>0001-01-01T00:00:00</AbsoluteDeadlineInternal>
+      <AbsoluteStopAssignmentsDeadline>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadline>
+      <RelativeStopAssignmentsDeadline>00:00:00</RelativeStopAssignmentsDeadline>
+      <RelativeStopDeadlineDays xsi:nil="true" />
+      <RelativeStopDeadlineHours xsi:nil="true" />
+      <AbsoluteStopAssignmentsDeadlineInternal>0001-01-01T00:00:00</AbsoluteStopAssignmentsDeadlineInternal>
+      <ExecutionResults />
+      <CustomExecutionResults />
+      <StopResults />
+      <ElevatedTaskAccessRightsUsers />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>20</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление об исполнении (установлен лимит)</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights>
+        <GroupAttachmentsRights>
+          <GroupId>00000000-0000-0000-0000-000000000000</GroupId>
+          <AttachmentsRights>AllPerformersAllAttachments</AttachmentsRights>
+          <AttachmentsRightsType>676a7c2d-f883-4528-b190-84fa0e3cc0f3</AttachmentsRightsType>
+          <IsNotGreaterInitiatorRights>false</IsNotGreaterInitiatorRights>
+        </GroupAttachmentsRights>
+      </GroupsAttachmentsRights>
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+    <BlockBase xsi:type="DecisionBlock">
+      <Id>21</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Контрагент компания или банк?</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <ConditionExpressions />
+    </BlockBase>
+    <BlockBase xsi:type="ScriptBlock">
+      <Id>22</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Заполнение полей вложений</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <RetryIteration>0</RetryIteration>
+      <Retry>false</Retry>
+      <NextRetryTime xsi:nil="true" />
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>25</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>5744dc57-d476-4759-8efd-ffa3f5c8c6d4</CreatedInTaskGuid>
+      <Title>Уведомление старта согласования для соответствующей роли</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <Operations />
+      <Author>00000000-0000-0000-0000-000000000000</Author>
+      <GroupsAttachmentsRights />
+      <AttachmentGroupsSettings />
+      <TypeGuid>ef79164b-2ce7-451b-9ba6-eb59dd9a4a74</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+  </Blocks>
+  <Edges>
+    <Edge>
+      <Id>2</Id>
+      <Source>3</Source>
+      <Target>4</Target>
+      <Value />
+    </Edge>
+    <Edge>
+      <Id>3</Id>
+      <Source>4</Source>
+      <Target>5</Target>
+      <Value />
+    </Edge>
+    <Edge>
+      <Id>4</Id>
+      <Source>5</Source>
+      <Target>21</Target>
+      <Value />
+    </Edge>
+    <Edge>
+      <Id>16</Id>
+      <Source>3</Source>
+      <Target>12</Target>
+      <Value>Rework</Value>
+    </Edge>
+    <Edge>
+      <Id>17</Id>
+      <Source>12</Source>
+      <Target>3</Target>
+      <Value>Corrected</Value>
+    </Edge>
+    <Edge>
+      <Id>29</Id>
+      <Source>6</Source>
+      <Target>7</Target>
+      <Value>False</Value>
+    </Edge>
+    <Edge>
+      <Id>31</Id>
+      <Source>7</Source>
+      <Target>8</Target>
+      <Value>False</Value>
+    </Edge>
+    <Edge>
+      <Id>43</Id>
+      <Source>5</Source>
+      <Target>13</Target>
+      <Value>Rework</Value>
+    </Edge>
+    <Edge>
+      <Id>44</Id>
+      <Source>13</Source>
+      <Target>5</Target>
+      <Value>Corrected</Value>
+    </Edge>
+    <Edge>
+      <Id>55</Id>
+      <Source>21</Source>
+      <Target>19</Target>
+      <Value>True</Value>
+    </Edge>
+    <Edge>
+      <Id>58</Id>
+      <Source>21</Source>
+      <Target>6</Target>
+      <Value>False</Value>
+    </Edge>
+    <Edge>
+      <Id>70</Id>
+      <Source>19</Source>
+      <Target>20</Target>
+    </Edge>
+    <Edge>
+      <Id>71</Id>
+      <Source>4</Source>
+      <Target>15</Target>
+      <Value>CoopNotRecomend</Value>
+    </Edge>
+    <Edge>
+      <Id>72</Id>
+      <Source>5</Source>
+      <Target>15</Target>
+      <Value>CoopNotRecomend</Value>
+    </Edge>
+    <Edge>
+      <Id>76</Id>
+      <Source>11</Source>
+      <Target>14</Target>
+    </Edge>
+    <Edge>
+      <Id>80</Id>
+      <Source>22</Source>
+      <Target>18</Target>
+    </Edge>
+    <Edge>
+      <Id>81</Id>
+      <Source>20</Source>
+      <Target>6</Target>
+    </Edge>
+    <Edge>
+      <Id>82</Id>
+      <Source>8</Source>
+      <Target>9</Target>
+      <Value>True</Value>
+    </Edge>
+    <Edge>
+      <Id>84</Id>
+      <Source>6</Source>
+      <Target>14</Target>
+      <Value>True</Value>
+    </Edge>
+    <Edge>
+      <Id>86</Id>
+      <Source>8</Source>
+      <Target>14</Target>
+      <Value>False</Value>
+    </Edge>
+    <Edge>
+      <Id>89</Id>
+      <Source>14</Source>
+      <Target>22</Target>
+    </Edge>
+    <Edge>
+      <Id>90</Id>
+      <Source>15</Source>
+      <Target>22</Target>
+    </Edge>
+    <Edge>
+      <Id>91</Id>
+      <Source>7</Source>
+      <Target>14</Target>
+      <Value>True</Value>
+    </Edge>
+    <Edge>
+      <Id>92</Id>
+      <Source>9</Source>
+      <Target>11</Target>
+    </Edge>
+    <Edge>
+      <Id>93</Id>
+      <Source>18</Source>
+      <Target>2</Target>
+    </Edge>
+    <Edge>
+      <Id>94</Id>
+      <Source>4</Source>
+      <Target>12</Target>
+      <Value>Rework</Value>
+    </Edge>
+    <Edge>
+      <Id>95</Id>
+      <Source>1</Source>
+      <Target>25</Target>
+    </Edge>
+    <Edge>
+      <Id>96</Id>
+      <Source>25</Source>
+      <Target>3</Target>
+    </Edge>
+  </Edges>
+  <Layout>
+    <BlocksLayout>
+      <BlockLayout>
+        <BlockId>1</BlockId>
+        <Bounds>
+          <Location>
+            <X>4.6998000000003231</X>
+            <Y>-201.7994</Y>
+          </Location>
+          <Size>
+            <Width>48</Width>
+            <Height>48</Height>
+          </Size>
+          <X>4.6998000000003231</X>
+          <Y>-201.7994</Y>
+          <Width>48</Width>
+          <Height>48</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>2</BlockId>
+        <Bounds>
+          <Location>
+            <X>-342.71139999999991</X>
+            <Y>-201.7994</Y>
+          </Location>
+          <Size>
+            <Width>48</Width>
+            <Height>48</Height>
+          </Size>
+          <X>-342.71139999999991</X>
+          <Y>-201.7994</Y>
+          <Width>48</Width>
+          <Height>48</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>3</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96</X>
+            <Y>4.51980000000006</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96</X>
+          <Y>4.51980000000006</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>4</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96</X>
+            <Y>122.96074488188981</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96</X>
+          <Y>122.96074488188981</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>5</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96</X>
+            <Y>247.96074488188981</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96</X>
+          <Y>247.96074488188981</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>6</BlockId>
+        <Bounds>
+          <Location>
+            <X>-17</X>
+            <Y>554.37987244094461</Y>
+          </Location>
+          <Size>
+            <Width>70</Width>
+            <Height>109</Height>
+          </Size>
+          <X>-17</X>
+          <Y>554.37987244094461</Y>
+          <Width>70</Width>
+          <Height>109</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>7</BlockId>
+        <Bounds>
+          <Location>
+            <X>153.69980000000032</X>
+            <Y>610.37987244094461</Y>
+          </Location>
+          <Size>
+            <Width>70</Width>
+            <Height>109</Height>
+          </Size>
+          <X>153.69980000000032</X>
+          <Y>610.37987244094461</Y>
+          <Width>70</Width>
+          <Height>109</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>8</BlockId>
+        <Bounds>
+          <Location>
+            <X>315.80960000000027</X>
+            <Y>662.37987244094461</Y>
+          </Location>
+          <Size>
+            <Width>70</Width>
+            <Height>109</Height>
+          </Size>
+          <X>315.80960000000027</X>
+          <Y>662.37987244094461</Y>
+          <Width>70</Width>
+          <Height>109</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>9</BlockId>
+        <Bounds>
+          <Location>
+            <X>373.80960000000027</X>
+            <Y>362.3224897637798</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>373.80960000000027</X>
+          <Y>362.3224897637798</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>11</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>496.12074488188978</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>496.12074488188978</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>12</BlockId>
+        <Bounds>
+          <Location>
+            <X>373.80960000000027</X>
+            <Y>4.51980000000006</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>373.80960000000027</X>
+          <Y>4.51980000000006</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>13</BlockId>
+        <Bounds>
+          <Location>
+            <X>373.80960000000027</X>
+            <Y>247.96074488188981</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>373.80960000000027</X>
+          <Y>247.96074488188981</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>14</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>636.12074488188978</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>636.12074488188978</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>15</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>192.96074488188981</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>192.96074488188981</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>18</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>-32.7601999999998</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>-32.7601999999998</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>19</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96.300199999999677</X>
+            <Y>362.3224897637798</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96.300199999999677</X>
+          <Y>362.3224897637798</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>20</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>362.3224897637798</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>362.3224897637798</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>21</BlockId>
+        <Bounds>
+          <Location>
+            <X>210</X>
+            <Y>362.3224897637798</Y>
+          </Location>
+          <Size>
+            <Width>70</Width>
+            <Height>109</Height>
+          </Size>
+          <X>210</X>
+          <Y>362.3224897637798</Y>
+          <Width>70</Width>
+          <Height>109</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>22</BlockId>
+        <Bounds>
+          <Location>
+            <X>-443.71139999999991</X>
+            <Y>63.51980000000006</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-443.71139999999991</X>
+          <Y>63.51980000000006</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>25</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96.300199999999677</X>
+            <Y>-120.35845511811021</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96.300199999999677</X>
+          <Y>-120.35845511811021</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+    </BlocksLayout>
+    <EdgesLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>2</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>122.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>29</X>
+            <Y>74.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>122.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>122.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>29</X>
+          <Y>74.51980000000006</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>3</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>247.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>29</X>
+            <Y>192.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>247.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>247.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>29</X>
+          <Y>192.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>1</DestinationAnchor>
+        <EdgeId>4</EdgeId>
+        <EndPoint>
+          <X>245</X>
+          <Y>362.3224897637798</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>29</X>
+            <Y>317.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>336.85838267716542</Y>
+          </Point>
+          <Point>
+            <X>245</X>
+            <Y>336.85838267716542</Y>
+          </Point>
+          <Point>
+            <X>245</X>
+            <Y>362.3224897637798</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>29</X>
+          <Y>317.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>15</DestinationAnchor>
+        <EdgeId>16</EdgeId>
+        <EndPoint>
+          <X>373.80960000000027</X>
+          <Y>39.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>18</OriginAnchor>
+        <Points>
+          <Point>
+            <X>154</X>
+            <Y>39.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>373.80960000000027</X>
+            <Y>39.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>373.80960000000027</X>
+            <Y>39.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>154</X>
+          <Y>39.51980000000006</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>17</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>4.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>3</OriginAnchor>
+        <Points>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>4.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>-28.358455118110214</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>-28.358455118110214</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>4.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>498.80960000000027</X>
+          <Y>4.51980000000006</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>1</DestinationAnchor>
+        <EdgeId>29</EdgeId>
+        <EndPoint>
+          <X>188.69980000000032</X>
+          <Y>610.37987244094461</Y>
+        </EndPoint>
+        <OriginAnchor>2</OriginAnchor>
+        <Points>
+          <Point>
+            <X>53</X>
+            <Y>589.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>188.69980000000032</X>
+            <Y>589.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>188.69980000000032</X>
+            <Y>610.37987244094461</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>53</X>
+          <Y>589.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>1</DestinationAnchor>
+        <EdgeId>31</EdgeId>
+        <EndPoint>
+          <X>350.80960000000027</X>
+          <Y>662.37987244094461</Y>
+        </EndPoint>
+        <OriginAnchor>2</OriginAnchor>
+        <Points>
+          <Point>
+            <X>223.69980000000032</X>
+            <Y>645.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>350.80960000000027</X>
+            <Y>645.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>350.80960000000027</X>
+            <Y>662.37987244094461</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>223.69980000000032</X>
+          <Y>645.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>15</DestinationAnchor>
+        <EdgeId>43</EdgeId>
+        <EndPoint>
+          <X>373.80960000000027</X>
+          <Y>282.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>18</OriginAnchor>
+        <Points>
+          <Point>
+            <X>154</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>172.89763779527559</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>172.89763779527559</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>373.80960000000027</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>154</X>
+          <Y>282.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>44</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>247.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>3</OriginAnchor>
+        <Points>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>247.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>223.42114488188992</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>223.42114488188992</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>247.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>498.80960000000027</X>
+          <Y>247.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>18</DestinationAnchor>
+        <EdgeId>55</EdgeId>
+        <EndPoint>
+          <X>153.69980000000032</X>
+          <Y>397.3224897637798</Y>
+        </EndPoint>
+        <OriginAnchor>0</OriginAnchor>
+        <Points>
+          <Point>
+            <X>210</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>166.84990000000016</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>166.84990000000016</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>153.69980000000032</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>210</X>
+          <Y>397.3224897637798</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>1</DestinationAnchor>
+        <EdgeId>58</EdgeId>
+        <EndPoint>
+          <X>18</X>
+          <Y>554.37987244094461</Y>
+        </EndPoint>
+        <OriginAnchor>2</OriginAnchor>
+        <Points>
+          <Point>
+            <X>280</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>336.90480000000014</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>336.90480000000014</X>
+            <Y>481.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>18</X>
+            <Y>481.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>18</X>
+            <Y>554.37987244094461</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>280</X>
+          <Y>397.3224897637798</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>18</DestinationAnchor>
+        <EdgeId>70</EdgeId>
+        <EndPoint>
+          <X>-193.71139999999991</X>
+          <Y>397.3224897637798</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-96.300199999999677</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>-193.71139999999991</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>-193.71139999999991</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-96.300199999999677</X>
+          <Y>397.3224897637798</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>71</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>192.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-96</X>
+            <Y>157.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>157.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>192.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-96</X>
+          <Y>157.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>10</DestinationAnchor>
+        <EdgeId>72</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>262.96074488188981</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-96</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>282.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>262.96074488188981</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-96</X>
+          <Y>282.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>76</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>636.12074488188978</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>566.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>636.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>636.12074488188978</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-318.71139999999991</X>
+          <Y>566.12074488188978</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>10</DestinationAnchor>
+        <EdgeId>80</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>37.2398000000002</Y>
+        </EndPoint>
+        <OriginAnchor>3</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>63.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>37.2398000000002</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>37.2398000000002</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-318.71139999999991</X>
+          <Y>63.51980000000006</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>1</DestinationAnchor>
+        <EdgeId>81</EdgeId>
+        <EndPoint>
+          <X>18</X>
+          <Y>554.37987244094461</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>432.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>480.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>18</X>
+            <Y>480.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>18</X>
+            <Y>554.37987244094461</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-318.71139999999991</X>
+          <Y>432.3224897637798</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>10</DestinationAnchor>
+        <EdgeId>82</EdgeId>
+        <EndPoint>
+          <X>498.80960000000027</X>
+          <Y>432.3224897637798</Y>
+        </EndPoint>
+        <OriginAnchor>2</OriginAnchor>
+        <Points>
+          <Point>
+            <X>385.80960000000027</X>
+            <Y>697.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>697.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>432.3224897637798</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>385.80960000000027</X>
+          <Y>697.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>84</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>636.12074488188978</Y>
+        </EndPoint>
+        <OriginAnchor>0</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-17</X>
+            <Y>589.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>589.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>636.12074488188978</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-17</X>
+          <Y>589.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>10</DestinationAnchor>
+        <EdgeId>86</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>706.12074488188978</Y>
+        </EndPoint>
+        <OriginAnchor>0</OriginAnchor>
+        <Points>
+          <Point>
+            <X>315.80960000000027</X>
+            <Y>697.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>262.49332440944886</X>
+            <Y>697.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>262.49332440944886</X>
+            <Y>726.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>726.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>706.12074488188978</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>315.80960000000027</X>
+          <Y>697.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>15</DestinationAnchor>
+        <EdgeId>89</EdgeId>
+        <EndPoint>
+          <X>-443.71139999999991</X>
+          <Y>98.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-443.71139999999991</X>
+            <Y>671.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-481.50667559055108</X>
+            <Y>671.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-481.50667559055108</X>
+            <Y>98.519800000000032</Y>
+          </Point>
+          <Point>
+            <X>-443.71139999999991</X>
+            <Y>98.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-443.71139999999991</X>
+          <Y>671.12074488188978</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>15</DestinationAnchor>
+        <EdgeId>90</EdgeId>
+        <EndPoint>
+          <X>-443.71139999999991</X>
+          <Y>98.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-443.71139999999991</X>
+            <Y>227.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-481.50667559055108</X>
+            <Y>227.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>-481.50667559055108</X>
+            <Y>98.51980000000006</Y>
+          </Point>
+          <Point>
+            <X>-443.71139999999991</X>
+            <Y>98.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-443.71139999999991</X>
+          <Y>227.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>18</DestinationAnchor>
+        <EdgeId>91</EdgeId>
+        <EndPoint>
+          <X>-193.71139999999991</X>
+          <Y>671.12074488188978</Y>
+        </EndPoint>
+        <OriginAnchor>0</OriginAnchor>
+        <Points>
+          <Point>
+            <X>153.69980000000032</X>
+            <Y>645.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>104.80216220472474</X>
+            <Y>645.37987244094461</Y>
+          </Point>
+          <Point>
+            <X>104.80216220472474</X>
+            <Y>671.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>-99.50667559055114</X>
+            <Y>671.64154488188979</Y>
+          </Point>
+          <Point>
+            <X>-99.50667559055114</X>
+            <Y>671.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-193.71139999999991</X>
+            <Y>671.12074488188978</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>153.69980000000032</X>
+          <Y>645.37987244094461</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>18</DestinationAnchor>
+        <EdgeId>92</EdgeId>
+        <EndPoint>
+          <X>-193.71139999999991</X>
+          <Y>531.12074488188978</Y>
+        </EndPoint>
+        <OriginAnchor>15</OriginAnchor>
+        <Points>
+          <Point>
+            <X>373.80960000000027</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>348.49332440944886</X>
+            <Y>397.3224897637798</Y>
+          </Point>
+          <Point>
+            <X>348.49332440944886</X>
+            <Y>531.12074488188978</Y>
+          </Point>
+          <Point>
+            <X>-193.71139999999991</X>
+            <Y>531.12074488188978</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>373.80960000000027</X>
+          <Y>397.3224897637798</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>93</EdgeId>
+        <EndPoint>
+          <X>-318.71139999999991</X>
+          <Y>-153.7994</Y>
+        </EndPoint>
+        <OriginAnchor>3</OriginAnchor>
+        <Points>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>-32.7601999999998</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>-153.7994</Y>
+          </Point>
+          <Point>
+            <X>-318.71139999999991</X>
+            <Y>-153.7994</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>-318.71139999999991</X>
+          <Y>-32.7601999999998</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>10</DestinationAnchor>
+        <EdgeId>94</EdgeId>
+        <EndPoint>
+          <X>498.80960000000027</X>
+          <Y>74.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>18</OriginAnchor>
+        <Points>
+          <Point>
+            <X>154</X>
+            <Y>157.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>157.96074488188981</Y>
+          </Point>
+          <Point>
+            <X>498.80960000000027</X>
+            <Y>74.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>154</X>
+          <Y>157.96074488188981</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>95</EdgeId>
+        <EndPoint>
+          <X>28.699800000000323</X>
+          <Y>-120.35845511811021</Y>
+        </EndPoint>
+        <OriginAnchor>3</OriginAnchor>
+        <Points>
+          <Point>
+            <X>28.699800000000323</X>
+            <Y>-153.7994</Y>
+          </Point>
+          <Point>
+            <X>28.699800000000323</X>
+            <Y>-120.35845511811021</Y>
+          </Point>
+          <Point>
+            <X>28.699800000000323</X>
+            <Y>-120.35845511811021</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>28.699800000000323</X>
+          <Y>-153.7994</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>96</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>4.51980000000006</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>28.699800000000323</X>
+            <Y>-50.358455118110214</Y>
+          </Point>
+          <Point>
+            <X>28.699800000000323</X>
+            <Y>-22.919327559055077</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>-22.919327559055077</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>4.51980000000006</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>28.699800000000323</X>
+          <Y>-50.358455118110214</Y>
+        </StartPoint>
+      </EdgeLayout>
+    </EdgesLayout>
+  </Layout>
+</RouteScheme>

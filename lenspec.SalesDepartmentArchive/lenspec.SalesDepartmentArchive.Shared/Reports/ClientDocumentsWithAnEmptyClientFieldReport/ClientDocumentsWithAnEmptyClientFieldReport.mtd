@@ -1,0 +1,52 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "d5a1a1d4-8070-4e1c-a7b4-249ba2eff993",
+  "Name": "ClientDocumentsWithAnEmptyClientFieldReport",
+  "AssociatedGuid": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [
+    {
+      "NameGuid": "c7d4103a-db10-439b-bfa4-67dd753a8a06",
+      "Name": "ClientContract",
+      "EntityType": "c4f798a1-be37-4701-8036-f81e45f44e5d"
+    }
+  ],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "SalesDepartmentArchiveClientDocumentsWithAnEmptyClientFieldReport",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "HandledEvents",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DataSources",
+    "Parameters"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "bd43dd90-8140-482f-a21a-302deb9b73a1",
+      "Name": "BusinessUnit",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab",
+      "InternalDataTypeName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "Id"
+  ],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

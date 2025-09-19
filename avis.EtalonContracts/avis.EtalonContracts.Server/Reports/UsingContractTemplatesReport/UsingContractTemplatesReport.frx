@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Core.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.Localization&#13;&#10;Sungero.Declension&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;avis.EtalonContracts.Shared&#13;&#10;avis.EtalonContracts.Server" ReportInfo.CreatorVersion="2020.2.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Sungero.Domain.Shared;
+using Sungero.CoreEntities;
+using Sungero.Core;
+using Resources = avis.EtalonContracts.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Table" Alias="ContractTemplatesData" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${GetUsingContractTemplatesTable}">
+        <Column Name="DocumentId" DataType="System.Int64" PropName="Column"/>
+        <Column Name="DocumentHyperlink" DataType="System.String" PropName="Column"/>
+        <Column Name="Author" DataType="System.String" PropName="Column"/>
+        <Column Name="CreatedDate" DataType="System.DateTime" PropName="Column"/>
+        <Column Name="BusinessUnit" DataType="System.String" PropName="Column"/>
+        <Column Name="Counterparty" DataType="System.String" PropName="Column"/>
+        <Column Name="TemplateId" DataType="System.Int64" PropName="Column"/>
+        <Column Name="TemplateName" DataType="System.String" PropName="Column"/>
+        <Column Name="TemplateHyperlink" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="ReportSessionId" DataType="16" IsDbType="true" Expression="[ReportSessionId]"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" Id="6512dc6d-24ee-4add-9126-45899a2ae443" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DateFrom" Id="258c8f07-c430-43e3-916c-97baad1a5f93" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DateTo" Id="d0feef0d-dcdb-4fa2-828d-753a995f3f0a" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="ReportSessionId" Id="8ae4c9d5-05a8-4a87-802d-60c4c1273dd8" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="CurrentDate" Id="4824e6ae-ec7a-46e3-b994-f240795c3f93" IsRequired="false" IsCollection="false" InternalDataType="System.DateTime" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" FirstPageSource="15" OtherPagesSource="15" Watermark.Font="Arial, 60pt" ExtraDesignWidth="true" UnlimitedHeight="true" UnlimitedWidth="true">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="56.7">
+      <TextObject Name="Text1" Width="1795.5" Height="18.9" Text="[Resources.UsingContractTemplatesReport.ReportName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text9" Top="18.9" Width="151.34" Height="18.9" Text="[CurrentDate]" HorzAlign="Right" Font="Arial, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="1047.06" Height="37.8" CanGrow="true" PrintOn="FirstPage" Guides="37.8">
+      <TableObject Name="Table1" Width="1795.5" Height="37.8">
+        <TableColumn Name="Column1" Width="151.25"/>
+        <TableColumn Name="Column2" Width="302.29"/>
+        <TableColumn Name="Column3" Width="226.85"/>
+        <TableColumn Name="Column4" Width="302.42"/>
+        <TableColumn Name="Column5" Width="302.45"/>
+        <TableColumn Name="Column6" Width="302.34"/>
+        <TableColumn Name="Column7" Width="207.9"/>
+        <TableRow Name="Row1" Height="37.8">
+          <TableCell Name="Cell1" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.DocumentIdColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.AuthorColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.CreatedColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.BusinessUnitColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.CounterpartyColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.TemplateNameColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+          <TableCell Name="Cell27" Border.Lines="All" Text="[Resources.UsingContractTemplatesReport.TemplateIdColumnName]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold" TabWidth="60"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="102.5" Width="1047.06" Height="94.5" CanGrow="true" CanShrink="true" DataSource="Table" KeepTogether="true" KeepDetail="true">
+      <TextObject Name="Text11" Left="151.2" Width="302.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.Author]" HorzAlign="Justify" Font="Arial, 10pt"/>
+      <TextObject Name="Text12" Left="453.6" Width="226.8" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.CreatedDate]" HorzAlign="Justify" Font="Arial, 10pt">
+        <Formats>
+          <CustomFormat Format="dd.MM.yyyy HH:mm:ss"/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <TextObject Name="Text13" Left="680.4" Width="302.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.BusinessUnit]" HorzAlign="Justify" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="982.8" Width="302.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.Counterparty]" HorzAlign="Justify" Font="Arial, 10pt"/>
+      <TextObject Name="Text2" Width="151.2" Height="18.9" Border.Lines="All" Cursor="Hand" Hyperlink.Expression="[ContractTemplatesData.DocumentHyperlink]" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.DocumentId]" HorzAlign="Justify" Font="Arial, 10pt, style=Underline" TextFill.Color="Blue"/>
+      <TextObject Name="Text3" Left="1587.6" Width="207.9" Height="18.9" Border.Lines="All" Cursor="Hand" Hyperlink.Expression="[ContractTemplatesData.TemplateHyperlink]" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.TemplateId]" Font="Arial, 10pt, style=Underline" TextFill.Color="Blue"/>
+      <TextObject Name="Text4" Left="1285.2" Width="302.4" Height="18.9" Border.Lines="All" CanGrow="true" GrowToBottom="true" Text="[ContractTemplatesData.TemplateName]" HorzAlign="Justify" Font="Arial, 10pt"/>
+      <Sort>
+        <Sort Expression="[ContractTemplatesData.DocumentId]"/>
+        <Sort Expression="[ContractTemplatesData.CreatedDate]"/>
+      </Sort>
+    </DataBand>
+  </ReportPage>
+</Report>
