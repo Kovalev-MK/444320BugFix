@@ -1,9 +1,0 @@
-{
-  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
-  "Uuid": "c4af2b89-d791-465d-b752-b19f2bad4a36",
-  "ModuleNameGuid": "3110aefb-f2e4-4b73-93eb-f7274b1ec7d3",
-  "HelpCode": "lenspec_ElectronicDigitalSignatures",
-  "Status": "Active",
-  "SortingPriority": "High",
-  "StoreAsDefaultSetting": true
-}

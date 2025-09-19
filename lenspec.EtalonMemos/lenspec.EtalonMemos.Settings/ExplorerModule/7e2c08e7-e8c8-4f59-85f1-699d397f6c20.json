@@ -1,9 +1,0 @@
-{
-  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
-  "Uuid": "7e2c08e7-e8c8-4f59-85f1-699d397f6c20",
-  "ModuleNameGuid": "7e2c08e7-e8c8-4f59-85f1-699d397f6c20",
-  "HelpCode": "lenspec_EtalonMemos",
-  "Status": "Active",
-  "SortingPriority": "Medium",
-  "StoreAsDefaultSetting": true
-}
