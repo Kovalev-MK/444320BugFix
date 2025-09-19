@@ -1,0 +1,56 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "01479516-dc7c-4532-b295-ffa49f9fef31",
+  "Name": "DeletingContentOfEDSDocument",
+  "BaseGuid": "6831f842-3ea6-412e-9637-c6315a4e6686",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "ElectronicDigitalSignaturesDeletingContentOfEDSDocument",
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "DocumentNotFound",
+    "SafetyRequirementsMessage"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "f5015355-b443-4ead-bfdd-cda3d8bf8513",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "46d967ef-6893-4e9b-ae20-f4df9aed2d42",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

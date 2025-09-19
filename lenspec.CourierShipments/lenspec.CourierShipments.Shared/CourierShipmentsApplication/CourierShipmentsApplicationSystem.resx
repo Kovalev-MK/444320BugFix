@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Application for courier shipment</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Application for courier shipment</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Applications for courier shipments</value>
+  </data>
+  <data name="ControlGroup_406e14dc17444a7f85d8f6eef8abaa3f" xml:space="preserve">
+    <value>Application initiator</value>
+  </data>
+  <data name="Resource_fc50c88831554ff196e8ff7064894ead" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fc50c88831554ff196e8ff7064894ead_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_CourierService" xml:space="preserve">
+    <value>Courier service</value>
+  </data>
+  <data name="Property_DeliveryAddress" xml:space="preserve">
+    <value>Delivery address</value>
+  </data>
+  <data name="Property_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Property_RecipientPhoneNumber" xml:space="preserve">
+    <value>Recipient phone number</value>
+  </data>
+  <data name="Property_WaybillNumber" xml:space="preserve">
+    <value>Waybill number</value>
+  </data>
+  <data name="Property_Recipient" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="Property_Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Resource_91cff7df37834f868122f6238e9ba7c0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_91cff7df37834f868122f6238e9ba7c0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_670056d3a80d41c290537ace73f8c3e3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ec742a73eb834925a43ca0a7cf42eae0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ec742a73eb834925a43ca0a7cf42eae0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_7df27ccda54245dfb05240089a659cbf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_7df27ccda54245dfb05240089a659cbf_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_3d411ab8967c43b4ab770240b19d9921" xml:space="preserve">
+    <value>Actual sender</value>
+  </data>
+  <data name="Resource_09b8c877bb4f4b329a9832d12a8dae24" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_09b8c877bb4f4b329a9832d12a8dae24_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_597fdf1225334c36b69ae250aa909158" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_597fdf1225334c36b69ae250aa909158_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_SenderPhoneNumber" xml:space="preserve">
+    <value>Sender phone number</value>
+  </data>
+  <data name="Property_Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="ControlGroup_5b0c06a00d1b44308a309bace1488dcb" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_2cf357f49e0d4e838920a09720cad45d" xml:space="preserve">
+    <value>Shipping Information</value>
+  </data>
+  <data name="FilterPanel_Initiator_daa5c80b1011420f985afa5f71b13927" xml:space="preserve">
+    <value>Initiator</value>
+  </data>
+  <data name="FilterPanel_Initiator_11043ed413184f70af61ba9d990f045a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Form_35c1e9606230477d8203f6a8b353a19e" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="ControlGroup_ce4285db065d42298f013b1fb00e57fc" xml:space="preserve">
+    <value>Attachment description</value>
+  </data>
+  <data name="Property_Attachments" xml:space="preserve">
+    <value>Attachment description</value>
+  </data>
+  <data name="Property_Initiator" xml:space="preserve">
+    <value>Initiator</value>
+  </data>
+  <data name="Property_CreationDate" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="ControlGroup_5ed4d4a9d0be47c7a642679213e31156" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_8db26a50da3140a7ba61d3bde5471095" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_8db26a50da3140a7ba61d3bde5471095_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_fa0a3423a23a4455a4249fb747aea0fc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_d5b2f941d1b14c32b39f2290a12048ac_EmptyText" xml:space="preserve">
+    <value>+7(___)___-__-__</value>
+  </data>
+  <data name="Control_0fc4a0cba2504d63b0c5abf20a9d6516_EmptyText" xml:space="preserve">
+    <value>+7(___)___-__-__</value>
+  </data>
+</root>

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_CodeInvestavis" xml:space="preserve">
+    <value>Code Invest</value>
+  </data>
+  <data name="Resource_df687b306ddd439d8abc8262e3a8ba92" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_df687b306ddd439d8abc8262e3a8ba92_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_7675f69407a5448099fa2dd0a55ebc06" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_9e3df66a01e8408aaa4ca5c92a1227fb" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Resource_966f5464efad489f8598d48f1fdfe547" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_966f5464efad489f8598d48f1fdfe547_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_37b611c90c654ebbb20b532c099ebe6d" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_37b611c90c654ebbb20b532c099ebe6d_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_0a16025bf9b74ee38653fae0509c4ab4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_0a16025bf9b74ee38653fae0509c4ab4_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_8aa590633d62455fb454b27459ee3d32" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_8aa590633d62455fb454b27459ee3d32_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsOtheravis" xml:space="preserve">
+    <value>Прочие</value>
+  </data>
+  <data name="Property_IsEmployeeGKavis" xml:space="preserve">
+    <value>Сотрудник ГК</value>
+  </data>
+  <data name="Resource_687c94fc67704c17bb0b57a69433b001" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_687c94fc67704c17bb0b57a69433b001_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsClientOwnersavis" xml:space="preserve">
+    <value>Клиенты (собственники)</value>
+  </data>
+  <data name="Property_IsClientBuyersavis" xml:space="preserve">
+    <value>Клиенты (покупатели, дольщики)</value>
+  </data>
+  <data name="ControlGroup_4b9defe5f46d4581b50a5c0be4a80a50" xml:space="preserve">
+    <value>Bank details</value>
+  </data>
+  <data name="Resource_7ab27d39fff04fe9b1673ec41d087616" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_7ab27d39fff04fe9b1673ec41d087616_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_238f5c7bf35d4f8aa7dc453043354f5d" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_238f5c7bf35d4f8aa7dc453043354f5d_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_69a4139490424b338d9ce5253d0a8c27" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Resource_a4203bd178814b25bef4e70576f0d4dd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_a4203bd178814b25bef4e70576f0d4dd_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_b87f6c1f42364108a9ed7784811e97c1" xml:space="preserve">
+    <value>Интеграции</value>
+  </data>
+  <data name="ControlGroup_ab624e991337474faef36556f289ed46" xml:space="preserve">
+    <value>Тип персоны</value>
+  </data>
+  <data name="Resource_2891cd18e8214c63a69526d2f0c52bfb" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_2891cd18e8214c63a69526d2f0c52bfb_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_67ed7ec774704b13879d0af89ac8ea33" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_67ed7ec774704b13879d0af89ac8ea33_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_f804cb6cf1ea4d7c8bd153ae80a56cfd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_51022de7f9de4dbab9a635847664ea27" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_4818079d7ff840a5baff1aa53fb38fe9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_4818079d7ff840a5baff1aa53fb38fe9_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_f8d2d427d5cc48baa0b7db39a244d8bf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_f8d2d427d5cc48baa0b7db39a244d8bf_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsPersonalDataavis" xml:space="preserve">
+    <value>Согласие на обработку перс. данных</value>
+  </data>
+  <data name="Property_IsLawyeravis" xml:space="preserve">
+    <value>Адвокаты/нотариусы/совет дома</value>
+  </data>
+  <data name="Form_649f8edf48464770a57a4fce194d17aa" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ControlGroup_d3be71d67ff2431593c88cac5a069d7e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_UpdateInvestavis" xml:space="preserve">
+    <value>Update invest</value>
+  </data>
+  <data name="Action_UpdateInvestavisDescription" xml:space="preserve">
+    <value>Обновить инф. из Invest</value>
+  </data>
+  <data name="Action_UpdateInvestavisHint" xml:space="preserve">
+    <value>Обновить инф. из Invest</value>
+  </data>
+  <data name="Action_UpdateInvestavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_UpdateInvestavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ClientAgreementsavis" xml:space="preserve">
+    <value>Клиентские договоры</value>
+  </data>
+  <data name="Action_ClientAgreementsavisDescription" xml:space="preserve">
+    <value>Клиентские договоры</value>
+  </data>
+  <data name="Action_ClientAgreementsavisHint" xml:space="preserve">
+    <value>Клиентские договоры</value>
+  </data>
+  <data name="Action_ClientAgreementsavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ClientAgreementsavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_AgreementsJKHavis" xml:space="preserve">
+    <value>Договоры ЖКХ</value>
+  </data>
+  <data name="Action_AgreementsJKHavisDescription" xml:space="preserve">
+    <value>Договоры ЖКХ</value>
+  </data>
+  <data name="Action_AgreementsJKHavisHint" xml:space="preserve">
+    <value>Договоры ЖКХ</value>
+  </data>
+  <data name="Action_AgreementsJKHavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_AgreementsJKHavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Countryavis" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Property_HomeAddressavis" xml:space="preserve">
+    <value>Улица, дом, кв. </value>
+  </data>
+  <data name="Property_Indexavis" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="Property_Appealavis" xml:space="preserve">
+    <value>Обращение </value>
+  </data>
+  <data name="Property_Cityavis" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Property_Regionavis" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="Property_CodeLKavis" xml:space="preserve">
+    <value>ИД ЛК </value>
+  </data>
+  <data name="AdditionalInfoTemplate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowEmployeeslenspec" xml:space="preserve">
+    <value>ShowEmployees</value>
+  </data>
+  <data name="Action_ShowEmployeeslenspecDescription" xml:space="preserve">
+    <value>ShowEmployees</value>
+  </data>
+  <data name="Action_ShowEmployeeslenspecHint" xml:space="preserve">
+    <value>ShowEmployees</value>
+  </data>
+  <data name="Action_ShowEmployeeslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowEmployeeslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ImportFromExcelavis" xml:space="preserve">
+    <value>Загрузить из Excel</value>
+  </data>
+  <data name="Action_ImportFromExcelavisDescription" xml:space="preserve">
+    <value>Загрузить Собственников и Помещения из Excel</value>
+  </data>
+  <data name="Action_ImportFromExcelavisHint" xml:space="preserve">
+    <value>Загрузить из Excel</value>
+  </data>
+  <data name="Action_ImportFromExcelavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ImportFromExcelavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_PersonalAccountavis" xml:space="preserve">
+    <value>Лицевой счёт</value>
+  </data>
+  <data name="Form_3864b8bc278542efbcc2111dc2448216" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="ControlGroup_cc541da0debb4a2db354fa49424eac80" xml:space="preserve">
+    <value>Согласование ДБ</value>
+  </data>
+  <data name="Form_0a15ac2c0f814b3ea64fb7238e309cfd" xml:space="preserve">
+    <value>Перс. данные</value>
+  </data>
+  <data name="ControlGroup_ac6fed4a1f7548b0984547e08e3e2332" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_7b8d5fe408c141568f4e6c7a4aa9e8b0" xml:space="preserve">
+    <value>Основное</value>
+  </data>
+  <data name="ControlGroup_f6d9e6919d61443298bc0be26612326b" xml:space="preserve">
+    <value>Банковские реквизиты</value>
+  </data>
+  <data name="ControlGroup_e5d9ab97bc894207ba8f890c6dfbc80f" xml:space="preserve">
+    <value>Тип персоны</value>
+  </data>
+  <data name="Action_ShowBankDetailslenspec" xml:space="preserve">
+    <value>Банк. реквизиты</value>
+  </data>
+  <data name="Action_ShowBankDetailslenspecDescription" xml:space="preserve">
+    <value>Банковские реквизиты</value>
+  </data>
+  <data name="Action_ShowBankDetailslenspecHint" xml:space="preserve">
+    <value>Банковские реквизиты</value>
+  </data>
+  <data name="Action_ShowBankDetailslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowBankDetailslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_ResultApprovalDEBavis" xml:space="preserve">
+    <value>Результат согласования ДБ</value>
+  </data>
+  <data name="Property_InspectionDateDEBavis" xml:space="preserve">
+    <value>Дата проверки ДБ</value>
+  </data>
+  <data name="Property_ResponsibleDEBavis" xml:space="preserve">
+    <value>Ответственный от ДБ</value>
+  </data>
+</root>

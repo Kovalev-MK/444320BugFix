@@ -1,0 +1,88 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_794877ba77d748b59daea54b924af9fb": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Инвестиционно-строительные проекты"
+  },
+  "MainGroup_Title_ab5b238fe776425c8555dc8864f1876f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Main",
+    "ru-RU": "Main\r\n"
+  },
+  "CreateDocuments_Title_7bfe530ece914864b5dc60d96a2f9146": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создание документов РНС и РНВ"
+  },
+  "Databooks_Title_d9c017faa9eb40f4b302524d5730489d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Справочники"
+  },
+  "SearchDocuments_Title_070a77f515054a7491d4780358e11336": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск документов"
+  },
+  "CreateRNS_Title_c23f165ddd1b4caf9691f4b7aa743abe": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создать разрешение на строительство"
+  },
+  "CreateRNS_Description_c23f165ddd1b4caf9691f4b7aa743abe": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создание карточки документа вида \"Разрешение на строительство\"."
+  },
+  "CreateRNV_Title_018c054143044a88af87f323838caca8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создание разрешения на ввод объекта"
+  },
+  "CreateRNV_Description_018c054143044a88af87f323838caca8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создание карточки документа вида \"Разрешение на ввод объекта\"."
+  },
+  "OurCF_Title_481ab738dcc34eba90050e692f5ff5bd": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Инвестиционно-строительные проекты и группы объектов строительства"
+  },
+  "OurCF_Description_481ab738dcc34eba90050e692f5ff5bd": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Справочник для учета инвестиционно-строительных проектов и групп объектов строительства"
+  },
+  "ObjectAnProject_Title_c0bae57113e2491394302effa21fee61": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Объекты проектов и объекты строительства"
+  },
+  "ObjectAnProject_Description_c0bae57113e2491394302effa21fee61": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Справочник для учета объектов проектов и объектов строительства"
+  },
+  "ObjectAnSale_Title_80ff5f1e15c746c88b332a20f39ef312": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Помещения объектов продажи"
+  },
+  "ObjectAnSale_Description_80ff5f1e15c746c88b332a20f39ef312": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Справочник для указания записей помещений объектов продажи"
+  },
+  "PurposeOfPremises_Title_fb5ecf88a5094b38b910bae4de54643d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Назначения помещений объектов продажи"
+  },
+  "PurposeOfPremises_Description_fb5ecf88a5094b38b910bae4de54643d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Справочник для указания назначения помещений объектов продажи"
+  },
+  "SeachRNS_Title_6f064b2d8617431bafcad7e31e2be29d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Разрешение на строительство"
+  },
+  "SeachRNS_Description_6f064b2d8617431bafcad7e31e2be29d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Список документов вида «Разрешение на строительство»"
+  },
+  "SearchRNV_Title_f75a9afbd5a5446f8c0ba3f73fc53db7": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Разрешение на ввод объекта"
+  },
+  "SearchRNV_Description_f75a9afbd5a5446f8c0ba3f73fc53db7": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Список документов вида «Разрешение на ввод объекта»"
+  }
+}

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CoverAction_RusPostlenspec" xml:space="preserve">
+    <value>Реестр для Руспоста</value>
+  </data>
+  <data name="CoverDescription_RusPostlenspec" xml:space="preserve">
+    <value>Информация о зарегистрированных исходящих письмах для указанного адресата.</value>
+  </data>
+  <data name="CoverGroup_Registrationlenspec" xml:space="preserve">
+    <value>Регистрация и нумерация</value>
+  </data>
+  <data name="CoverDescription_DocumentRegisterslenspec" xml:space="preserve">
+    <value>Перечень журналов, используемых для учета, нумерации и регистрации документов.</value>
+  </data>
+  <data name="CoverAction_DocumentRegisterslenspec" xml:space="preserve">
+    <value>Журналы регистрации</value>
+  </data>
+  <data name="CoverDescription_RegistrationGroupslenspec" xml:space="preserve">
+    <value>Группы сотрудников, которыми производится регистрация, учет и хранение документов в определенных журналах регистрации.</value>
+  </data>
+  <data name="CoverDescription_RegistrationSettingslenspec" xml:space="preserve">
+    <value>Правила автоматического подбора журнала регистрации в соответствии с реквизитами документа.</value>
+  </data>
+  <data name="CoverDescription_MailDeliveryMethodslenspec" xml:space="preserve">
+    <value>Перечень способов, используемых для доставки документов в компанию и их отправки контрагентам.</value>
+  </data>
+  <data name="CoverAction_RegistrationGroupslenspec" xml:space="preserve">
+    <value>Группы регистрации</value>
+  </data>
+  <data name="CoverAction_RegistrationSettingslenspec" xml:space="preserve">
+    <value>Настройки регистрации</value>
+  </data>
+  <data name="CoverAction_MailDeliveryMethodslenspec" xml:space="preserve">
+    <value>Способы доставки документов</value>
+  </data>
+  <data name="CoverAction_PostSendLKReportavis" xml:space="preserve">
+    <value>Отчет по почтовым отправлениям в ЛК Почты РФ</value>
+  </data>
+  <data name="CoverAction_ReportExecutionOrderslenspec" xml:space="preserve">
+    <value>Отчет об исполнении поручений по входящим письмам</value>
+  </data>
+  <data name="CoverDescription_ReportExecutionOrderslenspec" xml:space="preserve">
+    <value>Информация о задачах на исполнение поручений по входящим письмам.</value>
+  </data>
+</root>

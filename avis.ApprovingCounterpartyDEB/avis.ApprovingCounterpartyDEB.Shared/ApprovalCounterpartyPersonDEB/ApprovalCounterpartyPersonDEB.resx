@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AssignmentIcon" type="System.Byte[], mscorlib">
+    <value>
+        AAABAAIAEBAAAAEAIACgAQAAJgAAACAgAAABACAAAwMAAMYBAACJUE5HDQoaCgAAAA1JSERSAAAAEAAA
+        ABAIBgAAAB/z/2EAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+o
+        ZAAAATVJREFUOE9jAIGKpva2yqaO/yA2iMaF4fKNHfNAbDhAV0gMhmqFAGwKCGGoVgjApoAQhmqFAJAA
+        KWDgDYBqQwBCBjx/dO//oY1L/m9fOPH/vtXz/k/OsAyHaoUAfAac3b/1/+LG1P/3r138/+rpo/8Pb137
+        v25y/ad5VVG7odpxGwBSvKwj//+vnz/A/IuXL4NpENg8u/PLjCKfYrwGgJwLMgQG1m7cBGX9///hzav/
+        86ui7+I1AOT079++QnlAW7fvABvy7t17MH9qpiUkQHEZAAo0kL+xAZDBc8pDXuE14Orpw/93L5sO5aGC
+        cwd3/JpfHT0TrwF///wBBdb/o1tXwgMSJAbSPLss6GV/vh0/1ID2YyBD0DFIbn6cLfvc8uC+OSWBH0F+
+        nlng+XVuRcQCiGYGBgBJ5cUUagXbSQAAAABJRU5ErkJggolQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgG
+        AAAAc3p69AAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAC
+        mElEQVRYR+2Wz2sTQRTHc/Po0aNH/wEx5uClBz0IglQRURQPmlbUiqihIkovkV78RZI2dtMlsamgCI1F
+        xVoStKCWEtoSLBI0aqEIxR9NsTEkKc99s2/Mbmd33UkNXvKBR3aWee/7zZvZ2fU4oSSGg7F4cpCG0kjn
+        s4REEjBwbHXtNmzznQz9maQFYnXtNow5xmsMkhMxTloqFuHZeBoepkahXC6bCrgJp3ySEzFOGs+8gFKp
+        BJVKBbLTM6YCbsIpn+REjJOaGSQnYjW5GUFyInxCs2gZaBloGVASye//1YCqqhu1l9FVkhP5FwYWF+Zh
+        ZmIMnsZvsUg/GITc6wy7TzL2rMfA0tdFJhju9LHfbOYxE8ZAE9FzuyHWfSB3+4RvC8mJNGoAxdXugzA6
+        0AvLP77RXTO/SiswOTYCfWfaqgPn95wiSTONGFhZLjJxbPtaJqeydFXn49ws61KkY5uXZOs0YuD5cL/W
+        8ps0MmNXC83GAvvz6pEdG0haR9bAl/kCW1vsghV2tVZrNYhfOVYNd273k7SOrAHcaNgBO5xqYa56+fB9
+        ktaRNTAS7rFce45TrYVCHtRLhz6QtI6sgXu9Z+Fzfo5GIrweD/xM4+C5gJuRpHX4RLfg8/5u+g2N5EAD
+        0a5dP0laR9bAy9QQW8tGeJ/LghLYN0vSOrIGsP13e46zXS3LozvXVrWnIEjSOrIGUBgPobdTE3THHbgB
+        I6fbKqGTWzeRtI6sAQSL4WbCM8ENeGYoF9uroQ5fgGTrcANuQkkMFbTXK/sHsUD79f6unTVcVyfQJIoL
+        zz9HK/xqrdBfIk2pnpDfexR3dSoarOKS4C7ngef/E/VGDduudcv+e2C99Pm9m1FAubD3Ey4LDxxrLY+I
+        r2KP5zeJvjFpl/LdvQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="InProcessBlockLableSate" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="PerformerNotCalculated" xml:space="preserve">
+    <value>Исполнитель не вычислен.</value>
+  </data>
+  <data name="CompletedBlockLableState" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="NotRecomendedResultLable" xml:space="preserve">
+    <value>Сотрудничество не рекомендовано</value>
+  </data>
+  <data name="PossibleResultLable" xml:space="preserve">
+    <value>Сотрудничество возможно</value>
+  </data>
+  <data name="WithRisksResultLable" xml:space="preserve">
+    <value>Сотрудничество с рисками</value>
+  </data>
+  <data name="NotRquiredResultLable" xml:space="preserve">
+    <value>Не требует одобрения</value>
+  </data>
+  <data name="ReworkResultLable" xml:space="preserve">
+    <value>На доработку</value>
+  </data>
+  <data name="FailedAddExtractFromEGRUL" xml:space="preserve">
+    <value>Не удалось актуализировать Выписку из ЕГРЮЛ/ЕГРИП. Добавьте документ вручную.</value>
+  </data>
+  <data name="DocumentsHaveBeenUpdated" xml:space="preserve">
+    <value>Актуализированы выписки из ЕГРЮЛ (добавлена версия, обновлено поле Дата документа):{0}</value>
+  </data>
+  <data name="StartTaskConfirmMessage" xml:space="preserve">
+    <value>Отправить задачу?</value>
+  </data>
+  <data name="UpdateDocumentsErrorMessage" xml:space="preserve">
+    <value>Не удалось актуализировать документ {0} (ИД {1}): {2}.</value>
+  </data>
+  <data name="ErrorMessageHereIsActiveTask" xml:space="preserve">
+    <value>Контрагент отправлен на согласование {0} сотрудником {1}.</value>
+  </data>
+  <data name="DBApprovalTaskOnStartNotification" xml:space="preserve">
+    <value>Уведомление о старте задачи по согласованию с ДБ. Контрагент {0}</value>
+  </data>
+</root>

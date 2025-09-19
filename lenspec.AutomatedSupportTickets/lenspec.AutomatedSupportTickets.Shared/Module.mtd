@@ -1,0 +1,588 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "35ff7bf5-ce83-443a-a770-584effe87a8a",
+  "Name": "AutomatedSupportTickets",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "747a4355-f0f5-4364-8174-8cb4f2abc18a",
+      "Name": "DisablingAccounts",
+      "DelayPeriod": 15,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "0b044417-018f-479e-aa59-717fc1037079",
+          "Name": "userId",
+          "ParameterType": "LongInteger"
+        },
+        {
+          "NameGuid": "24685615-6ea4-4199-83d6-1f368ef40d2f",
+          "Name": "employeeId",
+          "ParameterType": "LongInteger"
+        },
+        {
+          "NameGuid": "38fe7155-558b-46d8-81fe-013a87757c1b",
+          "Name": "assignmentAbort",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "813ffe23-2092-4dbc-be64-a3dcf1bb20c3",
+          "Name": "substitutionsAbort",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "9309c837-554b-4a80-8a66-9103d8a82954",
+          "Name": "taskAbort",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "b071b1d0-16a2-4485-b242-5a5df6f8ad12",
+          "Name": "textTasks",
+          "ParameterType": "String"
+        },
+        {
+          "NameGuid": "f518af63-67e9-412d-b922-abe8f03279e4",
+          "Name": "textAssignment",
+          "ParameterType": "String"
+        }
+      ]
+    },
+    {
+      "NameGuid": "05b6a04f-0502-4c8e-a398-e367bd5d112e",
+      "Name": "CompleteCollegialBodiesMembersTasks",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "49d855df-f459-46d9-b6e1-c2b56bbfe61a",
+          "Name": "ClosingDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "cd3563ef-c1d7-4530-9960-289d08a6af58",
+          "Name": "EmployeeId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "lenspec.AutomatedSupportTickets.Client",
+  "ClientBaseAssemblyName": "lenspec.AutomatedSupportTickets.ClientBase",
+  "ClientBaseNamespace": "lenspec.AutomatedSupportTickets.ClientBase",
+  "ClientNamespace": "lenspec.AutomatedSupportTickets.Client",
+  "Code": "Automat",
+  "CompanyCode": "lenspec",
+  "Cover": {
+    "NameGuid": "182cfe01-4a16-4075-bb05-f98fbcdc4871",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "8233a1bf-6938-480e-816c-fce75fc7c92c",
+        "Name": "Substitutions",
+        "EntityTypeId": "cf369908-9587-45e0-937c-206efa109d23",
+        "GroupId": "a0775cb4-8866-4ebe-a54b-0e176723c3f4"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "c82d85e0-de57-40bc-979c-9f178f32c475",
+        "Name": "CreateSubstitutionRequest",
+        "FunctionName": "CreateSubstitutionRequest",
+        "GroupId": "231c9b33-0d78-4356-8cc8-59d90fb79192"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "1f8d0d4c-13ce-46d1-a3a5-f48a0c3611b5",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "231c9b33-0d78-4356-8cc8-59d90fb79192",
+        "Name": "SupportRequests",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSupportRequests_231c9b330d7843568cc859d90fb79192.png",
+        "TabId": "fd646d48-cf35-41d1-8987-7539177dd98f"
+      },
+      {
+        "NameGuid": "a0775cb4-8866-4ebe-a54b-0e176723c3f4",
+        "Name": "LinkedInformation",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconLinkedInformation_a0775cb488664ebea54b0e176723c3f4.png",
+        "PreviousItemGuid": "231c9b33-0d78-4356-8cc8-59d90fb79192",
+        "TabId": "fd646d48-cf35-41d1-8987-7539177dd98f"
+      }
+    ],
+    "Header": {
+      "NameGuid": "19b43651-291e-4724-88fa-78a11244b283",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "fd646d48-cf35-41d1-8987-7539177dd98f",
+        "Name": "Tab"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.3.23.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "b5d3d91e-1cb1-4c86-8a82-ee997a8b781b"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "ec7fe4b9-1bfa-4f77-ad22-b9a3d5661038",
+      "PreviousItemId": "b5d3d91e-1cb1-4c86-8a82-ee997a8b781b"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "4492e85e-3f66-4460-aeeb-5ca47e33b3ee",
+      "PreviousItemId": "ec7fe4b9-1bfa-4f77-ad22-b9a3d5661038"
+    },
+    {
+      "ItemId": "cf369908-9587-45e0-937c-206efa109d23",
+      "PreviousItemId": "4492e85e-3f66-4460-aeeb-5ca47e33b3ee"
+    },
+    {
+      "ItemId": "156cd6e7-ebca-41f1-aafa-dc18f595de9a",
+      "PreviousItemId": "cf369908-9587-45e0-937c-206efa109d23"
+    },
+    {
+      "ItemId": "a23d92ea-681a-45b1-af37-c68e1d9130ea",
+      "PreviousItemId": "156cd6e7-ebca-41f1-aafa-dc18f595de9a"
+    },
+    {
+      "ItemId": "8e236014-f003-45ad-a813-48aa766cae48",
+      "PreviousItemId": "a23d92ea-681a-45b1-af37-c68e1d9130ea"
+    },
+    {
+      "ItemId": "43be6c53-68b9-4eb1-ae31-bc6516f2bbcb",
+      "PreviousItemId": "8e236014-f003-45ad-a813-48aa766cae48"
+    },
+    {
+      "ItemId": "7bccd52f-536a-438c-9918-77cc66bb3b83",
+      "PreviousItemId": "43be6c53-68b9-4eb1-ae31-bc6516f2bbcb"
+    },
+    {
+      "ItemId": "725ddf0a-8de6-4e95-b8a5-392d51dd9012",
+      "PreviousItemId": "7bccd52f-536a-438c-9918-77cc66bb3b83"
+    },
+    {
+      "ItemId": "2c039bef-5fb3-489e-8cae-a535fd34b298",
+      "PreviousItemId": "725ddf0a-8de6-4e95-b8a5-392d51dd9012"
+    },
+    {
+      "ItemId": "15f75e84-fbdf-4eda-b429-e593132f27f6",
+      "PreviousItemId": "2c039bef-5fb3-489e-8cae-a535fd34b298"
+    },
+    {
+      "ItemId": "2139efbd-0fbc-4cb9-84b7-ab77491f5920",
+      "PreviousItemId": "15f75e84-fbdf-4eda-b429-e593132f27f6"
+    },
+    {
+      "ItemId": "f587e776-007b-4b0b-96cd-77b5b6603b7e",
+      "PreviousItemId": "2139efbd-0fbc-4cb9-84b7-ab77491f5920"
+    },
+    {
+      "ItemId": "c0a9fdb2-32fe-44a1-b47a-ca6290ced845",
+      "PreviousItemId": "f587e776-007b-4b0b-96cd-77b5b6603b7e"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Low",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "lenspec.AutomatedSupportTickets",
+  "IsolatedAssemblyName": "lenspec.AutomatedSupportTickets.Isolated",
+  "IsolatedNamespace": "lenspec.AutomatedSupportTickets.Isolated",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "4d47fdd8-1aab-40fb-9fc7-7fcc882bda8f",
+      "Name": "SendSubstitutionExpirationTask",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T06:00:00"
+    },
+    {
+      "NameGuid": "9fa2d925-4cf2-4373-8aef-e4e3d71fc7be",
+      "Name": "AutoCompleteApprovalAssignments",
+      "GenerateHandler": true,
+      "IsEnabled": false,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    }
+  ],
+  "Libraries": [
+    {
+      "NameGuid": "b84bc7ec-5d4f-44fe-a4d0-bb0971970b8a",
+      "Name": "OpenXML",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "Importance",
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "AccessAccountDisconnectionAndUserReport",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"f7b1e725-61ef-4e81-965d-cdf60f5769ea\")"
+    },
+    {
+      "Name": "CompleteAssignmentsResponsible",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"AEAA46DC-AD3D-4451-BD74-84A24EA7D076\")"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CheckAutomatedUser",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "CheckDialogPeriodBetween",
+      "Parameters": [
+        {
+          "Name": "args",
+          "ParameterType": "CommonLibrary.InputDialogButtonClickEventArgs"
+        },
+        {
+          "Name": "dialogPeriodBegin",
+          "ParameterType": "CommonLibrary.IDateDialogValue"
+        },
+        {
+          "Name": "dialogPeriodEnd",
+          "ParameterType": "CommonLibrary.IDateDialogValue"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAllDataTableLine",
+      "Parameters": [
+        {
+          "Name": "employeeFIO",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "employeeID",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        },
+        {
+          "Name": "employeeJobTitle",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "employeeDep",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "ourOrg",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "accountStatus",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "employeeRecordStatus",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "roles",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "allrolesNor",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "substitutions",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "alltasks",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "alljobs",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        },
+        {
+          "Name": "approvalSettings",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "approvalStages",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "registrationGroups",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "signatureSettings",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "responsibleContractors",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "conditionBase",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "custReqSetups",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "certificates",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "managersAssistants",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "collegialBodies",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "Structures.SpecifyingUsersSystemObjects.SpecifyingReportTableLine"
+    },
+    {
+      "Name": "CreateEditComponentRXRequestTask",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::lenspec.AutomatedSupportTickets.IEditComponentRXRequestTask",
+      "ReturnTypeFullName": "lenspec.AutomatedSupportTickets.IEditComponentRXRequestTask, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "CreateSubstitutionRequest",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::lenspec.AutomatedSupportTickets.ISubstitutionRequestTask",
+      "ReturnTypeFullName": "lenspec.AutomatedSupportTickets.ISubstitutionRequestTask, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "CreateTableLineReconciliationSettings",
+      "Parameters": [
+        {
+          "Name": "id",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        },
+        {
+          "Name": "businessUnits",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "approvalSettings",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "roleKinds",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "employee",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "note",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "hyperlinkID",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "sost",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "Structures.ReconciliationSettings.SpecifyingReportTableLine"
+    },
+    {
+      "Name": "GetAllDataReconciliationSettings",
+      "Parameters": [
+        {
+          "Name": "businessUnits",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Company.IBusinessUnit>"
+        },
+        {
+          "Name": "approvalRules",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IApprovalRuleBase>"
+        },
+        {
+          "Name": "roleKinds",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::lenspec.EtalonDatabooks.IRoleKind>"
+        },
+        {
+          "Name": "status",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<lenspec.AutomatedSupportTickets.Structures.ReconciliationSettings.SpecifyingReportTableLine>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetAllDataSpecifyingUsersSystemObjects",
+      "Parameters": [
+        {
+          "Name": "employees",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Company.IEmployee>"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<lenspec.AutomatedSupportTickets.Structures.SpecifyingUsersSystemObjects.SpecifyingReportTableLine>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "TestParseExcel",
+      "Parameters": [
+        {
+          "Name": "body",
+          "ParameterType": "System.Byte[]"
+        },
+        {
+          "Name": "path",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "roleid",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.AutomatedSupportTickets",
+  "ResourcesKeys": [
+    "FormationSubstitutionStageName",
+    "Jobtitle",
+    "Departments",
+    "BusinessUnits",
+    "ManagerOfDepartmens",
+    "BusinessUnitsCEO",
+    "Roles",
+    "Manager",
+    "Substitutions",
+    "ManagersAssistants",
+    "Assistant",
+    "Employee",
+    "From",
+    "Period",
+    "Permanently",
+    "To",
+    "Substitute",
+    "CheckWrong",
+    "RoleNameCompleteAssignmentsResponsible",
+    "RoleDescriptionCompleteAssignmentsResponsible",
+    "RoleNameAccessAccountDisconnectionAndUserReport",
+    "RoleDescriptionAccessAccountDisconnectionAndUserReport",
+    "AddedFromBusinessUnit",
+    "SpecifyingUsersSignatureSettings",
+    "SpecifyingUsersApprovalCondition",
+    "DisablingAccountsErrorNoticeSubject",
+    "DisablingAccountsCompleteNoticeSubject",
+    "AssignmentsInProgressByEmployee",
+    "CheckAssignmentsInProgress",
+    "CreateSubstitutionRequest_ResourceKey",
+    "CreateSubstitutionRequest_DescriptionResourceKey",
+    "TextAssignment",
+    "FillingUserGroupsFromFile",
+    "SettingUpUserGroups",
+    "GoodCheck",
+    "Test",
+    "Test2"
+  ],
+  "ServerAssemblyName": "lenspec.AutomatedSupportTickets.Server",
+  "ServerNamespace": "lenspec.AutomatedSupportTickets.Server",
+  "SharedAssemblyName": "lenspec.AutomatedSupportTickets.Shared",
+  "SharedNamespace": "lenspec.AutomatedSupportTickets.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.411",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

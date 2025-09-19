@@ -1,0 +1,133 @@
+{
+  "Action_Description_5b789cd372bb42f99e898408142f2962": {
+    "en-US": "Настройка интеграции с Видами работ и Детализации видов работ"
+  },
+  "Action_Title_5b789cd372bb42f99e898408142f2962": {
+    "en-US": "Настройка и история"
+  },
+  "Action_Title_fb84e97373d741d197fb5d8890e51ed7": {
+    "en-US": "Action",
+    "ru-RU": "Настройка и история"
+  },
+  "ActiveDirectoryavis_Title_ff1d15aec1e747368133cfed06576bfe": {
+    "en-US": "Active Directory integration",
+    "ru-RU": "Интеграция с Active Directory"
+  },
+  "ConstractionSiteslenspec_Title_6ba7d05f7f7a414998ceb526a830f6db": {
+    "en-US": "Эталон. 1С Интеграция \r\nОбъекты проектов \r\nи Объекты строительства"
+  },
+  "ConstractionSiteslenspec_Title_c4ff9d33d66844e2bb58936364ad534c": {
+    "en-US": "Настройка и история"
+  },
+  "ContractorsD5_Title_d2c708b503a24f499262c9c351775216": {
+    "en-US": "Import contractors from Directum 5",
+    "ru-RU": "Импорт контрагентов из Directum 5"
+  },
+  "CoverHeaderSettings_Description_61b8eaaf0b1f482aae9bd7e505ab8fc1": {
+    "en-US": "Create, setup and manage integration with external systems",
+    "ru-RU": "Модуль предназначен для настройки и управления интеграциями с внешними системами"
+  },
+  "CoverHeaderSettings_Title_61b8eaaf0b1f482aae9bd7e505ab8fc1": {
+    "en-US": "Integration",
+    "ru-RU": "Интеграции с внешними системами"
+  },
+  "CRMActionavis_Title_3d0070875ee84ca798f834c015702e33": {
+    "en-US": "Настройка и история"
+  },
+  "CRMavis_Title_574b6ba8cafe4ca6b4ccfb0a927533db": {
+    "en-US": "Интеграция с CRM"
+  },
+  "DadataAtionavis_Title_13763ca5f2064edcbb30d3ea02612de1": {
+    "en-US": "Настройка и история"
+  },
+  "Dadataavis_Title_af313ff34a424c97bfe9c8cbbdae74c5": {
+    "en-US": "Dadata integration",
+    "ru-RU": "Интеграция с Dadata"
+  },
+  "Description": {},
+  "GisClientInfoActionavis_Title_b39c6195439a4959abf6f729cb63b6d0": {
+    "en-US": "Настройка и история"
+  },
+  "GisClientInfoavis_Title_d1f0a3dcf72d4afc9cfb1b8535deb4ce": {
+    "en-US": "Экспорт GisClientInfo"
+  },
+  "Group_Title_260d97f9984a4a5a8be3b8cc5b583047": {
+    "en-US": "Group",
+    "ru-RU": "Интеграция с API ФНС"
+  },
+  "Group_Title_8942bc6bcf6a43c38f52679fe2ff045e": {
+    "en-US": "Эталон. 1С Интеграция Видов работ и Детализации Видов работ"
+  },
+  "Investavis_Title_8faa6f5736014d399ad41bf868300a08": {
+    "en-US": "Invest",
+    "ru-RU": "Интеграция с Invest"
+  },
+  "KBKlenspec_Title_1bffbe29171641688deb454d32136a94": {
+    "en-US": "Эталон. Импорт справочников «Статьи бюджета», \r\n«Расшифровки статей бюджета», \r\n«Группы статей бюджета»"
+  },
+  "KBKlenspec_Title_4aa9714b19484548be3d490514a8515f": {
+    "en-US": "Настройка и история"
+  },
+  "KonturFocuslenspec_Title_7aad8e34ae1f42ffa64db71edf675e73": {
+    "en-US": "KonturFocuslenspec",
+    "ru-RU": "Интеграция с API Контур.Фокус"
+  },
+  "LKavis_Description_40e59edfb5914d80a72dca8761705735": {
+    "en-US": "Настройка подключения к minio LK для передачи документов между системами"
+  },
+  "LKavis_Title_40e59edfb5914d80a72dca8761705735": {
+    "en-US": "Настройка ЛК"
+  },
+  "LKavis_Title_ca6de56cd3c749958009217806a3400b": {
+    "en-US": "Интеграция с Minio"
+  },
+  "Name": {
+    "en-US": "Интеграции с внешними системами",
+    "ru-RU": "Интеграции с внешними системами"
+  },
+  "NatsActionavis_Title_df0fa49ac76f4fdda8bf918b7fb970a6": {
+    "en-US": "Настройка и история"
+  },
+  "Natsavis_Title_10ffe3d5da0a4608a006441e3a5ae0b8": {
+    "en-US": "Интеграция с NATS"
+  },
+  "OrgStructure1C_Title_581541c81696464bbd1dcb847b5ec7b2": {
+    "en-US": "Import organizational structure from 1C",
+    "ru-RU": "Импорт оргструктуры из 1С"
+  },
+  "Pkpavis_Description_c19468186bdb435a90813b972bdaabb5": {
+    "en-US": "Настройка подключения к minio ПКП для передачи документов между системами"
+  },
+  "Pkpavis_Title_c19468186bdb435a90813b972bdaabb5": {
+    "en-US": "Настройка ПКП"
+  },
+  "SettingAndHistoryInvestavis_Title_b11da5af7f8944f4bf0b62c03c297abf": {
+    "en-US": "Settings and history",
+    "ru-RU": "Настройки и история"
+  },
+  "SettingAndHistoryisavis_Title_75d5f79bd8e649409fe7e3924750962c": {
+    "en-US": "Settings and history",
+    "ru-RU": "Настройки и история"
+  },
+  "SettingsAndHistory_Title_be3890abeb6b43ff87990502cfea0cbf": {
+    "en-US": "Settings and history",
+    "ru-RU": "Настройки и история"
+  },
+  "SettingsAndHistory1_Title_0b49711ac40d46ff8c9647acb78b7183": {
+    "en-US": "Settings and history",
+    "ru-RU": "Настройки и история"
+  },
+  "SettingsAndHistorylenspec_Title_3db1614f7d9947099245caa6c45afbcc": {
+    "en-US": "Settings and history",
+    "ru-RU": "Настройки и история"
+  },
+  "Tab_Title_0d4e6dca8e704e67a50c723a7b93f01b": {
+    "en-US": "Tab"
+  },
+  "TemplateCustomerRequestavis_Description_2f934921aa6d4abb8e0f1b9aba0b77af": {
+    "en-US": "Настройка имени шаблона из которого создаётся новое обращение клиента через интеграцию ЛК"
+  },
+  "TemplateCustomerRequestavis_Title_2f934921aa6d4abb8e0f1b9aba0b77af": {
+    "en-US": "Настройка Шаблона обращения клиента"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "43bed210-e027-416b-975d-f625807c5aa6",
+  "Name": "FlowFolderSettingTaskSubject",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "FlowFolderSet1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "073f03d9-2257-4fe3-961c-160fd25fa7da",
+      "Name": "FlowFolderSetting",
+      "CanBeSearch": false,
+      "Code": "FlowFolderSett",
+      "EntityGuid": "723dc19d-5f55-4a9b-9b4e-edcaf51dfa61",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "58dcb5e5-dfa2-4097-9003-a24659e0beac",
+      "Name": "Subject",
+      "CanBeSearch": false,
+      "Code": "Subject",
+      "Length": 1000,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "073f03d9-2257-4fe3-961c-160fd25fa7da"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "97f7a12b-eee9-42ed-87d8-7715f81fdc15",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "009b051a-dced-412e-99e6-dded54bac552",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

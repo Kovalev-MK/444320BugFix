@@ -1,0 +1,98 @@
+{
+  "Action_Description_1f100071a50140f2bc355ea307524bc2": {
+    "ru-RU": "Заполнение "
+  },
+  "Action_Title_1f100071a50140f2bc355ea307524bc2": {
+    "en-US": "Action",
+    "ru-RU": "Заполнение групп пользователей из файла"
+  },
+  "CoverHeaderSettings_Description_41b3b3ebac564873bcfb00fd2e5f8390": {
+    "en-US": "Applications to technical support DIRECTUM",
+    "ru-RU": "Заявки в тех. поддержку DIRECTUM"
+  },
+  "CoverHeaderSettings_Title_41b3b3ebac564873bcfb00fd2e5f8390": {
+    "en-US": "Applications for DIRECTUM",
+    "ru-RU": "Заявки на изменение прав, документов и настроек в DIRECTUM"
+  },
+  "CreateDoc_Description_52c4be3aacae4d1192eb8b80e8ee5a3d": {
+    "en-US": "Creating an Application for the opening of the RAS and UU periods.",
+    "ru-RU": "Создание заявки на открытие периодов РСБУ и УУ."
+  },
+  "CreateDoc_Title_52c4be3aacae4d1192eb8b80e8ee5a3d": {
+    "en-US": "New Application for the opening of the RAS and UU periods",
+    "ru-RU": "Создать заявку на открытие периодов РСБУ и УУ"
+  },
+  "CreateSubstitutionRequest_Description_1c4edc58e3a04e6a802d7edc93ce66fe": {
+    "en-US": "Creating and sending an Application to create a substitution.",
+    "ru-RU": "Создание и отправка заявки на формирование замещения."
+  },
+  "CreateSubstitutionRequest_Title_1c4edc58e3a04e6a802d7edc93ce66fe": {
+    "en-US": "New Application to create a substitution",
+    "ru-RU": "Создать заявку на формирование замещения"
+  },
+  "Description": {},
+  "Document_Title_37aa6e77576d4e4a95d4026ca702944a": {
+    "en-US": "Document",
+    "ru-RU": "Заявка на открытие периодов РСБУ и УУ"
+  },
+  "EditDoc_Description_f7bab5b127a74696932306c8d58d183e": {
+    "en-US": "Creating an Application for obtaining access rights to documents.",
+    "ru-RU": "Создание заявки на получение прав доступа к документам."
+  },
+  "EditDoc_Title_f7bab5b127a74696932306c8d58d183e": {
+    "en-US": "New Application to change access rights to documents",
+    "ru-RU": "Создать заявку на изменение прав доступа на документы"
+  },
+  "EditProcessRequest_Description_8177b228016343d78a5271bcbb6fe1da": {
+    "en-US": "Creating an Application to changing settings or modifying a process.",
+    "ru-RU": "Создание заявки на изменение настроек или модификацию процесса."
+  },
+  "EditProcessRequest_Title_8177b228016343d78a5271bcbb6fe1da": {
+    "en-US": "New Application to change process",
+    "ru-RU": "Создать заявку на изменение процесса"
+  },
+  "Information_Title_135ceecac5dd4fc39829315bf4f85115": {
+    "en-US": "Information",
+    "ru-RU": "Информация"
+  },
+  "LinkedInformation_Title_81ecfb6b461044a298dea9cf4b31669e": {
+    "en-US": "Related Information",
+    "ru-RU": "Связанная информация"
+  },
+  "MyRequest_Description_91b6b32e8cd5477ba9ca94424a4c34e0": {
+    "en-US": "Список ваших заявок"
+  },
+  "MyRequest_Title_91b6b32e8cd5477ba9ca94424a4c34e0": {
+    "en-US": "My request",
+    "ru-RU": "Мои заявки"
+  },
+  "Name": {
+    "en-US": "Заявки на изменение прав, документов и настроек в DIRECTUM",
+    "ru-RU": "Заявки на изменение прав, документов и настроек в DIRECTUM"
+  },
+  "Other_Description_cf68c90328004b659422b464f185b59a": {
+    "en-US": "Creating an Application other than the listed classification.",
+    "ru-RU": "Создание заявки, отличной от перечисленной классификации."
+  },
+  "Other_Title_cf68c90328004b659422b464f185b59a": {
+    "en-US": "New Application in any form",
+    "ru-RU": "Создать заявку в произвольной форме"
+  },
+  "RequestsEditComponentRX_Title_13c98d478be344d4acc639d3730acd69": {
+    "en-US": "Заявки на изменение компонентов Directum RX"
+  },
+  "Substitutions_Description_b41f2c687e0e4475878ddcc57b06e921": {
+    "en-US": "Справочник замещений"
+  },
+  "Substitutions_Title_b41f2c687e0e4475878ddcc57b06e921": {
+    "en-US": "Substitutions",
+    "ru-RU": "Замещения"
+  },
+  "SupportRequests_Title_35bf24785ab249f48885bc0e56ec464b": {
+    "en-US": "Substitution Applications",
+    "ru-RU": "Заявки на замещение"
+  },
+  "Tab_Title_f76d26d99db44afcbcfdac1f68b285ed": {
+    "en-US": "Tab"
+  }
+}

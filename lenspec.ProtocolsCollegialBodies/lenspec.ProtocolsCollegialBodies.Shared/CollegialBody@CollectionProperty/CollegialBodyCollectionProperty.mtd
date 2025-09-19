@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "c2957174-20fb-492b-9469-5d6229b71396",
+  "Name": "CollegialBodyCollectionProperty",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "Members",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8d57af58-6f00-457a-b3b1-dd9dd4059119",
+      "Name": "CollegialBody",
+      "CanBeSearch": false,
+      "Code": "CollegialBody",
+      "EntityGuid": "bfdfe689-9fad-4304-a902-0ea92d4e8226",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b8ab850c-430a-49a2-9379-7b422a27f47d",
+      "Name": "Member",
+      "CanBeSearch": false,
+      "Code": "Member",
+      "EntityGuid": "b7905516-2be5-4931-961c-cb38d5677565",
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "8d57af58-6f00-457a-b3b1-dd9dd4059119"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "62d21dc3-b2b5-4e8d-a5c1-1692ac0bd3ad",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "97f20376-95a5-49f8-91a6-5222f3ea5e3f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

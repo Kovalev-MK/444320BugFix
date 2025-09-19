@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BudgetControllerRoleKindName" xml:space="preserve">
+    <value>Бюджетный контролер</value>
+  </data>
+  <data name="ResponsibleForEconomicsRoleKindName" xml:space="preserve">
+    <value>Ответственный по экономике</value>
+  </data>
+  <data name="UpdateApplicationForPaymentNotificationSubject" xml:space="preserve">
+    <value>Были внесены изменения в {0}</value>
+  </data>
+  <data name="UpdateApplicationForPaymentNotificationActiveText" xml:space="preserve">
+    <value>В карточку Заявки на оплату были внесены изменения.</value>
+  </data>
+  <data name="BudgetResponsibleRoleKindName" xml:space="preserve">
+    <value>Ответственный за бюджет</value>
+  </data>
+  <data name="CommentMustBeEmpty" xml:space="preserve">
+    <value>Очистите комментарий в тексте задания, комментарий можно оставить только при отправке на доработку.</value>
+  </data>
+  <data name="CreatePoA" xml:space="preserve">
+    <value>Создать доверенности</value>
+  </data>
+  <data name="ContractCategories" xml:space="preserve">
+    <value>Категории договорных документов</value>
+  </data>
+  <data name="ErrorUpdatingRequestForCreatingPoA" xml:space="preserve">
+    <value>Ошибка обновления карточки заявки на создание доверенности, обратитесь к администратору.</value>
+  </data>
+  <data name="ErrorUpdatingRequestForCreatingPoAFields" xml:space="preserve">
+    <value>Ошибка обновления полей Заявки на оформление доверенности. {0}</value>
+  </data>
+  <data name="PoANotFound" xml:space="preserve">
+    <value>Доверенности не найдены.</value>
+  </data>
+  <data name="BudgetController300" xml:space="preserve">
+    <value>Бюджетный контролер ЗНО 300 тыс.</value>
+  </data>
+  <data name="BudgetControllerRegl" xml:space="preserve">
+    <value>Бюджетный контролер ЗНО регламентный</value>
+  </data>
+  <data name="BudgetControllerFine" xml:space="preserve">
+    <value>Бюджетный контролер ЗНО штрафы</value>
+  </data>
+  <data name="BudgetControllerRefund" xml:space="preserve">
+    <value>Бюджетный контролер ЗНО возвраты</value>
+  </data>
+  <data name="AddBusinessUnits" xml:space="preserve">
+    <value>Добавить Наши организации</value>
+  </data>
+  <data name="RemoveBusinessUnits" xml:space="preserve">
+    <value>Исключить Наши организации</value>
+  </data>
+  <data name="ChooseBusinessUnitsForAdd" xml:space="preserve">
+    <value>Выберите Наши организации для добавления</value>
+  </data>
+  <data name="ChooseBusinessUnitsForDelete" xml:space="preserve">
+    <value>Выберите Наши организации для исключения</value>
+  </data>
+</root>

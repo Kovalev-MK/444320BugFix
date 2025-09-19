@@ -1,0 +1,65 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "74ac667b-d783-4db9-8655-d3b333afd461",
+  "Name": "PowerOfAttorneyCounterpartyavis",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "Counterpavis",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d3da558d-a501-484a-96cd-6d35ee2e7453",
+      "Name": "PowerOfAttorney",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "e19941f7-b16f-4ca9-a591-38307be11c33",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "896c193b-f005-4752-815f-735be82e4b8f",
+      "Name": "Counterpart",
+      "CanBeSearch": false,
+      "Code": "Counterpart",
+      "EntityGuid": "36889c4b-0959-486b-a729-2d09c186da65",
+      "FlatListInStandaloneLookup": true,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "d3da558d-a501-484a-96cd-6d35ee2e7453"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "c459f691-c2d4-43bd-a670-a84a56c82d16",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "3e94b2ca-7f65-4a52-a400-c2a5fa98bba2",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "33a6e517-7ecd-4a24-a818-7af86768e3b2",
+  "Name": "PrinterSettings",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "avis.PrinterSettings.Client",
+  "ClientBaseAssemblyName": "avis.PrinterSettings.ClientBase",
+  "ClientBaseNamespace": "avis.PrinterSettings.ClientBase",
+  "ClientNamespace": "avis.PrinterSettings.Client",
+  "Code": "Printer",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "12ffc1d7-7a41-49dd-9f99-d71e0cb48873",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "cfafc180-a716-413a-9aa7-30c89dd27dab",
+        "Name": "Action",
+        "EntityTypeId": "85aa3082-fdb4-4c7f-b430-fd408895e6ba",
+        "GroupId": "18fb22a2-43ca-4283-b678-dc87ff2f98e8"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "449c4777-8d2d-44c0-99bf-84317b8b95f8",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "18fb22a2-43ca-4283-b678-dc87ff2f98e8",
+        "Name": "Printer",
+        "BackgroundPosition": "Stretch",
+        "TabId": "62f1e736-da51-40cb-9b7c-00f38b623745"
+      }
+    ],
+    "Header": {
+      "NameGuid": "53aea43b-ba0e-41ca-8952-9a9929e169a4",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "62f1e736-da51-40cb-9b7c-00f38b623745",
+        "Name": "Tab"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "85aa3082-fdb4-4c7f-b430-fd408895e6ba"
+    },
+    {
+      "ItemId": "3b76326b-e800-4134-ac32-0fec6b28f5fd",
+      "PreviousItemId": "85aa3082-fdb4-4c7f-b430-fd408895e6ba"
+    },
+    {
+      "ItemId": "4b96dfef-2c5b-4d4e-b310-00cbb0efce1a",
+      "PreviousItemId": "3b76326b-e800-4134-ac32-0fec6b28f5fd"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.PrinterSettings",
+  "IsolatedAssemblyName": "avis.PrinterSettings.Isolated",
+  "IsolatedNamespace": "avis.PrinterSettings.Isolated",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "df6c06c3-f628-4a75-ab8f-a047e5c079ed",
+      "Name": "Printers",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "GetActivePrinters",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::avis.PrinterSettings.IPrinters>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetVisibleScanSettingIds",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.Int64>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "SaveFile",
+      "Parameters": [
+        {
+          "Name": "fileName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "barcodeReport",
+          "ParameterType": "avis.PrinterSettings.IBarcodePageReportAvis"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.PrinterSettings",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "avis.PrinterSettings.Server",
+  "ServerNamespace": "avis.PrinterSettings.Server",
+  "SharedAssemblyName": "avis.PrinterSettings.Shared",
+  "SharedNamespace": "avis.PrinterSettings.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.419",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

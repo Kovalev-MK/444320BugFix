@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="CreateSourceTable">
+    <mssql><![CDATA[create table {0}
+([ReportSessionId] varchar(256) not null,
+  [LineNumber] int not null,
+  [DocumentDate] nvarchar(max) null,
+  [RegNumber] nvarchar(max) null,
+  [Isp] nvarchar(max) null,
+  [BussinesUnit] nvarchar(max) null,
+  [TypeCorrespondent] nvarchar(max) null,
+  [Correspondent] nvarchar(max) null,
+  [Content] nvarchar(max) null,
+  [Status] nvarchar(max) null,
+  [Executors] nvarchar(max) null,
+  [Controllers] nvarchar(max) null,
+  [Term] nvarchar(max) null,
+  [DocumentID] bigint not null,
+  [TaskID] bigint not null,
+  [ParentsTaskID] bigint null,
+  [HyperlinkDocumentID] varchar(256),
+  [HyperlinkTaskID] varchar(256),
+  [HyperlinkParentsTaskID] varchar(256))]]></mssql>
+  </query>
+  <query key="SelectDocumentsFromTempTable">
+    <default><![CDATA[select LineNumber,
+  DocumentDate,
+  RegNumber,
+  Isp,
+  BussinesUnit,
+  TypeCorrespondent,
+  Correspondent,
+  Content,
+  Status,
+  Executors,
+  Controllers,
+  Term,
+  DocumentID,
+  TaskID,
+  ParentsTaskID,
+  HyperlinkDocumentID,
+  HyperlinkTaskID,
+  HyperlinkParentsTaskID
+from lenspec_Reports_ExecutionOrders
+where ReportSessionId = @ReportSessionId
+order by LineNumber;]]></default>
+  </query>
+</queries>

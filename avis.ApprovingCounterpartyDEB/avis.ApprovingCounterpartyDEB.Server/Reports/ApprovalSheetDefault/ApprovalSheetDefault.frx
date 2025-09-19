@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReferencedAssemblies="System.dll&#13;&#10;System.Core.dll&#13;&#10;System.Drawing.dll&#13;&#10;System.Windows.Forms.dll&#13;&#10;System.Data.dll&#13;&#10;System.Xml.dll&#13;&#10;Sungero.Domain.Shared&#13;&#10;Sungero.CoreEntities.Shared&#13;&#10;Sungero.Reporting.Shared&#13;&#10;CommonLibrary&#13;&#10;Sungero.Localization&#13;&#10;Sungero.Declension&#13;&#10;Sungero.Domain.Interfaces&#13;&#10;avis.ApprovingCounterpartyDEB.Shared&#13;&#10;avis.ApprovingCounterpartyDEB.Server" ReportInfo.CreatorVersion="2020.2.12.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+using Sungero.Domain.Shared;
+using Sungero.CoreEntities;
+using Sungero.Core;
+using Resources = avis.ApprovingCounterpartyDEB.Reports.Resources;
+
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+  }
+}
+  </ScriptText>
+  <Dictionary>
+    <SungeroSqlDataConnection Name="Sungero_Connection" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties" ConnectionStringExpression="[SungeroConnectionString]">
+      <TableDataSource Name="Table" DataType="System.Int32" Enabled="true" CanEdit="true" SelectCommand="${Assignments}">
+        <Column Name="performer" DataType="System.String" PropName="Column"/>
+        <Column Name="completedBy" DataType="System.String" PropName="Column1"/>
+        <Column Name="status" DataType="System.String" PropName="Column2"/>
+        <Column Name="result" DataType="System.String" PropName="Column3"/>
+        <Column Name="completed" DataType="System.DateTime" PropName="Column4"/>
+        <Column Name="body" DataType="System.String" PropName="Column5"/>
+        <Column Name="forward1" DataType="System.String" PropName="Column"/>
+        <Column Name="forward2" DataType="System.String" PropName="Column"/>
+        <CommandParameter Name="TaskId" DataType="12" IsDbType="true" Expression="[TaskId]"/>
+        <CommandParameter Name="StartId" DataType="11" IsDbType="true" Expression="[StartId]"/>
+      </TableDataSource>
+    </SungeroSqlDataConnection>
+    <SungeroParameter Name="SungeroConnectionString" Restrictions="DontModify, DontEdit, DontDelete, HideAllProperties, DontShow" Id="86b8ed5b-5e7b-466e-940d-f5a92dfc62e4" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="TaskId" Id="40cf7d1d-7b4a-49b4-aaf8-34d81d643c43" IsRequired="false" IsCollection="false" InternalDataType="System.Int64" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="StartId" Id="61e5c92c-b3d4-4ca4-9f39-f4f3acbf5638" IsRequired="false" IsCollection="false" InternalDataType="System.Int32" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="DocId" Id="01500b0f-129d-4b3a-a633-9e42419e6882" IsRequired="false" IsCollection="false" InternalDataType="System.Int64" IsSimpleDataType="true" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Author" Id="551cba95-8410-463c-9939-748bc0b151e2" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="Initiator" Id="36d0893f-9d9b-4084-8fdf-c5f7f14ff022" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="CurrentUser" Id="34845aa0-bb15-4f14-ae3d-a2e59a62b3a9" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="CounterpartyTIN" Id="74c11c7f-ef50-4a6d-995d-6b3a2dd41005" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="CounterpartyName" Id="d3566850-d6e9-434c-8428-55caeaa794de" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+    <SungeroParameter Name="TaskSubject" Id="c9a85a0b-91f5-44a6-ada8-28cc7e99bb7b" IsRequired="false" IsCollection="false" InternalDataType="System.String" IsSimpleDataType="false" EntityTypeId="00000000-0000-0000-0000-000000000000"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="264.6">
+      <TextObject Name="Text11" Left="151.2" Top="9.45" Width="378" Height="18.9" Text="Лист согласования" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text12" Left="75.6" Top="132.3" Width="103.95" Height="18.9" Text="ИД документа:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text13" Left="75.6" Top="151.2" Width="103.95" Height="18.9" Text="ИД задачи:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text14" Left="75.6" Top="170.1" Width="103.95" Height="18.9" Text="Автор:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text16" Left="585.9" Top="9.45" Width="122.85" Height="18.9" Text="[Calendar.Today.ToShortDateString()]" Font="Arial, 9pt"/>
+      <TextObject Name="Text18" Left="179.55" Top="132.3" Width="349.65" Height="18.9" Text="[DocId]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text19" Left="179.55" Top="151.2" Width="349.65" Height="18.9" Text="[TaskId]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text20" Left="179.55" Top="170.1" Width="349.65" Height="18.9" Text="[Author]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text22" Left="75.6" Top="113.4" Width="103.95" Height="18.9" Text="ИНН:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text23" Left="75.6" Top="94.5" Width="103.95" Height="18.9" Text="Контрагент:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text25" Left="179.55" Top="94.5" Width="349.65" Height="18.9" Text="[CounterpartyName]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text26" Left="179.55" Top="113.4" Width="349.65" Height="18.9" Text="[CounterpartyTIN]" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text27" Left="132.3" Top="47.25" Width="415.8" Height="18.9" CanGrow="true" Text="[TaskSubject]" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text28" Left="75.6" Top="189" Width="103.95" Height="18.9" Text="Инициатор:" VertAlign="Center" Font="Arial, 8pt"/>
+      <TextObject Name="Text29" Left="179.55" Top="189" Width="349.65" Height="18.9" Text="[Initiator]" VertAlign="Center" Font="Arial, 8pt"/>
+    </ReportTitleBand>
+    <ColumnHeaderBand Name="ColumnHeader1" Top="268.6" Width="718.2" Height="18.9">
+      <TextObject Name="Text2" Left="9.45" Width="122.85" Height="18.9" Border.Lines="All" Fill.Color="Gainsboro" Text="Выполнил" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text4" Left="132.3" Width="113.4" Height="18.9" Border.Lines="All" Fill.Color="Gainsboro" Text="Статус" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text6" Left="245.7" Width="122.85" Height="18.9" Border.Lines="All" Fill.Color="Gainsboro" Text="Результат" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text8" Left="368.55" Width="245.7" Height="18.9" Border.Lines="All" Fill.Color="Gainsboro" Text="Комментарий" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="Text10" Left="614.25" Width="94.5" Height="18.9" Border.Lines="All" Fill.Color="Gainsboro" Text="Дата/Время" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </ColumnHeaderBand>
+    <DataBand Name="Data1" Top="291.5" Width="718.2" Height="28.35" DataSource="Table">
+      <TextObject Name="Text1" Left="9.45" Width="122.85" Height="28.35" Border.Lines="All" Text="[IIf([Table.performer] == [Table.completedBy],[Table.performer],IIf([Table.completedBy] == &quot;&quot;,[Table.performer], Format(&quot;{0} за {1}&quot;,[Table.completedBy], [Table.performer])))]" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="132.3" Width="113.4" Height="28.35" Border.Lines="All" Text="[IIf([Table.status] == &quot;InProcess&quot;,&quot;В работе&quot;,IIf([Table.status] == &quot;Completed&quot;,&quot;Выполнено&quot;,IIf([Table.status] == &quot;Suspended&quot;,&quot;Приостановлено&quot;, &quot;Прекращено&quot;)))]" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="245.7" Width="122.85" Height="28.35" Border.Lines="All" Text="[IIf([Table.result] == &quot;Rework&quot;,&quot;На доработку&quot;,IIf([Table.result] == &quot;CoopPossible&quot;, &quot;Сотрудничество возможно&quot;,IIf([Table.result] == &quot;CoopWithRisks&quot;,&quot;Сотрудничество с рисками&quot;,IIf([Table.result] == &quot;DoesNotReqAppr&quot;,&quot;Не требует одобрения&quot;,IIf([Table.result] == &quot;CoopNotRecomend&quot;,&quot;Сотрудничество не рекомендовано&quot;,IIf([Table.result] == &quot;Forward&quot;,&quot;Переадресовано&quot;,IIf([Table.result] == &quot;Complete&quot;,&quot;Согласовано&quot;,IIf([Table.result] == &quot;Corrected&quot;,&quot;Исправлено&quot;,IIf([Table.result] == &quot;Include&quot;,&quot;Выполнено&quot;, &quot;&quot;)))))))))]" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="368.55" Width="245.7" Height="28.35" Border.Lines="All" Text="[IIf([Table.result] == &quot;Forward&quot; &amp;&amp; [Table.forward2] == &quot;&quot;, [Table.forward1], IIf([Table.result] == &quot;Forward&quot; &amp;&amp; [Table.forward1] == &quot;&quot;,[Table.forward2], IIf([Table.result] == &quot;Include&quot;,&quot;Контрагент включен в реестр поставщиков и подрядчиков&quot;, [Table.body])))]" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="614.25" Width="94.5" Height="28.35" Border.Lines="All" Text="[IIf([Table.completed] == ToDateTime(&quot;01.01.0001&quot;),&quot;&quot;,[Table.completed])]" Font="Arial, 10pt">
+        <Formats>
+          <GeneralFormat/>
+          <GeneralFormat/>
+        </Formats>
+      </TextObject>
+      <DataFooterBand Name="DataFooter1" Top="323.85" Width="718.2" Height="47.25">
+        <TextObject Name="Text17" Left="9.45" Top="18.9" Width="699.3" Height="18.9" CanBreak="false" Text="Распечатал(а) ___________________________/[CurrentUser]" WordWrap="false" Font="Arial, 9pt"/>
+      </DataFooterBand>
+    </DataBand>
+  </ReportPage>
+</Report>

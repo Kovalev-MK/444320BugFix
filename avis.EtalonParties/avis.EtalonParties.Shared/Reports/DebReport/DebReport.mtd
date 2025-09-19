@@ -1,0 +1,611 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "c70af880-3f34-409c-a639-a72cea3c67e0",
+  "Name": "DebReport",
+  "AssociatedGuid": "8ac35a3c-1361-495a-ab0f-6cdaa53ea7d9",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Word",
+  "ExportFormats": [
+    "Word"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "EtalonPartiesDebReport",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "HandledEvents",
+    "Parameters",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DisplayName"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "fae13da1-31f0-407b-a032-80adce1f9d3d",
+      "Name": "Inn",
+      "InternalDataTypeName": "System.String",
+      "IsRequired": true
+    },
+    {
+      "NameGuid": "01b6fd27-fba8-4780-a228-01276c8c3404",
+      "Name": "Date",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "7300a45f-9d65-4eee-82bf-be39de25076d",
+      "Name": "Legalname",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "5e76c8b6-c70e-4b55-b850-c01c4bac8265",
+      "Name": "Ogrn",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "52aa7a39-1eb5-43ac-a3f1-bca4c539cb78",
+      "Name": "InitiatorEmployeer",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9148548b-99ec-4bc8-a411-2dcff94a72f2",
+      "Name": "Kpp",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "a0db184d-d8f9-4cf3-8985-e50499be4a21",
+      "Name": "Department",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "e8d319f0-8012-4873-9141-b8c6a70f8d98",
+      "Name": "BusinessUnit",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "a79038cd-6697-4060-9f90-989315e1bce7",
+      "Name": "ShortName",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ae2463b0-2932-4af3-b9ac-2d540967ca60",
+      "Name": "Status",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "6d847bdf-8b9e-4abc-b496-4b4f16f6cb1a",
+      "Name": "DateFormation",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d6316fe1-a3ff-4f7a-aea3-afcb20086b01",
+      "Name": "AuthorizedCapital",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "2f43ad58-380c-499a-ab4f-618d2229d832",
+      "Name": "AuthorizedCapitalDate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "46eca596-1c90-4ff2-87c9-3af1a8196228",
+      "Name": "Sites",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "e43fe75f-4dc1-4a58-b3fd-c9cdd60c3520",
+      "Name": "Phones",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "521c892e-e042-4b6f-abf9-f5e68e4ab28e",
+      "Name": "SessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c8bc7e64-2416-45fb-8eb6-07930f43b65e",
+      "Name": "GDJobTitle",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "3776e60c-0c2e-4e0f-b5f7-6328d6e66ead",
+      "Name": "GDDate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "43fa1183-c74f-43a0-acdf-c1f671153b72",
+      "Name": "GDName",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "573c0de6-5c47-49e8-b5a3-291b6b2ae409",
+      "Name": "NoLicense",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "6352e4b4-da7a-4a99-9b47-8183ae04c7bf",
+      "Name": "NoActiveLicense",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "e5c7c466-b49b-4564-a4cd-1b40cbdf850f",
+      "Name": "NoInstalledLicense",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "71abd8dc-6526-4092-a406-8e5be0bade49",
+      "Name": "FinanceYear1",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ab746f82-630d-4ddc-a28f-0b5a02e685d9",
+      "Name": "FinanceYear2",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "3f9c4032-68bb-4568-8f8b-8458c27e54f0",
+      "Name": "FinanceYear3",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "bbb77bfd-7e7e-4083-9de6-cd23970f3b5a",
+      "Name": "m4001",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "e60b5592-b35b-4484-8dc3-ad85bfb9dc49",
+      "Name": "NoContract",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "558405ec-1c06-4877-8418-310f764405b1",
+      "Name": "q4003",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "39684a34-bec9-4b50-80b8-7e4d4a60a97d",
+      "Name": "s4003",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4066db70-9ded-46a9-a960-b5caa59ef4ee",
+      "Name": "q4002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "8d9cf95f-fab8-4b20-b179-231b975e434d",
+      "Name": "s4002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "6ec8d3ad-b4a2-4386-9511-eb5923377e05",
+      "Name": "m7010",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "753d4481-5d0e-456f-bf74-fc81a5e79ee6",
+      "Name": "DateUpdate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4e730c61-085f-4fed-829d-1d892d6c9426",
+      "Name": "q1002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "7d681cdb-c483-4fe5-a78a-50d0e940dc8a",
+      "Name": "q1001",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "a75109de-ba6d-4764-8b72-d9b80b216d26",
+      "Name": "s1002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "5e87f478-7992-4ec4-bcd5-48a131e2fae9",
+      "Name": "s1001",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d9cb7e35-1429-4b51-ba71-f5b73da7fdfb",
+      "Name": "q2002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "506f08c3-a951-4126-ae4b-f1e0f94da63d",
+      "Name": "q2011",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c7e89ceb-b833-410a-a419-8e141a348072",
+      "Name": "q2012",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d28c3ff8-cab6-40fd-9882-33efe6ac8af6",
+      "Name": "q2013",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c16f5bcb-906a-4704-8a44-8e76d07d9842",
+      "Name": "q2014",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9c74e752-bd75-4335-a9d0-30de0ff9704c",
+      "Name": "q2015",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "40c07cbf-ee53-4c69-a2be-1ef3e14edf0f",
+      "Name": "q2029",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "68a2b9b7-1870-422e-a055-d78d004c793b",
+      "Name": "s2002",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "35f15be5-e290-42e8-b7db-cb6441e306b8",
+      "Name": "s2011",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "7a153e59-b12f-4a84-8e08-e6d8e065cbf9",
+      "Name": "s2012",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "da31fa3a-e25e-4776-ad34-c205605d2dd5",
+      "Name": "s2013",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ecd0a0f6-064c-4806-b7cb-1867e16b4597",
+      "Name": "s2014",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "457eddc0-06b5-4bd2-a428-415020c7c8bb",
+      "Name": "s2015",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "84255461-fcf7-4007-9936-9138b8569a43",
+      "Name": "s2029",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "0073d2d3-be08-4eb8-bc50-b1d1af770178",
+      "Name": "q2001",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "16e63722-9d28-4b30-a96e-1c7e090372a9",
+      "Name": "q2016",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "79de6c6c-a913-47bc-b836-37a08580f8d8",
+      "Name": "q2017",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c86725ac-9733-4ddd-ba6d-49c274d3c890",
+      "Name": "q2018",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c765a614-094d-48c9-83cc-df3da68626db",
+      "Name": "q2019",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "c55b9de7-e8ef-46a5-9be3-4f4e2771be2c",
+      "Name": "q2027",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ae5660c0-3f73-47ac-b3bb-c7e1a12688a1",
+      "Name": "q2028",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "fa53b1ae-64fa-47e6-9489-3abafe1ded4f",
+      "Name": "s2001",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "cb1c0315-c35b-40a6-9a19-1e1c85195f4b",
+      "Name": "s2016",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "8b641278-79ba-43ac-90d8-e2784480083a",
+      "Name": "s2017",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4e5cfb34-307e-4d84-ac21-08020385d2c8",
+      "Name": "s2018",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "5be1851e-5ef3-4f59-b4b2-a7b32610a6a5",
+      "Name": "s2019",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "1fcb040a-71cb-401b-9a36-b0b93747273c",
+      "Name": "s2027",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9635ac1c-5809-4eb9-9c5e-18c034bb56c1",
+      "Name": "s2028",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "48039866-fbe1-43ff-b562-ec47d4c0d7e2",
+      "Name": "q7026",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "e2fbb5f1-5a7d-4287-9a7b-b068d3d1113a",
+      "Name": "q2041",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ed13e819-cf6b-4a3c-98ca-058c571fde96",
+      "Name": "e7014",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "69bb68ab-9435-4099-82fc-f6c1e29cc96b",
+      "Name": "d7014",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ddceb4d2-8958-4492-82a4-3b904cdfd1e8",
+      "Name": "Director",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "4e785d5d-d883-468d-a1a9-d9df49828bdf",
+      "Name": "LegalAddress",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "6d1f4de2-3308-4e40-87e2-42e90f26b8cf",
+      "Name": "MainViewActivities",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "8f4aefad-b35c-4f0c-902e-44655eea75ee",
+      "Name": "DirectorDate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "1cb0dd45-9da3-4fe1-8418-0a9deda50d31",
+      "Name": "ArbitrationCount50",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "b5cd971d-7580-4d08-a32a-259d4bc753ad",
+      "Name": "m7035Green",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d0ae9ae5-3a09-4fa4-b520-f5807f1f88ed",
+      "Name": "m7035Red",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "088e9f38-0dd2-4aec-bbf4-955b99975858",
+      "Name": "m7036Green",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "32bb17e8-5036-4545-82cd-1d9c73114272",
+      "Name": "m7036Red",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "d86b714b-ceb6-4e9f-898f-d2f6bbff27d0",
+      "Name": "NonoLinecses",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "99a101f5-b2a7-4208-9f37-8dc6d72e679c",
+      "Name": "IsInaccuracy",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "a221576b-1645-4e76-aa7f-cdeec2f10465",
+      "Name": "InaccuracyDate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "48550305-c2a8-4bbf-abdb-9de4e455158b",
+      "Name": "m7015",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "459d168b-976b-46e7-b321-81728e9def8d",
+      "Name": "CaseNumber",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "502d35cf-388e-4f63-bfc3-0199e0078a7e",
+      "Name": "m7035",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "1c0db060-3629-4a3f-aad9-614c3009676a",
+      "Name": "m7036",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "1b23d5f5-0b43-40a0-be73-efa236980e02",
+      "Name": "PurposeOfInspection",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "3d42d211-936f-4f48-9322-6898a642b907",
+      "Name": "Essential",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "7a29029d-d963-4f5e-9cf2-0a81444ac483",
+      "Name": "IsInaccuracyManager",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "b2a3e241-0276-4634-ad12-b3dabecffaf9",
+      "Name": "IsInaccuracyManagerDate",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "5483a874-8610-4687-afcc-7bf2e075de59",
+      "Name": "NoTaxes",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "90bcdfee-6ccf-477c-a3ad-2fa3a29c5662",
+      "Name": "m5004",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "757dcda9-215f-4b79-a447-13208843f5de",
+      "Name": "m5005",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "668c6b39-5420-4215-b3c8-14ef8a813a9c",
+      "Name": "Pledges",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicConstants": [
+    {
+      "Name": "TableNameDebActivities",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Activities\""
+    },
+    {
+      "Name": "TableNameDebArbitrations",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Arbitrations\""
+    },
+    {
+      "Name": "TableNameDebBanks",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Banks\""
+    },
+    {
+      "Name": "TableNameDebContracts",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Contracts\""
+    },
+    {
+      "Name": "TableNameDebDirectors",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Directors\""
+    },
+    {
+      "Name": "TableNameDebFilials",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Filials\""
+    },
+    {
+      "Name": "TableNameDebFinances",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Finances\""
+    },
+    {
+      "Name": "TableNameDebFns",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Fns\""
+    },
+    {
+      "Name": "TableNameDebFounders",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Founders\""
+    },
+    {
+      "Name": "TableNameDebHistoryFounders",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_HistoryFounders\""
+    },
+    {
+      "Name": "TableNameDebHistoryUL",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_HistoryUL\""
+    },
+    {
+      "Name": "TableNameDebLicenses",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Licenses\""
+    },
+    {
+      "Name": "TableNameDebTaxes",
+      "ParentClasses": [
+        "DebReport"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"Deb_Taxes\""
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "StatusCurrent"
+  ],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

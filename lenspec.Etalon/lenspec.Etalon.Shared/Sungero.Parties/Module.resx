@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RoleNameAccessToDadata" xml:space="preserve">
+    <value>Права на кнопку "Получить адрес из Dadata" в Контрагентах</value>
+  </data>
+  <data name="RoleFullPermitArhivJKH" xml:space="preserve">
+    <value>Полные права на Архив управляющих компаний (управление домом)</value>
+  </data>
+  <data name="DEBCoordinationgName" xml:space="preserve">
+    <value>Согласующий сотрудник ДБ</value>
+  </data>
+  <data name="DEBCoordinationgDescription" xml:space="preserve">
+    <value>Сотрудники ДБ получающие заявки на согласование контрагентов</value>
+  </data>
+  <data name="DEBManagementName" xml:space="preserve">
+    <value>Руководство ДБ</value>
+  </data>
+  <data name="DEBManagementDescription" xml:space="preserve">
+    <value>Проверяющие заданий на согласование контрагентов, банков и персон, после согласующих ДБ</value>
+  </data>
+  <data name="TenderCoordinatorName" xml:space="preserve">
+    <value>Согласующий по тендерам</value>
+  </data>
+  <data name="TenderResponsibleName" xml:space="preserve">
+    <value>Ответственные за тендеры и протоколы тендерных комитетов</value>
+  </data>
+  <data name="TenderResponsibleDescription" xml:space="preserve">
+    <value>Сотрудники департамента тендеров и закупок. Права на изменение справочника Тендерные комитеты.</value>
+  </data>
+  <data name="TenderCoordinatorDescription" xml:space="preserve">
+    <value>Сотрудник, получающий задание на добавление контрагентов в базу поставщиков и подрядчиков.</value>
+  </data>
+  <data name="FullPermitArhivJKHName" xml:space="preserve">
+    <value>Полные права на Архив управляющих компаний (управление домом)</value>
+  </data>
+  <data name="RoleCreateCounterpartyName" xml:space="preserve">
+    <value>Права на создание/изменение контрагентов, персон и контактных лиц</value>
+  </data>
+  <data name="FullPermitArhivJKHDescription" xml:space="preserve">
+    <value>Полные права на договора управления МКД; Правоустанавливающий документ (выписка из ЕГРН); Прочие документы ЖКХ + создание персон клиенты-собственники</value>
+  </data>
+  <data name="ResponsibleByCounterpartiesDiadocName" xml:space="preserve">
+    <value>Ответственные за справочник "Ответственные по контрагентам"</value>
+  </data>
+  <data name="ResponsibleByCounterpartiesDiadocDescription" xml:space="preserve">
+    <value>Права на создание и изменение записей в справочнике Ответственные по контрагентам.</value>
+  </data>
+  <data name="IsClientOwnerAccessName" xml:space="preserve">
+    <value>Полные права на Клиенты (собственники) для Канцелярий УК</value>
+  </data>
+  <data name="FormCounterpartyApprovalReport_ResourceKey" xml:space="preserve">
+    <value>Отчёт Контрагенты на согласование.</value>
+  </data>
+  <data name="FormCounterpartyApprovalReport_DescriptionResourceKey" xml:space="preserve">
+    <value>Отчёт Контрагенты на согласование.</value>
+  </data>
+  <data name="ShowCreateCompanyTasks_ResourceKey" xml:space="preserve">
+    <value>Показать задачи на создание, изменение контрагента/банка/персоны.</value>
+  </data>
+  <data name="ShowCreateCompanyTasks_DescriptionResourceKey" xml:space="preserve">
+    <value>Показать задачи на создание, изменение контрагента/банка/персоны.</value>
+  </data>
+  <data name="ShowApprovalCounterpartyPersonTasks_ResourceKey" xml:space="preserve">
+    <value>Показать задачи на согласование контрагента/банка/персоны.</value>
+  </data>
+  <data name="ShowApprovalCounterpartyPersonTasks_DescriptionResourceKey" xml:space="preserve">
+    <value>Показать задачи на согласование контрагента/банка/персоны.</value>
+  </data>
+  <data name="CreateApprovalPersonDEB_ResourceKey" xml:space="preserve">
+    <value>Новый документ согласование персоны.</value>
+  </data>
+  <data name="CreateApprovalPersonDEB_DescriptionResourceKey" xml:space="preserve">
+    <value>Новый документ согласование персоны.</value>
+  </data>
+  <data name="CreateApprovalCounterpartyBankDEB_ResourceKey" xml:space="preserve">
+    <value>Новый документ согласование контрагента/банка.</value>
+  </data>
+  <data name="CreateApprovalCounterpartyBankDEB_DescriptionResourceKey" xml:space="preserve">
+    <value>Новый документ согласование контрагента/банка.</value>
+  </data>
+  <data name="ShowDialogFindCompanyFromKontur_ResourceKey" xml:space="preserve">
+    <value>Открываем диалог, выбора заполнения головной организацией или филиалом.</value>
+  </data>
+  <data name="ShowDialogFindCompanyFromKontur_DescriptionResourceKey" xml:space="preserve">
+    <value>Открываем диалог, выбора заполнения головной организацией или филиалом.</value>
+  </data>
+  <data name="ShowDialogFindCompanyFilial_ResourceKey" xml:space="preserve">
+    <value>Открываем диалог выбора филиала.</value>
+  </data>
+  <data name="ShowDialogFindCompanyFilial_DescriptionResourceKey" xml:space="preserve">
+    <value>Открываем диалог выбора филиала.</value>
+  </data>
+  <data name="ShowCreatePersonTask_ResourceKey" xml:space="preserve">
+    <value>Открыть окно для создания задачи для создания новой персоны.</value>
+  </data>
+  <data name="ShowCreatePersonTask_DescriptionResourceKey" xml:space="preserve">
+    <value>Открыть окно для создания задачи для создания новой персоны.</value>
+  </data>
+  <data name="CreateNewCompany_ResourceKey" xml:space="preserve">
+    <value>Создание новой организации.</value>
+  </data>
+  <data name="CreateNewCompany_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание новой организации.</value>
+  </data>
+  <data name="ShowCreateCompanyTask_ResourceKey" xml:space="preserve">
+    <value>Открыть окно для создания задачи для создания нового контрагента.</value>
+  </data>
+  <data name="ShowCreateCompanyTask_DescriptionResourceKey" xml:space="preserve">
+    <value>Открыть окно для создания задачи для создания нового контрагента.</value>
+  </data>
+  <data name="ResponsibleUnloadingContractors1CName" xml:space="preserve">
+    <value>Responsible for unloading contractors in 1C</value>
+  </data>
+  <data name="ResponsibleUnloadingContractors1CDescription" xml:space="preserve">
+    <value>Rights to the "Export to 1C" button</value>
+  </data>
+  <data name="UnloadingContractors_ResourceKey" xml:space="preserve">
+    <value>Выгрузка контрагентов</value>
+  </data>
+  <data name="UnloadingContractors_DescriptionResourceKey" xml:space="preserve">
+    <value>Массовая выгрузка контрагентов</value>
+  </data>
+  <data name="RoleCreateCounterparteDescription" xml:space="preserve">
+    <value>Пользователи, имеющие права на создание и редактирование персон типов: 
+Адвокаты/нотариусы/совет дома 
+Прочие</value>
+  </data>
+  <data name="ConstituentDocumentKindName" xml:space="preserve">
+    <value>Учредительный документ</value>
+  </data>
+  <data name="ConstituentDocumentKindShortName" xml:space="preserve">
+    <value>Учредительный документ</value>
+  </data>
+  <data name="CharterAndChangesDocumentKindName" xml:space="preserve">
+    <value>Устав и изменения</value>
+  </data>
+  <data name="CharterAndChangesDocumentKindShortName" xml:space="preserve">
+    <value>Устав и изменения</value>
+  </data>
+  <data name="ExtractFromEGRULDocumentKindName" xml:space="preserve">
+    <value>Выписка из ЕГРЮЛ/ЕГРИП</value>
+  </data>
+  <data name="ExtractFromEGRULDocumentKindShortName" xml:space="preserve">
+    <value>Выписка из ЕГРЮЛ/ЕГРИП</value>
+  </data>
+  <data name="BankDetailsRoleName" xml:space="preserve">
+    <value>Полные права на справочник "Банковские реквизиты"</value>
+  </data>
+  <data name="ErrorMessageFailFillFromKontur" xml:space="preserve">
+    <value>Произошла ошибка получения данных из KonturFocus, обратитесь к администратору.</value>
+  </data>
+  <data name="ErrorMessageNotFoundCompany" xml:space="preserve">
+    <value>Организация с ИНН {0} не найдена.</value>
+  </data>
+  <data name="ErrorMessageFailConnectiongToKonturFocus" xml:space="preserve">
+    <value>Ошибка подключения к KonturFocus, обратитесь к администратору.</value>
+  </data>
+  <data name="RegexForGettingTRRC" xml:space="preserve">
+    <value>КПП: ([^\n]{9})</value>
+  </data>
+  <data name="SetDBApprovalStatus" xml:space="preserve">
+    <value>Установка статуса результат согласования ДБ</value>
+  </data>
+  <data name="ErrorMessageUnloadPersonInto1C" xml:space="preserve">
+    <value>Ошибка при автоматической выгрузке Персоны. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ErrorMessageUnloadCompanyInto1C" xml:space="preserve">
+    <value>Ошибка при автоматической выгрузке Организации. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ErrorMessageUnloadBankInto1C" xml:space="preserve">
+    <value>Ошибка при автоматической выгрузке Банка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ConnectionStringNotFound" xml:space="preserve">
+    <value>Не найдена строка подключения.</value>
+  </data>
+</root>

@@ -1,0 +1,266 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "f587e776-007b-4b0b-96cd-77b5b6603b7e",
+  "Name": "SpecifyingUsersSystemObjects",
+  "AssociatedGuid": "35ff7bf5-ce83-443a-a770-584effe87a8a",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel",
+    "Pdf"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteServer",
+    "BeforeExecuteClient",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "AutomatedSupportTicketsSpecifyingUsersSystemObjects",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "Description",
+    "Parameters",
+    "HandledEvents",
+    "ExportFormats",
+    "DefaultExportFormat"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "e3047055-a380-4b3a-9434-f07c99c44ee7",
+      "Name": "businessUnit",
+      "EntityType": "eff95720-181f-4f7d-892d-dec034c7b2ab",
+      "InternalDataTypeName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "7ec8ba08-8fa2-4fcb-b80b-ffc604074128",
+      "Name": "sign",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "09c7ede0-45b1-42a2-9476-1016f485a7ed",
+      "Name": "CurrentDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "2999a3f7-2fc1-4569-be97-fe102504ae58",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "ec952241-6be0-48a3-b4f0-5f52c23b3f15",
+      "Name": "employees",
+      "EntityType": "b7905516-2be5-4931-961c-cb38d5677565",
+      "InternalDataTypeName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    }
+  ],
+  "PublicConstants": [
+    {
+      "Name": "CompanyPriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "1000"
+    },
+    {
+      "Name": "CounterpartyPriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "4000"
+    },
+    {
+      "Name": "DocflowPriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "2000"
+    },
+    {
+      "Name": "ExchangePriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "1500"
+    },
+    {
+      "Name": "MeetingsPriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "3000"
+    },
+    {
+      "Name": "ProjectsPriority",
+      "ParentClasses": [
+        "SpecifyingUsersSystemObjects"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "2500"
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "SpecifyingReportTableLine",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Employee",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "EmployeeID",
+          "TypeFullName": "global::System.Int64"
+        },
+        {
+          "Name": "JobTitle",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "OurOrg",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Department",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "AccountStatus",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "EmployeeRecordStatus",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Roles",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "AllrolesNor",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Substitutions",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Alltasks",
+          "TypeFullName": "global::System.Int32"
+        },
+        {
+          "Name": "Alljobs",
+          "TypeFullName": "global::System.Int32"
+        },
+        {
+          "Name": "ApprovalSettings",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ApprovalStages",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "RegistrationGroups",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "SignatureSettings",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ResponsibleContractors",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ConditionBases",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CustReqSetups",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Certificates",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ManagersAssistants",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CollegialBodies",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ReportSessionId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "lenspec.AutomatedSupportTickets.Structures.SpecifyingUsersSystemObjects"
+    }
+  ],
+  "ResourcesKeys": [
+    "ConditionsApprovalRules",
+    "RegistrationGroups",
+    "ID",
+    "UserName",
+    "ConstructionFacilities",
+    "CategoryApplicationsShareholders",
+    "DigitalCertificates",
+    "AssistantManager",
+    "SettingBasedCustomerRequests",
+    "JobTitle",
+    "OurOrg",
+    "Divisions",
+    "AccountStatus",
+    "EmployeeRecordStatus",
+    "Roles",
+    "Substitutions",
+    "TasksInProgress",
+    "JobInProgress",
+    "ApprovalSettings",
+    "StagesOfApproval",
+    "RightSign",
+    "ResponsibleForContractors",
+    "ReportName",
+    "CollegialBodies",
+    "TypeRole",
+    "RolesInNor"
+  ],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

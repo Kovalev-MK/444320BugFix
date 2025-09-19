@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BusinessUnitIsLoaded" xml:space="preserve">
+    <value>Наша организация загружена</value>
+  </data>
+  <data name="OrganizationWithEnteredTinNotFound" xml:space="preserve">
+    <value>С введенным ИНН организация не найдена. Проверьте правильность введенных данных и состояние выгрузки в базе IntegraDB для последней даты синхронизации.</value>
+  </data>
+  <data name="BusinessUnitIsChanged" xml:space="preserve">
+    <value>Наша организация изменена</value>
+  </data>
+  <data name="FailedToChangeBusinessUnit" xml:space="preserve">
+    <value>Не удалось изменить Нашу организацию</value>
+  </data>
+  <data name="FailedToCreateBusinessUnit" xml:space="preserve">
+    <value>Не удалось создать Нашу организацию</value>
+  </data>
+  <data name="FailedToGetConnectionString" xml:space="preserve">
+    <value>Не удалось получить параметры подключения</value>
+  </data>
+  <data name="CardIsLockedByYou" xml:space="preserve">
+    <value>Карточка Нашей организации заблокирована вами. Закройте карточку и повторите попытку.</value>
+  </data>
+  <data name="CardIsLockedByOtherUser" xml:space="preserve">
+    <value>Карточка Нашей организации заблокирована пользователем {0}</value>
+  </data>
+  <data name="TINMissingError" xml:space="preserve">
+    <value>Записи не были обработаны: отсутствуют ИНН.</value>
+  </data>
+  <data name="BusinessUnitsHaveBeenChanged" xml:space="preserve">
+    <value>Записи в спр. «Наши организации» изменены</value>
+  </data>
+  <data name="ValueNoNumberErrorMessage" xml:space="preserve">
+    <value>Значение должно быть положительным числом.</value>
+  </data>
+</root>

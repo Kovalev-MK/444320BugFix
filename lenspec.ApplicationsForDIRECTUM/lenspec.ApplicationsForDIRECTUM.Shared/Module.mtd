@@ -1,0 +1,251 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "5b96d1e4-e0cf-4c08-9927-49db95a339f1",
+  "Name": "ApplicationsForDIRECTUM",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "lenspec.ApplicationsForDIRECTUM.Client",
+  "ClientBaseAssemblyName": "lenspec.ApplicationsForDIRECTUM.ClientBase",
+  "ClientBaseNamespace": "lenspec.ApplicationsForDIRECTUM.ClientBase",
+  "ClientNamespace": "lenspec.ApplicationsForDIRECTUM.Client",
+  "Code": "Applica",
+  "CompanyCode": "lenspec",
+  "Cover": {
+    "NameGuid": "2ea0bdb1-8b69-499b-a52c-b64c6fb2fde1",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "1c4edc58-e3a0-4e6a-802d-7edc93ce66fe",
+        "Name": "CreateSubstitutionRequest",
+        "FunctionName": "CreateSubstitutionRequest",
+        "GroupId": "35bf2478-5ab2-49f4-8885-bc0e56ec464b"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "52c4be3a-acae-4d11-92eb-8b80e8ee5a3d",
+        "Name": "CreateDoc",
+        "FunctionName": "CreateDoc",
+        "GroupId": "37aa6e77-576d-4e4a-95d4-026ca702944a"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "8177b228-0163-43d7-8a52-71bcbb6fe1da",
+        "Name": "EditProcessRequest",
+        "FunctionName": "EditProcessShow",
+        "GroupId": "13c98d47-8be3-44d4-acc6-39d3730acd69"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverComputableFolderActionMetadata, Sungero.Metadata",
+        "NameGuid": "91b6b32e-8cd5-477b-a9ca-94424a4c34e0",
+        "Name": "MyRequest",
+        "ComputableFolderId": "7b69f695-b8c6-4640-9389-79bad45df48a",
+        "GroupId": "135ceeca-c5dd-4fc3-9829-315bf4f85115"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "b41f2c68-7e0e-4475-878d-dcc57b06e921",
+        "Name": "Substitutions",
+        "EntityTypeId": "cf369908-9587-45e0-937c-206efa109d23",
+        "GroupId": "81ecfb6b-4610-44a2-98de-a9cf4b31669e"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "cf68c903-2800-4b65-9422-b464f185b59a",
+        "Name": "Other",
+        "FunctionName": "OtherShow",
+        "GroupId": "13c98d47-8be3-44d4-acc6-39d3730acd69",
+        "PreviousItemGuid": "f7bab5b1-27a7-4696-9323-06c8d58d183e"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "f7bab5b1-27a7-4696-9323-06c8d58d183e",
+        "Name": "EditDoc",
+        "FunctionName": "EditDocShow",
+        "GroupId": "13c98d47-8be3-44d4-acc6-39d3730acd69",
+        "PreviousItemGuid": "8177b228-0163-43d7-8a52-71bcbb6fe1da"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "151031f3-e3b1-4f4f-9468-2c0786cbb520",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "37aa6e77-576d-4e4a-95d4-026ca702944a",
+        "Name": "Document",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDocument_37aa6e77576d4e4a95d4026ca702944a.png",
+        "TabId": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed"
+      },
+      {
+        "NameGuid": "81ecfb6b-4610-44a2-98de-a9cf4b31669e",
+        "Name": "LinkedInformation",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconLinkedInformation_81ecfb6b461044a298dea9cf4b31669e.png",
+        "PreviousItemGuid": "37aa6e77-576d-4e4a-95d4-026ca702944a",
+        "TabId": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed"
+      },
+      {
+        "NameGuid": "35bf2478-5ab2-49f4-8885-bc0e56ec464b",
+        "Name": "SupportRequests",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSupportRequests_35bf24785ab249f48885bc0e56ec464b.png",
+        "PreviousItemGuid": "81ecfb6b-4610-44a2-98de-a9cf4b31669e",
+        "TabId": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed"
+      },
+      {
+        "NameGuid": "135ceeca-c5dd-4fc3-9829-315bf4f85115",
+        "Name": "Information",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconInformation_135ceecac5dd4fc39829315bf4f85115.png",
+        "PreviousItemGuid": "35bf2478-5ab2-49f4-8885-bc0e56ec464b",
+        "TabId": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed"
+      },
+      {
+        "NameGuid": "13c98d47-8be3-44d4-acc6-39d3730acd69",
+        "Name": "RequestsEditComponentRX",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconRequestsEditComponentRX_13c98d478be344d4acc639d3730acd69.png",
+        "PreviousItemGuid": "135ceeca-c5dd-4fc3-9829-315bf4f85115",
+        "TabId": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed"
+      }
+    ],
+    "Header": {
+      "NameGuid": "41b3b3eb-ac56-4873-bcfb-00fd2e5f8390",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "f76d26d9-9db4-4afc-bcfd-ac1f68b285ed",
+        "Name": "Tab"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.3.23.0"
+    },
+    {
+      "Id": "d534e107-a54d-48ec-85ff-bc44d731a82f",
+      "MaxVersion": "",
+      "MinVersion": "4.3.23.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "IsVisible": false,
+      "ItemId": "38207b81-8d37-4722-8dee-d77d4f1f3f4c"
+    },
+    {
+      "ItemId": "7b69f695-b8c6-4640-9389-79bad45df48a",
+      "PreviousItemId": "38207b81-8d37-4722-8dee-d77d4f1f3f4c"
+    },
+    {
+      "ItemId": "7f9a0817-87f2-4f3a-8c31-1a6bc4ce81fd",
+      "PreviousItemId": "7b69f695-b8c6-4640-9389-79bad45df48a"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "lenspec.ApplicationsForDIRECTUM",
+  "IsolatedAssemblyName": "lenspec.ApplicationsForDIRECTUM.Isolated",
+  "IsolatedNamespace": "lenspec.ApplicationsForDIRECTUM.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible",
+    "Importance"
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateDoc",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::lenspec.ApplicationsForDIRECTUM.IApplicationOpeningRSBUandUU",
+      "ReturnTypeFullName": "lenspec.ApplicationsForDIRECTUM.IApplicationOpeningRSBUandUU, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "GetTaskWithRequestApplicationOpeningRSBUandUUKind",
+      "Parameters": [
+        {
+          "Name": "requestIds",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int64>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<global::System.Int64>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetUrgentRequestToApprovalTasks",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.Int64>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.ApplicationsForDIRECTUM",
+  "ResourcesKeys": [
+    "ApplicationOpeningRSBUandUUKindName",
+    "ApplicationOpeningRSBUandUUKindShortName",
+    "ApplicationOpeningRSBUandUUTypeName",
+    "CreateDoc_ResourceKey",
+    "CreateDoc_DescriptionResourceKey",
+    "CreateSubstitutionRequest_ResourceKey",
+    "CreateSubstitutionRequest_DescriptionResourceKey",
+    "EditProcessShow_ResourceKey",
+    "EditProcessShow_DescriptionResourceKey",
+    "EditDocShow_ResourceKey",
+    "EditDocShow_DescriptionResourceKey",
+    "OtherShow_ResourceKey",
+    "OtherShow_DescriptionResourceKey"
+  ],
+  "ServerAssemblyName": "lenspec.ApplicationsForDIRECTUM.Server",
+  "ServerNamespace": "lenspec.ApplicationsForDIRECTUM.Server",
+  "SharedAssemblyName": "lenspec.ApplicationsForDIRECTUM.Shared",
+  "SharedNamespace": "lenspec.ApplicationsForDIRECTUM.Shared",
+  "SpecialFolders": [
+    {
+      "NameGuid": "7b69f695-b8c6-4640-9389-79bad45df48a",
+      "Name": "MyRequests",
+      "DefaultContentType": "d795d1f6-45c1-4e5e-9677-b53fb7280c7e",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "019e0a58-71fb-4ca3-9ca5-c14cbe94ec13",
+        "Name": "FilterPanel",
+        "Controls": [],
+        "IsEnabled": false
+      },
+      "HandledEvents": [
+        "DataQueryServer"
+      ],
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false
+    }
+  ],
+  "Version": "0.0.1.415",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

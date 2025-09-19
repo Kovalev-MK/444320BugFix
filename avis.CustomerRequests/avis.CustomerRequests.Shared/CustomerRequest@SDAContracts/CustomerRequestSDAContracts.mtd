@@ -1,0 +1,70 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "e87be91b-9411-4441-bb6e-fa4155892fd8",
+  "Name": "CustomerRequestSDAContracts",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "CustomerReques",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b1d34238-9ec9-4a81-8c65-afe9f9dbd03d",
+      "Name": "CustomerRequest",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "29b9e735-ecfb-49ac-8150-b53238439f38",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6cd4b538-109e-4992-8964-e993a9b05d21",
+      "Name": "Contract",
+      "CanBeSearch": false,
+      "Code": "Contract",
+      "EntityGuid": "c4f798a1-be37-4701-8036-f81e45f44e5d",
+      "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "LookupServer",
+        "ChangedShared"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "NeedPassEntityToLookupEvent": true,
+      "OnlyRootEntityUsedInChildLookupEvent": true,
+      "PreviousPropertyGuid": "b1d34238-9ec9-4a81-8c65-afe9f9dbd03d"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "c0448af6-8c09-4047-bb6d-4da04d2421e2",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "7bc95c01-8c07-43a3-85bc-28a16e5a0351",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

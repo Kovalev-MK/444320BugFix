@@ -1,0 +1,96 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "43a2acb6-9ff7-4b68-bf2d-601b753ecb75",
+  "Name": "CompRoleCollegialBody",
+  "BaseGuid": "86423acd-6e29-40d6-8aa6-93ec7ce3284c",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "IconResourcesKeys": [],
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "644bffad-c8fe-4ef4-90fc-15bc9176a728",
+      "Name": "Type",
+      "DirectValues": [
+        {
+          "NameGuid": "91d31d12-89b9-4901-88fb-8cb60c76506a",
+          "Name": "Members",
+          "Code": "Members"
+        },
+        {
+          "NameGuid": "d59c6e0b-9603-4bb5-9cf6-3a532f024694",
+          "Name": "Chairman",
+          "Code": "Chairman"
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "Values"
+      ],
+      "Versions": []
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "GetProtocolsCollegialBodyMembers",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "compRoleCollegialBody",
+          "ParameterType": "global::lenspec.ProtocolsCollegialBodies.ICompRoleCollegialBody",
+          "ParameterTypeFullName": "lenspec.ProtocolsCollegialBodies.ICompRoleCollegialBody, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "task",
+          "ParameterType": "global::Sungero.Docflow.IApprovalTask",
+          "ParameterTypeFullName": "Sungero.Docflow.IApprovalTask, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.CoreEntities.IRecipient>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0eb8fdae-121b-43ef-80dd-9f3d7676db29",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "d3024a7d-1088-4a60-af71-4e52fad34836",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action_ShowDstrictslenspec" xml:space="preserve">
+    <value>Округа</value>
+  </data>
+  <data name="Action_ShowDstrictslenspecDescription" xml:space="preserve">
+    <value>Показать связанные округа</value>
+  </data>
+  <data name="Action_ShowDstrictslenspecHint" xml:space="preserve">
+    <value>Показать связанные округа</value>
+  </data>
+  <data name="Action_ShowDstrictslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowDstrictslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowRegionslenspec" xml:space="preserve">
+    <value>Регионы</value>
+  </data>
+  <data name="Action_ShowRegionslenspecDescription" xml:space="preserve">
+    <value>Показать связанные регионы</value>
+  </data>
+  <data name="Action_ShowRegionslenspecHint" xml:space="preserve">
+    <value>Показать связанные регионы</value>
+  </data>
+  <data name="Action_ShowRegionslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowRegionslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowAreaslenspec" xml:space="preserve">
+    <value>Районы</value>
+  </data>
+  <data name="Action_ShowAreaslenspecDescription" xml:space="preserve">
+    <value>Показать связанные районы</value>
+  </data>
+  <data name="Action_ShowAreaslenspecHint" xml:space="preserve">
+    <value>Показать связанные районы</value>
+  </data>
+  <data name="Action_ShowAreaslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowAreaslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowCitieslenspec" xml:space="preserve">
+    <value>Населенные пункты</value>
+  </data>
+  <data name="Action_ShowCitieslenspecDescription" xml:space="preserve">
+    <value>Показать связанные населенные пункты</value>
+  </data>
+  <data name="Action_ShowCitieslenspecHint" xml:space="preserve">
+    <value>Показать связанные населенные пункты</value>
+  </data>
+  <data name="Action_ShowCitieslenspecConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowCitieslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_Relations_b72750e354d648f1a992c165a28fc2f5" xml:space="preserve">
+    <value>Связь</value>
+  </data>
+  <data name="Ribbon_RelationsCommands_4642a40aa65f4352a39fa66453071689" xml:space="preserve">
+    <value>Связь</value>
+  </data>
+</root>

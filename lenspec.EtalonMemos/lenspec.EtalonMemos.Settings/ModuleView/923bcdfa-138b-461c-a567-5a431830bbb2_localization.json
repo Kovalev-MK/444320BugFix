@@ -1,0 +1,77 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_45d8b0b6d96f4bbfbe92d610f374ce38": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Memos",
+    "ru-RU": "Служебные записки"
+  },
+  "CoverHeaderSettings_Description_45d8b0b6d96f4bbfbe92d610f374ce38": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "This module is where you can create and send for approval memos.\r\nAll memos created before switching to Directum RX remain and are completed in Directum 5.",
+    "ru-RU": "Модуль предназначен для создания и отправки на согласование служебных записок.\r\nВсе служебные записки, созданные до перехода на Directum RX, остаются и завершаются в Directum 5."
+  },
+  "Tab_Title_0fd166082ee74096b45e083ffd5874b9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Tab"
+  },
+  "Memos_Title_f7040219c92c4033a41ce551c2f9357b": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Memos",
+    "ru-RU": "Служебные записки"
+  },
+  "Search_Title_998a4fa813474115bb4dc0a6b1778b09": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search",
+    "ru-RU": "Поиск служебных записок"
+  },
+  "Assigments_Title_175712a43da141af8b0a8d12ecf9a222": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Assigments",
+    "ru-RU": "Поручения"
+  },
+  "CreateMemo_Title_c23a7fb5002f4f479e00439a262c8d6a": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Create memo",
+    "ru-RU": "Создать служебную записку"
+  },
+  "CreateMemo_Description_c23a7fb5002f4f479e00439a262c8d6a": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Create memo",
+    "ru-RU": "Создание служебной записки"
+  },
+  "ShowMyMemos_Title_57bb86d3c42a4cb192f40080c6f0723e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "SearchMyMemos",
+    "ru-RU": "Мои служебные записки"
+  },
+  "ShowMyMemos_Description_57bb86d3c42a4cb192f40080c6f0723e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Get all my memos",
+    "ru-RU": "Просмотреть мои служебные записки"
+  },
+  "SearchMemos_Title_32949f352bc34e6fa71723bc956dded9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "SearchMemos",
+    "ru-RU": "Поиск служебных записок"
+  },
+  "SearchMemos_Description_32949f352bc34e6fa71723bc956dded9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search memos",
+    "ru-RU": "Найти служебные записки по выбранным критериям"
+  },
+  "IssuedAssignments_Title_057aef99585248adbe23e55625f3fcb7": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Issued assignments",
+    "ru-RU": "Выданные мне поручения"
+  },
+  "AssigmentsFromMe_Title_f944176e99bc43bb82fe5499d0fc6229": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "AssigmentsFromMe",
+    "ru-RU": "Выданные мною поручения"
+  },
+  "ControlAssigments_Title_7f4b1cacc6294ffd9ecd195b0b4b25c3": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Control assigments",
+    "ru-RU": "Контроль выданных поручений"
+  }
+}

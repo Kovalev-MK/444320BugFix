@@ -1,0 +1,66 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "43e4957e-602d-48de-89c0-4a92b455eed2",
+  "Name": "ExecutionLawyerAssignmentDocKindsavis",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ExecutionLawy1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a693e361-5bad-4505-8e7e-3d0a49885229",
+      "Name": "ExecutionLawyerAssignment",
+      "CanBeSearch": false,
+      "Code": "Assignment",
+      "EntityGuid": "035f5310-908d-4c13-9c09-fc4cb3cc36bb",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "269cb531-f3a5-46c8-90ee-8e1f76f16422",
+      "Name": "Kind",
+      "CanBeSearch": false,
+      "Code": "Kind",
+      "EntityGuid": "14a59623-89a2-4ea8-b6e9-2ad4365f358c",
+      "FlatListInStandaloneLookup": true,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "a693e361-5bad-4505-8e7e-3d0a49885229",
+      "Versions": []
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "5fe49b3b-330a-413d-8801-a82323dae373",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "b5a28134-6f76-42b9-951a-29682e2e2285",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

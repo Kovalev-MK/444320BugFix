@@ -1,0 +1,75 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "2c039bef-5fb3-489e-8cae-a535fd34b298",
+  "Name": "TimeLastUserConnection",
+  "AssociatedGuid": "35ff7bf5-ce83-443a-a770-584effe87a8a",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "AutomatedSupportTicketsTimeLastUserConnection",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "Parameters",
+    "HandledEvents",
+    "DisplayName",
+    "Description",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "DataSources"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "4d8bbd9d-11a8-4036-a7a1-38e2be5dc625",
+      "Name": "businessUnit",
+      "EntityType": "61b6e79b-ef61-4cc9-90fa-bb6f4c405b66",
+      "InternalDataTypeName": "lenspec.Etalon.IBusinessUnit, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "64ec0a69-cd9e-482a-ba76-08df4c7aa962",
+      "Name": "department",
+      "EntityType": "61b1c19f-26e2-49a5-b3d3-0d3618151e12",
+      "InternalDataTypeName": "Sungero.Company.IDepartment, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "6aefe29a-85fa-4738-95b5-fda9b224e529",
+      "Name": "employee",
+      "EntityType": "bc049649-73a8-4fa7-96ca-d0a60babf65f",
+      "InternalDataTypeName": "lenspec.Etalon.IEmployee, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "5c1bef81-0512-4c24-a111-c6a53ff9ea13",
+      "Name": "beginDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "78e8572f-bbf3-43fe-bfbf-1492782ccefe",
+      "Name": "endDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "37c106f0-96c5-455f-bf65-c072379d9ca1",
+      "Name": "employeeIds",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

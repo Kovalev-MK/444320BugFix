@@ -1,0 +1,58 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "c209b8f9-f28e-4f56-8681-6ae02bbeb0ca",
+  "Name": "DocumentTemplateContractTypeslenspec",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "DocumentTempla",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "091c3dd1-0173-4e47-8028-d703d5ae68c2",
+      "Name": "DocumentTemplate",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "11b72d06-e628-448c-b731-a566b931064e",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2c72a9b3-0c19-4ec8-82d2-61f1132ddda6",
+      "Name": "ContractType",
+      "CanBeSearch": false,
+      "Code": "ContractType",
+      "EntityGuid": "fb1f7a24-9e8e-4822-b076-11fd1298156d",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "091c3dd1-0173-4e47-8028-d703d5ae68c2"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "1c1ebf3b-c2ff-49e9-9e1d-beafdc57e123",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "ff662fca-a479-4524-9168-f6b59d30621a",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

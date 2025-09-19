@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Согласование контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Согласование контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Согласования контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="AttachmentGroup_ApprovalDatabookTitle" xml:space="preserve">
+    <value>КОНТРАГЕНТ/ПЕРСОНА</value>
+  </data>
+  <data name="AttachmentGroup_ApprovalDatabookInformationMessage" xml:space="preserve">
+    <value>Запись справочника Организации, Банки, Персоны </value>
+  </data>
+  <data name="AttachmentGroup_ApprovalDocumentTitle" xml:space="preserve">
+    <value>ДОКУМЕНТ</value>
+  </data>
+  <data name="AttachmentGroup_ApprovalDocumentInformationMessage" xml:space="preserve">
+    <value>Документ типа Согласование персоны с ДБ, Согласование контрагента и банка с ДБ</value>
+  </data>
+  <data name="AttachmentGroup_CounterpartyInfoTitle" xml:space="preserve">
+    <value>СВЕДЕНИЯ О КОНТРАГЕНТЕ</value>
+  </data>
+  <data name="AttachmentGroup_CounterpartyInfoInformationMessage" xml:space="preserve">
+    <value>Документ типа Сведения о контрагенте</value>
+  </data>
+  <data name="AttachmentGroup_AtherDocumentsTitle" xml:space="preserve">
+    <value>ПРОЧИЕ ДОКУМЕНТЫ</value>
+  </data>
+  <data name="AttachmentGroup_AtherDocumentsInformationMessage" xml:space="preserve">
+    <value>Документы любого типа</value>
+  </data>
+  <data name="Property_Counterparty" xml:space="preserve">
+    <value>Контрагент/персона </value>
+  </data>
+  <data name="Property_ApprovalerDEB" xml:space="preserve">
+    <value>Согласующий ДБ </value>
+  </data>
+  <data name="Property_Mandatories" xml:space="preserve">
+    <value>Обязательные</value>
+  </data>
+  <data name="Property_ManagerInitiator" xml:space="preserve">
+    <value>Руководитель инициатора</value>
+  </data>
+  <data name="Property_ResultApprovalDEB" xml:space="preserve">
+    <value>Результат согласования ДБ </value>
+  </data>
+  <data name="Enum_ResultApprovalDEB_CoopWithRisks" xml:space="preserve">
+    <value>Сотрудничество с рисками</value>
+  </data>
+  <data name="Enum_ResultApprovalDEB_CoopNotRecomend" xml:space="preserve">
+    <value>Сотрудничество не рекомендовано</value>
+  </data>
+  <data name="Enum_ResultApprovalDEB_CoopPossible" xml:space="preserve">
+    <value>Сотрудничество возможно</value>
+  </data>
+  <data name="Property_MaxDeadline" xml:space="preserve">
+    <value>Final deadline</value>
+  </data>
+  <data name="Property_CounterpartyLimit" xml:space="preserve">
+    <value>Лимит на контрагента (руб) </value>
+  </data>
+  <data name="Property_Note" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Property_ManagerDEB" xml:space="preserve">
+    <value>Руководитель ДБ </value>
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>Вложите документы, необходимые для согласования контрагента, укажите вид документа "Сведение о контрагенте". 
+ 
+Для контрагентов – юридических лиц:
+1. Карточка контрагента (реквизиты на фирменном бланке), заверенная руководителем организации, индивидуальным предпринимателем, физическим лицом;
+2. Копия свидетельства о государственной регистрации юридического лица, копии свидетельств о внесении записи в Единый государственный реестр юридических лиц, копия свидетельства о государственной регистрации физического лица в качестве индивидуального предпринимателя;
+3. Копия свидетельства о постановке на учет в налоговом органе
+4. Копия уведомления об использовании права на освобождение от НДС / о возможности применения упрощенной системы налогообложения (свидетельства о переходе на упрощенную систему налогообложения и др.), в случае, если контрагенту предоставлено такое право / возможность в соответствии с законодательством РФ;
+5. Справка об исполнении обязанности по уплате налогов, сборов, пеней, штрафов, процентов, сроком давности не более 1 календарного месяца до начала проверки;
+6. Копии устава и изменений к уставу, учредительного договора (при наличии);
+7. Копия бухгалтерской отчетности (форма №1 «Бухгалтерский баланс», форма №2 «Отчет о финансовых результатах») с отметкой налогового органа за последний отчетный период (для юридических лиц обязательно, для ИП – если применимо), передаточный акт для юридического лица в процессе реорганизации в форме слияния, присоединения или преобразования, разделительный баланс для юридического лица в процессе реорганизации в форме разделения или выделения;
+8. Копия документа на занимаемое контрагентом помещение
+ 
+Для контрагентов – ИП, физических лиц:
+1. Все те же документы, что и для контрагентов-юридических лиц, но без Копии устава.
+ 
+Для контрагентов – контрагентов нерезидентов:
+1. Карточка контрагента (реквизиты на фирменном бланке), заверенная руководителем организации, индивидуальным предпринимателем, физическим лицом;
+2. Копия свидетельства о государственной регистрации юридического лица, копии свидетельств о внесении записи в Единый государственный реестр юридических лиц, копия свидетельства о государственной регистрации физического лица в качестве индивидуального предпринимателя.</value>
+  </data>
+  <data name="Resource_035869ed2baa4573bdfe9e4f5e10c4b3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_035869ed2baa4573bdfe9e4f5e10c4b3_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_479979011ecc40598763e16524959df0" xml:space="preserve">
+    <value>Согласующие</value>
+  </data>
+  <data name="Resource_679cef60166e482cbfa7a1ec861f0263" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_679cef60166e482cbfa7a1ec861f0263_EmptyText" xml:space="preserve">
+    <value>Specify observers…</value>
+  </data>
+  <data name="ControlGroup_3849ac3b252941c6aa0d03907f402a05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_73e7c55ab14d49d89a690ed7d46bf563" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_3ac9d65f504b4a6eac9dc57bc9b7d311" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_23f620999b9c49d486cf8d5736be4ac5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_0cbdf7b631c648818d275d13996b0ee5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Property_CompleteDate" xml:space="preserve">
+    <value>Дата окончания согласования</value>
+  </data>
+  <data name="FilterPanel_Initiator_667f85201d0f413c9c3cd8c5232fdf86" xml:space="preserve">
+    <value>Инициатор</value>
+  </data>
+  <data name="FilterPanel_Counterparty_6146c6ca5cbc477684b731d7fbb4a665" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="FilterPanel_Period_00cb5376c85a4697b27a0558530c1a92" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Period_1f80d7368e07404da0d9b004bb918184" xml:space="preserve">
+    <value>Период старта задачи</value>
+  </data>
+  <data name="Enum_ResultApprovalDEB_DoesNotReqAppr" xml:space="preserve">
+    <value>Не требует одобрения</value>
+  </data>
+  <data name="Form_21c3390dbd3b415eaac4fcb92696c8dc" xml:space="preserve">
+    <value>Regulations</value>
+  </data>
+  <data name="ControlGroup_4c25c247cf894d77977e53eaa9af6b89" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsNeedQualification" xml:space="preserve">
+    <value>Требуется квалификация</value>
+  </data>
+</root>

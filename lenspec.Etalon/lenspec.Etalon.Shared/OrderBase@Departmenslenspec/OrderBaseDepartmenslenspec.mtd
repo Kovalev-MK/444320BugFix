@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "037d6c45-f583-4e87-965c-ec43d200a668",
+  "Name": "OrderBaseDepartmenslenspec",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "Departmens",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "35118cf6-8c17-4eff-b0e1-79a13f0c968f",
+      "Name": "OrderBase",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "31aef41a-f35b-4dc6-843e-8b177a3ea241",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d09a016e-68fc-4e4a-baac-61ad68785d77",
+      "Name": "Department",
+      "CanBeSearch": false,
+      "Code": "Department",
+      "EntityGuid": "61b1c19f-26e2-49a5-b3d3-0d3618151e12",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "35118cf6-8c17-4eff-b0e1-79a13f0c968f"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "3819f0f8-143d-4faf-afdd-a51956e450c4",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "f6356473-8ec2-4097-b449-ea4760fd7f67",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

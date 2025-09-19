@@ -1,0 +1,54 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "16ea9522-0798-473d-a2b9-2c7fd847f873",
+  "Name": "CheckLetterDataReport",
+  "AssociatedGuid": "fa18be6a-226c-4868-b24a-1ae60e0c30a4",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "OutgoingLettersCheckLetterDataReport",
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "PublicConstants",
+    "PublicStructures",
+    "DisplayName",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "HandledEvents",
+    "Parameters",
+    "DataSources",
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "1bfd6cab-d751-43e8-82e0-d2e9102edf72",
+      "Name": "Entity",
+      "EntityType": "fa18be6a-226c-4868-b24a-1ae60e0c30a4",
+      "InternalDataTypeName": "lenspec.OutgoingLetters.IMassMailingApplication, Sungero.Domain.Interfaces",
+      "IsRequired": true
+    },
+    {
+      "NameGuid": "b5f20054-ed9d-4ca7-b33d-15d167b65d93",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": [
+    {
+      "Type": "ReportMetadata",
+      "Number": 1
+    }
+  ]
+}

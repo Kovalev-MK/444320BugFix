@@ -1,0 +1,177 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "2d959782-81f7-4656-9892-748b79fc2d14",
+  "Name": "PresenceRegion",
+  "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": true,
+  "CanBeUsedInIntegration": true,
+  "Code": "PresenceRegion",
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "980194be-065d-4d7c-a7b4-71d559c25d47",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "aa19c2f0-ec99-4da4-8d9e-6f96b61f956c",
+          "Name": "ControlGroup"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "cb9c0a4b-bfd4-4300-bc3e-dca719e862a1",
+          "Name": "Control",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "aa19c2f0-ec99-4da4-8d9e-6f96b61f956c",
+          "PropertyGuid": "2d719aca-4ae5-4dac-99c9-6d2f979c2690",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "a0342878-c862-4e56-a916-462afbdaa891",
+          "Name": "Status",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "aa19c2f0-ec99-4da4-8d9e-6f96b61f956c",
+          "PropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "ab2a8238-2f42-4a19-a474-3340a0fb3309",
+          "Name": "IsUseToAFP",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "aa19c2f0-ec99-4da4-8d9e-6f96b61f956c",
+          "PropertyGuid": "6a7382a1-7f14-4262-a38f-22297120d5b8",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "5d55bda3-65ef-47b8-ac27-bed991432ea0",
+          "Name": "IsUsedForQualification",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "aa19c2f0-ec99-4da4-8d9e-6f96b61f956c",
+          "PropertyGuid": "7a15e446-41df-4292-859a-d380ac1b047d",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ]
+    }
+  ],
+  "HandledEvents": [
+    "CreatedServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "EtalonContractsPresenceRegion",
+  "IsStatusEnabled": true,
+  "IsVisible": false,
+  "NeedWriteHistory": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsStatusEnabled",
+    "CanBeSearch",
+    "IsVisible",
+    "NeedWriteHistory",
+    "IsAutoCreated",
+    "HideFromCreationArea",
+    "HideFromNavigationEditorCreationArea",
+    "CanBeUsedInIntegration"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+      "Name": "Status",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "IsShowedInList",
+        "CanBeSearch",
+        "IsVisibility"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2d719aca-4ae5-4dac-99c9-6d2f979c2690",
+      "Name": "Name",
+      "Code": "Name",
+      "IsDisplayValue": true,
+      "IsQuickSearchAllowed": true,
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6a7382a1-7f14-4262-a38f-22297120d5b8",
+      "Name": "IsUseToAFP",
+      "CanBeSearch": false,
+      "Code": "IsUseToAFP",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "2d719aca-4ae5-4dac-99c9-6d2f979c2690"
+    },
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "7a15e446-41df-4292-859a-d380ac1b047d",
+      "Name": "IsUsedForQualification",
+      "CanBeSearch": false,
+      "Code": "IsUsedForQuali",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "6a7382a1-7f14-4262-a38f-22297120d5b8"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "fc0fd23f-34d0-4de6-8cc7-f50192deeda5",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "3d99f787-d804-4eff-8b43-e1eecff3f391",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

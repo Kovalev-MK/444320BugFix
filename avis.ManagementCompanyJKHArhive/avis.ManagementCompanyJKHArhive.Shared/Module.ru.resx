@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MKDDocumentKindName" xml:space="preserve">
+    <value>Договор управления МКД</value>
+  </data>
+  <data name="MKDDocumentKindShortName" xml:space="preserve">
+    <value>Договор управления МКД</value>
+  </data>
+  <data name="DirectionFromDeveloperName" xml:space="preserve">
+    <value>Направление от застройщика (при заселении в дом)</value>
+  </data>
+  <data name="DirectionFromDeveloperShortName" xml:space="preserve">
+    <value>Направление от застройщика (при заселении в дом)</value>
+  </data>
+  <data name="TitleDocumentName" xml:space="preserve">
+    <value>Правоустанавливающий документ (выписка из ЕГРН)</value>
+  </data>
+  <data name="TitleDocumentShortName" xml:space="preserve">
+    <value>Правоустанавливающий документ (выписка из ЕГРН)</value>
+  </data>
+  <data name="OtherDocJKHName" xml:space="preserve">
+    <value>Прочие документы ЖКХ</value>
+  </data>
+  <data name="OtherDocJKHShortName" xml:space="preserve">
+    <value>Прочие документы ЖКХ</value>
+  </data>
+  <data name="BasisMKDDescription" xml:space="preserve">
+    <value>Является основанием для</value>
+  </data>
+  <data name="BasisMKDTitle" xml:space="preserve">
+    <value>На основании</value>
+  </data>
+  <data name="ManagementContractMKDName" xml:space="preserve">
+    <value>Договор управления МКД</value>
+  </data>
+  <data name="DocumentForManagementCompanyName" xml:space="preserve">
+    <value>Прочие документы для договорного архива управления МКД</value>
+  </data>
+  <data name="BasisForManagementContractMKDName" xml:space="preserve">
+    <value>Документ-основание для создания договора управления МКД</value>
+  </data>
+  <data name="CreateActsOfManagementCompany_ResourceKey" xml:space="preserve">
+    <value>Создание акта УК</value>
+  </data>
+  <data name="CreateActsOfManagementCompany_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание карточки "Акты управляющих компаний".</value>
+  </data>
+  <data name="FindActsOfManagementCompanies_ResourceKey" xml:space="preserve">
+    <value>Поиск актов управляющих компаний</value>
+  </data>
+  <data name="FindActsOfManagementCompanies_DescriptionResourceKey" xml:space="preserve">
+    <value>Поиск актов управляющих компаний</value>
+  </data>
+  <data name="ShowActsOfManagementCompanies_ResourceKey" xml:space="preserve">
+    <value>Акты управляющих компаний</value>
+  </data>
+  <data name="ShowActsOfManagementCompanies_DescriptionResourceKey" xml:space="preserve">
+    <value>Список всех документов с типом "Акты управляющих компаний".</value>
+  </data>
+  <data name="CreateBasisForManagementContractMKD_ResourceKey" xml:space="preserve">
+    <value>Создание документа-основания для создания договора управления МКД</value>
+  </data>
+  <data name="CreateBasisForManagementContractMKD_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание карточки "Документ-основание для создания договора управления МКД".</value>
+  </data>
+  <data name="CreateDocMC_ResourceKey" xml:space="preserve">
+    <value>Создание прочих документов для договорного архива управления МКД</value>
+  </data>
+  <data name="CreateDocMC_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание карточки "Прочие документы для договорного архива управления МКД".</value>
+  </data>
+  <data name="CreateMKD_ResourceKey" xml:space="preserve">
+    <value>Создание договора управления МКД</value>
+  </data>
+  <data name="CreateMKD_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание карточки "Договор управления МКД".</value>
+  </data>
+  <data name="FindDucumentForMC_ResourceKey" xml:space="preserve">
+    <value>Создание акта УК</value>
+  </data>
+  <data name="FindDucumentForMC_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание акта УК</value>
+  </data>
+</root>

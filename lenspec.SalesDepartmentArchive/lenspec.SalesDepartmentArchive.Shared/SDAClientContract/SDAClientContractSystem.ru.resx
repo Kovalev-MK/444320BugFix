@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Клиентский договор</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Клиентский договор</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Клиентские договоры</value>
+  </data>
+  <data name="Property_ClientDocumentNumber" xml:space="preserve">
+    <value>№ договора</value>
+  </data>
+  <data name="Property_ClientDocumentDate" xml:space="preserve">
+    <value>Дата договора</value>
+  </data>
+  <data name="Property_Premises" xml:space="preserve">
+    <value>Помещение</value>
+  </data>
+  <data name="Property_ObjectAnProject" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="Property_TransferOfOwnershipDate" xml:space="preserve">
+    <value>Дата передачи по АПП</value>
+  </data>
+  <data name="Property_SignedWithAnElectronicSignature" xml:space="preserve">
+    <value>Подписан электронной подписью</value>
+  </data>
+  <data name="Property_StorageAddress" xml:space="preserve">
+    <value>Место хранения </value>
+  </data>
+  <data name="Property_InvestContractCode" xml:space="preserve">
+    <value>Код договора в Invest</value>
+  </data>
+  <data name="Resource_ecc43a4956284a5ab0a06555083f5cff" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ecc43a4956284a5ab0a06555083f5cff_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_SignedWithAnElectronicSignature_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_SignedWithAnElectronicSignature_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Resource_e300028a5e1f485d806917e121bb9ba9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c45cfe6a44c043689482e4b0a91c3e05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_6aa141838ef74f1c9f48c64480f37c31" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_6aa141838ef74f1c9f48c64480f37c31_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_aa3365472c6644b2b93120a82a6159e2" xml:space="preserve">
+    <value />
+  </data>
+</root>

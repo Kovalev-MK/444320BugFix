@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Sungero.Core;
+using Sungero.CoreEntities;
+using lenspec.ApplicationsForDIRECTUM.Assignment;
+
+namespace lenspec.ApplicationsForDIRECTUM.Server
+{
+  partial class AssignmentFunctions
+  {
+
+  }
+}

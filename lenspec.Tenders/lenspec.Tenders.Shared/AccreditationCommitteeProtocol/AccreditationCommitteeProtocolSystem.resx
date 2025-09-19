@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Протокол комитета аккредитации</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Протокол комитета аккредитации</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Протоколы комитета аккредитации</value>
+  </data>
+  <data name="Property_MeetingDate" xml:space="preserve">
+    <value>Дата проведения заседания</value>
+  </data>
+  <data name="Property_TenderAccreditationForm" xml:space="preserve">
+    <value>Анкета для аккредитации</value>
+  </data>
+  <data name="Property_MeetingType" xml:space="preserve">
+    <value>Тип заседания</value>
+  </data>
+  <data name="Enum_MeetingType_Online" xml:space="preserve">
+    <value>Очное</value>
+  </data>
+  <data name="Enum_MeetingType_Offline" xml:space="preserve">
+    <value>Заочное</value>
+  </data>
+  <data name="Property_AccreditationCommittee" xml:space="preserve">
+    <value>Комитет аккредитации</value>
+  </data>
+  <data name="Property_Counterparty" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="Property_PreparedBy" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="Resource_670056d3a80d41c290537ace73f8c3e3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_91cff7df37834f868122f6238e9ba7c0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_91cff7df37834f868122f6238e9ba7c0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsProvider" xml:space="preserve">
+    <value>Поставщик</value>
+  </data>
+  <data name="Property_IsContractor" xml:space="preserve">
+    <value>Подрядчик</value>
+  </data>
+  <data name="ControlGroup_406e14dc17444a7f85d8f6eef8abaa3f" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Resource_fc50c88831554ff196e8ff7064894ead" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fc50c88831554ff196e8ff7064894ead_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ddf41ead829a4a3f8d12d40a52b7440c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ddf41ead829a4a3f8d12d40a52b7440c_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_a915c070568d4f08a7365fbdabe9e559" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_a915c070568d4f08a7365fbdabe9e559_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_b8017e2288d643da8d6d8d11917b1dd6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_3d411ab8967c43b4ab770240b19d9921" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_09b8c877bb4f4b329a9832d12a8dae24" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_09b8c877bb4f4b329a9832d12a8dae24_EmptyText" xml:space="preserve">
+    <value>Наша организация, которая заявляла контрагента на аккредитацию</value>
+  </data>
+  <data name="Resource_597fdf1225334c36b69ae250aa909158" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_597fdf1225334c36b69ae250aa909158_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_dcab7ecffaed4bd68e0fa391e95f08dc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_dcab7ecffaed4bd68e0fa391e95f08dc_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Addressees" xml:space="preserve">
+    <value>Адресаты</value>
+  </data>
+  <data name="Property_MaterialKinds" xml:space="preserve">
+    <value>Виды материалов</value>
+  </data>
+  <data name="ControlGroup_2cf357f49e0d4e838920a09720cad45d" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_5ed4d4a9d0be47c7a642679213e31156" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_WorkKinds" xml:space="preserve">
+    <value>Виды работ</value>
+  </data>
+  <data name="ControlGroup_c2584ee7872f4d84919cf712cd05ca5d" xml:space="preserve">
+    <value>Предмет аккредитации</value>
+  </data>
+  <data name="ControlGroup_42612188cf984a66a4cc5c674787d208" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Resource_0e47ae684ffc4acb80bf3d6f715ce7c2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_0e47ae684ffc4acb80bf3d6f715ce7c2_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_DepartmentsForAddressees" xml:space="preserve">
+    <value>Подразделения</value>
+  </data>
+  <data name="Property_IsFillingByDepartmentEmployees" xml:space="preserve">
+    <value>Заполнить работниками подразделения</value>
+  </data>
+  <data name="Property_AddresseesFilingOption" xml:space="preserve">
+    <value>Вариант заполнения</value>
+  </data>
+  <data name="Enum_AddresseesFilingOption_AllEmployees" xml:space="preserve">
+    <value>Все работники</value>
+  </data>
+  <data name="Enum_AddresseesFilingOption_OnlyManagers" xml:space="preserve">
+    <value>Только руководители</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceList" xml:space="preserve">
+    <value>Сохранить список</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceListDescription" xml:space="preserve">
+    <value>Сохранение адресатов в новый список ознакомления/рассмотрения.</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceListHint" xml:space="preserve">
+    <value>Сохранение адресатов в новый список ознакомления/рассмотрения.</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceListConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SaveToAcquaintanceListConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_FillFromAcquaintanceList" xml:space="preserve">
+    <value>Заполнить из списка</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListDescription" xml:space="preserve">
+    <value>Заполнение адресатов из списка ознакомления/рассмотрения.</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListHint" xml:space="preserve">
+    <value>Заполнение адресатов из списка ознакомления/рассмотрения.</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_FillFromAcquaintanceListConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_FillFromDepartment" xml:space="preserve">
+    <value>Заполнить из подразделения</value>
+  </data>
+  <data name="Action_FillFromDepartmentDescription" xml:space="preserve">
+    <value>Заполнить сотрудниками подразделения</value>
+  </data>
+  <data name="Action_FillFromDepartmentHint" xml:space="preserve">
+    <value>Заполнить сотрудниками подразделения</value>
+  </data>
+  <data name="Action_FillFromDepartmentConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_FillFromDepartmentConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ClearAddressees" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="Action_ClearAddresseesDescription" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_ClearAddresseesHint" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_ClearAddresseesConfirmationMessage" xml:space="preserve">
+    <value>Действительно очистить список?</value>
+  </data>
+  <data name="Action_ClearAddresseesConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_2f7b4c5ce021456bb1dab1581e66095d" xml:space="preserve">
+    <value>Виды работ</value>
+  </data>
+  <data name="ControlGroup_566b74a07f9a45dd8a7811f72c110d35" xml:space="preserve">
+    <value>Виды материалов</value>
+  </data>
+  <data name="Form_b2ea5a574e8341e88dd0f52b477f7a06" xml:space="preserve">
+    <value>Адресаты</value>
+  </data>
+  <data name="ControlGroup_7e3e8d50774d44e194e40260d624ce19" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ec742a73eb834925a43ca0a7cf42eae0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ec742a73eb834925a43ca0a7cf42eae0_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_e81f0c5eb58a4007aeebb672ea52875b" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_e300028a5e1f485d806917e121bb9ba9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c45cfe6a44c043689482e4b0a91c3e05" xml:space="preserve">
+    <value />
+  </data>
+</root>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EDSApplication" xml:space="preserve">
+    <value>Заявка УКЭП на носителе</value>
+  </data>
+  <data name="EDSDocument" xml:space="preserve">
+    <value>Документ для УКЭП</value>
+  </data>
+  <data name="PassportDocumentKindName" xml:space="preserve">
+    <value>Паспорт РФ</value>
+  </data>
+  <data name="ConsentToProcessingDocumentKindName" xml:space="preserve">
+    <value>Согласие на обработку персональных данных</value>
+  </data>
+  <data name="QESResponsibleSpbRoleName" xml:space="preserve">
+    <value>Ответственный за выдачу, продление и аннулирование УКЭП по СПБ</value>
+  </data>
+  <data name="QESResponsibleMskRoleName" xml:space="preserve">
+    <value>Ответственный за выдачу, продление и аннулирование УКЭП по МСК и Регионам</value>
+  </data>
+  <data name="CreateEDSApplication_DescriptionResourceKey" xml:space="preserve">
+    <value>При нажатии запустится процесс создания документа.</value>
+  </data>
+  <data name="CreateEDSApplication_ResourceKey" xml:space="preserve">
+    <value>Создать заявку УКЭП на носителе</value>
+  </data>
+  <data name="OpenRenewalInstruction_ResourceKey" xml:space="preserve">
+    <value>Инструкция для продления УКЭП</value>
+  </data>
+  <data name="OpenRenewalInstruction_DescriptionResourceKey" xml:space="preserve">
+    <value>Открытие ссылки из константы "Инструкция для продления УКЭП"</value>
+  </data>
+  <data name="OpenCancellationInstruction_ResourceKey" xml:space="preserve">
+    <value>Инструкция для самостоятельного аннулирования УКЭП</value>
+  </data>
+  <data name="OpenCancellationInstruction_DescriptionResourceKey" xml:space="preserve">
+    <value>Открытие ссылки из константы Инструкция для самостоятельного аннулирования УКЭП</value>
+  </data>
+  <data name="OpenSettingInstruction_ResourceKey" xml:space="preserve">
+    <value>Инструкция для настройки УКЭП на рабочем ПК</value>
+  </data>
+  <data name="OpenSettingInstruction_DescriptionResourceKey" xml:space="preserve">
+    <value>Открытие ссылки из константы Инструкция для настройки УКЭП на рабочем ПК</value>
+  </data>
+  <data name="EDSApplicationKindCode" xml:space="preserve">
+    <value>УКЭП</value>
+  </data>
+  <data name="DeletingContentOfEDSDocumentsStageName" xml:space="preserve">
+    <value>Удаление содержимого документов сотрудника и содержимого заявки</value>
+  </data>
+  <data name="UpdateEDSApplicationStateStageName" xml:space="preserve">
+    <value>Обновление поля Состояние/Согласование заявки для УКЭП, ЗНО</value>
+  </data>
+</root>

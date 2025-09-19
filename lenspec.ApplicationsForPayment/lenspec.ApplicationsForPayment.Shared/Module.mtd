@@ -1,0 +1,269 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "7deef6c9-d270-4646-b48b-5b20c138c7fe",
+  "Name": "ApplicationsForPayment",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "0c535e8c-8ab1-4eb3-922a-161c60c6f9e9",
+      "Name": "AsyncExportApplicationForPayment",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 1,
+      "Parameters": [
+        {
+          "NameGuid": "e838ddfc-3261-4814-9996-e2e80ed0a778",
+          "Name": "DocumentId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "efc80b85-b139-4ad6-8793-882a4d286e62",
+      "Name": "AsyncUpdateIncomingInvoice",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "9445fbcf-0253-4eb4-821e-ee48f89565f8",
+          "Name": "IncomingInvoiceId",
+          "ParameterType": "LongInteger"
+        },
+        {
+          "NameGuid": "d03db9ae-fcd0-4be6-bbae-f320e60eec1a",
+          "Name": "ApplicationForPaymentId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "bc94d3eb-640e-4a94-8378-c1af101ceb5a",
+      "Name": "AsyncUpdateApplicationForPayment",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "4a248402-568a-436d-9f12-af2bddfb378b",
+          "Name": "IsPartiallyCompleted",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "4c0b0e2e-c613-4dfc-ac89-38d615fdd4d3",
+          "Name": "ActualPaymentDate",
+          "ParameterType": "DateTime"
+        },
+        {
+          "NameGuid": "62de38ca-a7d6-4bfc-9427-6536987df4b9",
+          "Name": "ApplicationForPaymentId",
+          "ParameterType": "LongInteger"
+        },
+        {
+          "NameGuid": "e5eecbbc-3d59-4cb6-89a5-1b7e8f8db7e6",
+          "Name": "IsCompleted",
+          "ParameterType": "Boolean"
+        },
+        {
+          "NameGuid": "e7f789ee-9307-4c42-8c92-dec9853d16d7",
+          "Name": "ActualPaymentAmount",
+          "ParameterType": "Double"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "lenspec.ApplicationsForPayment.Client",
+  "ClientBaseAssemblyName": "lenspec.ApplicationsForPayment.ClientBase",
+  "ClientBaseNamespace": "lenspec.ApplicationsForPayment.ClientBase",
+  "ClientNamespace": "lenspec.ApplicationsForPayment.Client",
+  "Code": "Applic1",
+  "CompanyCode": "lenspec",
+  "Cover": {
+    "NameGuid": "2968c797-3f15-48c8-9df7-8fc7d2779c15",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "0a8764bf-0043-4390-8c84-a763208678ff",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "206cbb42-c420-4fd3-8aca-c30d0d288dfb",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.9.39.0"
+    },
+    {
+      "Id": "59797aba-7718-45df-8ac1-5bb7a36c7a66",
+      "MaxVersion": "",
+      "MinVersion": "4.11.37.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "121b10bb-e057-489d-bcbb-14e4153c8cbf"
+    },
+    {
+      "ItemId": "f371e3e8-805a-4834-ac58-b313b3c4356f",
+      "PreviousItemId": "121b10bb-e057-489d-bcbb-14e4153c8cbf"
+    },
+    {
+      "ItemId": "8ae29274-942b-4515-97df-0f8a71ab8e14",
+      "PreviousItemId": "f371e3e8-805a-4834-ac58-b313b3c4356f"
+    },
+    {
+      "ItemId": "4e31d5e5-b56a-4c60-a6c9-5843c691a980",
+      "PreviousItemId": "8ae29274-942b-4515-97df-0f8a71ab8e14"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "lenspec.ApplicationsForPayment",
+  "IsolatedAssemblyName": "lenspec.ApplicationsForPayment.Isolated",
+  "IsolatedNamespace": "lenspec.ApplicationsForPayment.Isolated",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "2f3fd15b-21de-494b-bce3-a1ab016a5e75",
+      "Name": "UpdateApplicationForPaymentAmount",
+      "GenerateHandler": true,
+      "IsEnabled": false,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T06:00:00"
+    }
+  ],
+  "Overridden": [
+    "Importance",
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "ApplicationForPaymentKind",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"9C18699B-6627-4DDA-BA36-FD95CAA023E7\")"
+    },
+    {
+      "Name": "ApplicationForPaymentType",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"8ae29274-942b-4515-97df-0f8a71ab8e14\")"
+    },
+    {
+      "Name": "PaymentTypeAccessRoleGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"91F7C77A-FB09-4B58-9C5E-90732D5E8C82\")"
+    },
+    {
+      "Name": "PitResponsibleAccountantRoleGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"B948DBA3-457D-45EF-866B-BCF0618870CC\")"
+    },
+    {
+      "Name": "UploadApplicationForPaymentRoleGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"B528298A-64DF-48DA-BF2F-621A944A2A6F\")"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateApplicationForPayment",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::lenspec.ApplicationsForPayment.IApplicationForPayment",
+      "ReturnTypeFullName": "lenspec.ApplicationsForPayment.IApplicationForPayment, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.ApplicationsForPayment",
+  "ResourcesKeys": [
+    "UploadApplicationForPaymentRoleName",
+    "UploadApplicationForPaymentRoleDescription",
+    "ApplicationForPaymentTypeName",
+    "ApplicationForPaymentKindName",
+    "CreateApplicationForPayment_ResourceKey",
+    "CreateApplicationForPayment_DescriptionResourceKey",
+    "PitResponsibleAccountantRoleName",
+    "PitResponsibleAccountantRoleDescription"
+  ],
+  "ServerAssemblyName": "lenspec.ApplicationsForPayment.Server",
+  "ServerNamespace": "lenspec.ApplicationsForPayment.Server",
+  "SharedAssemblyName": "lenspec.ApplicationsForPayment.Shared",
+  "SharedNamespace": "lenspec.ApplicationsForPayment.Shared",
+  "SpecialFolders": [
+    {
+      "NameGuid": "121b10bb-e057-489d-bcbb-14e4153c8cbf",
+      "Name": "RegisterOfApplicationsForPayment",
+      "DefaultContentType": "8ae29274-942b-4515-97df-0f8a71ab8e14",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "c056842c-af0a-4569-9c80-e0b6ad84da7d",
+        "Name": "FilterPanel",
+        "Controls": []
+      },
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false
+    },
+    {
+      "NameGuid": "f371e3e8-805a-4834-ac58-b313b3c4356f",
+      "Name": "MyApplicationsForPayment",
+      "DefaultContentType": "8ae29274-942b-4515-97df-0f8a71ab8e14",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "009492fb-1b06-4ac0-a3ef-15f99752e89c",
+        "Name": "FilterPanel",
+        "Controls": []
+      },
+      "HandledEvents": [
+        "PreFilteringServer"
+      ],
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false
+    }
+  ],
+  "Version": "0.0.1.21",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

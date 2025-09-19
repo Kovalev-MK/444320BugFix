@@ -1,0 +1,107 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "ffce7c25-bf86-426c-8ff7-159ff470babf",
+  "Name": "PostalItemAttachmentCollection",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "PostalItemAtta",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6bf1b6dd-4a2e-4d97-a3b7-669fd5e644c2",
+      "Name": "PostalItem",
+      "CanBeSearch": false,
+      "Code": "PostalItem",
+      "EntityGuid": "47809823-ca97-4f38-9e2f-59cfffcbaa46",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b4b9d6f4-2e83-4d56-a222-cf8e8070ad4c",
+      "Name": "Attachment",
+      "CanBeSearch": false,
+      "Code": "Attachment",
+      "IsRequired": true,
+      "Length": 500,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "6bf1b6dd-4a2e-4d97-a3b7-669fd5e644c2"
+    },
+    {
+      "$type": "Sungero.Metadata.DoublePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "dab64b08-ace1-4f32-a6aa-be4f5a5d685d",
+      "Name": "ValueLetter",
+      "CanBeSearch": false,
+      "Code": "ValueLetter",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "b4b9d6f4-2e83-4d56-a222-cf8e8070ad4c"
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fd6b8bf3-4275-4a3e-805b-30c0fa6ab014",
+      "Name": "ValuePages",
+      "CanBeSearch": false,
+      "Code": "ValuePages",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "dab64b08-ace1-4f32-a6aa-be4f5a5d685d"
+    },
+    {
+      "$type": "Sungero.Metadata.IntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "61f6ae76-4ee4-4739-96bd-780b1856848e",
+      "Name": "Number",
+      "CanBeSearch": false,
+      "Code": "Number",
+      "IsEnabled": false,
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "fd6b8bf3-4275-4a3e-805b-30c0fa6ab014"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1c4c9c53-4db3-4a37-ae39-6d95f73c62f7",
+      "Name": "LongAttachment",
+      "CanBeSearch": false,
+      "Code": "LongAttachment",
+      "IsEnabled": false,
+      "IsShowedInList": false,
+      "IsSortingAllowed": false,
+      "IsVisibility": false,
+      "Length": 500,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "61f6ae76-4ee4-4739-96bd-780b1856848e"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "63d096db-1806-454f-88b3-93d71f405f68",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "81b79c45-71f5-4b12-8fde-7631b73a21c6",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

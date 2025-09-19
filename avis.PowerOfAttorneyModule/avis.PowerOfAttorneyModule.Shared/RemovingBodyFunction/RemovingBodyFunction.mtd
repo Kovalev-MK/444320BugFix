@@ -1,0 +1,76 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "cc9d6cd8-1650-4ae1-a7fb-4adce6a7e584",
+  "Name": "RemovingBodyFunction",
+  "BaseGuid": "6831f842-3ea6-412e-9637-c6315a4e6686",
+  "CanBeNavigationPropertyType": true,
+  "CanBeUsedInIntegration": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "PowerOfAttorneyModuleRemovingBodyFunction",
+  "IsStatusEnabled": true,
+  "NeedWriteHistory": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "NeedWriteHistory",
+    "CanBeUsedInIntegration",
+    "IsStatusEnabled",
+    "IsAutoCreated",
+    "HideFromCreationArea",
+    "HideFromNavigationEditorCreationArea"
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "RemoveBodyDocuments",
+      "Parameters": [
+        {
+          "Name": "documents",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "af1c6a2e-af88-4ffc-8e98-283c03323987",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "91cc4627-b505-42a6-9c01-7e8081f22709",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

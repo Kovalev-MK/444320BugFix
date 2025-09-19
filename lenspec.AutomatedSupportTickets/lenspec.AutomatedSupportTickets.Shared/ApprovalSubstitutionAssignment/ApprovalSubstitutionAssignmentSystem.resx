@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Enum_Result_Complete" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Action_Complete" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Action_CompleteHint" xml:space="preserve">
+    <value>Complete with Result "Approve"</value>
+  </data>
+  <data name="Action_CompleteConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Approve"?</value>
+  </data>
+  <data name="Action_CompleteDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Approve"</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Approve substitution</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Approve substitution</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Approve substitution</value>
+  </data>
+  <data name="Enum_Result_Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Action_Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Action_RejectHint" xml:space="preserve">
+    <value>Complete with Result "Reject"</value>
+  </data>
+  <data name="Action_RejectConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Reject"?</value>
+  </data>
+  <data name="Action_RejectDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Reject"</value>
+  </data>
+  <data name="Property_Substitute" xml:space="preserve">
+    <value>Substitute</value>
+  </data>
+  <data name="Property_SubstitutedUser" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="Property_StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="Property_EndDate" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="Property_ManagerOfSubstitutedUser" xml:space="preserve">
+    <value>Head of the substituted employee</value>
+  </data>
+  <data name="Property_Founding" xml:space="preserve">
+    <value>Founding</value>
+  </data>
+  <data name="Property_Instruction" xml:space="preserve">
+    <value>Instruction</value>
+  </data>
+  <data name="Resource_c9c4beefec5b4b3796d4959c17991279" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_c9c4beefec5b4b3796d4959c17991279_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_45c3f7afea6f40948e21e643b6358f4a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_45c3f7afea6f40948e21e643b6358f4a_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ad03c4af7bfe4967aa2cdaa3265bdbe3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_8d48efbcd1734d71860070923524da4a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_e18d4d771f0048d0b081034fa2666929" xml:space="preserve">
+    <value>Instruction</value>
+  </data>
+  <data name="Action_ShowDuplicates" xml:space="preserve">
+    <value>Show Duplicates</value>
+  </data>
+  <data name="Action_ShowDuplicatesDescription" xml:space="preserve">
+    <value>Show duplicates in the Substitutions directory</value>
+  </data>
+  <data name="Action_ShowDuplicatesHint" xml:space="preserve">
+    <value>Show Duplicate Substitutions</value>
+  </data>
+  <data name="Action_ShowDuplicatesConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowDuplicatesConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>Approve the substitution of the employee. Approval means that the substitute is automatically given access rights to system objects so that he can perform work for the absent employee.</value>
+  </data>
+</root>
