@@ -28,9 +28,4 @@ namespace lenspec.Etalon
         _obj.Employeelenspec = null;
     }
   }
-
-  partial class PowerOfAttorneyBaseSharedHandlers
-  {
-
-  }
 }
