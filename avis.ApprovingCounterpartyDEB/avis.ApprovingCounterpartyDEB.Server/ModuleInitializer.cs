@@ -12,11 +12,11 @@ namespace avis.ApprovingCounterpartyDEB.Server
 
     public override void Initializing(Sungero.Domain.ModuleInitializingEventArgs e)
     {
-      CreateDocumentKinds();
-      GrantAccessRightsToDocuments();
-      CreateRoles();
-      GrantAccessRightsToReports();
-      GrantAccessRightsToTasks();
+      //CreateDocumentKinds();
+      //GrantAccessRightsToDocuments();
+      //CreateRoles();
+      //GrantAccessRightsToReports();
+      //GrantAccessRightsToTasks();
     }
     
     public void CreateRoles()

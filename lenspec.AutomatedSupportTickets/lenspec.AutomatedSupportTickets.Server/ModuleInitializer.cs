@@ -13,15 +13,15 @@ namespace lenspec.AutomatedSupportTickets.Server
     public override void Initializing(Sungero.Domain.ModuleInitializingEventArgs e)
     {
       // Создание ролей.
-      CreateRoles();
+      //CreateRoles();
       
       // Задачи.
-      GrantRightsOnTasks();
+      //GrantRightsOnTasks();
       
       #region Отчеты
       
-      CreateReportsTables();
-      GrantRightsOnReport();
+      //CreateReportsTables();
+      //GrantRightsOnReport();
       
       #endregion
     }

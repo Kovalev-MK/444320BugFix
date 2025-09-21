@@ -1187,9 +1187,13 @@
     "CreatingFromServer"
   ],
   "IconResourcesKeys": [],
+  "IsVisible": false,
   "LayeredFromGuid": "104472db-b71b-42a8-bca5-581a08d1ca7b",
   "OpenCardByDefaultInCollection": true,
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
