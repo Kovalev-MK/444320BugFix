@@ -1,9 +1,0 @@
-{
-  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
-  "Uuid": "803bf0a2-88a4-48de-aa9b-6c851ac60ec0",
-  "ModuleNameGuid": "803bf0a2-88a4-48de-aa9b-6c851ac60ec0",
-  "HelpCode": "lenspec_Tenders",
-  "Status": "Active",
-  "SortingPriority": "High",
-  "StoreAsDefaultSetting": true
-}
