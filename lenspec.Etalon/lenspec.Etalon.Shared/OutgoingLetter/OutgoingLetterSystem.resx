@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_OurCFlenspec" xml:space="preserve">
+    <value>ИСП/Группа объектов</value>
+  </data>
+  <data name="Property_ClientContractlenspec" xml:space="preserve">
+    <value>Client contract</value>
+  </data>
+  <data name="Property_RepresentativeByPowerOfAttorneyNumberlenspec" xml:space="preserve">
+    <value>Representative by Power of Attorney No</value>
+  </data>
+  <data name="Property_PowerOfAttorneyDatelenspec" xml:space="preserve">
+    <value>Power of Attorney date</value>
+  </data>
+  <data name="Resource_fc50c88831554ff196e8ff7064894ead" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fc50c88831554ff196e8ff7064894ead_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ddf41ead829a4a3f8d12d40a52b7440c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ddf41ead829a4a3f8d12d40a52b7440c_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_f0607051ea774af2b7966d11cd8a7374" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_f0607051ea774af2b7966d11cd8a7374_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_a915c070568d4f08a7365fbdabe9e559" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_a915c070568d4f08a7365fbdabe9e559_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_AddressOfRecipientlenspec" xml:space="preserve">
+    <value>Address of the recipient</value>
+  </data>
+  <data name="Resource_73496ad6f1f94bcf93ffc9bf7433a7cd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_73496ad6f1f94bcf93ffc9bf7433a7cd_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ab8684bf90b04e939a5eb118d5a18ba1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ab8684bf90b04e939a5eb118d5a18ba1_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_81dc714cbfee4bef8271b5c81e852825" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_81dc714cbfee4bef8271b5c81e852825_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_7e49894fb70d409e858f8f9d0d4eaa66" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_7e49894fb70d409e858f8f9d0d4eaa66_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Emaillenspec" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Property_MassMailingApplicationlenspec" xml:space="preserve">
+    <value>Application for mailing mass notifications</value>
+  </data>
+  <data name="Action_UpdateTemplatelenspec" xml:space="preserve">
+    <value>UpdateTemplateParameters</value>
+  </data>
+  <data name="Action_CreatePostalItemavis" xml:space="preserve">
+    <value>Create Postal Item</value>
+  </data>
+  <data name="Action_CreatePostalItemavisDescription" xml:space="preserve">
+    <value>Create a postal item to the document</value>
+  </data>
+  <data name="Action_CreatePostalItemavisHint" xml:space="preserve">
+    <value>Create Postal Item to Document</value>
+  </data>
+  <data name="Action_CreatePostalItemavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreatePostalItemavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_JobTitleavis" xml:space="preserve">
+    <value>Должность подписанта для шаблонов </value>
+  </data>
+  <data name="Property_InResponseToCustomavis" xml:space="preserve">
+    <value>In response to</value>
+  </data>
+  <data name="Property_InResponseToCustRequestavis" xml:space="preserve">
+    <value>In response to (customer request)</value>
+  </data>
+  <data name="Property_InResponseTo" xml:space="preserve">
+    <value>In response to (incoming documet)</value>
+  </data>
+  <data name="Property_ManagementContractMKDavis" xml:space="preserve">
+    <value>Договор МКД</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspec" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecDescription" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecHint" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecConfirmationMessage" xml:space="preserve">
+    <value>Действительно очистить список?</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ExportVersionWithSignatoryavis" xml:space="preserve">
+    <value>Выгрузить архив с ЭП</value>
+  </data>
+  <data name="Action_ExportVersionWithSignatoryavisDescription" xml:space="preserve">
+    <value>Экспорт архива с документом и последней утверждающей подписью</value>
+  </data>
+  <data name="Action_ExportVersionWithSignatoryavisHint" xml:space="preserve">
+    <value>Экспорт архива с документом и последней утверждающей подписью</value>
+  </data>
+  <data name="Action_ExportVersionWithSignatoryavisConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ExportVersionWithSignatoryavisConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_InResponseToOffDocumentslenspec" xml:space="preserve">
+    <value>In response to</value>
+  </data>
+</root>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Контрагенты (Эталон)</value>
+  </data>
+  <data name="JobDisplayName_5848d826ef64422d9da444f2afc4f9a5" xml:space="preserve">
+    <value>Эталон. Контрагенты. Отслеживание окончания срока согласования контрагентов и персон</value>
+  </data>
+  <data name="AsyncHandler_Description_0ebd71331fc14c8d8d5a3e8c1c5bbcfc" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="AsyncHandler_Description_ddf83402c1ee44e0a2177adcd5c7baca" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="FilterPanel_StrategicStatus_dbdaa98e808540d392780004b8b72dd6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_CompanyStatusInRegister_be3888b0b7ce4570bfaf28fe98d405a0" xml:space="preserve">
+    <value>Статус нахождения в реестре</value>
+  </data>
+  <data name="FilterPanel_CompanyStatus_a64470d5aec6477f9f6b0bf9824dfda5" xml:space="preserve">
+    <value>Статус контрагента</value>
+  </data>
+  <data name="FilterPanel_NonStrategic_8e9ddd0803744a148857f7459a4281c1" xml:space="preserve">
+    <value>Нестратегический</value>
+  </data>
+  <data name="FilterPanel_Strategic_34c4fa487cbf4a0885a78e42f24d8a25" xml:space="preserve">
+    <value>Стратегический</value>
+  </data>
+  <data name="FilterPanel_NonStrategic_38424db8361044b884fa5cddb9eb431b" xml:space="preserve">
+    <value>Нестратегический</value>
+  </data>
+  <data name="FilterPanel_Additional_f25daf1d982045e3a2c82f7a0d409cf7" xml:space="preserve">
+    <value>Основное</value>
+  </data>
+  <data name="FilterPanel_Region_5409b86704214ec5b64490ce8e790ff9" xml:space="preserve">
+    <value>Регион присутствия</value>
+  </data>
+  <data name="FilterPanel_WorkKindsAndMaterials_f6f9c4264b934561942aabd6f5caeeaf" xml:space="preserve">
+    <value>Виды работ и материалы</value>
+  </data>
+  <data name="FilterPanel_Additional_0242168b13e34647bd711d6e7e260932" xml:space="preserve">
+    <value>Основное</value>
+  </data>
+  <data name="FilterPanel_Region_4bd1b59ab84742c287715fb07177c8c7" xml:space="preserve">
+    <value>Регион присутствия</value>
+  </data>
+  <data name="FilterPanel_CompanyStatusInRegister_afb9fc1c168345e1bfbd1c4817e9bda2" xml:space="preserve">
+    <value>Статус нахождения в реестре</value>
+  </data>
+  <data name="FilterPanel_CompanyStatus_245059abaef84603a6c7113f2c37e883" xml:space="preserve">
+    <value>Статус контрагента</value>
+  </data>
+  <data name="FilterPanel_Strategic_7d13045f17cd495c976f8a3bf797a3d8" xml:space="preserve">
+    <value>Стратегический</value>
+  </data>
+  <data name="FilterPanel_Responsible_2bb2751df37946ca8f72d39bec247d7f" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="FilterPanel_CounterpartyType_57749e2fdf7b4d8b9cae3bab5b8fb35e" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="FilterPanel_StrategicStatus_183765c1ef7241978a53d802dc27ca16" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_WorkKindsAndMaterials_9e052c6d385c45d5aca79fff52d81f12" xml:space="preserve">
+    <value>Виды работ и материалы</value>
+  </data>
+  <data name="FilterPanel_Responsible_79fc5ae89e50404bb4a809a8b5920bd9" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="AsyncHandler_Description_35985f1466c64927967cb7c69391085b" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="AsyncHandler_Description_4d305d739a614221b3fe7f363f433eef" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+</root>

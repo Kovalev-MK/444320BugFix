@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormationSubstitutionStageName" xml:space="preserve">
+    <value>Formation a substitution</value>
+  </data>
+  <data name="Jobtitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="BusinessUnits" xml:space="preserve">
+    <value>BusinessUnits</value>
+  </data>
+  <data name="ManagerOfDepartmens" xml:space="preserve">
+    <value>Departments manager</value>
+  </data>
+  <data name="BusinessUnitsCEO" xml:space="preserve">
+    <value>Business units CEO</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Substitutions" xml:space="preserve">
+    <value>Substitutions</value>
+  </data>
+  <data name="ManagersAssistants" xml:space="preserve">
+    <value>Assistant Managers</value>
+  </data>
+  <data name="Assistant" xml:space="preserve">
+    <value>Assistant</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>from</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Permanently" xml:space="preserve">
+    <value>permanent</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="Substitute" xml:space="preserve">
+    <value>Substitute</value>
+  </data>
+  <data name="CheckWrong" xml:space="preserve">
+    <value>The verification period should not exceed 2 months</value>
+  </data>
+  <data name="RoleNameCompleteAssignmentsResponsible" xml:space="preserve">
+    <value>Завершение Задач и Заданий</value>
+  </data>
+  <data name="RoleDescriptionCompleteAssignmentsResponsible" xml:space="preserve">
+    <value>Проверка задач и заданий увольняемого сотрудника ГПХ</value>
+  </data>
+  <data name="RoleNameAccessAccountDisconnectionAndUserReport" xml:space="preserve">
+    <value>Отключение учетных записей и указание пользователей в объектах системы</value>
+  </data>
+  <data name="RoleDescriptionAccessAccountDisconnectionAndUserReport" xml:space="preserve">
+    <value>Права доступа к отключению учетных записей и отчету Указание пользователей в объектах системы</value>
+  </data>
+  <data name="AddedFromBusinessUnit" xml:space="preserve">
+    <value>Добавлено из карточки НОР</value>
+  </data>
+  <data name="SpecifyingUsersSignatureSettings" xml:space="preserve">
+    <value>ИД {0}, Примечание: {1}</value>
+  </data>
+  <data name="SpecifyingUsersApprovalCondition" xml:space="preserve">
+    <value>{0}, Условие {1}</value>
+  </data>
+  <data name="DisablingAccountsErrorNoticeSubject" xml:space="preserve">
+    <value>Фоновый процесс «Отключение учетных записей» завершился с ошибкой.</value>
+  </data>
+  <data name="DisablingAccountsCompleteNoticeSubject" xml:space="preserve">
+    <value>Фоновый процесс «Отключение учетных записей» завершился.</value>
+  </data>
+  <data name="AssignmentsInProgressByEmployee" xml:space="preserve">
+    <value>Невыполненные задания пользователя {0}</value>
+  </data>
+  <data name="CheckAssignmentsInProgress" xml:space="preserve">
+    <value>Проверьте невыполненные задания</value>
+  </data>
+  <data name="CreateSubstitutionRequest_ResourceKey" xml:space="preserve">
+    <value>Создать заявку на формирование замещения</value>
+  </data>
+  <data name="CreateSubstitutionRequest_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание новой заявки на формирование замещения.</value>
+  </data>
+  <data name="TextAssignment" xml:space="preserve">
+    <value>Автоматическое выполнение в связи с истечением срока согласования</value>
+  </data>
+  <data name="FillingUserGroupsFromFile" xml:space="preserve">
+    <value>Добавление пользователей в группу</value>
+  </data>
+  <data name="SettingUpUserGroups" xml:space="preserve">
+    <value>Настройка групп пользователей</value>
+  </data>
+  <data name="GoodCheck" xml:space="preserve">
+    <value>Пользователи добавлены в группу</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>Тестовая загрузка доков</value>
+  </data>
+  <data name="Test2" xml:space="preserve">
+    <value>Тест чисто</value>
+  </data>
+</root>

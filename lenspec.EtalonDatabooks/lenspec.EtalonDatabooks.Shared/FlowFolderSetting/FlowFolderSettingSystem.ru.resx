@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="Property_FolderName" xml:space="preserve">
+    <value>Имя папки потока</value>
+  </data>
+  <data name="Enum_FolderName_AppDispatchCourierMail" xml:space="preserve">
+    <value>Заявки на отправление курьерской почтой</value>
+  </data>
+  <data name="Enum_FolderName_CheckingDesignOutgoingEmails" xml:space="preserve">
+    <value>Проверка оформления исходящих писем</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationOutgoingEmails" xml:space="preserve">
+    <value>Регистрация исходящих писем</value>
+  </data>
+  <data name="Enum_FolderName_SendingOutgoingEmails" xml:space="preserve">
+    <value>Отправка исх. писем (эл. почтой)</value>
+  </data>
+  <data name="Enum_FolderName_ApprovalLocalAct" xml:space="preserve">
+    <value>Согласование локального акта</value>
+  </data>
+  <data name="Enum_FolderName_CheckingLocalAct" xml:space="preserve">
+    <value>Проверка локального акта</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationLocalAct" xml:space="preserve">
+    <value>Регистрация локального акта</value>
+  </data>
+  <data name="Enum_FolderName_VerificationProtocolCollegialBody" xml:space="preserve">
+    <value>Проверка протоколов (ТК, КА, Коллег. органов)</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationProtocolCollegialBody" xml:space="preserve">
+    <value>Регистрация протоколов (ТК, КА, Коллег. органов)</value>
+  </data>
+  <data name="Enum_FolderName_ApplicationCreatingChangingCounterparties" xml:space="preserve">
+    <value>Заявка на создание/изменение контрагентов и персон</value>
+  </data>
+  <data name="Property_TaskType" xml:space="preserve">
+    <value>Тип задачи</value>
+  </data>
+  <data name="Property_TaskStatus" xml:space="preserve">
+    <value>Статус задачи</value>
+  </data>
+  <data name="Enum_TaskStatus_Draft" xml:space="preserve">
+    <value>Черновик</value>
+  </data>
+  <data name="Enum_TaskStatus_InProcess" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="Enum_TaskStatus_Suspended" xml:space="preserve">
+    <value>Остановлена</value>
+  </data>
+  <data name="Enum_TaskStatus_Completed" xml:space="preserve">
+    <value>Завершена</value>
+  </data>
+  <data name="Enum_TaskStatus_Aborted" xml:space="preserve">
+    <value>Прекращена</value>
+  </data>
+  <data name="Enum_TaskStatus_UnderReview" xml:space="preserve">
+    <value>На приемке</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Настройка папки потока</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Настройку папки потока</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Настройки папок потока</value>
+  </data>
+  <data name="Property_TaskSubject" xml:space="preserve">
+    <value>Тема задачи</value>
+  </data>
+  <data name="Enum_FolderName_SendingOutgoingOther" xml:space="preserve">
+    <value>Отправка исх. писем (прочими способами)</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationMassMailingApplication" xml:space="preserve">
+    <value>Регистрация исходящих писем для массовой рассылки</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationIncomingLetter" xml:space="preserve">
+    <value>Регистрация входящих писем</value>
+  </data>
+  <data name="Enum_FolderName_IssuingPOA" xml:space="preserve">
+    <value>Выдача доверенности</value>
+  </data>
+  <data name="Enum_FolderName_PrintSignPOA" xml:space="preserve">
+    <value>Распечатка и подписание доверенности</value>
+  </data>
+  <data name="Enum_FolderName_RegistrationPOA" xml:space="preserve">
+    <value>Регистрация доверенности</value>
+  </data>
+  <data name="Enum_FolderName_ScanningPOA" xml:space="preserve">
+    <value>Сканирование доверенности</value>
+  </data>
+  <data name="Enum_FolderName_FormalizedPOA" xml:space="preserve">
+    <value>МЧД</value>
+  </data>
+  <data name="Enum_FolderName_RegPOAExecTask" xml:space="preserve">
+    <value>Регистрация доверенностей</value>
+  </data>
+</root>

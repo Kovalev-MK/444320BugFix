@@ -1,0 +1,53 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "b310a5e0-4b40-4f69-8e0a-1cf0bb6a220f",
+  "Name": "SDARequestToArchiveBaseListOfDocuments",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "SDARequestToAr",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4d83d1c8-4474-4903-b12f-fd445b5a1d9d",
+      "Name": "SDARequestToArchiveBase",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "4de90ea6-cb5c-4d3e-8c2b-0a6c685b8364",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "f4c5c8d8-2b15-4607-a621-45cd1dd43751",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "8be73f6c-db2a-480f-bf12-5dcbb5df4697",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

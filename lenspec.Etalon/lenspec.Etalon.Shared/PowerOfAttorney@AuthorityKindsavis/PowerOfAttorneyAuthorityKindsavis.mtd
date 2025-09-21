@@ -1,0 +1,65 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "0bf3551a-638a-46cd-ab1c-6bece979ff32",
+  "Name": "PowerOfAttorneyAuthorityKindsavis",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "AuthKindsavis",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "91e90903-1b71-49bf-888f-25c7add67d83",
+      "Name": "PowerOfAttorney",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "e19941f7-b16f-4ca9-a591-38307be11c33",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "0857b0d1-2a38-4a53-b296-353ef2e754f6",
+      "Name": "AuthKind",
+      "CanBeSearch": false,
+      "Code": "AuthKind",
+      "EntityGuid": "5863c5fe-29cf-4276-81fb-6952d4c98d0f",
+      "FlatListInStandaloneLookup": true,
+      "IsShowedInList": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "91e90903-1b71-49bf-888f-25c7add67d83"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "e95e68f5-a5f3-40a9-9aa4-2339087c373d",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "952cce71-6c0b-45ff-b963-c2b41b7b03d6",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

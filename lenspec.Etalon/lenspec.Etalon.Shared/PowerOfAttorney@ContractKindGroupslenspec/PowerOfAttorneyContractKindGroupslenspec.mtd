@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "4f0e633b-c6da-4606-9af8-50f169dbc375",
+  "Name": "PowerOfAttorneyContractKindGroupslenspec",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ContractKindGr",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "a59be401-b878-407a-b2ed-7d85a06c116e",
+      "Name": "PowerOfAttorney",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "e19941f7-b16f-4ca9-a591-38307be11c33",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "0e49f2e0-5460-43e7-9d4f-b9024f0ffb5c",
+      "Name": "GroupContractType",
+      "CanBeSearch": false,
+      "Code": "GroupContractT",
+      "EntityGuid": "e50e3cf1-12aa-4e54-a134-cb820436f5ef",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "a59be401-b878-407a-b2ed-7d85a06c116e"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "e537a2b4-f816-41dc-bcef-ad07af3b845f",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "d9ed5eac-1957-49b0-8fc9-2be888878215",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

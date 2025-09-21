@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Addresseelenspec" xml:space="preserve">
+    <value>Адресат</value>
+  </data>
+  <data name="Property_Addresseeslenspec" xml:space="preserve">
+    <value>Список адресатов</value>
+  </data>
+  <data name="Form_4ae0ce9d0d684223aedbcf8ab6ddaf3f" xml:space="preserve">
+    <value>Адресаты</value>
+  </data>
+  <data name="Action_ChangeManyAddresseeslenspecDescription" xml:space="preserve">
+    <value>Режим указания нескольких адресатов. Указать сотрудников необходимо на закладке “Адресаты”.
+Повторное нажатие вернет документ в режим одного адресата</value>
+  </data>
+  <data name="Action_ChangeManyAddresseeslenspecHint" xml:space="preserve">
+    <value>Переключение в режим указания нескольких адресатов</value>
+  </data>
+  <data name="Action_ChangeManyAddresseeslenspec" xml:space="preserve">
+    <value>Несколько адресатов</value>
+  </data>
+  <data name="Property_IsManyAddresseeslenspec" xml:space="preserve">
+    <value>Несколько адресатов</value>
+  </data>
+  <data name="Property_ManyAddresseesPlaceholderlenspec" xml:space="preserve">
+    <value>Адресат</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceListlenspecDescription" xml:space="preserve">
+    <value>Сохранение адресатов в новый список рассмотрения.</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListlenspecDescription" xml:space="preserve">
+    <value>Заполнение адресатов из списка ознакомления/рассмотрения.</value>
+  </data>
+  <data name="Action_SaveToAcquaintanceListlenspec" xml:space="preserve">
+    <value>Сохранить список</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListlenspec" xml:space="preserve">
+    <value>Заполнить из списка</value>
+  </data>
+  <data name="Property_FillEmpDeplenspec" xml:space="preserve">
+    <value>Заполнить работниками подразделения</value>
+  </data>
+  <data name="Property_FillOptlenspec" xml:space="preserve">
+    <value>Вариант заполнения</value>
+  </data>
+  <data name="Enum_FillOptlenspec_AllEmployess" xml:space="preserve">
+    <value>Все работники</value>
+  </data>
+  <data name="Enum_FillOptlenspec_OnlyManager" xml:space="preserve">
+    <value>Только руководители</value>
+  </data>
+  <data name="Action_FillInDivisionlenspec" xml:space="preserve">
+    <value>Заполнить из подразделения</value>
+  </data>
+  <data name="Action_FillFromAcquaintanceListlenspecHint" xml:space="preserve">
+    <value>Заполнить из списка</value>
+  </data>
+  <data name="Action_FillInDivisionlenspecDescription" xml:space="preserve">
+    <value>Заполнить из подразделения</value>
+  </data>
+  <data name="Property_Departmenslenspec" xml:space="preserve">
+    <value>Подразделения</value>
+  </data>
+  <data name="Property_OurCFlenspec" xml:space="preserve">
+    <value>ИСП/Группа объекта</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecHint" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_ClearAddresseeslenspecDescription" xml:space="preserve">
+    <value>Очищение всего списка адресатов</value>
+  </data>
+  <data name="Action_FillInDivisionlenspecHint" xml:space="preserve">
+    <value>Заполнить из подразделения</value>
+  </data>
+</root>

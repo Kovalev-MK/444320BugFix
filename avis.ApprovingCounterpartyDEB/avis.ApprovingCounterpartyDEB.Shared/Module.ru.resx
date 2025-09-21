@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApprovalCounterpartyBankTypeAndKindName" xml:space="preserve">
+    <value>Согласование контрагента/банка с ДБ</value>
+  </data>
+  <data name="ApprovalPersonTypeAndKindName" xml:space="preserve">
+    <value>Согласование персоны с ДБ</value>
+  </data>
+  <data name="RightsOnReportApprovalCounterparty" xml:space="preserve">
+    <value>Права на отчет «Контрагенты на согласовании»</value>
+  </data>
+  <data name="DebReportRoleDescription" xml:space="preserve">
+    <value>Пользователи, имеющие права на формирование отчёта по кнопке "Полный отчёт из КФ" из карточки Организаций, Банков и из документа "Согласование контрагентов и банков с ДБ".</value>
+  </data>
+  <data name="DebReportRoleName" xml:space="preserve">
+    <value>Права на формирование отчёта по кнопке "Полный отчёт из КФ"</value>
+  </data>
+  <data name="ExpressReportKFRoleDescription" xml:space="preserve">
+    <value>Пользователи, имеющие права на формирование отчёта по кнопке "Экспресс-отчет из КонтурФокус" из карточки Организаций, Банков и из документа "Согласование контрагентов и банков с ДБ"</value>
+  </data>
+  <data name="ExpressReportKFRoleName" xml:space="preserve">
+    <value>Права на экспресс-отчет из КФ</value>
+  </data>
+  <data name="ResponsibleLimitEconomistRoleName" xml:space="preserve">
+    <value>Ответственный экономист за определение лимита КА</value>
+  </data>
+  <data name="ResponsibleLimitEconomistRoleDescription" xml:space="preserve">
+    <value>Сотрудник, определяющий лимит по контрагенту в задаче на согласование контрагентов с ДБ</value>
+  </data>
+  <data name="NotifiedMembersApprovalDEBRoleName" xml:space="preserve">
+    <value>Уведомляемые по согласованию контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="NotifiedMembersApprovalDEBRoleDescription" xml:space="preserve">
+    <value>Сотрудники получающие уведомления о старте задач на согласование контрагентов, банков и персон с ДБ</value>
+  </data>
+</root>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявки на изменение прав, документов и настроек в DIRECTUM</value>
+  </data>
+  <data name="CoverGroup_Document" xml:space="preserve">
+    <value>Заявка на открытие периодов РСБУ и УУ</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Заявки на изменение прав, документов и настроек в DIRECTUM</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>Заявки в тех. поддержку DIRECTUM</value>
+  </data>
+  <data name="CoverAction_CreateDoc" xml:space="preserve">
+    <value>Создать заявку на открытие периодов РСБУ и УУ</value>
+  </data>
+  <data name="CoverDescription_CreateDoc" xml:space="preserve">
+    <value>Создание заявки на открытие периодов РСБУ и УУ.</value>
+  </data>
+  <data name="CoverGroup_SupportRequests" xml:space="preserve">
+    <value>Заявки на замещение</value>
+  </data>
+  <data name="CoverAction_CreateSubstitutionRequest" xml:space="preserve">
+    <value>Создать заявку на формирование замещения</value>
+  </data>
+  <data name="CoverGroup_LinkedInformation" xml:space="preserve">
+    <value>Связанная информация</value>
+  </data>
+  <data name="CoverAction_Substitutions" xml:space="preserve">
+    <value>Замещения</value>
+  </data>
+  <data name="CoverGroup_Information" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="CoverAction_MyRequest" xml:space="preserve">
+    <value>Мои заявки</value>
+  </data>
+  <data name="CoverDescription_MyRequest" xml:space="preserve">
+    <value>Список ваших заявок</value>
+  </data>
+  <data name="CoverGroup_RequestsEditComponentRX" xml:space="preserve">
+    <value>Заявки на изменение компонентов Directum RX</value>
+  </data>
+  <data name="CoverAction_EditProcessRequest" xml:space="preserve">
+    <value>Создать заявку на изменение процесса</value>
+  </data>
+  <data name="CoverDescription_EditProcessRequest" xml:space="preserve">
+    <value>Создание заявки на изменение настроек или модификацию процесса.</value>
+  </data>
+  <data name="CoverAction_EditDoc" xml:space="preserve">
+    <value>Создать заявку на изменение прав доступа на документы</value>
+  </data>
+  <data name="CoverDescription_EditDoc" xml:space="preserve">
+    <value>Создание заявки на получение прав доступа к документам.</value>
+  </data>
+  <data name="CoverAction_Other" xml:space="preserve">
+    <value>Создать заявку в произвольной форме</value>
+  </data>
+  <data name="CoverDescription_Other" xml:space="preserve">
+    <value>Создание заявки, отличной от перечисленной классификации.</value>
+  </data>
+  <data name="CoverDescription_CreateSubstitutionRequest" xml:space="preserve">
+    <value>Создание и отправка заявки на формирование замещения.</value>
+  </data>
+  <data name="CoverDescription_Substitutions" xml:space="preserve">
+    <value>Справочник замещений</value>
+  </data>
+  <data name="sf_7b69f695_b8c6_4640_9389_79bad45df48a" xml:space="preserve">
+    <value>Мои заявки</value>
+  </data>
+</root>

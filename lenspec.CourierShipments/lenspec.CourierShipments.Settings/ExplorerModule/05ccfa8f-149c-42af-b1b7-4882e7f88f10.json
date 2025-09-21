@@ -1,0 +1,9 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Uuid": "05ccfa8f-149c-42af-b1b7-4882e7f88f10",
+  "ModuleNameGuid": "05ccfa8f-149c-42af-b1b7-4882e7f88f10",
+  "HelpCode": "lenspec_CourierShipments",
+  "Status": "Active",
+  "SortingPriority": "High",
+  "StoreAsDefaultSetting": true
+}

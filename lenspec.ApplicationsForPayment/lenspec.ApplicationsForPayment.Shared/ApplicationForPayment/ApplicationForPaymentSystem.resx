@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявка на оплату</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Заявку на оплату</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Заявки на оплату</value>
+  </data>
+  <data name="Property_PaymentType" xml:space="preserve">
+    <value>Тип платежа</value>
+  </data>
+  <data name="Enum_PaymentType_Prepayment" xml:space="preserve">
+    <value>Предоплата по договору (предоплата/аванс по договору)</value>
+  </data>
+  <data name="Enum_PaymentType_Postpay" xml:space="preserve">
+    <value>Постоплата по договору (оплата за выполненные работы/услуги/товары)</value>
+  </data>
+  <data name="Enum_PaymentType_NoContract" xml:space="preserve">
+    <value>Без договора (оплата по счетам на сумму не более 300 тыс. руб.)</value>
+  </data>
+  <data name="Enum_PaymentType_Regulatory" xml:space="preserve">
+    <value>Регламентный (налоги, з/п, выдача и погашение займов и кредитов, уплата дивидендов, госпошлина)</value>
+  </data>
+  <data name="Enum_PaymentType_Sanction" xml:space="preserve">
+    <value>Штраф и аналогичные (любые выплаты по судебным решениям, по постановлениям судебных приставов, по постановлениям ГАИ)</value>
+  </data>
+  <data name="Enum_PaymentType_Refunds" xml:space="preserve">
+    <value>Возвраты денежных средств (любые возвраты денежных средств)</value>
+  </data>
+  <data name="Property_ThirdSide" xml:space="preserve">
+    <value>Третья сторона</value>
+  </data>
+  <data name="Property_CounterpartyBankDetail" xml:space="preserve">
+    <value>Расчетный счет контрагента</value>
+  </data>
+  <data name="Property_ThirdSideBankDetail" xml:space="preserve">
+    <value>Расчетный счет третьей стороны</value>
+  </data>
+  <data name="Property_BankDetailForRefund" xml:space="preserve">
+    <value>Расчетный счет для возврата денежных средств</value>
+  </data>
+  <data name="Property_NoAccount" xml:space="preserve">
+    <value>Без счета</value>
+  </data>
+  <data name="Property_Contract" xml:space="preserve">
+    <value>Договор</value>
+  </data>
+  <data name="Property_IncomingInvoice" xml:space="preserve">
+    <value>Входящий счет на оплату</value>
+  </data>
+  <data name="Property_ContractStatement" xml:space="preserve">
+    <value>Акт выполненных работ</value>
+  </data>
+  <data name="Property_Waybill" xml:space="preserve">
+    <value>Товарная накладная</value>
+  </data>
+  <data name="Property_UniversalTransferDocument" xml:space="preserve">
+    <value>УПД</value>
+  </data>
+  <data name="Property_Memo" xml:space="preserve">
+    <value>Служебная записка</value>
+  </data>
+  <data name="Property_SimpleDocument" xml:space="preserve">
+    <value>Простой документ</value>
+  </data>
+  <data name="Property_IncomingLetter" xml:space="preserve">
+    <value>Входящее письмо</value>
+  </data>
+  <data name="Property_CustomerRequest" xml:space="preserve">
+    <value>Обращение клиента</value>
+  </data>
+  <data name="Property_PlannedPaymentDate" xml:space="preserve">
+    <value>Плановая дата платежа</value>
+  </data>
+  <data name="Property_ActualPaymentDate" xml:space="preserve">
+    <value>Фактическая дата платежа</value>
+  </data>
+  <data name="Property_ActualPaymentAmount" xml:space="preserve">
+    <value>Сумма фактической оплаты</value>
+  </data>
+  <data name="Property_PaymentStatus" xml:space="preserve">
+    <value>Статус оплаты</value>
+  </data>
+  <data name="Enum_PaymentStatus_InProgress" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="Enum_PaymentStatus_Completed" xml:space="preserve">
+    <value>Исполнено</value>
+  </data>
+  <data name="Enum_PaymentStatus_Refused" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="Enum_PaymentStatus_Discontinued" xml:space="preserve">
+    <value>Прекращено</value>
+  </data>
+  <data name="Property_BudgetItem" xml:space="preserve">
+    <value>Статья бюджета ДДС</value>
+  </data>
+  <data name="Property_DecodingBudgetItem" xml:space="preserve">
+    <value>Расшифровка статьи бюджета ДДС</value>
+  </data>
+  <data name="Property_Directorate" xml:space="preserve">
+    <value>Дирекция</value>
+  </data>
+  <data name="Property_DirectorateRegion" xml:space="preserve">
+    <value>Регион дирекции</value>
+  </data>
+  <data name="Property_DepartmentRegion" xml:space="preserve">
+    <value>Регион подразделения</value>
+  </data>
+  <data name="Property_PreparedBy" xml:space="preserve">
+    <value>Инициатор</value>
+  </data>
+  <data name="Property_Department" xml:space="preserve">
+    <value>Подразделение инициатора</value>
+  </data>
+  <data name="Property_DepartmentByDirectorate" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="Property_ObjectAnProjects" xml:space="preserve">
+    <value>Объекты строительства</value>
+  </data>
+  <data name="Action_ShowDuplicates" xml:space="preserve">
+    <value>Показать дубли</value>
+  </data>
+  <data name="Action_ShowDuplicatesDescription" xml:space="preserve">
+    <value>Показать журналы регистрации с совпадающими полями.</value>
+  </data>
+  <data name="Action_ShowDuplicatesHint" xml:space="preserve">
+    <value>Показать дубли</value>
+  </data>
+  <data name="Action_ShowDuplicatesConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowDuplicatesConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_406e14dc17444a7f85d8f6eef8abaa3f" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Resource_fc50c88831554ff196e8ff7064894ead" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fc50c88831554ff196e8ff7064894ead_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ddf41ead829a4a3f8d12d40a52b7440c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ddf41ead829a4a3f8d12d40a52b7440c_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_b5e8b8544bd44d9f95ceb86fea26c1e6" xml:space="preserve">
+    <value>Плательщик</value>
+  </data>
+  <data name="Resource_a915c070568d4f08a7365fbdabe9e559" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_a915c070568d4f08a7365fbdabe9e559_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_b8017e2288d643da8d6d8d11917b1dd6" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="ControlGroup_2a9b759d673b4a94bb3b3d6bdcae0d5d" xml:space="preserve">
+    <value>Получатель</value>
+  </data>
+  <data name="Resource_2ba45a3701c04b3e908a465e75956a24" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_2ba45a3701c04b3e908a465e75956a24_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_4d51b49314b04582864662e156cbc859_EmptyText" xml:space="preserve">
+    <value>Укажите подразделение, чей бюджет расходуется</value>
+  </data>
+  <data name="ControlGroup_57b6dc7497134fe4978461603234027c" xml:space="preserve">
+    <value>Объекты строительства</value>
+  </data>
+  <data name="ControlGroup_554dd09856a148c8946ffb75f37312f8" xml:space="preserve">
+    <value>Условия</value>
+  </data>
+  <data name="Resource_89c5c5d1362044b082a83f12ccaf3a47" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_89c5c5d1362044b082a83f12ccaf3a47_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_076aa293ce4a4b1793e40fcee5779c4d" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_36d8ed1153db4cdb8b1dbc5d37146e80" xml:space="preserve">
+    <value>Центр финансовой ответственности</value>
+  </data>
+  <data name="ControlGroup_77a917257cde414f9a17c51ac4cd027f" xml:space="preserve">
+    <value>Расшифровка платежа</value>
+  </data>
+  <data name="Control_ab4d8221244248969b73674fc3b486b7_EmptyText" xml:space="preserve">
+    <value>Укажите подразделение, чей бюджет расходуется</value>
+  </data>
+  <data name="Form_4e791f31474a4fe98db469de3c7050fd" xml:space="preserve">
+    <value>Расшифровка платежа</value>
+  </data>
+  <data name="ControlGroup_d03f9d2f333c40e09bc5b17262d13494" xml:space="preserve">
+    <value>Документ-основание</value>
+  </data>
+  <data name="ControlGroup_c18501e47af044de8ac7873abb63e9d6" xml:space="preserve">
+    <value>Additional</value>
+  </data>
+  <data name="ControlGroup_42612188cf984a66a4cc5c674787d208" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Resource_0e47ae684ffc4acb80bf3d6f715ce7c2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_0e47ae684ffc4acb80bf3d6f715ce7c2_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_SubjectPaymentPurpose" xml:space="preserve">
+    <value>Содержание (назначение платежа)</value>
+  </data>
+  <data name="Property_Category" xml:space="preserve">
+    <value>Категория заявки</value>
+  </data>
+  <data name="Enum_Category_Standard" xml:space="preserve">
+    <value>Обычная</value>
+  </data>
+  <data name="Enum_Category_ForClients" xml:space="preserve">
+    <value>Клиентам</value>
+  </data>
+  <data name="Enum_Category_ForBailiffs" xml:space="preserve">
+    <value>Судебным приставам</value>
+  </data>
+  <data name="Property_CaseNumber" xml:space="preserve">
+    <value>Номер дела</value>
+  </data>
+  <data name="Property_ResolutionNumber" xml:space="preserve">
+    <value>Номер постановления</value>
+  </data>
+  <data name="Property_UIN" xml:space="preserve">
+    <value>Уникальный идентификатор (УИН)</value>
+  </data>
+  <data name="Property_PaymentKind" xml:space="preserve">
+    <value>Вид платежа</value>
+  </data>
+  <data name="Enum_PaymentKind_Advance" xml:space="preserve">
+    <value>Аванс</value>
+  </data>
+  <data name="Enum_PaymentKind_NoAdvance" xml:space="preserve">
+    <value>Без аванса</value>
+  </data>
+  <data name="Enum_PaymentKind_AccountingApp" xml:space="preserve">
+    <value>ПБУ 2</value>
+  </data>
+  <data name="Control_9f8f5dba299747c68bb541291cc9ab35_EmptyText" xml:space="preserve">
+    <value>Укажите назначение платежа</value>
+  </data>
+  <data name="Property_ContractStatements" xml:space="preserve">
+    <value>Акт выполненных работ</value>
+  </data>
+  <data name="Property_Waybills" xml:space="preserve">
+    <value>Товарная накладная</value>
+  </data>
+  <data name="Property_UTDs" xml:space="preserve">
+    <value>УПД</value>
+  </data>
+  <data name="Action_Export1C" xml:space="preserve">
+    <value>Экспорт в 1С</value>
+  </data>
+  <data name="Action_Export1CDescription" xml:space="preserve">
+    <value>Кнопка выгрузки заявки на оплату в 1С</value>
+  </data>
+  <data name="Action_Export1CHint" xml:space="preserve">
+    <value>Кнопка выгрузки заявки на оплату в 1С</value>
+  </data>
+  <data name="Action_Export1CConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_Export1CConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_InternalApprovalState_Approved" xml:space="preserve">
+    <value>Согласован</value>
+  </data>
+  <data name="Property_Export1CState" xml:space="preserve">
+    <value>Экспорт в 1С</value>
+  </data>
+  <data name="Enum_Export1CState_Yes" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="Enum_Export1CState_No" xml:space="preserve">
+    <value>Не выполнено</value>
+  </data>
+  <data name="Property_Export1CDate" xml:space="preserve">
+    <value>Дата экспорта в 1С</value>
+  </data>
+  <data name="Control_ddbc29293409463a9cfd5d326f46f8c2_EmptyText" xml:space="preserve">
+    <value>Приложите служебную записку для обоснования необходимости оплаты</value>
+  </data>
+  <data name="Resource_e300028a5e1f485d806917e121bb9ba9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_e81f0c5eb58a4007aeebb672ea52875b" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c45cfe6a44c043689482e4b0a91c3e05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_4ebb565bb94d465295fba553ba4900b8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_6db130988df540968fd5ffc5f9d4dfc5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_2574d8e0ddb04af7a692711434658d6a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_174ad90c64a4439eaa4f0c7286c511df" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_a52c6e121b2c4fc8941d7846542e3105" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_PaymentStatus_Partially" xml:space="preserve">
+    <value>Исполнено частично</value>
+  </data>
+  <data name="Property_ReasonNumber" xml:space="preserve">
+    <value>Номер основания</value>
+  </data>
+  <data name="Property_ReasonDate" xml:space="preserve">
+    <value>Дата основания</value>
+  </data>
+  <data name="ControlGroup_f7204bb689394e8fb2a9f0bd7bbfc8c1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_PaymentType_TransitPayment" xml:space="preserve">
+    <value>Транзитный платеж</value>
+  </data>
+  <data name="Enum_PaymentType_SubsidyDownPaym" xml:space="preserve">
+    <value>Субсидирование с ПВ</value>
+  </data>
+</root>

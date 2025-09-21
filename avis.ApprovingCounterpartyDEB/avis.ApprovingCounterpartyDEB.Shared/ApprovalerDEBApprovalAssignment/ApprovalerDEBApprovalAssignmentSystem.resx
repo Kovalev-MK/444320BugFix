@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Проверка контрагента Согласующим ДБ</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Проверка контрагента Согласующим ДБ</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Проверка контрагента Согласующим ДБ</value>
+  </data>
+  <data name="Enum_Result_Rework" xml:space="preserve">
+    <value>На доработку</value>
+  </data>
+  <data name="Action_Rework" xml:space="preserve">
+    <value>На доработку</value>
+  </data>
+  <data name="Action_ReworkHint" xml:space="preserve">
+    <value>Complete with Result "Rework"</value>
+  </data>
+  <data name="Action_ReworkConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Rework"?</value>
+  </data>
+  <data name="Action_ReworkDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Rework"</value>
+  </data>
+  <data name="Enum_Result_Forward" xml:space="preserve">
+    <value>Назначить исполнителя</value>
+  </data>
+  <data name="Action_Forward" xml:space="preserve">
+    <value>Назначить исполнителя</value>
+  </data>
+  <data name="Action_ForwardHint" xml:space="preserve">
+    <value>Complete with Result "Forward"</value>
+  </data>
+  <data name="Action_ForwardConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "Forward"?</value>
+  </data>
+  <data name="Action_ForwardDescription" xml:space="preserve">
+    <value>Complete the assignment with result "Forward"</value>
+  </data>
+  <data name="Property_Forward" xml:space="preserve">
+    <value>Переадресовать сотруднику </value>
+  </data>
+  <data name="Property_CompletionDate" xml:space="preserve">
+    <value>Дата окончания согласования</value>
+  </data>
+  <data name="Property_CounterpartyLimit" xml:space="preserve">
+    <value>Лимит на контрагента (руб.)</value>
+  </data>
+  <data name="Resource_1bbfaba9c44445878d1c51150787fb2e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_1bbfaba9c44445878d1c51150787fb2e_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c9c4beefec5b4b3796d4959c17991279" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_c9c4beefec5b4b3796d4959c17991279_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_45c3f7afea6f40948e21e643b6358f4a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_45c3f7afea6f40948e21e643b6358f4a_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ad03c4af7bfe4967aa2cdaa3265bdbe3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_4917364762724459ab15867c0b3c85a2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_ebfeb539df3646ebb16c88e4afe77109" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_2843c476ecee44d3a08869784756d9f0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_7d052a6b05aa4586abbfca9d980cf36c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_eca46beba27c4abc91e73bf3186fd8f8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_GetApprovalList" xml:space="preserve">
+    <value>Лист согласования с ДБ</value>
+  </data>
+  <data name="Action_GetApprovalListDescription" xml:space="preserve">
+    <value>Сформировать лист согласования с ДБ</value>
+  </data>
+  <data name="Action_GetApprovalListHint" xml:space="preserve">
+    <value>Сформировать лист согласования с ДБ</value>
+  </data>
+  <data name="Action_GetApprovalListConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_GetApprovalListConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_Result_CoopPossible" xml:space="preserve">
+    <value>Сотрудничество возможно</value>
+  </data>
+  <data name="Action_CoopPossible" xml:space="preserve">
+    <value>Сотрудничество возможно</value>
+  </data>
+  <data name="Action_CoopPossibleHint" xml:space="preserve">
+    <value>Complete with Result "CoopPossible"</value>
+  </data>
+  <data name="Action_CoopPossibleConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "CoopPossible"?</value>
+  </data>
+  <data name="Action_CoopPossibleDescription" xml:space="preserve">
+    <value>Complete the assignment with result "CoopPossible"</value>
+  </data>
+  <data name="Enum_Result_CoopNotRecomend" xml:space="preserve">
+    <value>Сотрудничество не рекомендовано</value>
+  </data>
+  <data name="Action_CoopNotRecomend" xml:space="preserve">
+    <value>Сотрудничество не рекомендовано</value>
+  </data>
+  <data name="Action_CoopNotRecomendHint" xml:space="preserve">
+    <value>Complete with Result "CoopNotRecomend"</value>
+  </data>
+  <data name="Action_CoopNotRecomendConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "CoopNotRecomend"?</value>
+  </data>
+  <data name="Action_CoopNotRecomendDescription" xml:space="preserve">
+    <value>Complete the assignment with result "CoopNotRecomend"</value>
+  </data>
+  <data name="Enum_Result_CoopWithRisks" xml:space="preserve">
+    <value>Сотрудничество с рисками</value>
+  </data>
+  <data name="Action_CoopWithRisks" xml:space="preserve">
+    <value>Сотрудничество с рисками</value>
+  </data>
+  <data name="Action_CoopWithRisksHint" xml:space="preserve">
+    <value>Complete with Result "CoopWithRisks"</value>
+  </data>
+  <data name="Action_CoopWithRisksConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "CoopWithRisks"?</value>
+  </data>
+  <data name="Action_CoopWithRisksDescription" xml:space="preserve">
+    <value>Complete the assignment with result "CoopWithRisks"</value>
+  </data>
+  <data name="Enum_Result_DoesNotReqAppr" xml:space="preserve">
+    <value>Не требует одобрения</value>
+  </data>
+  <data name="Action_DoesNotReqAppr" xml:space="preserve">
+    <value>Не требует одобрения</value>
+  </data>
+  <data name="Action_DoesNotReqApprHint" xml:space="preserve">
+    <value>Complete with Result "DoesNotReqAppr"</value>
+  </data>
+  <data name="Action_DoesNotReqApprConfirmationMessage" xml:space="preserve">
+    <value>Complete the assignment with result "DoesNotReqAppr"?</value>
+  </data>
+  <data name="Action_DoesNotReqApprDescription" xml:space="preserve">
+    <value>Complete the assignment with result "DoesNotReqAppr"</value>
+  </data>
+  <data name="Form_6097d9b188a740cf93b554be8c282911" xml:space="preserve">
+    <value>Regulations</value>
+  </data>
+  <data name="ControlGroup_ca80b9bc3c6741349fcf06a395fb6c35" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_NewPerformer" xml:space="preserve">
+    <value>Назначить исполнителя</value>
+  </data>
+  <data name="Action_NewPerformerDescription" xml:space="preserve">
+    <value>Переадресовать задание другому исполнителю</value>
+  </data>
+  <data name="Action_NewPerformerHint" xml:space="preserve">
+    <value>Переадресовать задание</value>
+  </data>
+  <data name="Action_NewPerformerConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_NewPerformerConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+</root>

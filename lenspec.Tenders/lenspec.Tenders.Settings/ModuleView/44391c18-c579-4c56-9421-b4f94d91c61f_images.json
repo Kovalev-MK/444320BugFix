@@ -1,0 +1,37 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces",
+      "Name": "9ac97da9-0b1e-4246-a28b-815bc86e9fde.svg",
+      "Data": {
+        "$type": "System.Byte[], System.Private.CoreLib",
+        "$value": "PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHRpdGxlPkdyb3VwSWNvbkRvY3VtZW50c19sYXJnZV8xMzZiNWI3YjA1M2E0Y2ExOGYwNTc5YWYxZmMyZGZmYjwvdGl0bGU+PHBvbHlnb24gcG9pbnRzPSIzMCAyNiAxMiAyNiAxMiAyIDI2IDIgMzAgNiAzMCAyNiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0zMCw2SDI2VjJNMjQsMFY3YTEsMSwwLDAsMCwxLDFoN1oiIGZpbGw9IiM5ZGEyYTUiLz48cmVjdCB4PSIyMyIgeT0iMTIiIHdpZHRoPSI1IiBoZWlnaHQ9IjIiIGZpbGw9IiNhZGIxYjIiLz48cmVjdCB4PSIyMyIgeT0iMTYiIHdpZHRoPSI1IiBoZWlnaHQ9IjIiIGZpbGw9IiNhZGIxYjIiLz48cmVjdCB4PSIyMyIgeT0iMjAiIHdpZHRoPSI1IiBoZWlnaHQ9IjIiIGZpbGw9IiNhZGIxYjIiLz48cG9seWdvbiBwb2ludHM9IjIwIDMwIDIgMzAgMiA2IDE2IDYgMjAgMTAgMjAgMzAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMjAsMTFWMzBIMlY2SDE1bDUsNU0xNS41LDRIMUExLDEsMCwwLDAsMCw1VjMxYTEsMSwwLDAsMCwxLDFIMjFhMSwxLDAsMCwwLDEtMVYxMC41WiIgZmlsbD0iIzlkYTJhNSIvPjxwYXRoIGQ9Ik0yMCwxMEgxNlY2TTE0LDR2N2ExLDEsMCwwLDAsMSwxaDdaIiBmaWxsPSIjOWRhMmE1Ii8+PHJlY3QgeD0iNCIgeT0iMTYiIHdpZHRoPSIxNCIgaGVpZ2h0PSIyIiBmaWxsPSIjYWRiMWIyIi8+PHJlY3QgeD0iNCIgeT0iMjAiIHdpZHRoPSIxNCIgaGVpZ2h0PSIyIiBmaWxsPSIjYWRiMWIyIi8+PHJlY3QgeD0iNCIgeT0iMjQiIHdpZHRoPSIxNCIgaGVpZ2h0PSIyIiBmaWxsPSIjYWRiMWIyIi8+PHBhdGggZD0iTTI1LjUsMEgxMWExLDEsMCwwLDAtMSwxVjNoMlYySDI1bDUsNVYyNkgyNHYyaDdjMC41NSwwLDEsLjU1LDEsMFY2LjVaIiBmaWxsPSIjOWRhMmE1Ii8+PC9zdmc+"
+      }
+    },
+    {
+      "$type": "Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces",
+      "Name": "dfdd63f1-ede7-4124-b017-ec9331994361.svg",
+      "Data": {
+        "$type": "System.Byte[], System.Private.CoreLib",
+        "$value": "PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHRpdGxlPkFjdGlvbl9TZWFyY2hEb2N1bWVudHNfbGFyZ2VfN2RhZDBjODNkZmU3NGU3YTlkNGQxNmQyODc4NTViOWQ8L3RpdGxlPjxwYXRoIGQ9Ik0zMC4zLDMyYTEuNjksMS42OSwwLDAsMS0xLjItLjVMMTIuODUsMTUuMjZhMS43LDEuNywwLDAsMSwyLjQtMi40TDMxLjUsMjkuMUExLjcsMS43LDAsMCwxLDMwLjMsMzJaIiBmaWxsPSIjNDA3ZmI5Ii8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTIsMi42QTkuNCw5LjQsMCwxLDEsMi42LDEyLDkuNDEsOS40MSwwLDAsMSwxMiwyLjZNMTIsMEExMiwxMiwwLDEsMCwyNCwxMiwxMiwxMiwwLDAsMCwxMiwwaDBaIiBmaWxsPSIjNDA3ZmI5Ii8+PC9zdmc+"
+      }
+    },
+    {
+      "$type": "Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces",
+      "Name": "e05a5b21-b1cb-46f2-b323-ba06e9b85822.svg",
+      "Data": {
+        "$type": "System.Byte[], System.Private.CoreLib",
+        "$value": "PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHRpdGxlPmFjdGlvbl9zaG93ZHVwbGljYXRld29ya2l0ZW1zX2xhcmdlXzg5ZWEwMjg4YTYwNzQ3M2Y5ZjdlYTc2ZTllOThmODM3PC90aXRsZT48cmVjdCB4PSIyIiB5PSI5IiB3aWR0aD0iMjQiIGhlaWdodD0iMTkiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSI2IiB5PSI0IiB3aWR0aD0iMjQiIGhlaWdodD0iMTkiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMjYsOVYyOEgyVjlIMjZtMS0ySDFBMSwxLDAsMCwwLDAsOFYyOWExLDEsMCwwLDAsMSwxSDI3YTEsMSwwLDAsMCwxLTFWOGExLDEsMCwwLDAtMS0xaDBaIiBmaWxsPSIjOWRhMmE1Ii8+PHJlY3QgeD0iNCIgeT0iMTMiIHdpZHRoPSIyMCIgaGVpZ2h0PSIzIiBmaWxsPSIjN2RhN2I1Ii8+PHJlY3QgeD0iNCIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiM2NjdmOTQiLz48cmVjdCB4PSIxMSIgeT0iMTciIHdpZHRoPSIxMyIgaGVpZ2h0PSIyIiBmaWxsPSIjNjY3Zjk0Ii8+PHJlY3QgeD0iNCIgeT0iMjAiIHdpZHRoPSI2IiBoZWlnaHQ9IjIiIGZpbGw9IiM2NjdmOTQiLz48cmVjdCB4PSIxMSIgeT0iMjAiIHdpZHRoPSIxMyIgaGVpZ2h0PSIyIiBmaWxsPSIjNjY3Zjk0Ii8+PHBhdGggZD0iTTMxLDJINUExLDEsMCwwLDAsNCwzVjZINlY0SDMwVjIzSDI5djJoMmExLDEsMCwwLDAsMS0xVjNBMSwxLDAsMCwwLDMxLDJaIiBmaWxsPSIjOWRhMmE1Ii8+PC9zdmc+"
+      }
+    },
+    {
+      "$type": "Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces",
+      "Name": "f33a5ba3-7e8a-4912-99eb-3aafc7fb8e70.svg",
+      "Data": {
+        "$type": "System.Byte[], System.Private.CoreLib",
+        "$value": "PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHRpdGxlPkdyb3VwSWNvbkxpbmtzX2xhcmdlXzQ1ODdlNGJhOThjNDQyOGVhYmVlMzdkOGVhYjEzOGNkPC90aXRsZT48cGF0aCBkPSJNOCwwSDI4YTEsMSwwLDAsMSwxLDFWMjdhMSwxLDAsMCwxLTEsMUg4YTAsMCwwLDAsMSwwLDBWMEEwLDAsMCwwLDEsOCwwWiIgZmlsbD0iIzZmYTZkNCIvPjxyZWN0IHg9IjciIHdpZHRoPSIxIiBoZWlnaHQ9IjMwIiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTUsMzAsNywwSDZBMiwyLDAsMCwwLDQsMlYzMGEyLDIsMCwwLDAsMiwySDI4YTAuOTQsMC45NCwwLDAsMCwxLTEsMC45MSwwLjkxLDAsMCwwLTEtMUg3VjBIN1oiIGZpbGw9IiM2ZmE2ZDQiLz48cmVjdCB4PSIxMyIgeT0iNiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjQiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNNywyOEgyOGEwLDAsMCwwLDEsMCwwdjJhMCwwLDAsMCwxLDAsMEg3YTEsMSwwLDAsMS0xLTF2MGExLDEsMCwwLDEsMS0xWiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+      }
+    }
+  ]
+}

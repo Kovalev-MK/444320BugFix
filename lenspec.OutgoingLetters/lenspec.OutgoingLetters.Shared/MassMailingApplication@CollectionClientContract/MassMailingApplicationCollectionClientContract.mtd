@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "c499657a-58d7-4274-aa31-af95c50146cb",
+  "Name": "MassMailingApplicationCollectionClientContract",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "MassMailingApp",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "0d2c4411-d720-43bc-95fe-ca7c6559b4f7",
+      "Name": "MassMailingApplication",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "fa18be6a-226c-4868-b24a-1ae60e0c30a4",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fb50158a-a128-4af5-8aaf-50d67cf0781c",
+      "Name": "ClientContract",
+      "CanBeSearch": false,
+      "Code": "ClientContract",
+      "EntityGuid": "c4f798a1-be37-4701-8036-f81e45f44e5d",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "0d2c4411-d720-43bc-95fe-ca7c6559b4f7"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "1039b194-8f2e-4a37-b467-376d673f79be",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "c2fff87f-e1bf-402d-9191-cedb0a1e3727",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

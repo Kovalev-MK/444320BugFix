@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RoleNameResponsibleForAuthorities" xml:space="preserve">
+    <value>Ответственный за полномочия по доверенностям</value>
+  </data>
+  <data name="RoleNameResponsibleForRightSign" xml:space="preserve">
+    <value>Ответственный за право подписи</value>
+  </data>
+  <data name="RoleNameRightChangePowerOfAttorneyGroup" xml:space="preserve">
+    <value>Права на изменение доверенностей группы</value>
+  </data>
+  <data name="RoleNameRightCreatePowerOfAttorneys" xml:space="preserve">
+    <value>Права на создание простых и нотариальных доверенностей без согласования</value>
+  </data>
+  <data name="RoleNameResponsibleRecallPowerOfAttorney" xml:space="preserve">
+    <value>Ответственные за отзыв доверенностей</value>
+  </data>
+  <data name="RoleNameRightAllPowerOfAttorneysGroup" xml:space="preserve">
+    <value>Права на все доверенности группы</value>
+  </data>
+  <data name="RevokeReason" xml:space="preserve">
+    <value>Истечение срока действия доверенности</value>
+  </data>
+  <data name="EnterIntoContractName" xml:space="preserve">
+    <value>Заключать договоры</value>
+  </data>
+  <data name="CreatePowerOfAttorney_ResourceKey" xml:space="preserve">
+    <value>Заявка на оформление доверенности</value>
+  </data>
+  <data name="CreatePowerOfAttorney_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание проекта доверенности.</value>
+  </data>
+  <data name="CreateRecallPowerOfAttorneyTask_ResourceKey" xml:space="preserve">
+    <value>Заявка на отзыв доверенности</value>
+  </data>
+  <data name="CreateRecallPowerOfAttorneyTask_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание задачи на отзыв доверенности.</value>
+  </data>
+  <data name="SearchPowerOfAttorney_ResourceKey" xml:space="preserve">
+    <value>Поиск доверенностей</value>
+  </data>
+  <data name="SearchPowerOfAttorney_DescriptionResourceKey" xml:space="preserve">
+    <value>Диалоговое окно поиска доверенностей.</value>
+  </data>
+  <data name="CreateElectronicPowerOfAttorney_ResourceKey" xml:space="preserve">
+    <value>Заявка на оформление электронной доверенности</value>
+  </data>
+  <data name="CreateElectronicPowerOfAttorney_DescriptionResourceKey" xml:space="preserve">
+    <value>Создание электронной доверенности.</value>
+  </data>
+  <data name="SearchFormalizedPowerOfAttorney_ResourceKey" xml:space="preserve">
+    <value>Поиск электронных доверенностей</value>
+  </data>
+  <data name="SearchFormalizedPowerOfAttorney_DescriptionResourceKey" xml:space="preserve">
+    <value>Диалоговое окно поиска электронных доверенностей.</value>
+  </data>
+  <data name="RequestToCreatePowerOfAttorneyKindName" xml:space="preserve">
+    <value>Заявка на оформление доверенности</value>
+  </data>
+  <data name="RequestToCreateNotarialPowerOfAttorneyKindName" xml:space="preserve">
+    <value>Заявка на оформление нотариальной доверенности</value>
+  </data>
+  <data name="DocumentAttorneyKindName" xml:space="preserve">
+    <value>Документы поверенных</value>
+  </data>
+  <data name="ApplicationRelinquishmentAuthorityKindName" xml:space="preserve">
+    <value>Заявление об отказе от полномочий по доверенности</value>
+  </data>
+  <data name="DocumentNotarialKindName" xml:space="preserve">
+    <value>Нотариальная доверенность</value>
+  </data>
+  <data name="HidingVersionsFunctionName" xml:space="preserve">
+    <value>Скрытие версий доверенностей</value>
+  </data>
+  <data name="RemovingBodyFunctionName" xml:space="preserve">
+    <value>Удаление содержимого документов поверенных и содержимого заявки</value>
+  </data>
+  <data name="RoleNameResponsibleLawyer" xml:space="preserve">
+    <value>Ответственный юрист для доверенностей</value>
+  </data>
+  <data name="RoleNameRightReadPowerOfAttorneyGroup" xml:space="preserve">
+    <value>Права на просмотр всех доверенностей группы</value>
+  </data>
+  <data name="RoleNameRightsToAttachScans" xml:space="preserve">
+    <value>Права на вложение сканов бумажных доверенностей</value>
+  </data>
+</root>

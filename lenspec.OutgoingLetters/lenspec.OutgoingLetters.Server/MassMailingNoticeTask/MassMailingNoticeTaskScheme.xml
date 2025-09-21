@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<RouteScheme xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MaxBlockId="3">
+  <Blocks>
+    <BlockBase xsi:type="StartBlock">
+      <Id>1</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CustomProperties />
+      <ParameterOperations />
+    </BlockBase>
+    <BlockBase xsi:type="FinishBlock">
+      <Id>2</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CustomProperties />
+      <ParameterOperations />
+      <UnderReview>false</UnderReview>
+      <ReviewAssignmentId>0</ReviewAssignmentId>
+    </BlockBase>
+    <BlockBase xsi:type="NoticeBlock">
+      <Id>3</Id>
+      <BlockTypeId xsi:nil="true" />
+      <CreatedInTaskGuid>7f59ae3a-09be-4e02-a6c5-e5ff374ad5a2</CreatedInTaskGuid>
+      <Title>Уведомление о результате массовой отправки эл. писем</Title>
+      <CustomProperties />
+      <ParameterOperations />
+      <GroupsAttachmentsRights />
+      <AttachmentGroupsSettings />
+      <TypeGuid>be39d02e-940e-4e0f-b02e-96df0f2981b9</TypeGuid>
+      <CreatedEntitiesIds />
+      <Performers />
+    </BlockBase>
+  </Blocks>
+  <Edges>
+    <Edge>
+      <Id>1</Id>
+      <Source>1</Source>
+      <Target>3</Target>
+    </Edge>
+    <Edge>
+      <Id>2</Id>
+      <Source>3</Source>
+      <Target>2</Target>
+    </Edge>
+  </Edges>
+  <Layout>
+    <BlocksLayout>
+      <BlockLayout>
+        <BlockId>1</BlockId>
+        <Bounds>
+          <Location>
+            <X>5</X>
+            <Y>-47.5</Y>
+          </Location>
+          <Size>
+            <Width>48</Width>
+            <Height>48</Height>
+          </Size>
+          <X>5</X>
+          <Y>-47.5</Y>
+          <Width>48</Width>
+          <Height>48</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>2</BlockId>
+        <Bounds>
+          <Location>
+            <X>5</X>
+            <Y>150.5</Y>
+          </Location>
+          <Size>
+            <Width>48</Width>
+            <Height>48</Height>
+          </Size>
+          <X>5</X>
+          <Y>150.5</Y>
+          <Width>48</Width>
+          <Height>48</Height>
+        </Bounds>
+      </BlockLayout>
+      <BlockLayout>
+        <BlockId>3</BlockId>
+        <Bounds>
+          <Location>
+            <X>-96</X>
+            <Y>40.5</Y>
+          </Location>
+          <Size>
+            <Width>250</Width>
+            <Height>70</Height>
+          </Size>
+          <X>-96</X>
+          <Y>40.5</Y>
+          <Width>250</Width>
+          <Height>70</Height>
+        </Bounds>
+      </BlockLayout>
+    </BlocksLayout>
+    <EdgesLayout>
+      <EdgeLayout>
+        <DestinationAnchor>3</DestinationAnchor>
+        <EdgeId>1</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>40.5</Y>
+        </EndPoint>
+        <OriginAnchor>-1</OriginAnchor>
+        <Points>
+          <Point>
+            <X>29</X>
+            <Y>0.5</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>40.5</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>29</X>
+          <Y>0.5</Y>
+        </StartPoint>
+      </EdgeLayout>
+      <EdgeLayout>
+        <DestinationAnchor>-1</DestinationAnchor>
+        <EdgeId>2</EdgeId>
+        <EndPoint>
+          <X>29</X>
+          <Y>150.5</Y>
+        </EndPoint>
+        <OriginAnchor>10</OriginAnchor>
+        <Points>
+          <Point>
+            <X>29</X>
+            <Y>110.5</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>150.5</Y>
+          </Point>
+          <Point>
+            <X>29</X>
+            <Y>150.5</Y>
+          </Point>
+        </Points>
+        <StartPoint>
+          <X>29</X>
+          <Y>110.5</Y>
+        </StartPoint>
+      </EdgeLayout>
+    </EdgesLayout>
+  </Layout>
+</RouteScheme>

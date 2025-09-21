@@ -1,0 +1,37 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_b6fcde2ced994a26bdfc0bb37015e3b4": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Обращения клиентов"
+  },
+  "CoverHeaderSettings_Description_b6fcde2ced994a26bdfc0bb37015e3b4": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Информация по работе с клиентскими обращениями.",
+    "ru-RU": "\r\nИнформация по работе с клиентскими обращениями:\r\n\r\nВсе обращения клиентов за все время перенесены из Directum 5 в Directum RX. Исполнение обращений, запущенное в Directum 5, завершается там же. "
+  },
+  "Tab_Title_4993c4594f0c43d9ab734fe3aed27638": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Tab"
+  },
+  "SetupInformation_Title_97d9db4707f24a7e8ff131400afeedfd": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Setup Information",
+    "ru-RU": "Информация по настройкам"
+  },
+  "FindCustomRequests_Title_e597372db2ce4acf9110b1b9c40057cb": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск обращений клиентов"
+  },
+  "CustomReqCateg_Title_96479a8afa8d4234817e88a3ef03a182": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Категории обращений клиентов"
+  },
+  "SetupActionCustReq_Title_6494170ceac347b18ceef35c51147ac2": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Настройка исполнения по обращениям клиентов"
+  },
+  "FindReqAction_Title_2e6f649ffa2e4f06b8527400f0cfaba9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск обращений"
+  }
+}

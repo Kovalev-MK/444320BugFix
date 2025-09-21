@@ -1,0 +1,247 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Uuid": "6790d1d6-aaa3-4a36-8fde-2ab4a68c6a68",
+  "Items": {
+    "$type": "Sungero.DataExport.ExportingObject[], Sungero.DataExport",
+    "$values": [
+      {
+        "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+        "Uuid": "99d084ae-4fc5-40a0-b19e-62c19528f0e5",
+        "ModuleView": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "f7cba906-f4c9-4f02-97e8-a6c6155a8ee6",
+          "Identifier": "6790d1d6-aaa3-4a36-8fde-2ab4a68c6a68"
+        },
+        "Number": 1,
+        "ItemType": "EntityType",
+        "NameGuid": "2f5623a9-2e2b-4119-9090-9bb5d59003e0"
+      }
+    ]
+  },
+  "Recipients": {
+    "$type": "Sungero.DataExport.ExportingObject[], Sungero.DataExport",
+    "$values": [
+      {
+        "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+        "Uuid": "70ceed4a-5bd2-43e4-a555-9b2d3d5b4620",
+        "ModuleView": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "f7cba906-f4c9-4f02-97e8-a6c6155a8ee6",
+          "Identifier": "6790d1d6-aaa3-4a36-8fde-2ab4a68c6a68"
+        },
+        "Recipient": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "5e9b55c2-c1f5-4e4f-aa09-7b6d461d87ed",
+          "Identifier": "ba88ed21-a43c-4684-be90-99c5a22e5c90"
+        }
+      }
+    ]
+  },
+  "Cover": {
+    "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverSettings, Sungero.NoCode.Settings.Interfaces",
+    "NameGuid": "13b97794-eb75-43bb-9c2c-eb0fc92a5e1c",
+    "Header": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverHeaderSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "4350d84c-7a6f-4032-abde-30b9238b7e3b",
+      "Name": "CoverHeaderSettings",
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Footer": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFooterSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "0dfce992-7ff9-4757-9a15-6e8366c3f80b",
+      "Name": "CoverFooterSettings",
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Tabs": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces",
+          "TabId": "87b7cace-f260-47cc-8494-ac657ca42831",
+          "NameGuid": "87b7cace-f260-47cc-8494-ac657ca42831",
+          "Name": "Tab",
+          "Index": 0,
+          "ParentId": "e3a3e8ad-7d06-4c22-95ff-607da903d6ee"
+        }
+      ]
+    },
+    "Groups": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "e7299ebd-186d-4ee3-9af1-82e4f4662e77",
+          "ColumnNumber": 0,
+          "IconName": "3db81367-f87e-4045-9ba8-f69dff729617.svg",
+          "NameGuid": "e7299ebd-186d-4ee3-9af1-82e4f4662e77",
+          "Name": "Documents",
+          "Index": 0,
+          "ParentId": "87b7cace-f260-47cc-8494-ac657ca42831"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "4acd0f86-9976-4ac8-b31a-f5f7eb9d6ef8",
+          "ColumnNumber": 1,
+          "IconName": "56daea10-ede7-4abf-9d03-3cbbfb7bda12.svg",
+          "NameGuid": "4acd0f86-9976-4ac8-b31a-f5f7eb9d6ef8",
+          "Name": "RequestsToArchive",
+          "Index": 1,
+          "ParentId": "87b7cace-f260-47cc-8494-ac657ca42831"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "720743ee-7f93-4625-badb-3aab098cc625",
+          "ColumnNumber": 0,
+          "IconName": "67bf3cb8-a9d6-4aab-b98c-6ead2b2292ef.svg",
+          "NameGuid": "720743ee-7f93-4625-badb-3aab098cc625",
+          "Name": "Search",
+          "Index": 2,
+          "ParentId": "87b7cace-f260-47cc-8494-ac657ca42831"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "b98e946f-8910-47bb-95a5-0832df6e3352",
+          "ColumnNumber": 1,
+          "IconName": "6299db1c-fabe-43ef-91b9-32bc945d5865.svg",
+          "NameGuid": "b98e946f-8910-47bb-95a5-0832df6e3352",
+          "Name": "LinkedInformation",
+          "Index": 3,
+          "ParentId": "87b7cace-f260-47cc-8494-ac657ca42831"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "bd999fbb-d403-4949-95ca-e30fd8e0618c",
+          "ColumnNumber": 0,
+          "IconName": "4a850861-298a-4569-baef-8e9497719ba9.svg",
+          "NameGuid": "bd999fbb-d403-4949-95ca-e30fd8e0618c",
+          "Name": "ActsAcceptanceApartments",
+          "Index": 4,
+          "ParentId": "87b7cace-f260-47cc-8494-ac657ca42831"
+        }
+      ]
+    },
+    "Actions": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverActionSettingsBase, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateAgreementToClientContract",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "d1239618-5c8f-4dca-b425-114ade333bf6",
+          "NameGuid": "d1239618-5c8f-4dca-b425-114ade333bf6",
+          "Name": "CreateAgreementToClientContract",
+          "Index": 0,
+          "ParentId": "e7299ebd-186d-4ee3-9af1-82e4f4662e77"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateAddendumToClientContract",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "2d7b1a8c-abdb-4b5c-ba61-41cc6f0cb984",
+          "NameGuid": "2d7b1a8c-abdb-4b5c-ba61-41cc6f0cb984",
+          "Name": "CreateAddendumToClientContract",
+          "Index": 1,
+          "ParentId": "e7299ebd-186d-4ee3-9af1-82e4f4662e77"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateOtherDocumentToClientContract",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "cb1dcb31-a747-4c50-97c0-d1549b22f3f3",
+          "NameGuid": "cb1dcb31-a747-4c50-97c0-d1549b22f3f3",
+          "Name": "CreateOtherDocumentToClientContract",
+          "Index": 2,
+          "ParentId": "e7299ebd-186d-4ee3-9af1-82e4f4662e77"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateRequestSubmissionToArchive",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "f0449189-0158-4c43-be63-a427e05fc358",
+          "NameGuid": "f0449189-0158-4c43-be63-a427e05fc358",
+          "Name": "CreateRequestSubmissionToArchive",
+          "Index": 0,
+          "ParentId": "4acd0f86-9976-4ac8-b31a-f5f7eb9d6ef8"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateRequestIssuanceFromArchive",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "41c0f96c-6bdb-4a75-9be7-0b2a16932496",
+          "NameGuid": "41c0f96c-6bdb-4a75-9be7-0b2a16932496",
+          "Name": "CreateRequestIssuanceFromArchive",
+          "Index": 1,
+          "ParentId": "4acd0f86-9976-4ac8-b31a-f5f7eb9d6ef8"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "SearchClientContracts",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "3d1c5f32-21a8-444d-82a5-290b2305633a",
+          "NameGuid": "3d1c5f32-21a8-444d-82a5-290b2305633a",
+          "Name": "SearchClientContracts",
+          "Index": 0,
+          "ParentId": "720743ee-7f93-4625-badb-3aab098cc625"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "SearchRequestToArchive",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "e8d4edee-602d-4192-a801-431bc09e83b5",
+          "NameGuid": "e8d4edee-602d-4192-a801-431bc09e83b5",
+          "Name": "SearchRequestToArchive",
+          "Index": 1,
+          "ParentId": "720743ee-7f93-4625-badb-3aab098cc625"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "2f5623a9-2e2b-4119-9090-9bb5d59003e0",
+          "ActionId": "9d6131c6-6fe0-4427-9693-209300278e67",
+          "NameGuid": "9d6131c6-6fe0-4427-9693-209300278e67",
+          "Name": "DocumentKindsOfRealEstateSale",
+          "Index": 0,
+          "ParentId": "b98e946f-8910-47bb-95a5-0832df6e3352"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "SearchActs",
+          "FunctionModuleId": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+          "ActionId": "12a54eb7-24c2-46df-97b1-35d4646d482f",
+          "NameGuid": "12a54eb7-24c2-46df-97b1-35d4646d482f",
+          "Name": "SearchActsOfAcceptanceOfApartments",
+          "Index": 0,
+          "ParentId": "bd999fbb-d403-4949-95ca-e30fd8e0618c"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "c17630f7-4f05-46e3-b12c-ee5bc62bb036",
+          "ActionId": "49fee197-e77c-4b41-8633-f887fa752648",
+          "NameGuid": "49fee197-e77c-4b41-8633-f887fa752648",
+          "Name": "ApartmentAcceptanceCertificates",
+          "Index": 1,
+          "ParentId": "bd999fbb-d403-4949-95ca-e30fd8e0618c"
+        }
+      ]
+    },
+    "RemoteControls": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverRemoteControlSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": []
+    },
+    "Background": null,
+    "BackgroundPosition": 1
+  },
+  "ModuleNameGuid": "ac84c166-e820-4bcf-8ddc-1248cba514bd",
+  "Description": null,
+  "Status": "Active",
+  "Priority": 1,
+  "StoreAsDefaultSetting": true,
+  "ExplorerModule": {
+    "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+    "TypeGuid": "4cbdfb03-5462-43c4-a033-034e3d3aa095",
+    "Identifier": "ac84c166-e820-4bcf-8ddc-1248cba514bd"
+  }
+}

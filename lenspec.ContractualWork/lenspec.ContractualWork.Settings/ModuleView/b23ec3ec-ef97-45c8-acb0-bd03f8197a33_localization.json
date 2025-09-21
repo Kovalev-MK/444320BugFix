@@ -1,0 +1,7 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_87304b6bf86c468ea1eb992470b20f7d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "ContractualWork"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "$type": "Sungero.Metadata.LayerModuleMetadata, Sungero.Metadata",
+  "NameGuid": "200de33b-d7a1-4cb0-bcfb-c369248d4056",
+  "Name": "ContractsUI",
+  "AssociatedGuid": "64038fa9-c2bc-4b60-b658-5249259632cd",
+  "AsyncHandlers": [],
+  "BaseGuid": "3c8b7d3a-187d-4445-8a8c-1d00ece44556",
+  "ClientBaseAssemblyName": "lenspec.Etalon.ClientBase",
+  "ClientBaseNamespace": "lenspec.Etalon.Module.ContractsUI.ClientBase",
+  "Code": "ContrUI",
+  "CompanyCode": "Sungero",
+  "Cover": {
+    "NameGuid": "e760d7e0-cecb-4289-8e26-9071ecbdae96",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "6be074ee-4473-4512-8161-7e2c4d6ec258",
+        "Name": "DetailingWorkTypesavis",
+        "EntityTypeId": "8493d4c5-dc7f-4d62-b01a-7c44e57a5334",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "PreviousItemGuid": "a3054641-f323-42d2-8fe4-503ba2bb4f8e"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "7b371c27-0f54-4391-be42-5392658d0006",
+        "Name": "ContractKindsavis",
+        "EntityTypeId": "4af909d5-1d06-41fa-992f-bfc6f58b71cc",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "PreviousItemGuid": "cca7276c-ef9b-492b-b740-d034a64a3545"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "873b2878-04d8-456b-83f2-d0907c8856ec",
+        "Name": "ContractCategoriesavis",
+        "EntityTypeId": "6144ecb9-f859-4e0f-89dc-9217b57ea4eb",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "PreviousItemGuid": "7b371c27-0f54-4391-be42-5392658d0006"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "92b56ef3-2888-4ea7-b11e-805833b79190",
+        "Name": "ContractTypesavis",
+        "EntityTypeId": "fb1f7a24-9e8e-4822-b076-11fd1298156d",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "a3054641-f323-42d2-8fe4-503ba2bb4f8e",
+        "Name": "WorkTypesavis",
+        "EntityTypeId": "e8f83eca-7fc4-42fe-add0-718ec4b48234",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "PreviousItemGuid": "873b2878-04d8-456b-83f2-d0907c8856ec"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "cca7276c-ef9b-492b-b740-d034a64a3545",
+        "Name": "GroundContractTypesavis",
+        "EntityTypeId": "e50e3cf1-12aa-4e54-a134-cb820436f5ef",
+        "GroupId": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "PreviousItemGuid": "92b56ef3-2888-4ea7-b11e-805833b79190"
+      }
+    ],
+    "Groups": [
+      {
+        "NameGuid": "66ea197f-24af-4c0a-bfbb-5fd6a8a2d51d",
+        "Name": "Databookavis",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDatabookavis_66ea197f24af4c0abfbb5fd6a8a2d51d.png",
+        "PreviousItemGuid": "74a83232-2ab3-4786-b5d7-90dd4c6809b4",
+        "TabId": "0bf75d9d-0906-4fcc-89bf-64a2a57cbb02"
+      }
+    ],
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "Groups",
+      "Actions"
+    ],
+    "RemoteControls": [],
+    "Tabs": [],
+    "Versions": []
+  },
+  "ExplorerTreeOrder": [],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "IsLicensed": true,
+  "IsVisible": false,
+  "LayeredFromGuid": "3c8b7d3a-187d-4445-8a8c-1d00ece44556",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.Etalon.Module.ContractsUI",
+  "ResourcesKeys": [],
+  "SpecialFolders": [],
+  "Version": "4.12.266.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "LayerModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    }
+  ]
+}

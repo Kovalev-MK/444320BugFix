@@ -1,0 +1,100 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_5ddd0c23a6824543a6f5225d677d11fc": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Postal Items",
+    "ru-RU": "Почтовые отправления"
+  },
+  "CoverHeaderSettings_Description_5ddd0c23a6824543a6f5225d677d11fc": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Модуль предназначен для автоматизации работы с почтовыми отправлениями."
+  },
+  "Main_Title_64d0ff7931154ef997d14600ccf77f1b": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Main",
+    "ru-RU": "Отчёты"
+  },
+  "Mailing_Title_e8f95376a8364efaaf649bd694bf9227": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Оформление почтовых отправлений"
+  },
+  "Delivery_Title_5bc7ad9cf6d84048b7e877172fa98ae4": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Delivery methods",
+    "ru-RU": "Способы доставки"
+  },
+  "Reports_Title_15b0540369534e8fb38960da3ba2add3": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Reports",
+    "ru-RU": "Отчёты"
+  },
+  "Search_Title_3a97872ca0464f3aaac5223b6f0e9b73": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search",
+    "ru-RU": "Поиск"
+  },
+  "PostalItemCreate_Title_ffe47b2e1bba43baba1552b65d1dde6f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создать почтовое отправление"
+  },
+  "PostalItemCreate_Description_ffe47b2e1bba43baba1552b65d1dde6f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Быстрое создание почтовых отправлений"
+  },
+  "PostalItemList_Title_402fae097f934fe5bf46ca4698d2d70b": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Промотр всех почтовых отправлений"
+  },
+  "PostalItemList_Description_402fae097f934fe5bf46ca4698d2d70b": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Показать все почтовые отправления."
+  },
+  "MailDeliveryMethods_Title_2a7c90024b39477e8502e3a1a47b35e8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document Delivery Methods",
+    "ru-RU": "Способы доставки документов"
+  },
+  "MailDeliveryMethods_Description_2a7c90024b39477e8502e3a1a47b35e8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Stores the list of methods used to deliver documents to our company or counterparties.",
+    "ru-RU": "Перечень способов, используемых для доставки документов в компанию и их отправки контрагентам."
+  },
+  "CategoryRPO_Title_e005b8f9017c48ae99dbfdf0139526ad": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Категории РПО"
+  },
+  "CategoryRPO_Description_e005b8f9017c48ae99dbfdf0139526ad": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Перечень категорий Российских почтовых отправлений."
+  },
+  "Notifications_Title_a87992814e44426db5f13fb9d973002e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Уведомление по внутренним отправлениям  "
+  },
+  "Envelopes_Title_54cd018b37274774aed4ca50ee4d9f40": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Конверты"
+  },
+  "Envelopes_Description_54cd018b37274774aed4ca50ee4d9f40": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Список созданных конвертов"
+  },
+  "Inventories_Title_f9629fe0f6814de4b6ef31d0173717ea": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Описи"
+  },
+  "Inventories_Description_f9629fe0f6814de4b6ef31d0173717ea": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Список описей по почтовым отправлениям"
+  },
+  "PostalItemsByAthor_Title_9adfea08acae4bd9aa83f1ccead274b3": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Postal items",
+    "ru-RU": "Почтовые отправления"
+  },
+  "LetterComponents_Title_1e40e8a51ee2438d86db60d8c45b4055": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search of letter component documents",
+    "ru-RU": "Поиск компонентов письма"
+  }
+}

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Почтовые отправления</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>Модуль предназначен для автоматизации работы с почтовыми отправлениями.</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Почтовые отправления</value>
+  </data>
+  <data name="CoverTab_Main" xml:space="preserve">
+    <value>Отчёты</value>
+  </data>
+  <data name="CoverGroup_Delivery" xml:space="preserve">
+    <value>Способы доставки</value>
+  </data>
+  <data name="CoverGroup_Mailing" xml:space="preserve">
+    <value>Оформление почтовых отправлений</value>
+  </data>
+  <data name="CoverAction_CategoryRPO" xml:space="preserve">
+    <value>Категории РПО</value>
+  </data>
+  <data name="CoverDescription_CategoryRPO" xml:space="preserve">
+    <value>Перечень категорий Российских почтовых отправлений.</value>
+  </data>
+  <data name="CoverAction_MailDeliveryMethods" xml:space="preserve">
+    <value>Способы доставки документов</value>
+  </data>
+  <data name="CoverDescription_MailDeliveryMethods" xml:space="preserve">
+    <value>Перечень способов, используемых для доставки документов в компанию и их отправки контрагентам.</value>
+  </data>
+  <data name="CoverAction_PostalItemCreate" xml:space="preserve">
+    <value>Создать почтовое отправление</value>
+  </data>
+  <data name="CoverDescription_PostalItemCreate" xml:space="preserve">
+    <value>Быстрое создание почтовых отправлений</value>
+  </data>
+  <data name="CoverAction_PostalItemList" xml:space="preserve">
+    <value>Промотр всех почтовых отправлений</value>
+  </data>
+  <data name="CoverDescription_PostalItemList" xml:space="preserve">
+    <value>Показать все почтовые отправления.</value>
+  </data>
+  <data name="CoverAction_Notifications" xml:space="preserve">
+    <value>Уведомление по внутренним отправлениям  </value>
+  </data>
+  <data name="CoverGroup_Reports" xml:space="preserve">
+    <value>Отчёты</value>
+  </data>
+  <data name="CoverAction_Envelopes" xml:space="preserve">
+    <value>Конверты</value>
+  </data>
+  <data name="CoverDescription_Envelopes" xml:space="preserve">
+    <value>Список созданных конвертов</value>
+  </data>
+  <data name="CoverAction_Inventories" xml:space="preserve">
+    <value>Описи</value>
+  </data>
+  <data name="CoverDescription_Inventories" xml:space="preserve">
+    <value>Список описей по почтовым отправлениям</value>
+  </data>
+  <data name="CoverGroup_Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="CoverAction_PostalItemsByAthor" xml:space="preserve">
+    <value>Почтовые отправления</value>
+  </data>
+  <data name="CoverAction_LetterComponents" xml:space="preserve">
+    <value>Поиск компонентов письма</value>
+  </data>
+</root>

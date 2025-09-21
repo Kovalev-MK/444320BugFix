@@ -1,0 +1,57 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_0be73c05c18a4f7a8561653cccbba4da": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Requests for courier shipments",
+    "ru-RU": "Заявки на курьерские отправления"
+  },
+  "CoverHeaderSettings_Description_0be73c05c18a4f7a8561653cccbba4da": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "This module is where you can create and maintain a register of courier applications",
+    "ru-RU": "Модуль предназначен для оформления и ведения реестра курьерских заявок"
+  },
+  "Tab_Title_0862e88ebe1844819a69ecbf90eb6d5f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Tab"
+  },
+  "CourierShipmentsApplicationCreation_Title_4d33eefa735a449ea2438a483192b8e8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Creation of a courier shipment",
+    "ru-RU": "Оформление курьерского отправления"
+  },
+  "LinkedInformation_Title_b891fbbe2392431a96f31286778abd35": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Related Information",
+    "ru-RU": "Связанная информация"
+  },
+  "CreateCourierShipmentsApplication_Title_79603693efe944d28c82ba2f78149b6c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "New Application for courier shipment",
+    "ru-RU": "Создать заявку на курьерское отправление"
+  },
+  "CreateCourierShipmentsApplication_Description_79603693efe944d28c82ba2f78149b6c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Create new application for courier shipment",
+    "ru-RU": "Создание заявки на курьерское отправление"
+  },
+  "CourierShipmentsApplicationList_Title_79015b7f7dad483cb10cd4f5af8d1306": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "List of courier shipments",
+    "ru-RU": "Реестр курьерских отправлений"
+  },
+  "CourierShipmentsApplicationList_Description_79015b7f7dad483cb10cd4f5af8d1306": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "List of all courier shipments of the organization",
+    "ru-RU": "Список всех курьерских отправлений организации"
+  },
+  "CourierService_Title_c494cbf64f494a379f1a5532cf614fee": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Courier services",
+    "ru-RU": "Курьерские службы"
+  },
+  "CourierService_Description_c494cbf64f494a379f1a5532cf614fee": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Stores information about courier services.",
+    "ru-RU": "Открытие справочника курьерских служб."
+  }
+}

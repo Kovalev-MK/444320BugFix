@@ -1,0 +1,321 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "68d3f5d9-0a14-489e-9024-a4cb77f5f223",
+  "Name": "EtalonContracts",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "f6c69dfd-193b-4d8a-a9bf-141f2ea56be7",
+      "Name": "AsyncChangeSynchronizationStatus",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "3be48798-0a76-4f73-a0f5-d98f38df3341",
+          "Name": "ContractualDocumentId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "d74a5fbc-aee2-42c7-bf28-920ac3965de0",
+      "Name": "CalculateRemainingAmount",
+      "DelayPeriod": 10,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 20,
+      "Parameters": [
+        {
+          "NameGuid": "16479ac1-d009-47d0-a7b9-180810a72a80",
+          "Name": "ContractId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "e2eae975-7dbc-424f-a8fb-459e773592cf",
+      "Name": "TerminateContractBySupAgreement",
+      "DelayPeriod": 15,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "f4f40322-f5d4-400a-9a7b-780ffd169f97",
+          "Name": "ContractId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "avis.EtalonContracts.Client",
+  "ClientBaseAssemblyName": "avis.EtalonContracts.ClientBase",
+  "ClientBaseNamespace": "avis.EtalonContracts.ClientBase",
+  "ClientNamespace": "avis.EtalonContracts.Client",
+  "Code": "EtalonC",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "2bff93b0-255f-4ce8-8dd6-943fa1611f26",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "c0348d26-55c7-446c-ae80-e10e00f14fed",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "214ced88-ac10-4bf1-bebf-ef7331c3dd32",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "fb1f7a24-9e8e-4822-b076-11fd1298156d",
+      "PreviousItemId": "ee0806b2-2c19-453d-b040-1af95c80e6c1"
+    },
+    {
+      "ItemId": "e50e3cf1-12aa-4e54-a134-cb820436f5ef",
+      "PreviousItemId": "fb1f7a24-9e8e-4822-b076-11fd1298156d"
+    },
+    {
+      "ItemId": "4af909d5-1d06-41fa-992f-bfc6f58b71cc",
+      "PreviousItemId": "e50e3cf1-12aa-4e54-a134-cb820436f5ef"
+    },
+    {
+      "ItemId": "e8f83eca-7fc4-42fe-add0-718ec4b48234",
+      "PreviousItemId": "4af909d5-1d06-41fa-992f-bfc6f58b71cc"
+    },
+    {
+      "ItemId": "8493d4c5-dc7f-4d62-b01a-7c44e57a5334",
+      "PreviousItemId": "e8f83eca-7fc4-42fe-add0-718ec4b48234"
+    },
+    {
+      "ItemId": "77eb61a9-037f-4baa-ac26-b362338a9b44",
+      "PreviousItemId": "8493d4c5-dc7f-4d62-b01a-7c44e57a5334"
+    },
+    {
+      "ItemId": "5b3a920a-b5d5-4f56-b7fc-645b6e34e93d",
+      "PreviousItemId": "77eb61a9-037f-4baa-ac26-b362338a9b44"
+    },
+    {
+      "ItemId": "2d959782-81f7-4656-9892-748b79fc2d14",
+      "PreviousItemId": "5b3a920a-b5d5-4f56-b7fc-645b6e34e93d"
+    },
+    {
+      "ItemId": "86d8264b-7da1-49e0-9c39-101d18e1295e",
+      "PreviousItemId": "2d959782-81f7-4656-9892-748b79fc2d14"
+    },
+    {
+      "ItemId": "9c91f058-6f3c-4642-96f3-3d4332541432",
+      "PreviousItemId": "86d8264b-7da1-49e0-9c39-101d18e1295e"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.EtalonContracts",
+  "IsolatedAssemblyName": "avis.EtalonContracts.Isolated",
+  "IsolatedNamespace": "avis.EtalonContracts.Isolated",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "9498e421-e383-4087-acde-a34c9299075e",
+      "Name": "LoadingWorkTypeFromIntegraDB",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T07:10:00"
+    }
+  ],
+  "Libraries": [
+    {
+      "NameGuid": "7b5f51d6-4d6b-4050-8aa8-9eae1bbb9e12",
+      "Name": "IntegrationHelper",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "AllEmployeesDirectionLegalIssues",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"9EB6EC89-0E3E-4812-88DF-001D72A0AC47\")"
+    },
+    {
+      "Name": "AttachmentContractDocumentTypeGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"77eb61a9-037f-4baa-ac26-b362338a9b44\")"
+    },
+    {
+      "Name": "AttachmentDocumentKindGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"1C9316A3-4199-44D3-A6FD-65DDFAD5CA93\")"
+    },
+    {
+      "Name": "FillingBudgetFormed",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"456FD762-D747-4432-AA23-5F2F4E6BDF8B\")"
+    },
+    {
+      "Name": "FullAcessContractualDocuments",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"342E173E-C863-47B4-A017-382249643BCB\")"
+    },
+    {
+      "Name": "KindsWorkTypesCode",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"KindsWorkTypes\""
+    },
+    {
+      "Name": "ProtocolDisagreementKindGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"3C7B78FC-2BB9-42B4-9AE8-01DB49511747\")"
+    },
+    {
+      "Name": "ResponsibleContracDocuments",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"D9566917-F143-4192-A4CE-4A9A268C7930\")"
+    },
+    {
+      "Name": "RightsToReportForContractTemplates",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"0A81CA5B-4D79-48FD-BB97-B2089DC12908\")"
+    },
+    {
+      "Name": "UploadingContractsInto1C",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"FFCDF62C-4FCF-4389-A85C-16B799689DCE\")"
+    },
+    {
+      "Name": "WorkTypesCode",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"WorkTypes\""
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CheckAccessRightsAllowRead",
+      "Parameters": [
+        {
+          "Name": "docId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "GetContractualDocs",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "dateFrom",
+          "ParameterType": "global::System.DateTime",
+          "ParameterTypeFullName": "System.DateTime"
+        },
+        {
+          "Name": "dateTo",
+          "ParameterType": "global::System.DateTime",
+          "ParameterTypeFullName": "System.DateTime"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Linq.IQueryable<global::lenspec.Etalon.IContractualDocument>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    },
+    {
+      "Name": "GetLinkToContractualDocument",
+      "Parameters": [
+        {
+          "Name": "documentId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.EtalonContracts",
+  "ResourcesKeys": [
+    "ResponsibleContracDocumentsName",
+    "AttachmentContractDocumentTypeName",
+    "AttachmentDocumentKindName",
+    "ProtocolDisagreementKindName",
+    "FillingBudgetFormedRoleName",
+    "AllEmployeesDirectionLegalIssuesName",
+    "FullAcessContractualDocumentName",
+    "RightsToReportForContractTemplatesName",
+    "RightsToReportForContractTemplatesDesc",
+    "UsingContractTemplateReportDialogTitle",
+    "UsingContractTemplateReportDialogDateFrom",
+    "UsingContractTemplateReportDialogDateTo",
+    "ContractualDocumentDatesValidationMessage"
+  ],
+  "ServerAssemblyName": "avis.EtalonContracts.Server",
+  "ServerNamespace": "avis.EtalonContracts.Server",
+  "SharedAssemblyName": "avis.EtalonContracts.Shared",
+  "SharedNamespace": "avis.EtalonContracts.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.145",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

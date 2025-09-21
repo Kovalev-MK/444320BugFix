@@ -1,0 +1,9 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Uuid": "73b1885c-57fd-4acd-9d88-9c13c0dfd116",
+  "ModuleNameGuid": "73b1885c-57fd-4acd-9d88-9c13c0dfd116",
+  "HelpCode": "avis_PowerOfAttorneyModule",
+  "Status": "Active",
+  "SortingPriority": "Medium",
+  "StoreAsDefaultSetting": true
+}

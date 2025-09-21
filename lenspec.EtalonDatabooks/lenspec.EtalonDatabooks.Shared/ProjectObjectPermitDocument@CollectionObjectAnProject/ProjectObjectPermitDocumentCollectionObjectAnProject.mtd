@@ -1,0 +1,67 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "c3f575d9-0386-4369-974d-d9684a6ade04",
+  "Name": "ProjectObjectPermitDocumentCollectionObjectAnProject",
+  "BaseGuid": "02107026-7079-4b8f-b070-ec974428e753",
+  "CanBeNavigationPropertyType": true,
+  "ExtraSearchProperties": [],
+  "IntegrationServiceName": "ProjectDocumentBaseCollectionObjectAnProject",
+  "IsChildEntity": true,
+  "NonVisualAuthorizationMode": "FullAccess",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5d1cd0f2-a34b-4dd6-8a6c-683e7f44b27e",
+      "Name": "ObjectAnProject",
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "HandledEvents",
+        "CanBeSearch"
+      ]
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8b661ee9-b6ac-41d6-8928-d2d1eb622847",
+      "Name": "ProjectDocumentBase",
+      "EntityGuid": "942b1446-8e9f-4e66-a6ef-77a738d0863b",
+      "IsAncestorMetadata": true,
+      "IsReferenceToRootEntity": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "07aaed8b-8f45-42c7-acc3-2b0371e3deda",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "1d6b0a08-5152-4732-8e6a-f28099b1f3b0",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

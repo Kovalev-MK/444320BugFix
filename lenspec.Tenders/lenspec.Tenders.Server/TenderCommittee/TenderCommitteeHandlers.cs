@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Sungero.Core;
+using Sungero.CoreEntities;
+using lenspec.Tenders.TenderCommittee;
+
+namespace lenspec.Tenders
+{
+  partial class TenderCommitteeBasisDocumentPropertyFilteringServerHandler<T>
+  {
+
+    public virtual IQueryable<T> BasisDocumentFiltering(IQueryable<T> query, Sungero.Domain.PropertyFilteringEventArgs e)
+    {
+      return query.Where(
+        d =>
+        Equals(d.LifeCycleState, Sungero.RecordManagement.Order.LifeCycleState.Active) &&
+        d.InternalApprovalState != null &&
+        Equals(d.InternalApprovalState.Value, Sungero.Docflow.OfficialDocument.InternalApprovalState.Signed));
+    }
+  }
+
+}

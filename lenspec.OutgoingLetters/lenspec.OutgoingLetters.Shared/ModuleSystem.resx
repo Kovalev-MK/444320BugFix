@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Outgoing Letters</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Outgoing Letters</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>This module is where you can create and send for approval Outgoing Letters.
+All outgoing letters created before switching to Directum RX remain and are completed in Directum 5.</value>
+  </data>
+  <data name="CoverGroup_Documents" xml:space="preserve">
+    <value>Creating a Document</value>
+  </data>
+  <data name="CoverAction_CreateOutgoingLetter" xml:space="preserve">
+    <value>New Outgoing Letter</value>
+  </data>
+  <data name="CoverDescription_CreateOutgoingLetter" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverGroup_MassMailings" xml:space="preserve">
+    <value>Mass mailings</value>
+  </data>
+  <data name="sf_2294e448_e734_4f1a_a073_08e443e90cbe" xml:space="preserve">
+    <value>My Outgoing Letters</value>
+  </data>
+  <data name="FilterPanel_DocumentRegisterGroup_1764e314d65140f7bf1d18a12f68ad81" xml:space="preserve">
+    <value>Document register</value>
+  </data>
+  <data name="FilterPanel_CounterpartyGroup_2c73d42fa0424275aa78a9dbc87eb60c" xml:space="preserve">
+    <value>Counterparty</value>
+  </data>
+  <data name="FilterPanel_Period_ffdfbe932b054485b3cd01301c07c8a4" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="FilterPanel_LastWeek_ffbdbea30a9344a18af5ecb965fcacfb" xml:space="preserve">
+    <value>Last 7 days</value>
+  </data>
+  <data name="FilterPanel_LastMonth_2a7dbeb68ac846eaa221b6209018aaa2" xml:space="preserve">
+    <value>Last 30 days</value>
+  </data>
+  <data name="FilterPanel_Last90Days_fdc77bb91a074fb682998727948837f4" xml:space="preserve">
+    <value>Last 90 days</value>
+  </data>
+  <data name="FilterPanel_ManualPeriod_99de7746d0fa4c19b216531bd280b591" xml:space="preserve">
+    <value>User-defined period:</value>
+  </data>
+  <data name="FilterPanel_Status_976b8a23f9234c5491427b19d9f64327" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="FilterPanel_Registered_f1c1a2daf5d44e8c95a7b8388c13898c" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="FilterPanel_NotRegistered_1eb41366ccfa4c1484427cc8447fa969" xml:space="preserve">
+    <value>Not registered</value>
+  </data>
+  <data name="FilterPanel_Reserved_481fecce904148d28970d794e7528c77" xml:space="preserve">
+    <value>Reserved</value>
+  </data>
+  <data name="FilterPanel_DocumentKindGroup_5addfcbcbe6d436fa5c8599dc386f81d" xml:space="preserve">
+    <value>Document kind</value>
+  </data>
+  <data name="FilterPanel_DepartmentGroup_bd2ce58431b7424383752144d707fec2" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="CoverAction_CreateMassMailingApplication" xml:space="preserve">
+    <value>New Application for mass mailing of notifications</value>
+  </data>
+  <data name="CoverDescription_CreateMassMailingApplication" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CoverGroup_ViewTasks" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="CoverAction_OutgoingLettersOfCurrentUser" xml:space="preserve">
+    <value>My Outgoing Letters</value>
+  </data>
+  <data name="CoverDescription_OutgoingLettersOfCurrentUser" xml:space="preserve">
+    <value>List of your Outgoing Letters.</value>
+  </data>
+  <data name="CoverTab_Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="CoverAction_MassMailingTypes" xml:space="preserve">
+    <value>Mass mail types</value>
+  </data>
+  <data name="CoverDescription_MassMailingTypes" xml:space="preserve">
+    <value>Stores information about the types of mass mailing.</value>
+  </data>
+  <data name="sf_9956319e_4050_4af6_aeee_f1970a9ce587" xml:space="preserve">
+    <value>My tasks for mass mailings</value>
+  </data>
+  <data name="CoverAction_CreateMassMailingRequest" xml:space="preserve">
+    <value>New Application for mass mailing of notifications</value>
+  </data>
+  <data name="CoverAction_MassMailingTasksOfCurrentUser" xml:space="preserve">
+    <value>My tasks for mass mailings</value>
+  </data>
+  <data name="CoverDescription_MassMailingTasksOfCurrentUser" xml:space="preserve">
+    <value>List of your tasks for mass mailings.</value>
+  </data>
+  <data name="AsyncHandler_Description_d1a5484c69b240b4a194106894d91938" xml:space="preserve">
+    <value>Mass sending outgoing letters</value>
+  </data>
+  <data name="CoverGroup_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="CoverAction_MailListV2" xml:space="preserve">
+    <value>Отчет по почтовым отправлениям в ЛК Почты РФ</value>
+  </data>
+  <data name="CoverDescription_MailListV2" xml:space="preserve">
+    <value>Список отправлений в формате XLS за период</value>
+  </data>
+  <data name="AsyncHandler_Description_7cd46c6ae2a744bfb1040de4077e7f97" xml:space="preserve">
+    <value>Creating outgoing letters for mailing</value>
+  </data>
+  <data name="AsyncHandler_Description_4c9284b6ff9d43bf800f2f6c1f1feefd" xml:space="preserve">
+    <value>Изменить поле Статус писем в Заявке на рассылку массовых уведомлений</value>
+  </data>
+</root>

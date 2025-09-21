@@ -1,0 +1,217 @@
+{
+  "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+  "Cover": {
+    "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverSettings, Sungero.NoCode.Settings.Interfaces",
+    "NameGuid": "1118579d-8238-4d3d-9cf7-da834e79c548",
+    "Header": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverHeaderSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "f400245e-7418-48c8-b482-fc5c821ef9ba",
+      "Name": "CoverHeaderSettings",
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Footer": {
+      "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFooterSettings, Sungero.NoCode.Settings.Interfaces",
+      "NameGuid": "7cbca838-d664-4954-bb04-95d83539d6b2",
+      "Name": "CoverFooterSettings",
+      "IconName": null,
+      "Background": null,
+      "BackgroundPosition": 1
+    },
+    "Tabs": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverTabSettings, Sungero.NoCode.Settings.Interfaces",
+          "TabId": "7f566687-ca3e-4931-9500-bf6ec075e899",
+          "NameGuid": "7f566687-ca3e-4931-9500-bf6ec075e899",
+          "Name": "Tab",
+          "Index": 0,
+          "ParentId": "00000000-0000-0000-0000-000000000000"
+        }
+      ]
+    },
+    "Groups": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "35889361-6bd7-4115-9b4d-0d53e2181565",
+          "ColumnNumber": 0,
+          "IconName": "e4e559bd-da78-40cc-9ae1-df315d0c1c81.svg",
+          "NameGuid": "35889361-6bd7-4115-9b4d-0d53e2181565",
+          "Name": "Documents",
+          "Index": 0,
+          "ParentId": "7f566687-ca3e-4931-9500-bf6ec075e899"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "a0e98576-6344-4efb-8bb8-a0259e150f42",
+          "ColumnNumber": 0,
+          "IconName": "11c04d97-d598-43e4-aa06-4e205f4c0ab2.svg",
+          "NameGuid": "a0e98576-6344-4efb-8bb8-a0259e150f42",
+          "Name": "MassMailings",
+          "Index": 1,
+          "ParentId": "7f566687-ca3e-4931-9500-bf6ec075e899"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "41644935-7052-4261-8354-2561a06ad680",
+          "ColumnNumber": 1,
+          "IconName": "1c58bd45-36d8-4d96-a065-9d0688f4a6b6.svg",
+          "NameGuid": "41644935-7052-4261-8354-2561a06ad680",
+          "Name": "ViewTasks",
+          "Index": 2,
+          "ParentId": "7f566687-ca3e-4931-9500-bf6ec075e899"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverGroupSettings, Sungero.NoCode.Settings.Interfaces",
+          "GroupId": "c587d400-9605-4917-a9af-989cb73bd4b5",
+          "ColumnNumber": 1,
+          "IconName": "9c69a39f-66f9-4303-b334-0b82f5189e16.svg",
+          "NameGuid": "c587d400-9605-4917-a9af-989cb73bd4b5",
+          "Name": "Reports",
+          "Index": 3,
+          "ParentId": "7f566687-ca3e-4931-9500-bf6ec075e899"
+        }
+      ]
+    },
+    "Actions": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverActionSettingsBase, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": [
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateOutgoingLetter",
+          "FunctionModuleId": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+          "ActionId": "82495899-13ae-42c9-ab9e-78601c988902",
+          "NameGuid": "82495899-13ae-42c9-ab9e-78601c988902",
+          "Name": "CreateOutgoingLetter",
+          "Index": 0,
+          "ParentId": "35889361-6bd7-4115-9b4d-0d53e2181565"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "CreateMassMailingApplication",
+          "FunctionModuleId": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+          "ActionId": "803e078c-2002-4fff-83e4-cca836a1796f",
+          "NameGuid": "803e078c-2002-4fff-83e4-cca836a1796f",
+          "Name": "CreateMassMailingApplication",
+          "Index": 0,
+          "ParentId": "a0e98576-6344-4efb-8bb8-a0259e150f42"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverEntityListActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "EntityTypeId": "d5ee3ff9-944b-40a1-94c5-f267ad0608bc",
+          "ActionId": "925d89aa-fa3e-4d97-b94c-04d1b5b15481",
+          "NameGuid": "925d89aa-fa3e-4d97-b94c-04d1b5b15481",
+          "Name": "MassMailingTypes",
+          "Index": 1,
+          "ParentId": "a0e98576-6344-4efb-8bb8-a0259e150f42"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverComputableFolderActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "ComputableFolderId": "2294e448-e734-4f1a-a073-08e443e90cbe",
+          "ActionId": "4ca1cd33-5277-4b25-af77-d075ca1db647",
+          "NameGuid": "4ca1cd33-5277-4b25-af77-d075ca1db647",
+          "Name": "OutgoingLettersOfCurrentUser",
+          "Index": 0,
+          "ParentId": "41644935-7052-4261-8354-2561a06ad680"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverComputableFolderActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "ComputableFolderId": "9956319e-4050-4af6-aeee-f1970a9ce587",
+          "ActionId": "4dab2961-40f0-4b76-a12c-a28ed4b869fe",
+          "NameGuid": "4dab2961-40f0-4b76-a12c-a28ed4b869fe",
+          "Name": "MassMailingTasksOfCurrentUser",
+          "Index": 1,
+          "ParentId": "41644935-7052-4261-8354-2561a06ad680"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverFunctionActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "FunctionName": "MailListReportV2",
+          "FunctionModuleId": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+          "ActionId": "9a2c3a3a-067c-464a-9e90-1059da7eb881",
+          "NameGuid": "9a2c3a3a-067c-464a-9e90-1059da7eb881",
+          "Name": "MailListV2",
+          "Index": 0,
+          "ParentId": "c587d400-9605-4917-a9af-989cb73bd4b5"
+        },
+        {
+          "$type": "Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverReportActionSettings, Sungero.NoCode.Settings.Interfaces",
+          "ReportId": "b0a6c03b-d73c-4669-8b26-ff19bf8ecc39",
+          "ActionId": "7d01b3a0-52f0-46e5-abf1-6958abb09049",
+          "NameGuid": "7d01b3a0-52f0-46e5-abf1-6958abb09049",
+          "Name": "Action",
+          "Index": 1,
+          "ParentId": "c587d400-9605-4917-a9af-989cb73bd4b5"
+        }
+      ]
+    },
+    "RemoteControls": {
+      "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Interfaces.Models.Cover.CoverRemoteControlSettings, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+      "$values": []
+    },
+    "Background": null,
+    "BackgroundPosition": 1
+  },
+  "Description": null,
+  "Priority": 1,
+  "ExplorerModule": {
+    "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+    "TypeGuid": "4cbdfb03-5462-43c4-a033-034e3d3aa095",
+    "Identifier": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb"
+  },
+  "Items": {
+    "$type": "Sungero.DataExport.ExportingObject[], Sungero.DataExport",
+    "$values": [
+      {
+        "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+        "Uuid": "dc2d8c67-0fd1-4e1b-8c25-50c6fe52f51e",
+        "ModuleView": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "f7cba906-f4c9-4f02-97e8-a6c6155a8ee6",
+          "Identifier": "fc97be3c-e3b0-4cfa-9be6-9b9fd33ca6a1"
+        },
+        "Number": 1,
+        "ItemType": "Folder",
+        "NameGuid": "2294e448-e734-4f1a-a073-08e443e90cbe"
+      },
+      {
+        "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+        "Uuid": "f4b1ede6-48c6-4c92-8d57-e99f17d5e50a",
+        "ModuleView": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "f7cba906-f4c9-4f02-97e8-a6c6155a8ee6",
+          "Identifier": "fc97be3c-e3b0-4cfa-9be6-9b9fd33ca6a1"
+        },
+        "Number": 2,
+        "ItemType": "Folder",
+        "NameGuid": "9956319e-4050-4af6-aeee-f1970a9ce587"
+      }
+    ]
+  },
+  "Recipients": {
+    "$type": "Sungero.DataExport.ExportingObject[], Sungero.DataExport",
+    "$values": [
+      {
+        "$type": "Sungero.DataExport.ExportingObject, Sungero.DataExport",
+        "Uuid": "aa973d5e-9e55-450b-a1ba-1ec00c12b3e6",
+        "ModuleView": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "f7cba906-f4c9-4f02-97e8-a6c6155a8ee6",
+          "Identifier": "fc97be3c-e3b0-4cfa-9be6-9b9fd33ca6a1"
+        },
+        "Recipient": {
+          "$type": "Sungero.DataExport.ExportingObjectId, Sungero.DataExport",
+          "TypeGuid": "5e9b55c2-c1f5-4e4f-aa09-7b6d461d87ed",
+          "Identifier": "ba88ed21-a43c-4684-be90-99c5a22e5c90"
+        }
+      }
+    ]
+  },
+  "Uuid": "fc97be3c-e3b0-4cfa-9be6-9b9fd33ca6a1",
+  "ModuleNameGuid": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+  "StoreAsDefaultSetting": true,
+  "Status": "Active"
+}

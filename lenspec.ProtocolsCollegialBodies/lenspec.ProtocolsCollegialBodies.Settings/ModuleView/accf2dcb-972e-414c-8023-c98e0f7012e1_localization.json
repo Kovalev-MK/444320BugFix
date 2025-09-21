@@ -1,0 +1,56 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_a2cf7e65f5334197a045f9e90823515c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Protocols of collegial bodies",
+    "ru-RU": "Протоколы коллегиальных органов"
+  },
+  "CoverHeaderSettings_Description_a2cf7e65f5334197a045f9e90823515c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "This module is where you can register and send for approval of protocols.",
+    "ru-RU": "Модуль предназначен для оформления и отправки на согласование протоколов."
+  },
+  "Tab_Title_31221d1fc7d74156b7621627250ab1e2": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Tab"
+  },
+  "Documents_Title_e2a72edd0865436297d748fefec4649f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Documents",
+    "ru-RU": "Создание протокола"
+  },
+  "Information_Title_78101f55803a48dcbaa8f810552ef4de": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Information",
+    "ru-RU": "Информация"
+  },
+  "Search_Title_831c743a392b46869a21e18bf59183ee": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search",
+    "ru-RU": "Поиск"
+  },
+  "CreateProtocol_Title_b1c6fcd7e8bb4c7e8847940a32a6ddee": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Create a protocol",
+    "ru-RU": "Создать протокол"
+  },
+  "CreateProtocol_Description_b1c6fcd7e8bb4c7e8847940a32a6ddee": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "When clicked, the document creation process will start",
+    "ru-RU": "При нажатии запустится процесс создания документа"
+  },
+  "CollegialBodies_Title_b19479c8e848436d80369f3e8ca86e38": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Collegial bodies",
+    "ru-RU": "Коллегиальные органы"
+  },
+  "CollegialBodies_Description_b19479c8e848436d80369f3e8ca86e38": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "In the directory you can find information on the approving and approving collegial bodies",
+    "ru-RU": "В справочнике можно ознакомиться с информацией по согласующим и утверждающим коллегиальных органов"
+  },
+  "ProtocolsByAuthor_Title_13c73c09067a4983bef8d76f3810d83d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Протоколы коллегиальных органов"
+  }
+}

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявка на сдачу в архив</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Заявку на сдачу в архив</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Заявки на сдачу в архив</value>
+  </data>
+  <data name="Property_RequestType" xml:space="preserve">
+    <value>Тип заявки</value>
+  </data>
+  <data name="Enum_RequestType_OnPaper" xml:space="preserve">
+    <value>На бумаге</value>
+  </data>
+  <data name="Enum_RequestType_Electronic" xml:space="preserve">
+    <value>В электронном виде</value>
+  </data>
+  <data name="Property_UrgentRequest" xml:space="preserve">
+    <value>Срочная заявка</value>
+  </data>
+  <data name="Enum_UrgentRequest_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Enum_UrgentRequest_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Property_ListOfDocument" xml:space="preserve">
+    <value>Перечень документов</value>
+  </data>
+  <data name="Action_BarcodesForListOfDocument" xml:space="preserve">
+    <value>Штрихкоды</value>
+  </data>
+  <data name="Action_BarcodesForListOfDocumentHint" xml:space="preserve">
+    <value>Сформировать штрихкоды клиентских документов из перечня</value>
+  </data>
+  <data name="Action_BarcodesForListOfDocumentDescription" xml:space="preserve">
+    <value>Сформировать штрихкод для каждой записи из Перечня документов</value>
+  </data>
+  <data name="Ribbon_BarcodesCommands_b9d7f7d4cd064f9181c6572390fe33db" xml:space="preserve">
+    <value>Штрихкоды</value>
+  </data>
+  <data name="Property_StorageAddress" xml:space="preserve">
+    <value>Место хранения</value>
+  </data>
+  <data name="Action_ShowCreatedDocuments" xml:space="preserve">
+    <value>Созданные документы</value>
+  </data>
+  <data name="Action_ShowCreatedDocumentsHint" xml:space="preserve">
+    <value>Показать созданные документы</value>
+  </data>
+  <data name="Action_ShowCreatedDocumentsDescription" xml:space="preserve">
+    <value>Показать созданные документы</value>
+  </data>
+</root>

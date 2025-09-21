@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="GroupIconReports" clip-path="url(#clip0_9752_13328)">
+<path id="Vector" d="M29 5H2V26H29V5Z" fill="white"/>
+<path id="Vector_2" d="M29 5V26H2V5H30H29ZM30 3H1C0.734784 3 0.48043 3.10536 0.292893 3.29289C0.105357 3.48043 0 3.73478 0 4L0 27C0 27.2652 0.105357 27.5196 0.292893 27.7071C0.48043 27.8946 0.734784 28 1 28H30C30.2652 28 30.5196 27.8946 30.7071 27.7071C30.8946 27.5196 31 27.2652 31 27V4C31 3.73478 30.8946 3.48043 30.7071 3.29289C30.5196 3.10536 30.2652 3 30 3Z" fill="#9DA2A5"/>
+<path id="Vector_3" d="M10 14H6V24H10V14Z" fill="#6FA6D4"/>
+<path id="Vector_4" d="M15 8H11V24H15V8Z" fill="#F39500"/>
+<path id="Vector_5" d="M20 11H16V24H20V11Z" fill="#6FB205"/>
+<path id="Vector_6" d="M25 16H21V24H25V16Z" fill="#6FA6D4"/>
+</g>
+<defs>
+<clipPath id="clip0_9752_13328">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

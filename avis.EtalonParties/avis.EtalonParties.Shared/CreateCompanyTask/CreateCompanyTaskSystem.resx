@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Application for editing directories Organizations and Persons</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Application for editing directories Organizations and Persons</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Application for editing directories Organizations and Persons</value>
+  </data>
+  <data name="Property_TIN" xml:space="preserve">
+    <value>TIN</value>
+  </data>
+  <data name="Property_CompanyName" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="Resource_035869ed2baa4573bdfe9e4f5e10c4b3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_035869ed2baa4573bdfe9e4f5e10c4b3_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_74e85eafe5944dc5b4724e791948b781" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_74e85eafe5944dc5b4724e791948b781_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_73e7c55ab14d49d89a690ed7d46bf563" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_3849ac3b252941c6aa0d03907f402a05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_Forwarding" xml:space="preserve">
+    <value>Переадресовать сотруднику</value>
+  </data>
+  <data name="Instruction" xml:space="preserve">
+    <value>Для создания персоны в поле "Комментарий" укажите, при необходимости, дополнительные сведения: ИНН, адрес, телефон, email, банковские реквизиты.
+
+Для создания и изменения контрагента, вам необходимо вложить в задачу “Сведения о контрагенте“. Это может быть карточка предприятия. Она предоставляется самим контрагентом, в ней, как правило, отображены следующие сведения:
+Полное и сокращённое название организации;
+Основные реквизиты компании: ИНН, КПП, ОГРН и т.д;
+Юридический адрес его местонахождения;
+Адрес официального сайта;
+Контактные телефоны;
+Банковские реквизиты;
+Логотип, рекламное изображение или торговая марка юридического лица;
+Характер предоставляемых услуг вид деятельности или производимые товары;
+Иные данные о контрагенте.
+
+Для индивидуальных предпринимателей (ИП) необходимо вложить лист записи единого государственного реестра индивидуальных предпринимателей (ЕГРИП) о внесении записи о государственной регистрации физического лица в качестве индивидуального предпринимателя и паспортные данные физического лица.
+
+Для работников канцелярий. Если создается контрагент для того, чтобы прошла входящая регистрация, то, в качестве "Документы контрагента", можно приложить полученное от него входящее письмо." 
+
+При заявке на создание или изменение ответственного по контрагенту укажите причину заявки. Например: "Замена ответственного для контрагента «ООО Сервис-Рус» по причине увольнения сотрудника."</value>
+  </data>
+  <data name="Property_TypeObject" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="Enum_TypeObject_Counterparty" xml:space="preserve">
+    <value>Counterparty</value>
+  </data>
+  <data name="Enum_TypeObject_Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Property_TypeRequest" xml:space="preserve">
+    <value>Type request</value>
+  </data>
+  <data name="Enum_TypeRequest_NewEntry" xml:space="preserve">
+    <value>Create a new entry</value>
+  </data>
+  <data name="Enum_TypeRequest_EditEntry" xml:space="preserve">
+    <value>Correcting an existing entry</value>
+  </data>
+  <data name="Property_FIOPerson" xml:space="preserve">
+    <value>FIO person</value>
+  </data>
+  <data name="Property_Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Property_SpecifyNeedToBeMade" xml:space="preserve">
+    <value>Specify what changes need to be made</value>
+  </data>
+  <data name="Property_Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Property_DateOfBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="Enum_TypeRequest_ResponsibleByCounterparty" xml:space="preserve">
+    <value>Создание или изменение ответственного по контрагенту</value>
+  </data>
+  <data name="Property_DatabookActionType" xml:space="preserve">
+    <value>Создать/изменить запись</value>
+  </data>
+  <data name="Enum_DatabookActionType_NewEntry" xml:space="preserve">
+    <value>Создать новую</value>
+  </data>
+  <data name="Enum_DatabookActionType_EditEntry" xml:space="preserve">
+    <value>Внести изменения</value>
+  </data>
+  <data name="Property_ResponsibleEmployee" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="Property_BusinessUnit" xml:space="preserve">
+    <value>Наша орг.</value>
+  </data>
+  <data name="Property_ResponsibleByCounterparty" xml:space="preserve">
+    <value>Ответственные по контрагентам</value>
+  </data>
+  <data name="AttachmentGroup_AttachmentGroupTitle" xml:space="preserve">
+    <value>Вложения</value>
+  </data>
+  <data name="AttachmentGroup_AttachmentGroupInformationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_e285c152e10747a4947c9cf4fb326b37_EmptyText" xml:space="preserve">
+    <value>Выберите запись справочника для изменения</value>
+  </data>
+  <data name="Property_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="FilterPanel_Initiator_7b2b326b298840e98025497c7f47a5c3" xml:space="preserve">
+    <value>Инициатор</value>
+  </data>
+  <data name="FilterPanel_Period_0a9fa31cf8e543fcafbead186442d438" xml:space="preserve">
+    <value>Период старта задачи</value>
+  </data>
+</root>

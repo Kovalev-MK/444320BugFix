@@ -1,0 +1,236 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "dc22b9cc-b4a5-4069-97f8-a4acc496f811",
+  "Name": "ManagementCompanyJKHArhive",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "avis.ManagementCompanyJKHArhive.Client",
+  "ClientBaseAssemblyName": "avis.ManagementCompanyJKHArhive.ClientBase",
+  "ClientBaseNamespace": "avis.ManagementCompanyJKHArhive.ClientBase",
+  "ClientNamespace": "avis.ManagementCompanyJKHArhive.Client",
+  "Code": "Managem",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "5f17a013-462e-4c6c-8544-74f7e89edc9e",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "114a66f4-474a-48f2-a271-0c9fecf5d7f5",
+        "Name": "CreateMKD",
+        "FunctionName": "CreateMKD",
+        "GroupId": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "3ee3ef1d-ef64-4b1c-a590-69447f258530",
+        "Name": "FindDocumentsForUK",
+        "FunctionName": "FindDucumentForMC",
+        "GroupId": "1258c0b3-dfff-46a1-8a56-dfb726095249"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "51436cf4-e4d0-4d61-b3a7-7a5bdc1c1c92",
+        "Name": "CreateBasisForManagementContractMKD",
+        "FunctionName": "CreateBasisForManagementContractMKD",
+        "GroupId": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a",
+        "PreviousItemGuid": "114a66f4-474a-48f2-a271-0c9fecf5d7f5"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "5df49213-d286-4314-b4ec-92d4eeb330a9",
+        "Name": "CreateDocumentForMC",
+        "FunctionName": "CreateDocMC",
+        "GroupId": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a",
+        "PreviousItemGuid": "51436cf4-e4d0-4d61-b3a7-7a5bdc1c1c92"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "67cce878-0f3e-4106-bf72-9663f366f370",
+        "Name": "ActsOfManagementCompanies",
+        "FunctionName": "ShowActsOfManagementCompanies",
+        "GroupId": "566cbd71-f952-4386-abcb-5d001e5ed6be"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "9609598f-61a8-4cb9-89c1-6adc5682aab9",
+        "Name": "CreateActsOfManagementCompany",
+        "FunctionName": "CreateActsOfManagementCompany",
+        "GroupId": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a",
+        "PreviousItemGuid": "5df49213-d286-4314-b4ec-92d4eeb330a9"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "af4f238d-af6f-40c6-9ff1-cd0957c93326",
+        "Name": "FindActsOfManagementCompanies",
+        "FunctionName": "FindActsOfManagementCompanies",
+        "GroupId": "1258c0b3-dfff-46a1-8a56-dfb726095249",
+        "PreviousItemGuid": "3ee3ef1d-ef64-4b1c-a590-69447f258530"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "891db7bc-f610-4c77-b753-0f72329b0d59",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a",
+        "Name": "DocumentFromUK",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconGroup_c5e062a961ba4adfa4f54c972c7a702a.png",
+        "TabId": "341c3b70-98c3-4fe8-94f3-7dc7535993f6"
+      },
+      {
+        "NameGuid": "1258c0b3-dfff-46a1-8a56-dfb726095249",
+        "Name": "FindDocumentsForUK",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconFindDocumentsForUK_1258c0b3dfff46a18a56dfb726095249.png",
+        "PreviousItemGuid": "c5e062a9-61ba-4adf-a4f5-4c972c7a702a",
+        "TabId": "341c3b70-98c3-4fe8-94f3-7dc7535993f6"
+      },
+      {
+        "NameGuid": "566cbd71-f952-4386-abcb-5d001e5ed6be",
+        "Name": "ActManagmentCompany",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconActManagmentCompany_566cbd71f9524386abcb5d001e5ed6be.png",
+        "PreviousItemGuid": "1258c0b3-dfff-46a1-8a56-dfb726095249",
+        "TabId": "341c3b70-98c3-4fe8-94f3-7dc7535993f6"
+      }
+    ],
+    "Header": {
+      "NameGuid": "9072cf07-04c1-423e-870e-0330e8070e53",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "341c3b70-98c3-4fe8-94f3-7dc7535993f6",
+        "Name": "PreparationOfDocumentsForUK"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.5.33.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "b5905176-3046-4b01-9d4c-1cd335fd0076",
+      "PreviousItemId": "2c4c96cc-672a-4521-a7d9-aed6ba7016bb"
+    },
+    {
+      "ItemId": "90fca0aa-5f14-4927-8470-ecdc38adf823",
+      "PreviousItemId": "b5905176-3046-4b01-9d4c-1cd335fd0076"
+    },
+    {
+      "ItemId": "cb65c6a5-8b32-408d-a7d5-4df368ae62c1",
+      "PreviousItemId": "90fca0aa-5f14-4927-8470-ecdc38adf823"
+    },
+    {
+      "ItemId": "65aa1a04-4b0c-42d8-8754-228bae584efa",
+      "PreviousItemId": "cb65c6a5-8b32-408d-a7d5-4df368ae62c1"
+    },
+    {
+      "ItemId": "8338568c-5f85-496b-aeab-719ba10a521e",
+      "PreviousItemId": "65aa1a04-4b0c-42d8-8754-228bae584efa"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer",
+    "VisibilityServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "High",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.ManagementCompanyJKHArhive",
+  "IsolatedAssemblyName": "avis.ManagementCompanyJKHArhive.Isolated",
+  "IsolatedNamespace": "avis.ManagementCompanyJKHArhive.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "Importance",
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "DocumentBasisToManagementAgreementMKDRelationName",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"BasisMKD\""
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.ManagementCompanyJKHArhive",
+  "ResourcesKeys": [
+    "MKDDocumentKindName",
+    "MKDDocumentKindShortName",
+    "DirectionFromDeveloperName",
+    "DirectionFromDeveloperShortName",
+    "TitleDocumentName",
+    "TitleDocumentShortName",
+    "OtherDocJKHName",
+    "OtherDocJKHShortName",
+    "BasisMKDDescription",
+    "BasisMKDTitle",
+    "ManagementContractMKDName",
+    "DocumentForManagementCompanyName",
+    "BasisForManagementContractMKDName",
+    "CreateActsOfManagementCompany_ResourceKey",
+    "CreateActsOfManagementCompany_DescriptionResourceKey",
+    "FindActsOfManagementCompanies_ResourceKey",
+    "FindActsOfManagementCompanies_DescriptionResourceKey",
+    "ShowActsOfManagementCompanies_ResourceKey",
+    "ShowActsOfManagementCompanies_DescriptionResourceKey",
+    "CreateBasisForManagementContractMKD_ResourceKey",
+    "CreateBasisForManagementContractMKD_DescriptionResourceKey",
+    "CreateDocMC_ResourceKey",
+    "CreateDocMC_DescriptionResourceKey",
+    "CreateMKD_ResourceKey",
+    "CreateMKD_DescriptionResourceKey",
+    "FindDucumentForMC_ResourceKey",
+    "FindDucumentForMC_DescriptionResourceKey"
+  ],
+  "ServerAssemblyName": "avis.ManagementCompanyJKHArhive.Server",
+  "ServerNamespace": "avis.ManagementCompanyJKHArhive.Server",
+  "SharedAssemblyName": "avis.ManagementCompanyJKHArhive.Shared",
+  "SharedNamespace": "avis.ManagementCompanyJKHArhive.Shared",
+  "SpecialFolders": [
+    {
+      "NameGuid": "65aa1a04-4b0c-42d8-8754-228bae584efa",
+      "Name": "MKDFolder",
+      "DefaultContentType": "90fca0aa-5f14-4927-8470-ecdc38adf823",
+      "DisplayType": "Module",
+      "FilterPanel": {
+        "NameGuid": "f1d75fc8-55f7-4c9b-9e6f-9b0de70c862d",
+        "Name": "FilterPanel",
+        "Controls": [],
+        "IsEnabled": false
+      },
+      "IsShow": true,
+      "Kind": "Computable",
+      "NeedShowMarkedCount": false
+    }
+  ],
+  "Version": "0.0.1.306",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

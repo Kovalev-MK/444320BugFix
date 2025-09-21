@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="TasksOnApproval">
+    <default><![CDATA[SELECT ROW_NUMBER() OVER (ORDER BY Task.Id) as Num
+,Task.Id as Id
+,Task.Started as StartDate
+,Task.Status as Status
+,Author.Name as Initiator
+,BusinessUnit.Name as BusinessUnit
+,Counterparty.Name as Counterparty
+,Counterparty.TIN as TIN
+,Counterparty.Discriminator as DiscriminatorCP
+,CounterpartyGroup.Name as CounterpartyGroup
+,Counterparty.IsProvideravis_Etalon_lenspec as IsProvider
+,Counterparty.IsContractorav_Etalon_lenspec as IsContractor
+,Counterparty.DateOfBirth as DateOfBirth
+,Assignment.Created as Created
+,Approvaler.Name as Approvaler
+,Task.ResultApproval_Approvi_avis as Result
+,Assignment.Completed as Complited
+,Task.CompleteDate_Approvi_avis as Deadline
+,DATEDIFF(day, Assignment.Deadline, Assignment.Completed) as Expired
+,DATEDIFF(day, Assignment.Created, Assignment.Completed) as PeriodComplete
+,Assignment.Deadline as AssignmentDeadline
+FROM Sungero_WF_Task as Task
+INNER JOIN dbo.Sungero_Core_Recipient as Author
+ON Task.Author = Author.Id
+INNER JOIN dbo.Sungero_Parties_Counterparty as Counterparty
+ON Task.Counterparty_Approvi_avis = Counterparty.Id
+LEFT JOIN avis_EtalonP_GroupCounterpa as CounterpartyGroup
+ON Counterparty.GroupCounterpa_Etalon_lenspec = CounterpartyGroup.Id
+LEFT JOIN Sungero_WF_Attachment as Attachment
+ON Task.Id = Attachment.Task
+LEFT JOIN dbo.Sungero_Content_EDoc as Doc
+ON Attachment.AttachmentId = Doc.Id
+LEFT JOIN Sungero_Core_Recipient as BusinessUnit
+ON Doc.BusinessUnit_Docflow_Sungero = BusinessUnit.Id
+LEFT JOIN dbo.Sungero_WF_Assignment as Assignment
+ON Task.Id = Assignment.Task AND Task.ApprovalerDEB_Approvi_avis = Assignment.CompletedBy AND Assignment.BlockId = 4 AND Assignment.Status = 'Completed' AND Assignment.Result NOT LIKE 'Forward'
+LEFT JOIN dbo.Sungero_Core_Recipient as Approvaler
+ON Task.ApprovalerDEB_Approvi_avis = Approvaler.Id
+WHERE (Task.Created >= @ValidFrom AND Task.Created <= @ValidTill) AND (@Status = '' OR Task.Status = @Status) AND (@ApprovalerId = -1 OR Task.ApprovalerDEB_Approvi_avis = @ApprovalerId) AND Attachment.[Group] = 'a667ecb8-f154-4210-86c1-eabbd0fa27b7']]></default>
+  </query>
+</queries>

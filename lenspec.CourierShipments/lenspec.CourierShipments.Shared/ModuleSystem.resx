@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Courier shipments</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Requests for courier shipments</value>
+  </data>
+  <data name="CoverGroup_LinkedInformation" xml:space="preserve">
+    <value>Related Information</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>This module is where you can create and maintain a register of courier applications</value>
+  </data>
+  <data name="CoverAction_CourierService" xml:space="preserve">
+    <value>Courier services</value>
+  </data>
+  <data name="CoverDescription_CourierService" xml:space="preserve">
+    <value>Stores information about courier services.</value>
+  </data>
+  <data name="CoverGroup_CourierShipmentsApplicationCreation" xml:space="preserve">
+    <value>Creation of a courier shipment</value>
+  </data>
+  <data name="CoverAction_CreateCourierShipmentsApplication" xml:space="preserve">
+    <value>New Application for courier shipment</value>
+  </data>
+  <data name="CoverDescription_CreateCourierShipmentsApplication" xml:space="preserve">
+    <value>Create new application for courier shipment</value>
+  </data>
+  <data name="CoverAction_CourierShipmentsApplicationList" xml:space="preserve">
+    <value>List of courier shipments</value>
+  </data>
+  <data name="CoverDescription_CourierShipmentsApplicationList" xml:space="preserve">
+    <value>List of all courier shipments of the organization</value>
+  </data>
+  <data name="sf_8418baf4_23e5_42ce_b996_12263d86c390" xml:space="preserve">
+    <value>List of courier shipments</value>
+  </data>
+  <data name="FilterPanel_BusinessUnit_7e4eea266fee41fa98d93af2e4f968a0" xml:space="preserve">
+    <value>Business unit</value>
+  </data>
+  <data name="FilterPanel_BusinessUnit_ac39353f2ea547d38c1b5a8955ffd80b" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Department_e9459d02e7ff41edb9118e3163e3303f" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="FilterPanel_ManualPeriod_8d844417354646898a1c0a24c3abc7e2" xml:space="preserve">
+    <value>User-defined period:</value>
+  </data>
+  <data name="FilterPanel_Reserved_7d042fb46b474b8ba6c75869abcc00f1" xml:space="preserve">
+    <value>Reserved</value>
+  </data>
+  <data name="FilterPanel_NotRegistered_323440f7dfd842f38a5cbe52f7ced478" xml:space="preserve">
+    <value>Not registered</value>
+  </data>
+  <data name="FilterPanel_Registered_7bbf0f21b7bb45258669f581dfc05032" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="FilterPanel_Initiator_719fd11aef254c8285abd70b07de17bb" xml:space="preserve">
+    <value>Initiator</value>
+  </data>
+  <data name="FilterPanel_LastMonth_bbfe782b21304ffb940a38d95264a0e4" xml:space="preserve">
+    <value>Last 30 days</value>
+  </data>
+  <data name="FilterPanel_LastWeek_52f1696c742d452c982d94c1475d5e57" xml:space="preserve">
+    <value>Last 7 days</value>
+  </data>
+  <data name="FilterPanel_Last90Days_a658693b1c9d4d79b3008e58d9e52f9d" xml:space="preserve">
+    <value>Last 90 days</value>
+  </data>
+  <data name="FilterPanel_Initiator_7126528924a34a66a6a8675dcc436e02" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_DocumentRegister_754b9f46358e47688f21c49eafb51359" xml:space="preserve">
+    <value>Document register</value>
+  </data>
+  <data name="FilterPanel_DocumentKind_ad73b48ed8844cbbaddcab48eb5a3a32" xml:space="preserve">
+    <value>Document kind</value>
+  </data>
+  <data name="FilterPanel_Status_96f7357ff73e43eb8f3807882f675a88" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="FilterPanel_Period_f7dac22ef0384eb5b90d1c43b20b0619" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="CoverTab_Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+</root>

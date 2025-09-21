@@ -1,0 +1,111 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_d3736fe259de4b2e8f77557084efd894": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Доверенности"
+  },
+  "CoverHeaderSettings_Description_d3736fe259de4b2e8f77557084efd894": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Модуль предназначен для оформления и ведения реестра доверенностей"
+  },
+  "ElectronicPowerOfAttorneys_Title_6253b861ea544cf8817d2b0f8f798b8d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Электронные доверенности"
+  },
+  "PowerOfAttorneys_Title_3456c7f63d87472cb0e1edf88f312a29": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Доверенности"
+  },
+  "ExecutionElectronicPowerOfAttorney_Title_69bab08c26764ee98f4f8386fa6e1083": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Оформление электронных доверенностей"
+  },
+  "SearchElectronicPowerOfAttorneys_Title_8b16c9dc23204095ac19631154fd8959": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск электронных доверенностей"
+  },
+  "Execution_Title_e7561d8b8e9843ce8dc79ebcaf7c1e61": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Оформление доверенности"
+  },
+  "Recall_Title_733d488e56514150b70a1b42862294f9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Отзыв доверенностей"
+  },
+  "SearchPowerOfAttorney_Title_4089a5d54a1942488f7643ebfd472389": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск доверенностей"
+  },
+  "AuthorityKind_Title_a3abf6df61d14dacbb49c728367b4814": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Виды полномочий"
+  },
+  "Authority_Title_ddb1d79bf2164ae49f90c3964f5a37ec": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Полномочия для доверенностей"
+  },
+  "CreateElectronicPowerOfAttorney_Title_9db7893913e34d968dd72cfdac0ea9a9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Заявка на оформление электронной доверенности"
+  },
+  "CreateElectronicPowerOfAttorney_Description_9db7893913e34d968dd72cfdac0ea9a9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создать электронную доверенность"
+  },
+  "ShowRegisterPowerOfAttorneys_Title_0a1b30df6fd444538456fd7ec8336a92": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Реестр доверенностей"
+  },
+  "ShowRegisterPowerOfAttorneys_Description_0a1b30df6fd444538456fd7ec8336a92": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Просмотр списка простых и электронных доверенностей "
+  },
+  "SearchElectronicPowerOfAttorneys_Title_a4f59cd30c344e108cfe409643abbb3d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск электронных доверенностей "
+  },
+  "SearchElectronicPowerOfAttorneys_Description_a4f59cd30c344e108cfe409643abbb3d": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Просмотр созданных электронных доверенностей, на которые у сотрудника есть права "
+  },
+  "CreateProjectPoa_Title_df5f14bebfd74b4c85ee8e2bc0ebcc0f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Заявка на оформление доверенности"
+  },
+  "CreateProjectPoa_Description_df5f14bebfd74b4c85ee8e2bc0ebcc0f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создать проект доверенности"
+  },
+  "Recall_Title_3bde71db943842a8945a49ebdc0fd9a8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Заявка на отзыв доверенности"
+  },
+  "Recall_Description_3bde71db943842a8945a49ebdc0fd9a8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Процесс отзыва доверенностей могут инициировать только сотрудники Департамента корпоративного управления"
+  },
+  "SearchPOA_Title_111787373a9b4a86b1fb298556a5ecb9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поиск доверенностей"
+  },
+  "SearchPOA_Description_111787373a9b4a86b1fb298556a5ecb9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Просмотр созданных доверенностей, на которые у сотрудника есть права"
+  },
+  "GetAuthorityKind_Title_67eaf736f9a549bc85c38415337729fc": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Виды полномочий"
+  },
+  "GetAuthorityKind_Description_67eaf736f9a549bc85c38415337729fc": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Открытие справочника Виды полномочий"
+  },
+  "GetAuthority_Title_c502c3a7a8a34109920e86105ed5062e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Полномочия для доверенностей"
+  },
+  "GetAuthority_Description_c502c3a7a8a34109920e86105ed5062e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Открытие справочника «Полномочия для доверенностей»"
+  }
+}

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConditionsApprovalRules" xml:space="preserve">
+    <value>Условия в правилах согласования</value>
+  </data>
+  <data name="RegistrationGroups" xml:space="preserve">
+    <value>Группы регистрации</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Ид</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>ФИО пользователя
+</value>
+  </data>
+  <data name="ConstructionFacilities" xml:space="preserve">
+    <value>Объекты строительства</value>
+  </data>
+  <data name="CategoryApplicationsShareholders" xml:space="preserve">
+    <value>Категория заявлений дольщиков</value>
+  </data>
+  <data name="DigitalCertificates" xml:space="preserve">
+    <value>Цифровые сертификаты</value>
+  </data>
+  <data name="AssistantManager" xml:space="preserve">
+    <value>Ассисент руководителя</value>
+  </data>
+  <data name="SettingBasedCustomerRequests" xml:space="preserve">
+    <value>Настройка исполнения по обращениям клиентов</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="OurOrg" xml:space="preserve">
+    <value>Наша организация</value>
+  </data>
+  <data name="Divisions" xml:space="preserve">
+    <value>Подразделения</value>
+  </data>
+  <data name="AccountStatus" xml:space="preserve">
+    <value>Состояние учетной записи</value>
+  </data>
+  <data name="EmployeeRecordStatus" xml:space="preserve">
+    <value>Состояние записи Сотрудника</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="Substitutions" xml:space="preserve">
+    <value>Замещения</value>
+  </data>
+  <data name="TasksInProgress" xml:space="preserve">
+    <value>Количество задач в работе</value>
+  </data>
+  <data name="JobInProgress" xml:space="preserve">
+    <value>Количество заданий в работе</value>
+  </data>
+  <data name="ApprovalSettings" xml:space="preserve">
+    <value>Настройки  согласования</value>
+  </data>
+  <data name="StagesOfApproval" xml:space="preserve">
+    <value>Этапы согласования</value>
+  </data>
+  <data name="RightSign" xml:space="preserve">
+    <value>Право подписи</value>
+  </data>
+  <data name="ResponsibleForContractors" xml:space="preserve">
+    <value>Ответственный за контрагентов</value>
+  </data>
+  <data name="ReportName" xml:space="preserve">
+    <value>Указание пользователей в объектах системы</value>
+  </data>
+  <data name="CollegialBodies" xml:space="preserve">
+    <value>Коллегиальные органы </value>
+  </data>
+  <data name="TypeRole" xml:space="preserve">
+    <value>Вид роли</value>
+  </data>
+  <data name="RolesInNor" xml:space="preserve">
+    <value>Роли в НОР</value>
+  </data>
+</root>

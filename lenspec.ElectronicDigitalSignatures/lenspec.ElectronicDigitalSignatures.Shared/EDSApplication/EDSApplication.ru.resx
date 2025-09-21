@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ForEmployee" xml:space="preserve">
+    <value> на сотрудника "{0}"</value>
+  </data>
+  <data name="NeedFillRenewalInstructionConstant" xml:space="preserve">
+    <value>Заполните константу "Инструкция для продления УКЭП"</value>
+  </data>
+  <data name="NeedFillCancellationInstructionConstant" xml:space="preserve">
+    <value>Заполните константу "Инструкция для самостоятельного аннулирования УКЭП"</value>
+  </data>
+  <data name="NeedFillSettingInstructionConstant" xml:space="preserve">
+    <value>Заполните константу "Инструкция для настройки УКЭП на рабочем ПК"</value>
+  </data>
+  <data name="NotFoundTemplateForConsentToProcessing" xml:space="preserve">
+    <value>Не найден шаблон для согласия на обработку персональных данных.</value>
+  </data>
+  <data name="ErrorExportZipForConsentToProcessing" xml:space="preserve">
+    <value>Не удалось выгрузить Согласие на обработку персональных данных.</value>
+  </data>
+  <data name="UploadingDocumentsDialog" xml:space="preserve">
+    <value>Загрузка документов для УКЭП</value>
+  </data>
+  <data name="UploadingDocumentsDialogText" xml:space="preserve">
+    <value>Для выдачи УКЭП необходимо добавить скан паспорта и подписанное согласие на обработку ПД.
+Распечатайте и подпишите Согласие на обработку ПД.</value>
+  </data>
+  <data name="RenewalInstructionMessage" xml:space="preserve">
+    <value>Обращаем ваше внимание, что вы можете продлить УКЭП самостоятельно через удостоверяющий центр Контур.</value>
+  </data>
+  <data name="CancellationInstructionMessage" xml:space="preserve">
+    <value>Инструкция по самостоятельному аннулированию  УКЭП через Госуслуги.</value>
+  </data>
+  <data name="ConsentToProcessingArchiveName" xml:space="preserve">
+    <value>Архив согласия на обработку ПД сотрудника {0}</value>
+  </data>
+  <data name="ChooseFile" xml:space="preserve">
+    <value>Выберите файл</value>
+  </data>
+  <data name="PassportDialogParam" xml:space="preserve">
+    <value>Паспорт РФ</value>
+  </data>
+  <data name="ConsentToProcessingDialogParam" xml:space="preserve">
+    <value>Согласие на обработку персональных данных</value>
+  </data>
+  <data name="PersonDialogParam" xml:space="preserve">
+    <value>Персона</value>
+  </data>
+  <data name="EDSDocumentsUploaded" xml:space="preserve">
+    <value>Документы для УКЭП уже загружены. При необходимости добавьте новую версию в карточке документа.</value>
+  </data>
+  <data name="NeedUploadEDSDocuments" xml:space="preserve">
+    <value>Перед отправкой на согласование загрузите документы для УКЭП.</value>
+  </data>
+</root>

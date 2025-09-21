@@ -1,0 +1,93 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_f400245e741848c8b482fc5c821ef9ba": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Outgoing Letters",
+    "ru-RU": "Исходящие письма"
+  },
+  "CoverHeaderSettings_Description_f400245e741848c8b482fc5c821ef9ba": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "This module is where you can create and send for approval Outgoing Letters.\r\nAll outgoing letters created before switching to Directum RX remain and are completed in Directum 5.",
+    "ru-RU": "Модуль предназначен для создания и отправки на согласование исходящих писем.\r\nВсе письма исходящие, созданные до перехода на Directum RX, остаются и завершаются в Directum 5."
+  },
+  "Tab_Title_7f566687ca3e49319500bf6ec075e899": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Tab"
+  },
+  "Documents_Title_358893616bd741159b4d0d53e2181565": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Creating a Document",
+    "ru-RU": "Создание документа"
+  },
+  "MassMailings_Title_a0e9857663444efb8bb8a0259e150f42": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Mass mailings",
+    "ru-RU": "Массовые рассылки"
+  },
+  "ViewTasks_Title_416449357052426183542561a06ad680": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Search",
+    "ru-RU": "Поиск"
+  },
+  "Reports_Title_c587d40096054917a9af989cb73bd4b5": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Reports",
+    "ru-RU": "Отчеты"
+  },
+  "CreateOutgoingLetter_Title_8249589913ae42c9ab9e78601c988902": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "New Outgoing Letter",
+    "ru-RU": "Создать исходящее письмо"
+  },
+  "CreateMassMailingApplication_Title_803e078c20024fff83e4cca836a1796f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "New Application for mass mailing of notifications",
+    "ru-RU": "Создать заявку на массовую рассылку уведомлений"
+  },
+  "MassMailingTypes_Title_925d89aafa3e4d97b94c04d1b5b15481": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Mass mail types",
+    "ru-RU": "Типы массовой рассылки"
+  },
+  "MassMailingTypes_Description_925d89aafa3e4d97b94c04d1b5b15481": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Stores information about the types of mass mailing.",
+    "ru-RU": "Справочник содержит информацию о типах массовой рассылки."
+  },
+  "OutgoingLettersOfCurrentUser_Title_4ca1cd3352774b25af77d075ca1db647": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "My Outgoing Letters",
+    "ru-RU": "Мои исходящие письма"
+  },
+  "OutgoingLettersOfCurrentUser_Description_4ca1cd3352774b25af77d075ca1db647": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "List of your Outgoing Letters.",
+    "ru-RU": "Перечень ваших исходящих писем."
+  },
+  "MassMailingTasksOfCurrentUser_Title_4dab296140f04b76a12ca28ed4b869fe": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "My tasks for mass mailings",
+    "ru-RU": "Мои задачи по массовым рассылкам"
+  },
+  "MassMailingTasksOfCurrentUser_Description_4dab296140f04b76a12ca28ed4b869fe": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "List of your tasks for mass mailings.",
+    "ru-RU": "Перечень ваших задач по массовым рассылкам."
+  },
+  "MailListV2_Title_9a2c3a3a067c464a9e901059da7eb881": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Отчет по почтовым отправлениям в ЛК Почты РФ"
+  },
+  "MailListV2_Description_9a2c3a3a067c464a9e901059da7eb881": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Список отправлений в формате XLS за период"
+  },
+  "Action_Title_7d01b3a052f046e5abf16958abb09049": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Exapmle report"
+  },
+  "Action_Description_7d01b3a052f046e5abf16958abb09049": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": ""
+  }
+}

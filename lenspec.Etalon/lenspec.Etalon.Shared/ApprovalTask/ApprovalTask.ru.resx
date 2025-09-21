@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApprovedAnotherUser" xml:space="preserve">
+    <value>Согласовано сотрудником: {0}</value>
+  </data>
+  <data name="ApprovedAnotherUserWithOnBehalfOf" xml:space="preserve">
+    <value>Согласовано сотрудником: {0} за {1}</value>
+  </data>
+  <data name="DoneAnotherUserWithOnBehalfOf" xml:space="preserve">
+    <value>Выполнено сотрудником: {0} за {1}</value>
+  </data>
+  <data name="DoneAnotherUser" xml:space="preserve">
+    <value>Выполнено сотрудником: {0}</value>
+  </data>
+  <data name="BusinessUnitDoesNotHaveApprovalSetting" xml:space="preserve">
+    <value>Для вашей организации отсутствует запись в справочнике "Настройки согласования".</value>
+  </data>
+  <data name="RequestApprovalText" xml:space="preserve">
+    <value>Прошу согласовать заявку.</value>
+  </data>
+  <data name="DocumentIsLockedByUser" xml:space="preserve">
+    <value>{0} (ИД {1}) - карточка заблокирована пользователем {2}</value>
+  </data>
+  <data name="FailedToUpdateFieldsInDocuments" xml:space="preserve">
+    <value>Не удалось обновить поля в {0} документах</value>
+  </data>
+  <data name="NoRightsToDocument" xml:space="preserve">
+    <value>Нет прав на изменение документа {0} (ИД {1})</value>
+  </data>
+  <data name="FailedToUpdateFieldsInDocumentsPrefix" xml:space="preserve">
+    <value>Не удалось обновить поля в следующих документах:
+</value>
+  </data>
+  <data name="DocumentHasApprovalSignature" xml:space="preserve">
+    <value>Документ {0} подписан утверждающей подписью.</value>
+  </data>
+  <data name="NeedSpecifyAutomatedEmployee" xml:space="preserve">
+    <value>Укажите сотрудника с действующей учетной записью или действующим замещением</value>
+  </data>
+  <data name="DocumentBodyIsLockedByUser" xml:space="preserve">
+    <value>{0} (ИД {1}) - тело заблокировано пользователем {2}</value>
+  </data>
+  <data name="ErrorMessageEmptyVersionPoaRequest" xml:space="preserve">
+    <value>Для старта задачи необходимо добавить версию заявки на оформление доверенности.</value>
+  </data>
+  <data name="ErrorMessageExecuteContractualDocumentEmptyJustificationDocument" xml:space="preserve">
+    <value>Необходимо добавить документ-обоснование.</value>
+  </data>
+  <data name="ErrorMessageExecuteContractualDocumentEmptyTenderAmount" xml:space="preserve">
+    <value>Необходимо заполнить Тендерную сумму у Нашей организации. Обратитесь к Администратору.</value>
+  </data>
+  <data name="ErrorMessageEmptyContractsApprovalRuleList" xml:space="preserve">
+    <value>Для договора настройка согласования не найдена, обратитесь к администраторам системы.</value>
+  </data>
+  <data name="ChooseAddendaDocument" xml:space="preserve">
+    <value>Выберите документ для вложения.</value>
+  </data>
+  <data name="JustificationDocument" xml:space="preserve">
+    <value>Документ-обоснование</value>
+  </data>
+  <data name="JustificationDocumentsNotFound" xml:space="preserve">
+    <value>Документы-обоснования не найдены или у вас нет прав на просмотр.</value>
+  </data>
+  <data name="ChooseDocument" xml:space="preserve">
+    <value>Выбрать документ</value>
+  </data>
+  <data name="JustificationDocumentPlural" xml:space="preserve">
+    <value>Документы-обоснования</value>
+  </data>
+  <data name="DocumentAlreadyAdded" xml:space="preserve">
+    <value>Документ "{0}" уже вложен в задачу.</value>
+  </data>
+</root>

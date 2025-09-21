@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="SelectDebActivities">
+    <default><![CDATA[select *
+from  Deb_Activities temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebFounders">
+    <default><![CDATA[select *
+from  Deb_Founders temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebHistoryFounders">
+    <default><![CDATA[select *
+from Deb_HistoryFounders temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebFilials">
+    <default><![CDATA[select *
+from Deb_Filials temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebLicenses">
+    <default><![CDATA[select *
+from Deb_Licenses temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebFinances">
+    <default><![CDATA[select *
+from Deb_Finances temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebTaxes">
+    <default><![CDATA[select *
+from Deb_Taxes temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebFns">
+    <default><![CDATA[select *
+from Deb_Fns temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebHistoryUL">
+    <default><![CDATA[select *
+from Deb_HistoryUL temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebBanks">
+    <default><![CDATA[select *
+from Deb_Banks temp
+where SessionId = @SessionId
+ORDER BY CAST(Number AS INT)]]></default>
+  </query>
+  <query key="SelectDebDirectors">
+    <default><![CDATA[select *
+from Deb_Directors temp
+where SessionId = @SessionId]]></default>
+  </query>
+  <query key="SelectDebArbitrations">
+    <default><![CDATA[select *
+from Deb_Arbitrations temp
+where SessionId = @SessionId
+ORDER BY CAST(Number AS INT)]]></default>
+  </query>
+  <query key="SelectDebContracts">
+    <default><![CDATA[select *
+from Deb_Contracts temp
+where SessionId = @SessionId
+ORDER BY CAST(Number AS INT)]]></default>
+  </query>
+</queries>

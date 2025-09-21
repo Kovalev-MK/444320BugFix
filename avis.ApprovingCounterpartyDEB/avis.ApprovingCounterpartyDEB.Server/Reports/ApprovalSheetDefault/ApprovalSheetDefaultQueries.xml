@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="Assignments">
+    <mssql><![CDATA[SELECT Performer.Name as performer
+,CompletedBy.Name as completedBy
+,Assignments.Status as status
+,Assignments.Result as result
+,Assignments.Completed as completed
+,Texts.Body as body
+,forward1.Name as forward1
+,forward2.Name as forward2
+FROM [dbo].[Sungero_WF_Assignment] as Assignments
+JOIN dbo.Sungero_WF_Text as Texts
+ON Assignments.Id = Texts.Assignment
+JOIN dbo.Sungero_Core_Recipient as Performer
+ON Assignments.Performer = Performer.Id
+LEFT JOIN dbo.Sungero_Core_Recipient as CompletedBy
+ON Assignments.CompletedBy = CompletedBy.Id
+LEFT JOIN dbo.Sungero_Core_Recipient as forward1
+ON Assignments.Forward_Approvi_avis = forward1.Id
+LEFT JOIN dbo.Sungero_Core_Recipient as forward2
+ON Assignments.Forward1_Approvi_avis = forward2.Id
+WHERE Assignments.Task = @TaskId AND Assignments.TaskStartId = @StartId AND (Assignments.Status <> 'Aborted' OR (Assignments.Status = 'Aborted' AND Assignments.Result = 'Forward')) AND (Assignments.Status <> 'Completed' OR (Assignments.Status = 'Completed' AND Assignments.Result IS NOT NULL))
+ORDER BY Assignments.Completed]]></mssql>
+  </query>
+</queries>

@@ -1,0 +1,98 @@
+{
+  "$type": "Sungero.Metadata.NoticeMetadata, Sungero.Workflow.Shared",
+  "NameGuid": "be39d02e-940e-4e0f-b02e-96df0f2981b9",
+  "Name": "UnsentMassEmailsNotification",
+  "AccessRightsMode": "Instance",
+  "Actions": [
+    {
+      "NameGuid": "6be876c8-3db5-45d9-bfab-af3874662864",
+      "Name": "ShowUnsentMassEmails",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": "Action_ShowUnsentMassEmails_large_6be876c83db545d9bfabaf3874662864.png",
+      "SmallIconName": "Action_ShowUnsentMassEmails_small_6be876c83db545d9bfabaf3874662864.png"
+    }
+  ],
+  "AssociatedGuid": "7f59ae3a-09be-4e02-a6c5-e5ff374ad5a2",
+  "BaseGuid": "ef79164b-2ce7-451b-9ba6-eb59dd9a4a74",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "5fe997cb-7fc0-4c74-a663-73af56c7c4f2",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "8b3cedfe-01e2-47a9-b77d-3a7d6ad7904f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.WorkflowEntityStandaloneFormMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "ecbb8ca4-ef38-446a-b0dd-6b2d0e15edf6",
+      "Name": "Card",
+      "Controls": [],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ]
+    }
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "OutgoingLettersUnsentMassEmailsNotice",
+  "IsVisibleThreadText": true,
+  "NeverLinkToParentWhenCreated": true,
+  "OperationsClass": "",
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0c6b14de-995c-436d-b899-72163ffcdf62",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "8c39f4fe-7899-40b4-8474-65262989b774",
+        "Name": "ShowUnsentMassEmails",
+        "ActionGuid": "6be876c8-3db5-45d9-bfab-af3874662864",
+        "ButtonSize": "Large",
+        "Index": 1,
+        "ParentGuid": "a5a72dbc-1ff5-42ad-b56e-a94b1c51ac3a"
+      }
+    ],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "5cf4f14d-8adf-4800-b960-4add4b33fbc5",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "NoticeMetadata",
+      "Number": 1
+    },
+    {
+      "Type": "AssignmentBaseMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "WorkflowEntityMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

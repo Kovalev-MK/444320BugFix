@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Resource_c1e139751799423f90a011850a0f3a4e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_b9aaa98c421a4624a98d6b63d7ff4ca9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_cc1339975fed4a839f9dc24ae07be106" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_039da257085d4d03bb46257de9f15acf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_b20c9f0063434f89b27ab57934b36f7e" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_a8c722e25f894d1cb7ce6dd6c898ff95" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_IsGrantOnTasksavis" xml:space="preserve">
+    <value>Назначать права с типом «Просмотр» на все связанные с документами задачи</value>
+  </data>
+  <data name="ControlGroup_a234c13e63554416b19adb6e8fd4f1b5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_2a0e5cce66f447e9beb7ac6b01aec715" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_d7e18ccdbe604ae1bb0c51b5ada78be3" xml:space="preserve">
+    <value>Критерии</value>
+  </data>
+  <data name="ControlGroup_5e623d993549456a8fbf4e04c60e3d4a" xml:space="preserve">
+    <value>Назначение прав</value>
+  </data>
+  <data name="Resource_8250ab423ed9437aa482f0e1988bd000" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_8250ab423ed9437aa482f0e1988bd000_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_3d9166d8af724b05a24a0739069661a3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_caca3f3353444baf8ee5445a21e6ffe1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_20990f4fc809490fa38b95f19b509048" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Resource_fa672c2edc774d648aede6b60e425083" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fa672c2edc774d648aede6b60e425083_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+</root>

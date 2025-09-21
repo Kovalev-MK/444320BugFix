@@ -1,0 +1,69 @@
+{
+  "$type": "Sungero.Metadata.ReportMetadata, Sungero.Reporting.Shared",
+  "NameGuid": "b0a6c03b-d73c-4669-8b26-ff19bf8ecc39",
+  "Name": "RusPostReport",
+  "AssociatedGuid": "66b7fd93-bd8c-487b-aec0-4a3ec1c119bb",
+  "BaseGuid": "cef9a810-3f30-4eca-9fe3-30992af0b818",
+  "DataSources": [],
+  "DefaultExportFormat": "Excel",
+  "ExportFormats": [
+    "Excel",
+    "Pdf"
+  ],
+  "HandledEvents": [
+    "BeforeExecuteClient",
+    "BeforeExecuteServer",
+    "AfterExecuteServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "OutgoingLettersRusPostReport",
+  "Overridden": [
+    "PublicConstants",
+    "PublicStructures",
+    "ExportFormats",
+    "DefaultExportFormat",
+    "HandledEvents",
+    "Parameters",
+    "DataSources",
+    "DisplayName",
+    "Description"
+  ],
+  "Parameters": [
+    {
+      "NameGuid": "e84d24bb-69dc-4eb0-9ef4-f01c5abcdccb",
+      "Name": "ReportSessionId",
+      "InternalDataTypeName": "System.String"
+    },
+    {
+      "NameGuid": "9d94d0d6-c966-4262-8eb2-55a51bc083c3",
+      "Name": "BeginDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsRequired": true,
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "4cca0400-20d3-424c-886b-9759679d1313",
+      "Name": "EndDate",
+      "InternalDataTypeName": "System.DateTime",
+      "IsRequired": true,
+      "IsSimpleDataType": true
+    },
+    {
+      "NameGuid": "c94fea4b-a98d-4d03-a289-d865731beac0",
+      "Name": "Addressee",
+      "EntityType": "36889c4b-0959-486b-a729-2d09c186da65",
+      "InternalDataTypeName": "lenspec.Etalon.ICounterparty, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    },
+    {
+      "NameGuid": "d9c66804-a51d-4a2e-b365-19ae6b8c9e7b",
+      "Name": "BusinessUnit",
+      "EntityType": "61b6e79b-ef61-4cc9-90fa-bb6f4c405b66",
+      "InternalDataTypeName": "lenspec.Etalon.IBusinessUnit, Sungero.Domain.Interfaces",
+      "IsCollection": true
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "Versions": []
+}

@@ -1,0 +1,304 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "990619f6-bf0c-41d2-9881-78f9f1195045",
+  "Name": "PostalItems",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "avis.PostalItems.Client",
+  "ClientBaseAssemblyName": "avis.PostalItems.ClientBase",
+  "ClientBaseNamespace": "avis.PostalItems.ClientBase",
+  "ClientNamespace": "avis.PostalItems.Client",
+  "Code": "PostalI",
+  "CompanyCode": "avis",
+  "Cover": {
+    "NameGuid": "6efe835f-3fda-46a0-bdee-733e180ebda9",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "1e40e8a5-1ee2-438d-86db-60d8c45b4055",
+        "Name": "LetterComponents",
+        "FunctionName": "SearchLetterComponentsByAuthor",
+        "GroupId": "3a97872c-a046-4f3a-aac5-223b6f0e9b73",
+        "PreviousItemGuid": "9adfea08-acae-4bd9-aa83-f1ccead274b3"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "2a7c9002-4b39-477e-8502-e3a1a47b35e8",
+        "Name": "MailDeliveryMethods",
+        "EntityTypeId": "276d7e4a-ea11-4740-af17-893abc6bc6e9",
+        "GroupId": "5bc7ad9c-f6d8-4048-b7e8-77172fa98ae4"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "402fae09-7f93-4fe5-bf46-ca4698d2d70b",
+        "Name": "PostalItemList",
+        "FunctionName": "PostalItemsShow",
+        "GroupId": "e8f95376-a836-4efa-af64-9bd694bf9227",
+        "PreviousItemGuid": "ffe47b2e-1bba-43ba-ba15-52b65d1dde6f"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "54cd018b-3727-4774-aed4-ca50ee4d9f40",
+        "Name": "Envelopes",
+        "FunctionName": "ReportEnvelopes",
+        "GroupId": "15b05403-6953-4e8f-b389-60da3ba2add3",
+        "PreviousItemGuid": "a8799281-4e44-426d-b5f1-3fb9d973002e"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "9adfea08-acae-4bd9-aa83-f1ccead274b3",
+        "Name": "PostalItemsByAthor",
+        "FunctionName": "SearchPostalItemsByAuthor",
+        "GroupId": "3a97872c-a046-4f3a-aac5-223b6f0e9b73"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "a8799281-4e44-426d-b5f1-3fb9d973002e",
+        "Name": "Notifications",
+        "FunctionName": "ReportNotifications",
+        "GroupId": "15b05403-6953-4e8f-b389-60da3ba2add3"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "e005b8f9-017c-48ae-99db-fdf0139526ad",
+        "Name": "CategoryRPO",
+        "EntityTypeId": "49543548-67e7-493f-82e3-1d80bd697734",
+        "GroupId": "5bc7ad9c-f6d8-4048-b7e8-77172fa98ae4",
+        "PreviousItemGuid": "2a7c9002-4b39-477e-8502-e3a1a47b35e8"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "f9629fe0-f681-4de4-b6ef-31d0173717ea",
+        "Name": "Inventories",
+        "FunctionName": "ReportInventories",
+        "GroupId": "15b05403-6953-4e8f-b389-60da3ba2add3",
+        "PreviousItemGuid": "54cd018b-3727-4774-aed4-ca50ee4d9f40"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "ffe47b2e-1bba-43ba-ba15-52b65d1dde6f",
+        "Name": "PostalItemCreate",
+        "FunctionName": "CreatePostalItemShow",
+        "GroupId": "e8f95376-a836-4efa-af64-9bd694bf9227"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "4b01d17c-c163-489f-8ec5-5a014cdea4fb",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "e8f95376-a836-4efa-af64-9bd694bf9227",
+        "Name": "Mailing",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconMailing_e8f95376a8364efaaf649bd694bf9227.png",
+        "TabId": "64d0ff79-3115-4ef9-97d1-4600ccf77f1b"
+      },
+      {
+        "NameGuid": "5bc7ad9c-f6d8-4048-b7e8-77172fa98ae4",
+        "Name": "Delivery",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDelivery_5bc7ad9cf6d84048b7e877172fa98ae4.png",
+        "PreviousItemGuid": "e8f95376-a836-4efa-af64-9bd694bf9227",
+        "TabId": "64d0ff79-3115-4ef9-97d1-4600ccf77f1b"
+      },
+      {
+        "NameGuid": "15b05403-6953-4e8f-b389-60da3ba2add3",
+        "Name": "Reports",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconReports_15b0540369534e8fb38960da3ba2add3.png",
+        "PreviousItemGuid": "5bc7ad9c-f6d8-4048-b7e8-77172fa98ae4",
+        "TabId": "64d0ff79-3115-4ef9-97d1-4600ccf77f1b"
+      },
+      {
+        "NameGuid": "3a97872c-a046-4f3a-aac5-223b6f0e9b73",
+        "Name": "Search",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSearch_3a97872ca0464f3aaac5223b6f0e9b73.png",
+        "PreviousItemGuid": "15b05403-6953-4e8f-b389-60da3ba2add3",
+        "TabId": "64d0ff79-3115-4ef9-97d1-4600ccf77f1b"
+      }
+    ],
+    "Header": {
+      "NameGuid": "5ddd0c23-a682-4543-a6f5-225d677d11fc",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "64d0ff79-3115-4ef9-97d1-4600ccf77f1b",
+        "Name": "Main"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.6.46.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "47809823-ca97-4f38-9e2f-59cfffcbaa46"
+    },
+    {
+      "ItemId": "49543548-67e7-493f-82e3-1d80bd697734",
+      "PreviousItemId": "47809823-ca97-4f38-9e2f-59cfffcbaa46"
+    },
+    {
+      "ItemId": "98f851d6-9bb2-4c2b-b795-ef0a80335d9a",
+      "PreviousItemId": "49543548-67e7-493f-82e3-1d80bd697734"
+    },
+    {
+      "ItemId": "2c158171-b030-4a61-8656-b8ff3a010f13",
+      "PreviousItemId": "98f851d6-9bb2-4c2b-b795-ef0a80335d9a"
+    },
+    {
+      "ItemId": "0e8a60dc-a72f-4359-b673-b32281b5b056",
+      "PreviousItemId": "2c158171-b030-4a61-8656-b8ff3a010f13"
+    },
+    {
+      "ItemId": "611d209a-f3a3-4738-b820-00a7f04901c7",
+      "PreviousItemId": "0e8a60dc-a72f-4359-b673-b32281b5b056"
+    },
+    {
+      "ItemId": "584cac01-f438-461d-bb82-26657040d56d",
+      "PreviousItemId": "611d209a-f3a3-4738-b820-00a7f04901c7"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "avis.PostalItems",
+  "IsolatedAssemblyName": "avis.PostalItems.Isolated",
+  "IsolatedNamespace": "avis.PostalItems.Isolated",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "40d36d74-1d93-411a-8a51-a2e26e0af06b",
+      "Name": "Dadata",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "RPOAbroadGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"1FE85289-EC19-46E5-9B64-A0C56EACB76E\")"
+    },
+    {
+      "Name": "RPOCustomGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"5E1FE82E-DD8F-4A7D-AD50-15EE47DF9FE5\")"
+    },
+    {
+      "Name": "RPOSimpleGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"4A0F3983-8A55-49BC-9A36-9D24C1464F98\")"
+    },
+    {
+      "Name": "RPOValuableGuid",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"C108C56D-539D-4A54-ABAE-216A5E07F839\")"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "TryGetPostalCode",
+      "Parameters": [
+        {
+          "Name": "address",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::avis.PostalItems.Structures.PostalItem.IPostalCodeReceiveResult",
+      "ReturnTypeFullName": "avis.PostalItems.Structures.PostalItem.IPostalCodeReceiveResult"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "avis.PostalItems",
+  "ResourcesKeys": [
+    "PostalItemCheckName",
+    "PostalItemCheckShortName",
+    "PostalItemEnvelopeShortName",
+    "PostalItemEnvelopeName",
+    "PostalItemNotificationShortName",
+    "PostalItemNotificationName",
+    "RegisteredCategoryRPOName",
+    "AbroadCategoryRPOName",
+    "SimpleCategoryRPOName",
+    "ValuableCategoryRPOName",
+    "LetterComplonentDocumentTypeName",
+    "SearchLetterComponentsByAuthor_ResourceKey",
+    "SearchLetterComponentsByAuthor_DescriptionResourceKey",
+    "SearchPostalItemsByAuthor_ResourceKey",
+    "SearchPostalItemsByAuthor_DescriptionResourceKey",
+    "PostalItemsShow_ResourceKey",
+    "PostalItemsShow_DescriptionResourceKey",
+    "ReportInventories_ResourceKey",
+    "ReportInventories_DescriptionResourceKey",
+    "ReportEnvelopes_ResourceKey",
+    "ReportEnvelopes_DescriptionResourceKey",
+    "CreatePostalItemShow_ResourceKey",
+    "CreatePostalItemShow_DescriptionResourceKey",
+    "ReportNotifications_ResourceKey",
+    "ReportNotifications_DescriptionResourceKey",
+    "InternalPostalItemsNotifications",
+    "CreationDateFrom",
+    "CreationDateTill",
+    "DeliveryMethod",
+    "Sender",
+    "CreationDateFromTillVerificationError",
+    "InternalMailInvenory",
+    "InternalMailEnvelopes",
+    "ChooseEnvelopeSize",
+    "EnvelopeSizeA4",
+    "EnvelopeSizeA5",
+    "ErrorConnectionSettingsNotFound",
+    "ErrorWrongToken"
+  ],
+  "ServerAssemblyName": "avis.PostalItems.Server",
+  "ServerNamespace": "avis.PostalItems.Server",
+  "SharedAssemblyName": "avis.PostalItems.Shared",
+  "SharedNamespace": "avis.PostalItems.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.350",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

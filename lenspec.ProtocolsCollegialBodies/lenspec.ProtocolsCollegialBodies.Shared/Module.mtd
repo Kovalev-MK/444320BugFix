@@ -1,0 +1,184 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "df34899b-d88d-4d04-979d-d7056c6ccf85",
+  "Name": "ProtocolsCollegialBodies",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "lenspec.ProtocolsCollegialBodies.Client",
+  "ClientBaseAssemblyName": "lenspec.ProtocolsCollegialBodies.ClientBase",
+  "ClientBaseNamespace": "lenspec.ProtocolsCollegialBodies.ClientBase",
+  "ClientNamespace": "lenspec.ProtocolsCollegialBodies.Client",
+  "Code": "Protoco",
+  "CompanyCode": "lenspec",
+  "Cover": {
+    "NameGuid": "59e13a35-0b40-4d76-bf82-40ee7239d8c0",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "13c73c09-067a-4983-bef8-d76f3810d83d",
+        "Name": "ProtocolsByAuthor",
+        "FunctionName": "SearchProtocolsByAuthor",
+        "GroupId": "831c743a-392b-4686-9a21-e18bf59183ee"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "b19479c8-e848-436d-8036-9f3e8ca86e38",
+        "Name": "CollegialBodies",
+        "EntityTypeId": "bfdfe689-9fad-4304-a902-0ea92d4e8226",
+        "GroupId": "78101f55-803a-48dc-baa8-f810552ef4de"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "b1c6fcd7-e8bb-4c7e-8847-940a32a6ddee",
+        "Name": "CreateProtocol",
+        "FunctionName": "CreateProtocol",
+        "GroupId": "e2a72edd-0865-4362-97d7-48fefec4649f"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "5373a157-fc0c-47c7-ac7b-457a06673196",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "e2a72edd-0865-4362-97d7-48fefec4649f",
+        "Name": "Documents",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconDocuments_e2a72edd0865436297d748fefec4649f.png",
+        "TabId": "31221d1f-c7d7-4156-b762-1627250ab1e2"
+      },
+      {
+        "NameGuid": "78101f55-803a-48dc-baa8-f810552ef4de",
+        "Name": "Information",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconInformation_78101f55803a48dcbaa8f810552ef4de.png",
+        "PreviousItemGuid": "e2a72edd-0865-4362-97d7-48fefec4649f",
+        "TabId": "31221d1f-c7d7-4156-b762-1627250ab1e2"
+      },
+      {
+        "NameGuid": "831c743a-392b-4686-9a21-e18bf59183ee",
+        "Name": "Search",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconSearch_831c743a392b46869a21e18bf59183ee.png",
+        "PreviousItemGuid": "78101f55-803a-48dc-baa8-f810552ef4de",
+        "TabId": "31221d1f-c7d7-4156-b762-1627250ab1e2"
+      }
+    ],
+    "Header": {
+      "NameGuid": "a2cf7e65-f533-4197-a045-f9e90823515c",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "31221d1f-c7d7-4156-b762-1627250ab1e2",
+        "Name": "Tab"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "64038fa9-c2bc-4b60-b658-5249259632cd",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.3.23.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "bfdfe689-9fad-4304-a902-0ea92d4e8226"
+    },
+    {
+      "ItemId": "34127cad-2596-4796-96cd-8f65be8b6f83",
+      "PreviousItemId": "bfdfe689-9fad-4304-a902-0ea92d4e8226"
+    },
+    {
+      "ItemId": "43a2acb6-9ff7-4b68-bf2d-601b753ecb75",
+      "PreviousItemId": "34127cad-2596-4796-96cd-8f65be8b6f83"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "3b7cb5e2-c444-4da6-a904-ce00aad3ba86",
+      "PreviousItemId": "43a2acb6-9ff7-4b68-bf2d-601b753ecb75"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "lenspec.ProtocolsCollegialBodies",
+  "IsolatedAssemblyName": "lenspec.ProtocolsCollegialBodies.Isolated",
+  "IsolatedNamespace": "lenspec.ProtocolsCollegialBodies.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "ClerksGKResponsible",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"b2f7dae1-009a-46ec-9298-8c776840c491\")"
+    },
+    {
+      "Name": "ProtocolCollegialBodyTypes",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"34127cad-2596-4796-96cd-8f65be8b6f83\")"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateProtocol",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::lenspec.ProtocolsCollegialBodies.IProtocolCollegialBody",
+      "ReturnTypeFullName": "lenspec.ProtocolsCollegialBodies.IProtocolCollegialBody, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "lenspec.ProtocolsCollegialBodies",
+  "ResourcesKeys": [
+    "RoleDescriptionMembersCollegialBody",
+    "RoleDescriptionChairmanCollegialBody",
+    "RoleDescriptionClerksGK",
+    "RoleNameClerksGK",
+    "StageStartingIntroductionTaskName",
+    "ProtocolCollegialBodyName",
+    "ProtocolCollegialBodyShortName",
+    "ProtocolCollegialDocumentTypeName",
+    "SearchProtocolsByAuthor_ResourceKey",
+    "SearchProtocolsByAuthor_DescriptionResourceKey",
+    "CreateProtocol_ResourceKey",
+    "CreateProtocol_DescriptionResourceKey"
+  ],
+  "ServerAssemblyName": "lenspec.ProtocolsCollegialBodies.Server",
+  "ServerNamespace": "lenspec.ProtocolsCollegialBodies.Server",
+  "SharedAssemblyName": "lenspec.ProtocolsCollegialBodies.Shared",
+  "SharedNamespace": "lenspec.ProtocolsCollegialBodies.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.421",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

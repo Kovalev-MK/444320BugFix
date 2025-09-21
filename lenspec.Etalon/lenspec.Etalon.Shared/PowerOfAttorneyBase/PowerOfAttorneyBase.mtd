@@ -1,0 +1,137 @@
+{
+  "$type": "Sungero.Metadata.DocumentMetadata, Sungero.Content.Shared",
+  "NameGuid": "3a432fd3-693c-435e-b949-52c1e6dc3e0d",
+  "Name": "PowerOfAttorneyBase",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "a8d955b1-4b35-4013-b643-3ea9d80bd1ea",
+  "CanBeNavigationPropertyType": true,
+  "ConverterFunctions": [
+    {
+      "Name": "GetAttorneysPassportDetails",
+      "DisplayNameResourceCode": "PassportDetailsTemplateField",
+      "IsConverter": true,
+      "Parameters": [
+        {
+          "Name": "document",
+          "ParameterType": "global::lenspec.Etalon.IPowerOfAttorneyBase",
+          "ParameterTypeFullName": "lenspec.Etalon.IPowerOfAttorneyBase, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "CreationAreaMetadata": {
+    "NameGuid": "01403d88-dd86-41ff-aa3b-40002653507a",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "80d3ce1a-9a72-443a-8b6c-6c6eef0c8d0f",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.InplaceFormMetadata, Sungero.Metadata",
+      "NameGuid": "ff7eec03-9f53-492b-a266-0ff6760da9d0",
+      "Name": "ManyRepresentatives",
+      "Controls": [],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ]
+    }
+  ],
+  "IconResourcesKeys": [],
+  "IsAbstract": true,
+  "LayeredFromGuid": "a8d955b1-4b35-4013-b643-3ea9d80bd1ea",
+  "OpenCardByDefaultInCollection": true,
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "56cbe741-880f-4e6f-9567-343d08494b59",
+      "Name": "Versions",
+      "EntityGuid": "5707ab8c-9ff7-49ba-aa71-9912d50a3358",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "15280407-331e-42f6-b263-041a495b66cd",
+      "Name": "Tracking",
+      "EntityGuid": "67194004-3967-4079-90ea-ef306f28e115",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "942c5a22-3ab8-4824-866d-0f20b57d253f",
+      "Name": "Representatives",
+      "EntityGuid": "17a0da94-d76b-4045-8aec-3e7acd370114",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "GetAttorneysPassportDetails",
+      "Parameters": [
+        {
+          "Name": "document",
+          "ParameterType": "global::lenspec.Etalon.IPowerOfAttorneyBase",
+          "ParameterTypeFullName": "lenspec.Etalon.IPowerOfAttorneyBase, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "PassportDetailsTemplateField"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "944914f9-7dcc-4e23-bc2c-30e6a72b2597",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "94ae5c77-81ad-4b22-88e9-4ccf3c1c1b02",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "DocumentMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 13
+    }
+  ]
+}

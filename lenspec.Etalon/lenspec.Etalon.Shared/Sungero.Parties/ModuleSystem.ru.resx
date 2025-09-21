@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CoverDescription_ShowGroupCounterpartyavis" xml:space="preserve">
+    <value>Справочник для учета групп контрагентов</value>
+  </data>
+  <data name="CoverAction_ShowGroupCounterpartyavis" xml:space="preserve">
+    <value>Группы контрагентов</value>
+  </data>
+  <data name="CoverAction_ShowCategoryCounterpartyavis" xml:space="preserve">
+    <value>Категории контрагентов</value>
+  </data>
+  <data name="CoverDescription_ShowCategoryCounterpartyavis" xml:space="preserve">
+    <value>Справочник для учета категорий контрагентов</value>
+  </data>
+  <data name="CoverAction_CreateTaskCompanyavis" xml:space="preserve">
+    <value>Заявка на создание/изменение контрагента </value>
+  </data>
+  <data name="CoverDescription_CreateTaskCompanyavis" xml:space="preserve">
+    <value>Создание нового или изменение существующего контрагента, а также ответственных по контрагентам.</value>
+  </data>
+  <data name="CoverAction_CreateCompanyavis" xml:space="preserve">
+    <value>Создать организацию</value>
+  </data>
+  <data name="CoverAction_CreateTaskCompanyPersonavis" xml:space="preserve">
+    <value>Заявка на создание/изменение персоны </value>
+  </data>
+  <data name="CoverDescription_CreateTaskCompanyPersonavis" xml:space="preserve">
+    <value>Создание новой или изменение существующей персоны, а также ответственных по контрагентам.</value>
+  </data>
+  <data name="CoverAction_ShowWorkKindavis" xml:space="preserve">
+    <value>Виды работ</value>
+  </data>
+  <data name="CoverDescription_ShowWorkKindavis" xml:space="preserve">
+    <value>Справочник для учета выполняемых работ.</value>
+  </data>
+  <data name="CoverAction_ShowWorkGroupavis" xml:space="preserve">
+    <value>Группы работ</value>
+  </data>
+  <data name="CoverDescription_ShowWorkGroupavis" xml:space="preserve">
+    <value>Справочник для учета групп работ. </value>
+  </data>
+  <data name="CoverAction_ShowMaterialavis" xml:space="preserve">
+    <value>Материалы</value>
+  </data>
+  <data name="CoverDescription_ShowMaterialavis" xml:space="preserve">
+    <value>Справочник для учета поставляемых материалов.</value>
+  </data>
+  <data name="CoverAction_ShowMaterialGroupavis" xml:space="preserve">
+    <value>Группы материалов</value>
+  </data>
+  <data name="CoverDescription_ShowMaterialGroupavis" xml:space="preserve">
+    <value>Справочник для учета групп материалов.</value>
+  </data>
+  <data name="JobDisplayName_8a61d0f203d744a7a12667612173edb2" xml:space="preserve">
+    <value>Эталон. Контрагенты. Установка статуса результат согласования ДБ</value>
+  </data>
+  <data name="JobDescription_8a61d0f203d744a7a12667612173edb2" xml:space="preserve">
+    <value>Эталон. Контрагенты. Установка статуса результат согласования ДБ</value>
+  </data>
+  <data name="CoverAction_ResponsibleByCounterpartyavis" xml:space="preserve">
+    <value>Ответственные по контрагентам</value>
+  </data>
+  <data name="CoverDescription_CreateApprovingCounterpartyRequestavis" xml:space="preserve">
+    <value>Заявка  на отправку контрагента, банка на проверку в ДБ и формирование реестра аккредитованных поставщиков/подрядчиков</value>
+  </data>
+  <data name="CoverDescription_ApprovalPersonsRequestavis" xml:space="preserve">
+    <value>Заявка на отправку персоны на проверку в ДБ</value>
+  </data>
+  <data name="CoverAction_ShowMyApprovalCounterpartyPersonRequestsavis" xml:space="preserve">
+    <value>Мои заявки на согласование контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="CoverDescription_ShowMyApprovalCounterpartyPersonRequestsavis" xml:space="preserve">
+    <value>Список всех заявок текущего пользователя на согласование контрагентов, банков и персон с ДБ</value>
+  </data>
+  <data name="CoverAction_ApprovalCounterpartiesavis" xml:space="preserve">
+    <value>Контрагенты на согласовании</value>
+  </data>
+  <data name="CoverDescription_ApprovalCounterpartiesavis" xml:space="preserve">
+    <value>Формирование отчета «Контрагенты на согласовании» </value>
+  </data>
+  <data name="AsyncHandler_Description_36d4abb685674fb0815f082eae1c05bb" xml:space="preserve">
+    <value>Выгрузка контрагентов</value>
+  </data>
+  <data name="AsyncHandler_Description_ea2eed773c7041dc9002c22dfbe7c875" xml:space="preserve">
+    <value>AsyncHandlerlenspec</value>
+  </data>
+  <data name="AsyncHandler_Description_38bf83c6937f4f3db4ec3cf942fe1312" xml:space="preserve">
+    <value>AsyncHandlerlenspec</value>
+  </data>
+</root>

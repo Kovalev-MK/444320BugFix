@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConditionNameUploadBU" xml:space="preserve">
+    <value>Выгрузить Нашу орг. в Directum?</value>
+  </data>
+  <data name="ConditionNameRequiresApproval" xml:space="preserve">
+    <value>Требует согласования обязательным согласующим?</value>
+  </data>
+  <data name="ConditionNameBusinessUnitAddresseeavis" xml:space="preserve">
+    <value>Адресаты – Наши НОР?</value>
+  </data>
+  <data name="ConditionNameDocumentIsSignedavis" xml:space="preserve">
+    <value>Документ подписан?</value>
+  </data>
+  <data name="ConditionNameFtsListState" xml:space="preserve">
+    <value>В реестре ФНС - {0}?</value>
+  </data>
+  <data name="ConditionNameRepresentativeType" xml:space="preserve">
+    <value>Тип представителя «{0}»?</value>
+  </data>
+  <data name="ConditionNameEmployeeRegion" xml:space="preserve">
+    <value>Регион сотрудника - {0}?</value>
+  </data>
+  <data name="ConditionNameIsUsedInRX" xml:space="preserve">
+    <value>Использование в Directum RX</value>
+  </data>
+  <data name="ConditionNameEDSAppCategory" xml:space="preserve">
+    <value>Категория заявки – Продление или Первичный выпуск?</value>
+  </data>
+  <data name="DocumentTypeErrorMessage" xml:space="preserve">
+    <value>Условие не может быть вычислено. Отправляемый документ имеет неверный тип.</value>
+  </data>
+</root>

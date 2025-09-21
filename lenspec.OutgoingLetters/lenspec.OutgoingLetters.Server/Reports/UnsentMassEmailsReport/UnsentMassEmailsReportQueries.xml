@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+  <query key="SelectDocumentsFromTempTable">
+    <default><![CDATA[select *
+from lenspec_Reports_UnsentMassEmails
+where ReportSessionId = @ReportSessionId
+order by LineNumber;]]></default>
+  </query>
+  <query key="CreateSourceTable">
+    <mssql><![CDATA[create table {0}
+([ReportSessionId] varchar(256) not null,
+  [LineNumber] int not null,
+  [DocumentName] nvarchar(max) null,
+  [RegistrationNumber] nvarchar(max) null,
+  [Correspondent] nvarchar(max) null,
+  [Error] nvarchar(max) null,
+  [DocumentId] nvarchar(max) null,
+  [DocumentHyperlink] nvarchar(max) null)]]></mssql>
+    <postgres><![CDATA[create table {0}
+(ReportSessionId varchar(256) not null,
+  LineNumber integer not null,
+  DocumentName citext null,
+  RegistrationNumber citext null,
+  Correspondent citext null,
+  Error citext null,
+  DocumentId citext null,
+  DocumentHyperlink citext null);]]></postgres>
+  </query>
+</queries>
